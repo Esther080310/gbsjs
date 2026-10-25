@@ -1,0 +1,17 @@
+{
+  "year": 2020,
+  "folds_loaded": [
+    0,
+    1
+  ],
+  "protocol_sha": "33a23835abe2dbfdade990810402728311ae0982227ff3ac8530a96d1fc37449",
+  "source_sha": "917022a773e09d45e14683dece1704ddf681da723df4b6d74b8bc2bee01ffe5e",
+  "old_exploratory_seed": 42,
+  "new_seeds": [
+    100,
+    17,
+    223,
+    483,
+    907
+  ]
+}

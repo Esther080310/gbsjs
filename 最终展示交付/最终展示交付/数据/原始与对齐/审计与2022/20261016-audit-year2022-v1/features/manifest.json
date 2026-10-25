@@ -1,0 +1,174 @@
+{
+  "year": 2022,
+  "feature_names": [
+    "audit::unique_company_year_match",
+    "audit::standard_unqualified",
+    "audit::unqualified_with_explanation",
+    "audit::qualified",
+    "audit::adverse",
+    "audit::disclaimer_or_refusal",
+    "audit::unknown"
+  ],
+  "mapping": {
+    "标准无保留意见": 0,
+    "无保留意见加说明段": 1,
+    "带有解释性说明的无保留意见": 1,
+    "保留意见": 2,
+    "保留意见加说明段": 2,
+    "保留意见加事项段": 2,
+    "否定意见": 3,
+    "否定意见加说明段": 3,
+    "无法表示意见": 4,
+    "拒绝发表意见": 4
+  },
+  "groups": [
+    "standard_unqualified",
+    "unqualified_with_explanation",
+    "qualified",
+    "adverse",
+    "disclaimer_or_refusal",
+    "unknown"
+  ],
+  "append_node": 2,
+  "append_node_name": "X3",
+  "dimensions": 7,
+  "uses_text": false,
+  "uses_dates_as_input": false,
+  "retrospective_only": true,
+  "r_definition": "current-snapshot unique same-company-year aligned match; dates never modify r",
+  "folds": [
+    {
+      "year": 2022,
+      "fold": 0,
+      "rows": 41787,
+      "matched": 40133,
+      "unmatched": 1654,
+      "unknown_matched": 0,
+      "raw_label_counts": {
+        "标准无保留意见": 37785,
+        "无保留意见加说明段": 102,
+        "拒绝发表意见": 20,
+        "保留意见": 455,
+        "保留意见加说明段": 26,
+        "带有解释性说明的无保留意见": 1274,
+        "无法表示意见": 312,
+        "保留意见加事项段": 158,
+        "否定意见": 1
+      },
+      "category_counts": {
+        "standard_unqualified": 37785,
+        "unqualified_with_explanation": 1376,
+        "qualified": 639,
+        "adverse": 1,
+        "disclaimer_or_refusal": 332,
+        "unknown": 0
+      },
+      "positives": 7014,
+      "iar_common_cohort": 40092,
+      "iar_auditdate_common_cohort": 39731
+    },
+    {
+      "year": 2022,
+      "fold": 1,
+      "rows": 4292,
+      "matched": 4145,
+      "unmatched": 147,
+      "unknown_matched": 0,
+      "raw_label_counts": {
+        "标准无保留意见": 3889,
+        "保留意见": 76,
+        "保留意见加事项段": 33,
+        "带有解释性说明的无保留意见": 111,
+        "无法表示意见": 36
+      },
+      "category_counts": {
+        "standard_unqualified": 3889,
+        "unqualified_with_explanation": 111,
+        "qualified": 109,
+        "adverse": 0,
+        "disclaimer_or_refusal": 36,
+        "unknown": 0
+      },
+      "positives": 787,
+      "iar_common_cohort": 4143,
+      "iar_auditdate_common_cohort": 4141
+    },
+    {
+      "year": 2022,
+      "fold": 2,
+      "rows": 4794,
+      "matched": 4689,
+      "unmatched": 105,
+      "unknown_matched": 0,
+      "raw_label_counts": {
+        "标准无保留意见": 4433,
+        "保留意见": 73,
+        "带有解释性说明的无保留意见": 108,
+        "无法表示意见": 47,
+        "保留意见加事项段": 27,
+        "否定意见": 1
+      },
+      "category_counts": {
+        "standard_unqualified": 4433,
+        "unqualified_with_explanation": 108,
+        "qualified": 100,
+        "adverse": 1,
+        "disclaimer_or_refusal": 47,
+        "unknown": 0
+      },
+      "positives": 747,
+      "iar_common_cohort": 4688,
+      "iar_auditdate_common_cohort": 4688
+    },
+    {
+      "year": 2022,
+      "fold": 3,
+      "rows": 5199,
+      "matched": 5070,
+      "unmatched": 129,
+      "unknown_matched": 0,
+      "raw_label_counts": {
+        "标准无保留意见": 4833,
+        "保留意见加事项段": 29,
+        "带有解释性说明的无保留意见": 103,
+        "保留意见": 68,
+        "无法表示意见": 37
+      },
+      "category_counts": {
+        "standard_unqualified": 4833,
+        "unqualified_with_explanation": 103,
+        "qualified": 97,
+        "adverse": 0,
+        "disclaimer_or_refusal": 37,
+        "unknown": 0
+      },
+      "positives": 629,
+      "iar_common_cohort": 5069,
+      "iar_auditdate_common_cohort": 5068
+    }
+  ],
+  "unique_matched_company_years": 54037,
+  "unique_raw_category_counts": {
+    "标准无保留意见": 50940,
+    "无保留意见加说明段": 102,
+    "拒绝发表意见": 20,
+    "保留意见": 672,
+    "保留意见加说明段": 26,
+    "带有解释性说明的无保留意见": 1596,
+    "无法表示意见": 432,
+    "保留意见加事项段": 247,
+    "否定意见": 2
+  },
+  "unknown_rows": [],
+  "arrays_reloaded_exact": true,
+  "cache_sha256": "816f0cb6b3ceeb169a273ead37f4877f74e5afd7771faf255a6e9a9a6a6152fd",
+  "alignment_sha256": "abac6196bd5749ec281b3f754780afebfb2815da26505523d9c0ccf6221a3a89",
+  "feature_sha256": "1194e61579a6423d09051fa5ff4482b7ef65162ff7856386ac6933d35fab841e",
+  "source_sha256": {
+    "/Users/how/Desktop/分布式企业违规检测/实验与代码/违规通报结构化研究/artifacts/followup/csmar/processed/20261016-v1/aligned/FIN_Audit_annual_candidates.csv.gz": "88bfeddc7c7f228638d9fe6f60490a317b2b00e459472b0e257a7930eaf1f5e6",
+    "/Users/how/Desktop/分布式企业违规检测/实验与代码/违规通报结构化研究/artifacts/followup/csmar/processed/20261016-v1/normalized/IAR_Rept.csv.gz": "a5c520d36844a7e0809a3ee0a056128302f101d6383608af6093ccf7ff497ba8",
+    "/Users/how/Desktop/分布式企业违规检测/实验与代码/财务年度配对修正/data/x2_annual.csv.gz": "253f100b3d43e2a9c47d56e305d7bf112632552e303ed90b32f2cacce50987bf",
+    "/Users/how/Desktop/分布式企业违规检测/实验与代码/财务年度配对修正/cache/2020.npz": "64673df87531328306cc0b32b2272739373839ff8760646752b231dac2c59ffc",
+    "/Users/how/Desktop/分布式企业违规检测/实验与代码/财务年度配对修正/cache/2021.npz": "7ebfa316b6d41180084c62309b0bbcd8bce0ffc622a266de3093027f233857e7"
+  }
+}

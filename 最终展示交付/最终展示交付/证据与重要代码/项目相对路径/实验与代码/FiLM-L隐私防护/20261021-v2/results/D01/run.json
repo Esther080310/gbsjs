@@ -1,0 +1,16 @@
+{
+  "arm": "D01",
+  "mode": "dcor",
+  "strength": 0.1,
+  "best_epoch": 12,
+  "epochs": 18,
+  "seconds": 17.42222554201726,
+  "selection_loss": 0.8846461311529482,
+  "parameters": 107378,
+  "folds_loaded": [
+    0,
+    1
+  ],
+  "protocol_sha": "882c570e3693c5d547e648660de4d1be3fe62767ac929c330ad98261dd2819b5",
+  "code_sha": "d43801f60fca8b624ac2ead910c57a7ab66a2175b437177c8e063c184a9dd28e"
+}

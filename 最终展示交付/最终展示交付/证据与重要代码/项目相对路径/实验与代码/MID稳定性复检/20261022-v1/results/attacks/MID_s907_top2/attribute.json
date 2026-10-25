@@ -1,0 +1,104 @@
+{
+  "classification": true,
+  "best_epoch": 16,
+  "best_score": 0.7587258151126139,
+  "history": [
+    {
+      "epoch": 1,
+      "selection_score": 0.7050676247462788
+    },
+    {
+      "epoch": 2,
+      "selection_score": 0.7232650682147657
+    },
+    {
+      "epoch": 3,
+      "selection_score": 0.7329383843555004
+    },
+    {
+      "epoch": 4,
+      "selection_score": 0.7416268273536029
+    },
+    {
+      "epoch": 5,
+      "selection_score": 0.7458953266697996
+    },
+    {
+      "epoch": 6,
+      "selection_score": 0.7488464063562975
+    },
+    {
+      "epoch": 7,
+      "selection_score": 0.7507723714576401
+    },
+    {
+      "epoch": 8,
+      "selection_score": 0.7523382476287138
+    },
+    {
+      "epoch": 9,
+      "selection_score": 0.7514874614486392
+    },
+    {
+      "epoch": 10,
+      "selection_score": 0.7546789336680131
+    },
+    {
+      "epoch": 11,
+      "selection_score": 0.755055382869871
+    },
+    {
+      "epoch": 12,
+      "selection_score": 0.7558502413543272
+    },
+    {
+      "epoch": 13,
+      "selection_score": 0.7546264290289405
+    },
+    {
+      "epoch": 14,
+      "selection_score": 0.7562781550749763
+    },
+    {
+      "epoch": 15,
+      "selection_score": 0.7574498300029269
+    },
+    {
+      "epoch": 16,
+      "selection_score": 0.7587258151126139
+    },
+    {
+      "epoch": 17,
+      "selection_score": 0.7584607643784965
+    },
+    {
+      "epoch": 18,
+      "selection_score": 0.7580045790565865
+    },
+    {
+      "epoch": 19,
+      "selection_score": 0.7582584921967338
+    },
+    {
+      "epoch": 20,
+      "selection_score": 0.7564390221227252
+    },
+    {
+      "epoch": 21,
+      "selection_score": 0.7582763241810369
+    },
+    {
+      "epoch": 22,
+      "selection_score": 0.7581083789486586
+    },
+    {
+      "epoch": 23,
+      "selection_score": 0.7585002372015149
+    },
+    {
+      "epoch": 24,
+      "selection_score": 0.7575537994709145
+    }
+  ],
+  "checkpoint_sha256": "878f76dfa45ed57cd5f00ff8a448d3808587798cc6e3ba556c92abbbb9c293f4"
+}

@@ -1,0 +1,82 @@
+{
+  "seeds": [
+    100,
+    17,
+    223,
+    483,
+    907
+  ],
+  "financial_key_fields": 13,
+  "key_mean_s0": 0.3600246392201297,
+  "key_mean_dcor": 0.4568462718906957,
+  "mean_paired_relative_increase": 0.26950372134418027,
+  "positive_seed_pairs": 5,
+  "fields_improved_on_average": 13,
+  "fields_positive_all_five": 13,
+  "mean_public_nrmse": 0.8962366249313258,
+  "mean_remaining_gain_over_public": 0.4393903530406301,
+  "task_prediction_checks": [
+    {
+      "seed": 100,
+      "arm": "S0",
+      "unchanged": true
+    },
+    {
+      "seed": 100,
+      "arm": "D1",
+      "unchanged": true
+    },
+    {
+      "seed": 17,
+      "arm": "S0",
+      "unchanged": true
+    },
+    {
+      "seed": 17,
+      "arm": "D1",
+      "unchanged": true
+    },
+    {
+      "seed": 223,
+      "arm": "S0",
+      "unchanged": true
+    },
+    {
+      "seed": 223,
+      "arm": "D1",
+      "unchanged": true
+    },
+    {
+      "seed": 483,
+      "arm": "S0",
+      "unchanged": true
+    },
+    {
+      "seed": 483,
+      "arm": "D1",
+      "unchanged": true
+    },
+    {
+      "seed": 907,
+      "arm": "S0",
+      "unchanged": true
+    },
+    {
+      "seed": 907,
+      "arm": "D1",
+      "unchanged": true
+    }
+  ],
+  "sensitivity": [
+    {
+      "target": "abs_overall_logit_delta",
+      "median_paired_ratio": 0.684691292818012,
+      "pairs": 195
+    },
+    {
+      "target": "abs_type_logit_delta",
+      "median_paired_ratio": 0.6186312643337296,
+      "pairs": 195
+    }
+  ]
+}

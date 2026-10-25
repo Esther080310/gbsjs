@@ -1,0 +1,2950 @@
+{
+  "status": "candidate accounting only; formal evaluation not run",
+  "count": 81,
+  "block_order": [
+    "market",
+    "finance",
+    "governance",
+    "audit_control"
+  ],
+  "precision_order": [
+    "fp32",
+    "fp16",
+    "int8"
+  ],
+  "ensemble_rule": "equal-average six calibrated logits, then apply sigmoid",
+  "physical_topology": {
+    "data_nodes": 3,
+    "uplinks": [
+      "x1_market",
+      "x2_finance",
+      "x3_governance_and_audit"
+    ],
+    "logical_frames_per_batch": 4,
+    "transport_rounds": 1
+  },
+  "serialization": {
+    "header_bytes_per_logical_frame": 20,
+    "r": "one exact uint8 per company",
+    "int8_scale": "FP32 per channel, pre-shared once with model manifest",
+    "requests_tls_encryption": "excluded"
+  },
+  "candidates": [
+    {
+      "candidate_number": 1,
+      "candidate_id": "market-fp32__finance-fp32__governance-fp32__audit_control-fp32",
+      "precision_by_logical_block": {
+        "market": "fp32",
+        "finance": "fp32",
+        "governance": "fp32",
+        "audit_control": "fp32"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 545,
+        "payload_bytes_by_block": {
+          "market": 68,
+          "finance": 356,
+          "governance": 88,
+          "audit_control": 33
+        },
+        "one_company_four_frame_bytes": 625,
+        "batch64_bytes_per_company": 546.25,
+        "one_time_int8_scale_manifest_bytes": 0,
+        "payload_fraction_of_fp32": 1.0
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 3205,
+        "payload_bytes_by_block": {
+          "market": 388,
+          "finance": 2116,
+          "governance": 508,
+          "audit_control": 193
+        },
+        "one_company_four_frame_bytes": 3285,
+        "batch64_bytes_per_company": 3206.25,
+        "one_time_int8_scale_manifest_bytes": 0,
+        "payload_fraction_of_fp32": 1.0
+      }
+    },
+    {
+      "candidate_number": 2,
+      "candidate_id": "market-fp32__finance-fp32__governance-fp32__audit_control-fp16",
+      "precision_by_logical_block": {
+        "market": "fp32",
+        "finance": "fp32",
+        "governance": "fp32",
+        "audit_control": "fp16"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 529,
+        "payload_bytes_by_block": {
+          "market": 68,
+          "finance": 356,
+          "governance": 88,
+          "audit_control": 17
+        },
+        "one_company_four_frame_bytes": 609,
+        "batch64_bytes_per_company": 530.25,
+        "one_time_int8_scale_manifest_bytes": 0,
+        "payload_fraction_of_fp32": 0.9706422018348624
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 3109,
+        "payload_bytes_by_block": {
+          "market": 388,
+          "finance": 2116,
+          "governance": 508,
+          "audit_control": 97
+        },
+        "one_company_four_frame_bytes": 3189,
+        "batch64_bytes_per_company": 3110.25,
+        "one_time_int8_scale_manifest_bytes": 0,
+        "payload_fraction_of_fp32": 0.9700468018720749
+      }
+    },
+    {
+      "candidate_number": 3,
+      "candidate_id": "market-fp32__finance-fp32__governance-fp32__audit_control-int8",
+      "precision_by_logical_block": {
+        "market": "fp32",
+        "finance": "fp32",
+        "governance": "fp32",
+        "audit_control": "int8"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 521,
+        "payload_bytes_by_block": {
+          "market": 68,
+          "finance": 356,
+          "governance": 88,
+          "audit_control": 9
+        },
+        "one_company_four_frame_bytes": 601,
+        "batch64_bytes_per_company": 522.25,
+        "one_time_int8_scale_manifest_bytes": 32,
+        "payload_fraction_of_fp32": 0.9559633027522936
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 3061,
+        "payload_bytes_by_block": {
+          "market": 388,
+          "finance": 2116,
+          "governance": 508,
+          "audit_control": 49
+        },
+        "one_company_four_frame_bytes": 3141,
+        "batch64_bytes_per_company": 3062.25,
+        "one_time_int8_scale_manifest_bytes": 192,
+        "payload_fraction_of_fp32": 0.9550702028081123
+      }
+    },
+    {
+      "candidate_number": 4,
+      "candidate_id": "market-fp32__finance-fp32__governance-fp16__audit_control-fp32",
+      "precision_by_logical_block": {
+        "market": "fp32",
+        "finance": "fp32",
+        "governance": "fp16",
+        "audit_control": "fp32"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 501,
+        "payload_bytes_by_block": {
+          "market": 68,
+          "finance": 356,
+          "governance": 44,
+          "audit_control": 33
+        },
+        "one_company_four_frame_bytes": 581,
+        "batch64_bytes_per_company": 502.25,
+        "one_time_int8_scale_manifest_bytes": 0,
+        "payload_fraction_of_fp32": 0.9192660550458716
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 2951,
+        "payload_bytes_by_block": {
+          "market": 388,
+          "finance": 2116,
+          "governance": 254,
+          "audit_control": 193
+        },
+        "one_company_four_frame_bytes": 3031,
+        "batch64_bytes_per_company": 2952.25,
+        "one_time_int8_scale_manifest_bytes": 0,
+        "payload_fraction_of_fp32": 0.9207488299531982
+      }
+    },
+    {
+      "candidate_number": 5,
+      "candidate_id": "market-fp32__finance-fp32__governance-fp16__audit_control-fp16",
+      "precision_by_logical_block": {
+        "market": "fp32",
+        "finance": "fp32",
+        "governance": "fp16",
+        "audit_control": "fp16"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 485,
+        "payload_bytes_by_block": {
+          "market": 68,
+          "finance": 356,
+          "governance": 44,
+          "audit_control": 17
+        },
+        "one_company_four_frame_bytes": 565,
+        "batch64_bytes_per_company": 486.25,
+        "one_time_int8_scale_manifest_bytes": 0,
+        "payload_fraction_of_fp32": 0.8899082568807339
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 2855,
+        "payload_bytes_by_block": {
+          "market": 388,
+          "finance": 2116,
+          "governance": 254,
+          "audit_control": 97
+        },
+        "one_company_four_frame_bytes": 2935,
+        "batch64_bytes_per_company": 2856.25,
+        "one_time_int8_scale_manifest_bytes": 0,
+        "payload_fraction_of_fp32": 0.890795631825273
+      }
+    },
+    {
+      "candidate_number": 6,
+      "candidate_id": "market-fp32__finance-fp32__governance-fp16__audit_control-int8",
+      "precision_by_logical_block": {
+        "market": "fp32",
+        "finance": "fp32",
+        "governance": "fp16",
+        "audit_control": "int8"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 477,
+        "payload_bytes_by_block": {
+          "market": 68,
+          "finance": 356,
+          "governance": 44,
+          "audit_control": 9
+        },
+        "one_company_four_frame_bytes": 557,
+        "batch64_bytes_per_company": 478.25,
+        "one_time_int8_scale_manifest_bytes": 32,
+        "payload_fraction_of_fp32": 0.8752293577981651
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 2807,
+        "payload_bytes_by_block": {
+          "market": 388,
+          "finance": 2116,
+          "governance": 254,
+          "audit_control": 49
+        },
+        "one_company_four_frame_bytes": 2887,
+        "batch64_bytes_per_company": 2808.25,
+        "one_time_int8_scale_manifest_bytes": 192,
+        "payload_fraction_of_fp32": 0.8758190327613105
+      }
+    },
+    {
+      "candidate_number": 7,
+      "candidate_id": "market-fp32__finance-fp32__governance-int8__audit_control-fp32",
+      "precision_by_logical_block": {
+        "market": "fp32",
+        "finance": "fp32",
+        "governance": "int8",
+        "audit_control": "fp32"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 479,
+        "payload_bytes_by_block": {
+          "market": 68,
+          "finance": 356,
+          "governance": 22,
+          "audit_control": 33
+        },
+        "one_company_four_frame_bytes": 559,
+        "batch64_bytes_per_company": 480.25,
+        "one_time_int8_scale_manifest_bytes": 88,
+        "payload_fraction_of_fp32": 0.8788990825688073
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 2824,
+        "payload_bytes_by_block": {
+          "market": 388,
+          "finance": 2116,
+          "governance": 127,
+          "audit_control": 193
+        },
+        "one_company_four_frame_bytes": 2904,
+        "batch64_bytes_per_company": 2825.25,
+        "one_time_int8_scale_manifest_bytes": 508,
+        "payload_fraction_of_fp32": 0.8811232449297972
+      }
+    },
+    {
+      "candidate_number": 8,
+      "candidate_id": "market-fp32__finance-fp32__governance-int8__audit_control-fp16",
+      "precision_by_logical_block": {
+        "market": "fp32",
+        "finance": "fp32",
+        "governance": "int8",
+        "audit_control": "fp16"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 463,
+        "payload_bytes_by_block": {
+          "market": 68,
+          "finance": 356,
+          "governance": 22,
+          "audit_control": 17
+        },
+        "one_company_four_frame_bytes": 543,
+        "batch64_bytes_per_company": 464.25,
+        "one_time_int8_scale_manifest_bytes": 88,
+        "payload_fraction_of_fp32": 0.8495412844036697
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 2728,
+        "payload_bytes_by_block": {
+          "market": 388,
+          "finance": 2116,
+          "governance": 127,
+          "audit_control": 97
+        },
+        "one_company_four_frame_bytes": 2808,
+        "batch64_bytes_per_company": 2729.25,
+        "one_time_int8_scale_manifest_bytes": 508,
+        "payload_fraction_of_fp32": 0.851170046801872
+      }
+    },
+    {
+      "candidate_number": 9,
+      "candidate_id": "market-fp32__finance-fp32__governance-int8__audit_control-int8",
+      "precision_by_logical_block": {
+        "market": "fp32",
+        "finance": "fp32",
+        "governance": "int8",
+        "audit_control": "int8"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 455,
+        "payload_bytes_by_block": {
+          "market": 68,
+          "finance": 356,
+          "governance": 22,
+          "audit_control": 9
+        },
+        "one_company_four_frame_bytes": 535,
+        "batch64_bytes_per_company": 456.25,
+        "one_time_int8_scale_manifest_bytes": 120,
+        "payload_fraction_of_fp32": 0.8348623853211009
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 2680,
+        "payload_bytes_by_block": {
+          "market": 388,
+          "finance": 2116,
+          "governance": 127,
+          "audit_control": 49
+        },
+        "one_company_four_frame_bytes": 2760,
+        "batch64_bytes_per_company": 2681.25,
+        "one_time_int8_scale_manifest_bytes": 700,
+        "payload_fraction_of_fp32": 0.8361934477379095
+      }
+    },
+    {
+      "candidate_number": 10,
+      "candidate_id": "market-fp32__finance-fp16__governance-fp32__audit_control-fp32",
+      "precision_by_logical_block": {
+        "market": "fp32",
+        "finance": "fp16",
+        "governance": "fp32",
+        "audit_control": "fp32"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 367,
+        "payload_bytes_by_block": {
+          "market": 68,
+          "finance": 178,
+          "governance": 88,
+          "audit_control": 33
+        },
+        "one_company_four_frame_bytes": 447,
+        "batch64_bytes_per_company": 368.25,
+        "one_time_int8_scale_manifest_bytes": 0,
+        "payload_fraction_of_fp32": 0.673394495412844
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 2147,
+        "payload_bytes_by_block": {
+          "market": 388,
+          "finance": 1058,
+          "governance": 508,
+          "audit_control": 193
+        },
+        "one_company_four_frame_bytes": 2227,
+        "batch64_bytes_per_company": 2148.25,
+        "one_time_int8_scale_manifest_bytes": 0,
+        "payload_fraction_of_fp32": 0.6698907956318253
+      }
+    },
+    {
+      "candidate_number": 11,
+      "candidate_id": "market-fp32__finance-fp16__governance-fp32__audit_control-fp16",
+      "precision_by_logical_block": {
+        "market": "fp32",
+        "finance": "fp16",
+        "governance": "fp32",
+        "audit_control": "fp16"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 351,
+        "payload_bytes_by_block": {
+          "market": 68,
+          "finance": 178,
+          "governance": 88,
+          "audit_control": 17
+        },
+        "one_company_four_frame_bytes": 431,
+        "batch64_bytes_per_company": 352.25,
+        "one_time_int8_scale_manifest_bytes": 0,
+        "payload_fraction_of_fp32": 0.6440366972477064
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 2051,
+        "payload_bytes_by_block": {
+          "market": 388,
+          "finance": 1058,
+          "governance": 508,
+          "audit_control": 97
+        },
+        "one_company_four_frame_bytes": 2131,
+        "batch64_bytes_per_company": 2052.25,
+        "one_time_int8_scale_manifest_bytes": 0,
+        "payload_fraction_of_fp32": 0.6399375975039001
+      }
+    },
+    {
+      "candidate_number": 12,
+      "candidate_id": "market-fp32__finance-fp16__governance-fp32__audit_control-int8",
+      "precision_by_logical_block": {
+        "market": "fp32",
+        "finance": "fp16",
+        "governance": "fp32",
+        "audit_control": "int8"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 343,
+        "payload_bytes_by_block": {
+          "market": 68,
+          "finance": 178,
+          "governance": 88,
+          "audit_control": 9
+        },
+        "one_company_four_frame_bytes": 423,
+        "batch64_bytes_per_company": 344.25,
+        "one_time_int8_scale_manifest_bytes": 32,
+        "payload_fraction_of_fp32": 0.6293577981651376
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 2003,
+        "payload_bytes_by_block": {
+          "market": 388,
+          "finance": 1058,
+          "governance": 508,
+          "audit_control": 49
+        },
+        "one_company_four_frame_bytes": 2083,
+        "batch64_bytes_per_company": 2004.25,
+        "one_time_int8_scale_manifest_bytes": 192,
+        "payload_fraction_of_fp32": 0.6249609984399376
+      }
+    },
+    {
+      "candidate_number": 13,
+      "candidate_id": "market-fp32__finance-fp16__governance-fp16__audit_control-fp32",
+      "precision_by_logical_block": {
+        "market": "fp32",
+        "finance": "fp16",
+        "governance": "fp16",
+        "audit_control": "fp32"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 323,
+        "payload_bytes_by_block": {
+          "market": 68,
+          "finance": 178,
+          "governance": 44,
+          "audit_control": 33
+        },
+        "one_company_four_frame_bytes": 403,
+        "batch64_bytes_per_company": 324.25,
+        "one_time_int8_scale_manifest_bytes": 0,
+        "payload_fraction_of_fp32": 0.5926605504587156
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 1893,
+        "payload_bytes_by_block": {
+          "market": 388,
+          "finance": 1058,
+          "governance": 254,
+          "audit_control": 193
+        },
+        "one_company_four_frame_bytes": 1973,
+        "batch64_bytes_per_company": 1894.25,
+        "one_time_int8_scale_manifest_bytes": 0,
+        "payload_fraction_of_fp32": 0.5906396255850234
+      }
+    },
+    {
+      "candidate_number": 14,
+      "candidate_id": "market-fp32__finance-fp16__governance-fp16__audit_control-fp16",
+      "precision_by_logical_block": {
+        "market": "fp32",
+        "finance": "fp16",
+        "governance": "fp16",
+        "audit_control": "fp16"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 307,
+        "payload_bytes_by_block": {
+          "market": 68,
+          "finance": 178,
+          "governance": 44,
+          "audit_control": 17
+        },
+        "one_company_four_frame_bytes": 387,
+        "batch64_bytes_per_company": 308.25,
+        "one_time_int8_scale_manifest_bytes": 0,
+        "payload_fraction_of_fp32": 0.563302752293578
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 1797,
+        "payload_bytes_by_block": {
+          "market": 388,
+          "finance": 1058,
+          "governance": 254,
+          "audit_control": 97
+        },
+        "one_company_four_frame_bytes": 1877,
+        "batch64_bytes_per_company": 1798.25,
+        "one_time_int8_scale_manifest_bytes": 0,
+        "payload_fraction_of_fp32": 0.5606864274570983
+      }
+    },
+    {
+      "candidate_number": 15,
+      "candidate_id": "market-fp32__finance-fp16__governance-fp16__audit_control-int8",
+      "precision_by_logical_block": {
+        "market": "fp32",
+        "finance": "fp16",
+        "governance": "fp16",
+        "audit_control": "int8"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 299,
+        "payload_bytes_by_block": {
+          "market": 68,
+          "finance": 178,
+          "governance": 44,
+          "audit_control": 9
+        },
+        "one_company_four_frame_bytes": 379,
+        "batch64_bytes_per_company": 300.25,
+        "one_time_int8_scale_manifest_bytes": 32,
+        "payload_fraction_of_fp32": 0.5486238532110091
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 1749,
+        "payload_bytes_by_block": {
+          "market": 388,
+          "finance": 1058,
+          "governance": 254,
+          "audit_control": 49
+        },
+        "one_company_four_frame_bytes": 1829,
+        "batch64_bytes_per_company": 1750.25,
+        "one_time_int8_scale_manifest_bytes": 192,
+        "payload_fraction_of_fp32": 0.5457098283931358
+      }
+    },
+    {
+      "candidate_number": 16,
+      "candidate_id": "market-fp32__finance-fp16__governance-int8__audit_control-fp32",
+      "precision_by_logical_block": {
+        "market": "fp32",
+        "finance": "fp16",
+        "governance": "int8",
+        "audit_control": "fp32"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 301,
+        "payload_bytes_by_block": {
+          "market": 68,
+          "finance": 178,
+          "governance": 22,
+          "audit_control": 33
+        },
+        "one_company_four_frame_bytes": 381,
+        "batch64_bytes_per_company": 302.25,
+        "one_time_int8_scale_manifest_bytes": 88,
+        "payload_fraction_of_fp32": 0.5522935779816514
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 1766,
+        "payload_bytes_by_block": {
+          "market": 388,
+          "finance": 1058,
+          "governance": 127,
+          "audit_control": 193
+        },
+        "one_company_four_frame_bytes": 1846,
+        "batch64_bytes_per_company": 1767.25,
+        "one_time_int8_scale_manifest_bytes": 508,
+        "payload_fraction_of_fp32": 0.5510140405616225
+      }
+    },
+    {
+      "candidate_number": 17,
+      "candidate_id": "market-fp32__finance-fp16__governance-int8__audit_control-fp16",
+      "precision_by_logical_block": {
+        "market": "fp32",
+        "finance": "fp16",
+        "governance": "int8",
+        "audit_control": "fp16"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 285,
+        "payload_bytes_by_block": {
+          "market": 68,
+          "finance": 178,
+          "governance": 22,
+          "audit_control": 17
+        },
+        "one_company_four_frame_bytes": 365,
+        "batch64_bytes_per_company": 286.25,
+        "one_time_int8_scale_manifest_bytes": 88,
+        "payload_fraction_of_fp32": 0.5229357798165137
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 1670,
+        "payload_bytes_by_block": {
+          "market": 388,
+          "finance": 1058,
+          "governance": 127,
+          "audit_control": 97
+        },
+        "one_company_four_frame_bytes": 1750,
+        "batch64_bytes_per_company": 1671.25,
+        "one_time_int8_scale_manifest_bytes": 508,
+        "payload_fraction_of_fp32": 0.5210608424336973
+      }
+    },
+    {
+      "candidate_number": 18,
+      "candidate_id": "market-fp32__finance-fp16__governance-int8__audit_control-int8",
+      "precision_by_logical_block": {
+        "market": "fp32",
+        "finance": "fp16",
+        "governance": "int8",
+        "audit_control": "int8"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 277,
+        "payload_bytes_by_block": {
+          "market": 68,
+          "finance": 178,
+          "governance": 22,
+          "audit_control": 9
+        },
+        "one_company_four_frame_bytes": 357,
+        "batch64_bytes_per_company": 278.25,
+        "one_time_int8_scale_manifest_bytes": 120,
+        "payload_fraction_of_fp32": 0.5082568807339449
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 1622,
+        "payload_bytes_by_block": {
+          "market": 388,
+          "finance": 1058,
+          "governance": 127,
+          "audit_control": 49
+        },
+        "one_company_four_frame_bytes": 1702,
+        "batch64_bytes_per_company": 1623.25,
+        "one_time_int8_scale_manifest_bytes": 700,
+        "payload_fraction_of_fp32": 0.5060842433697348
+      }
+    },
+    {
+      "candidate_number": 19,
+      "candidate_id": "market-fp32__finance-int8__governance-fp32__audit_control-fp32",
+      "precision_by_logical_block": {
+        "market": "fp32",
+        "finance": "int8",
+        "governance": "fp32",
+        "audit_control": "fp32"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 278,
+        "payload_bytes_by_block": {
+          "market": 68,
+          "finance": 89,
+          "governance": 88,
+          "audit_control": 33
+        },
+        "one_company_four_frame_bytes": 358,
+        "batch64_bytes_per_company": 279.25,
+        "one_time_int8_scale_manifest_bytes": 356,
+        "payload_fraction_of_fp32": 0.5100917431192661
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 1618,
+        "payload_bytes_by_block": {
+          "market": 388,
+          "finance": 529,
+          "governance": 508,
+          "audit_control": 193
+        },
+        "one_company_four_frame_bytes": 1698,
+        "batch64_bytes_per_company": 1619.25,
+        "one_time_int8_scale_manifest_bytes": 2116,
+        "payload_fraction_of_fp32": 0.5048361934477379
+      }
+    },
+    {
+      "candidate_number": 20,
+      "candidate_id": "market-fp32__finance-int8__governance-fp32__audit_control-fp16",
+      "precision_by_logical_block": {
+        "market": "fp32",
+        "finance": "int8",
+        "governance": "fp32",
+        "audit_control": "fp16"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 262,
+        "payload_bytes_by_block": {
+          "market": 68,
+          "finance": 89,
+          "governance": 88,
+          "audit_control": 17
+        },
+        "one_company_four_frame_bytes": 342,
+        "batch64_bytes_per_company": 263.25,
+        "one_time_int8_scale_manifest_bytes": 356,
+        "payload_fraction_of_fp32": 0.48073394495412847
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 1522,
+        "payload_bytes_by_block": {
+          "market": 388,
+          "finance": 529,
+          "governance": 508,
+          "audit_control": 97
+        },
+        "one_company_four_frame_bytes": 1602,
+        "batch64_bytes_per_company": 1523.25,
+        "one_time_int8_scale_manifest_bytes": 2116,
+        "payload_fraction_of_fp32": 0.4748829953198128
+      }
+    },
+    {
+      "candidate_number": 21,
+      "candidate_id": "market-fp32__finance-int8__governance-fp32__audit_control-int8",
+      "precision_by_logical_block": {
+        "market": "fp32",
+        "finance": "int8",
+        "governance": "fp32",
+        "audit_control": "int8"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 254,
+        "payload_bytes_by_block": {
+          "market": 68,
+          "finance": 89,
+          "governance": 88,
+          "audit_control": 9
+        },
+        "one_company_four_frame_bytes": 334,
+        "batch64_bytes_per_company": 255.25,
+        "one_time_int8_scale_manifest_bytes": 388,
+        "payload_fraction_of_fp32": 0.46605504587155966
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 1474,
+        "payload_bytes_by_block": {
+          "market": 388,
+          "finance": 529,
+          "governance": 508,
+          "audit_control": 49
+        },
+        "one_company_four_frame_bytes": 1554,
+        "batch64_bytes_per_company": 1475.25,
+        "one_time_int8_scale_manifest_bytes": 2308,
+        "payload_fraction_of_fp32": 0.4599063962558502
+      }
+    },
+    {
+      "candidate_number": 22,
+      "candidate_id": "market-fp32__finance-int8__governance-fp16__audit_control-fp32",
+      "precision_by_logical_block": {
+        "market": "fp32",
+        "finance": "int8",
+        "governance": "fp16",
+        "audit_control": "fp32"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 234,
+        "payload_bytes_by_block": {
+          "market": 68,
+          "finance": 89,
+          "governance": 44,
+          "audit_control": 33
+        },
+        "one_company_four_frame_bytes": 314,
+        "batch64_bytes_per_company": 235.25,
+        "one_time_int8_scale_manifest_bytes": 356,
+        "payload_fraction_of_fp32": 0.42935779816513764
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 1364,
+        "payload_bytes_by_block": {
+          "market": 388,
+          "finance": 529,
+          "governance": 254,
+          "audit_control": 193
+        },
+        "one_company_four_frame_bytes": 1444,
+        "batch64_bytes_per_company": 1365.25,
+        "one_time_int8_scale_manifest_bytes": 2116,
+        "payload_fraction_of_fp32": 0.425585023400936
+      }
+    },
+    {
+      "candidate_number": 23,
+      "candidate_id": "market-fp32__finance-int8__governance-fp16__audit_control-fp16",
+      "precision_by_logical_block": {
+        "market": "fp32",
+        "finance": "int8",
+        "governance": "fp16",
+        "audit_control": "fp16"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 218,
+        "payload_bytes_by_block": {
+          "market": 68,
+          "finance": 89,
+          "governance": 44,
+          "audit_control": 17
+        },
+        "one_company_four_frame_bytes": 298,
+        "batch64_bytes_per_company": 219.25,
+        "one_time_int8_scale_manifest_bytes": 356,
+        "payload_fraction_of_fp32": 0.4
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 1268,
+        "payload_bytes_by_block": {
+          "market": 388,
+          "finance": 529,
+          "governance": 254,
+          "audit_control": 97
+        },
+        "one_company_four_frame_bytes": 1348,
+        "batch64_bytes_per_company": 1269.25,
+        "one_time_int8_scale_manifest_bytes": 2116,
+        "payload_fraction_of_fp32": 0.39563182527301094
+      }
+    },
+    {
+      "candidate_number": 24,
+      "candidate_id": "market-fp32__finance-int8__governance-fp16__audit_control-int8",
+      "precision_by_logical_block": {
+        "market": "fp32",
+        "finance": "int8",
+        "governance": "fp16",
+        "audit_control": "int8"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 210,
+        "payload_bytes_by_block": {
+          "market": 68,
+          "finance": 89,
+          "governance": 44,
+          "audit_control": 9
+        },
+        "one_company_four_frame_bytes": 290,
+        "batch64_bytes_per_company": 211.25,
+        "one_time_int8_scale_manifest_bytes": 388,
+        "payload_fraction_of_fp32": 0.3853211009174312
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 1220,
+        "payload_bytes_by_block": {
+          "market": 388,
+          "finance": 529,
+          "governance": 254,
+          "audit_control": 49
+        },
+        "one_company_four_frame_bytes": 1300,
+        "batch64_bytes_per_company": 1221.25,
+        "one_time_int8_scale_manifest_bytes": 2308,
+        "payload_fraction_of_fp32": 0.38065522620904835
+      }
+    },
+    {
+      "candidate_number": 25,
+      "candidate_id": "market-fp32__finance-int8__governance-int8__audit_control-fp32",
+      "precision_by_logical_block": {
+        "market": "fp32",
+        "finance": "int8",
+        "governance": "int8",
+        "audit_control": "fp32"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 212,
+        "payload_bytes_by_block": {
+          "market": 68,
+          "finance": 89,
+          "governance": 22,
+          "audit_control": 33
+        },
+        "one_company_four_frame_bytes": 292,
+        "batch64_bytes_per_company": 213.25,
+        "one_time_int8_scale_manifest_bytes": 444,
+        "payload_fraction_of_fp32": 0.3889908256880734
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 1237,
+        "payload_bytes_by_block": {
+          "market": 388,
+          "finance": 529,
+          "governance": 127,
+          "audit_control": 193
+        },
+        "one_company_four_frame_bytes": 1317,
+        "batch64_bytes_per_company": 1238.25,
+        "one_time_int8_scale_manifest_bytes": 2624,
+        "payload_fraction_of_fp32": 0.3859594383775351
+      }
+    },
+    {
+      "candidate_number": 26,
+      "candidate_id": "market-fp32__finance-int8__governance-int8__audit_control-fp16",
+      "precision_by_logical_block": {
+        "market": "fp32",
+        "finance": "int8",
+        "governance": "int8",
+        "audit_control": "fp16"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 196,
+        "payload_bytes_by_block": {
+          "market": 68,
+          "finance": 89,
+          "governance": 22,
+          "audit_control": 17
+        },
+        "one_company_four_frame_bytes": 276,
+        "batch64_bytes_per_company": 197.25,
+        "one_time_int8_scale_manifest_bytes": 444,
+        "payload_fraction_of_fp32": 0.3596330275229358
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 1141,
+        "payload_bytes_by_block": {
+          "market": 388,
+          "finance": 529,
+          "governance": 127,
+          "audit_control": 97
+        },
+        "one_company_four_frame_bytes": 1221,
+        "batch64_bytes_per_company": 1142.25,
+        "one_time_int8_scale_manifest_bytes": 2624,
+        "payload_fraction_of_fp32": 0.35600624024961
+      }
+    },
+    {
+      "candidate_number": 27,
+      "candidate_id": "market-fp32__finance-int8__governance-int8__audit_control-int8",
+      "precision_by_logical_block": {
+        "market": "fp32",
+        "finance": "int8",
+        "governance": "int8",
+        "audit_control": "int8"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 188,
+        "payload_bytes_by_block": {
+          "market": 68,
+          "finance": 89,
+          "governance": 22,
+          "audit_control": 9
+        },
+        "one_company_four_frame_bytes": 268,
+        "batch64_bytes_per_company": 189.25,
+        "one_time_int8_scale_manifest_bytes": 476,
+        "payload_fraction_of_fp32": 0.344954128440367
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 1093,
+        "payload_bytes_by_block": {
+          "market": 388,
+          "finance": 529,
+          "governance": 127,
+          "audit_control": 49
+        },
+        "one_company_four_frame_bytes": 1173,
+        "batch64_bytes_per_company": 1094.25,
+        "one_time_int8_scale_manifest_bytes": 2816,
+        "payload_fraction_of_fp32": 0.34102964118564744
+      }
+    },
+    {
+      "candidate_number": 28,
+      "candidate_id": "market-fp16__finance-fp32__governance-fp32__audit_control-fp32",
+      "precision_by_logical_block": {
+        "market": "fp16",
+        "finance": "fp32",
+        "governance": "fp32",
+        "audit_control": "fp32"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 511,
+        "payload_bytes_by_block": {
+          "market": 34,
+          "finance": 356,
+          "governance": 88,
+          "audit_control": 33
+        },
+        "one_company_four_frame_bytes": 591,
+        "batch64_bytes_per_company": 512.25,
+        "one_time_int8_scale_manifest_bytes": 0,
+        "payload_fraction_of_fp32": 0.9376146788990826
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 3011,
+        "payload_bytes_by_block": {
+          "market": 194,
+          "finance": 2116,
+          "governance": 508,
+          "audit_control": 193
+        },
+        "one_company_four_frame_bytes": 3091,
+        "batch64_bytes_per_company": 3012.25,
+        "one_time_int8_scale_manifest_bytes": 0,
+        "payload_fraction_of_fp32": 0.9394695787831513
+      }
+    },
+    {
+      "candidate_number": 29,
+      "candidate_id": "market-fp16__finance-fp32__governance-fp32__audit_control-fp16",
+      "precision_by_logical_block": {
+        "market": "fp16",
+        "finance": "fp32",
+        "governance": "fp32",
+        "audit_control": "fp16"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 495,
+        "payload_bytes_by_block": {
+          "market": 34,
+          "finance": 356,
+          "governance": 88,
+          "audit_control": 17
+        },
+        "one_company_four_frame_bytes": 575,
+        "batch64_bytes_per_company": 496.25,
+        "one_time_int8_scale_manifest_bytes": 0,
+        "payload_fraction_of_fp32": 0.908256880733945
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 2915,
+        "payload_bytes_by_block": {
+          "market": 194,
+          "finance": 2116,
+          "governance": 508,
+          "audit_control": 97
+        },
+        "one_company_four_frame_bytes": 2995,
+        "batch64_bytes_per_company": 2916.25,
+        "one_time_int8_scale_manifest_bytes": 0,
+        "payload_fraction_of_fp32": 0.9095163806552262
+      }
+    },
+    {
+      "candidate_number": 30,
+      "candidate_id": "market-fp16__finance-fp32__governance-fp32__audit_control-int8",
+      "precision_by_logical_block": {
+        "market": "fp16",
+        "finance": "fp32",
+        "governance": "fp32",
+        "audit_control": "int8"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 487,
+        "payload_bytes_by_block": {
+          "market": 34,
+          "finance": 356,
+          "governance": 88,
+          "audit_control": 9
+        },
+        "one_company_four_frame_bytes": 567,
+        "batch64_bytes_per_company": 488.25,
+        "one_time_int8_scale_manifest_bytes": 32,
+        "payload_fraction_of_fp32": 0.8935779816513761
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 2867,
+        "payload_bytes_by_block": {
+          "market": 194,
+          "finance": 2116,
+          "governance": 508,
+          "audit_control": 49
+        },
+        "one_company_four_frame_bytes": 2947,
+        "batch64_bytes_per_company": 2868.25,
+        "one_time_int8_scale_manifest_bytes": 192,
+        "payload_fraction_of_fp32": 0.8945397815912637
+      }
+    },
+    {
+      "candidate_number": 31,
+      "candidate_id": "market-fp16__finance-fp32__governance-fp16__audit_control-fp32",
+      "precision_by_logical_block": {
+        "market": "fp16",
+        "finance": "fp32",
+        "governance": "fp16",
+        "audit_control": "fp32"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 467,
+        "payload_bytes_by_block": {
+          "market": 34,
+          "finance": 356,
+          "governance": 44,
+          "audit_control": 33
+        },
+        "one_company_four_frame_bytes": 547,
+        "batch64_bytes_per_company": 468.25,
+        "one_time_int8_scale_manifest_bytes": 0,
+        "payload_fraction_of_fp32": 0.8568807339449541
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 2757,
+        "payload_bytes_by_block": {
+          "market": 194,
+          "finance": 2116,
+          "governance": 254,
+          "audit_control": 193
+        },
+        "one_company_four_frame_bytes": 2837,
+        "batch64_bytes_per_company": 2758.25,
+        "one_time_int8_scale_manifest_bytes": 0,
+        "payload_fraction_of_fp32": 0.8602184087363495
+      }
+    },
+    {
+      "candidate_number": 32,
+      "candidate_id": "market-fp16__finance-fp32__governance-fp16__audit_control-fp16",
+      "precision_by_logical_block": {
+        "market": "fp16",
+        "finance": "fp32",
+        "governance": "fp16",
+        "audit_control": "fp16"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 451,
+        "payload_bytes_by_block": {
+          "market": 34,
+          "finance": 356,
+          "governance": 44,
+          "audit_control": 17
+        },
+        "one_company_four_frame_bytes": 531,
+        "batch64_bytes_per_company": 452.25,
+        "one_time_int8_scale_manifest_bytes": 0,
+        "payload_fraction_of_fp32": 0.8275229357798165
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 2661,
+        "payload_bytes_by_block": {
+          "market": 194,
+          "finance": 2116,
+          "governance": 254,
+          "audit_control": 97
+        },
+        "one_company_four_frame_bytes": 2741,
+        "batch64_bytes_per_company": 2662.25,
+        "one_time_int8_scale_manifest_bytes": 0,
+        "payload_fraction_of_fp32": 0.8302652106084243
+      }
+    },
+    {
+      "candidate_number": 33,
+      "candidate_id": "market-fp16__finance-fp32__governance-fp16__audit_control-int8",
+      "precision_by_logical_block": {
+        "market": "fp16",
+        "finance": "fp32",
+        "governance": "fp16",
+        "audit_control": "int8"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 443,
+        "payload_bytes_by_block": {
+          "market": 34,
+          "finance": 356,
+          "governance": 44,
+          "audit_control": 9
+        },
+        "one_company_four_frame_bytes": 523,
+        "batch64_bytes_per_company": 444.25,
+        "one_time_int8_scale_manifest_bytes": 32,
+        "payload_fraction_of_fp32": 0.8128440366972477
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 2613,
+        "payload_bytes_by_block": {
+          "market": 194,
+          "finance": 2116,
+          "governance": 254,
+          "audit_control": 49
+        },
+        "one_company_four_frame_bytes": 2693,
+        "batch64_bytes_per_company": 2614.25,
+        "one_time_int8_scale_manifest_bytes": 192,
+        "payload_fraction_of_fp32": 0.8152886115444617
+      }
+    },
+    {
+      "candidate_number": 34,
+      "candidate_id": "market-fp16__finance-fp32__governance-int8__audit_control-fp32",
+      "precision_by_logical_block": {
+        "market": "fp16",
+        "finance": "fp32",
+        "governance": "int8",
+        "audit_control": "fp32"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 445,
+        "payload_bytes_by_block": {
+          "market": 34,
+          "finance": 356,
+          "governance": 22,
+          "audit_control": 33
+        },
+        "one_company_four_frame_bytes": 525,
+        "batch64_bytes_per_company": 446.25,
+        "one_time_int8_scale_manifest_bytes": 88,
+        "payload_fraction_of_fp32": 0.8165137614678899
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 2630,
+        "payload_bytes_by_block": {
+          "market": 194,
+          "finance": 2116,
+          "governance": 127,
+          "audit_control": 193
+        },
+        "one_company_four_frame_bytes": 2710,
+        "batch64_bytes_per_company": 2631.25,
+        "one_time_int8_scale_manifest_bytes": 508,
+        "payload_fraction_of_fp32": 0.8205928237129485
+      }
+    },
+    {
+      "candidate_number": 35,
+      "candidate_id": "market-fp16__finance-fp32__governance-int8__audit_control-fp16",
+      "precision_by_logical_block": {
+        "market": "fp16",
+        "finance": "fp32",
+        "governance": "int8",
+        "audit_control": "fp16"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 429,
+        "payload_bytes_by_block": {
+          "market": 34,
+          "finance": 356,
+          "governance": 22,
+          "audit_control": 17
+        },
+        "one_company_four_frame_bytes": 509,
+        "batch64_bytes_per_company": 430.25,
+        "one_time_int8_scale_manifest_bytes": 88,
+        "payload_fraction_of_fp32": 0.7871559633027523
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 2534,
+        "payload_bytes_by_block": {
+          "market": 194,
+          "finance": 2116,
+          "governance": 127,
+          "audit_control": 97
+        },
+        "one_company_four_frame_bytes": 2614,
+        "batch64_bytes_per_company": 2535.25,
+        "one_time_int8_scale_manifest_bytes": 508,
+        "payload_fraction_of_fp32": 0.7906396255850234
+      }
+    },
+    {
+      "candidate_number": 36,
+      "candidate_id": "market-fp16__finance-fp32__governance-int8__audit_control-int8",
+      "precision_by_logical_block": {
+        "market": "fp16",
+        "finance": "fp32",
+        "governance": "int8",
+        "audit_control": "int8"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 421,
+        "payload_bytes_by_block": {
+          "market": 34,
+          "finance": 356,
+          "governance": 22,
+          "audit_control": 9
+        },
+        "one_company_four_frame_bytes": 501,
+        "batch64_bytes_per_company": 422.25,
+        "one_time_int8_scale_manifest_bytes": 120,
+        "payload_fraction_of_fp32": 0.7724770642201835
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 2486,
+        "payload_bytes_by_block": {
+          "market": 194,
+          "finance": 2116,
+          "governance": 127,
+          "audit_control": 49
+        },
+        "one_company_four_frame_bytes": 2566,
+        "batch64_bytes_per_company": 2487.25,
+        "one_time_int8_scale_manifest_bytes": 700,
+        "payload_fraction_of_fp32": 0.7756630265210609
+      }
+    },
+    {
+      "candidate_number": 37,
+      "candidate_id": "market-fp16__finance-fp16__governance-fp32__audit_control-fp32",
+      "precision_by_logical_block": {
+        "market": "fp16",
+        "finance": "fp16",
+        "governance": "fp32",
+        "audit_control": "fp32"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 333,
+        "payload_bytes_by_block": {
+          "market": 34,
+          "finance": 178,
+          "governance": 88,
+          "audit_control": 33
+        },
+        "one_company_four_frame_bytes": 413,
+        "batch64_bytes_per_company": 334.25,
+        "one_time_int8_scale_manifest_bytes": 0,
+        "payload_fraction_of_fp32": 0.6110091743119266
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 1953,
+        "payload_bytes_by_block": {
+          "market": 194,
+          "finance": 1058,
+          "governance": 508,
+          "audit_control": 193
+        },
+        "one_company_four_frame_bytes": 2033,
+        "batch64_bytes_per_company": 1954.25,
+        "one_time_int8_scale_manifest_bytes": 0,
+        "payload_fraction_of_fp32": 0.6093603744149766
+      }
+    },
+    {
+      "candidate_number": 38,
+      "candidate_id": "market-fp16__finance-fp16__governance-fp32__audit_control-fp16",
+      "precision_by_logical_block": {
+        "market": "fp16",
+        "finance": "fp16",
+        "governance": "fp32",
+        "audit_control": "fp16"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 317,
+        "payload_bytes_by_block": {
+          "market": 34,
+          "finance": 178,
+          "governance": 88,
+          "audit_control": 17
+        },
+        "one_company_four_frame_bytes": 397,
+        "batch64_bytes_per_company": 318.25,
+        "one_time_int8_scale_manifest_bytes": 0,
+        "payload_fraction_of_fp32": 0.581651376146789
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 1857,
+        "payload_bytes_by_block": {
+          "market": 194,
+          "finance": 1058,
+          "governance": 508,
+          "audit_control": 97
+        },
+        "one_company_four_frame_bytes": 1937,
+        "batch64_bytes_per_company": 1858.25,
+        "one_time_int8_scale_manifest_bytes": 0,
+        "payload_fraction_of_fp32": 0.5794071762870515
+      }
+    },
+    {
+      "candidate_number": 39,
+      "candidate_id": "market-fp16__finance-fp16__governance-fp32__audit_control-int8",
+      "precision_by_logical_block": {
+        "market": "fp16",
+        "finance": "fp16",
+        "governance": "fp32",
+        "audit_control": "int8"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 309,
+        "payload_bytes_by_block": {
+          "market": 34,
+          "finance": 178,
+          "governance": 88,
+          "audit_control": 9
+        },
+        "one_company_four_frame_bytes": 389,
+        "batch64_bytes_per_company": 310.25,
+        "one_time_int8_scale_manifest_bytes": 32,
+        "payload_fraction_of_fp32": 0.5669724770642202
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 1809,
+        "payload_bytes_by_block": {
+          "market": 194,
+          "finance": 1058,
+          "governance": 508,
+          "audit_control": 49
+        },
+        "one_company_four_frame_bytes": 1889,
+        "batch64_bytes_per_company": 1810.25,
+        "one_time_int8_scale_manifest_bytes": 192,
+        "payload_fraction_of_fp32": 0.5644305772230889
+      }
+    },
+    {
+      "candidate_number": 40,
+      "candidate_id": "market-fp16__finance-fp16__governance-fp16__audit_control-fp32",
+      "precision_by_logical_block": {
+        "market": "fp16",
+        "finance": "fp16",
+        "governance": "fp16",
+        "audit_control": "fp32"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 289,
+        "payload_bytes_by_block": {
+          "market": 34,
+          "finance": 178,
+          "governance": 44,
+          "audit_control": 33
+        },
+        "one_company_four_frame_bytes": 369,
+        "batch64_bytes_per_company": 290.25,
+        "one_time_int8_scale_manifest_bytes": 0,
+        "payload_fraction_of_fp32": 0.5302752293577981
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 1699,
+        "payload_bytes_by_block": {
+          "market": 194,
+          "finance": 1058,
+          "governance": 254,
+          "audit_control": 193
+        },
+        "one_company_four_frame_bytes": 1779,
+        "batch64_bytes_per_company": 1700.25,
+        "one_time_int8_scale_manifest_bytes": 0,
+        "payload_fraction_of_fp32": 0.5301092043681748
+      }
+    },
+    {
+      "candidate_number": 41,
+      "candidate_id": "market-fp16__finance-fp16__governance-fp16__audit_control-fp16",
+      "precision_by_logical_block": {
+        "market": "fp16",
+        "finance": "fp16",
+        "governance": "fp16",
+        "audit_control": "fp16"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 273,
+        "payload_bytes_by_block": {
+          "market": 34,
+          "finance": 178,
+          "governance": 44,
+          "audit_control": 17
+        },
+        "one_company_four_frame_bytes": 353,
+        "batch64_bytes_per_company": 274.25,
+        "one_time_int8_scale_manifest_bytes": 0,
+        "payload_fraction_of_fp32": 0.5009174311926605
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 1603,
+        "payload_bytes_by_block": {
+          "market": 194,
+          "finance": 1058,
+          "governance": 254,
+          "audit_control": 97
+        },
+        "one_company_four_frame_bytes": 1683,
+        "batch64_bytes_per_company": 1604.25,
+        "one_time_int8_scale_manifest_bytes": 0,
+        "payload_fraction_of_fp32": 0.5001560062402496
+      }
+    },
+    {
+      "candidate_number": 42,
+      "candidate_id": "market-fp16__finance-fp16__governance-fp16__audit_control-int8",
+      "precision_by_logical_block": {
+        "market": "fp16",
+        "finance": "fp16",
+        "governance": "fp16",
+        "audit_control": "int8"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 265,
+        "payload_bytes_by_block": {
+          "market": 34,
+          "finance": 178,
+          "governance": 44,
+          "audit_control": 9
+        },
+        "one_company_four_frame_bytes": 345,
+        "batch64_bytes_per_company": 266.25,
+        "one_time_int8_scale_manifest_bytes": 32,
+        "payload_fraction_of_fp32": 0.48623853211009177
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 1555,
+        "payload_bytes_by_block": {
+          "market": 194,
+          "finance": 1058,
+          "governance": 254,
+          "audit_control": 49
+        },
+        "one_company_four_frame_bytes": 1635,
+        "batch64_bytes_per_company": 1556.25,
+        "one_time_int8_scale_manifest_bytes": 192,
+        "payload_fraction_of_fp32": 0.48517940717628705
+      }
+    },
+    {
+      "candidate_number": 43,
+      "candidate_id": "market-fp16__finance-fp16__governance-int8__audit_control-fp32",
+      "precision_by_logical_block": {
+        "market": "fp16",
+        "finance": "fp16",
+        "governance": "int8",
+        "audit_control": "fp32"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 267,
+        "payload_bytes_by_block": {
+          "market": 34,
+          "finance": 178,
+          "governance": 22,
+          "audit_control": 33
+        },
+        "one_company_four_frame_bytes": 347,
+        "batch64_bytes_per_company": 268.25,
+        "one_time_int8_scale_manifest_bytes": 88,
+        "payload_fraction_of_fp32": 0.48990825688073397
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 1572,
+        "payload_bytes_by_block": {
+          "market": 194,
+          "finance": 1058,
+          "governance": 127,
+          "audit_control": 193
+        },
+        "one_company_four_frame_bytes": 1652,
+        "batch64_bytes_per_company": 1573.25,
+        "one_time_int8_scale_manifest_bytes": 508,
+        "payload_fraction_of_fp32": 0.4904836193447738
+      }
+    },
+    {
+      "candidate_number": 44,
+      "candidate_id": "market-fp16__finance-fp16__governance-int8__audit_control-fp16",
+      "precision_by_logical_block": {
+        "market": "fp16",
+        "finance": "fp16",
+        "governance": "int8",
+        "audit_control": "fp16"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 251,
+        "payload_bytes_by_block": {
+          "market": 34,
+          "finance": 178,
+          "governance": 22,
+          "audit_control": 17
+        },
+        "one_company_four_frame_bytes": 331,
+        "batch64_bytes_per_company": 252.25,
+        "one_time_int8_scale_manifest_bytes": 88,
+        "payload_fraction_of_fp32": 0.46055045871559636
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 1476,
+        "payload_bytes_by_block": {
+          "market": 194,
+          "finance": 1058,
+          "governance": 127,
+          "audit_control": 97
+        },
+        "one_company_four_frame_bytes": 1556,
+        "batch64_bytes_per_company": 1477.25,
+        "one_time_int8_scale_manifest_bytes": 508,
+        "payload_fraction_of_fp32": 0.4605304212168487
+      }
+    },
+    {
+      "candidate_number": 45,
+      "candidate_id": "market-fp16__finance-fp16__governance-int8__audit_control-int8",
+      "precision_by_logical_block": {
+        "market": "fp16",
+        "finance": "fp16",
+        "governance": "int8",
+        "audit_control": "int8"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 243,
+        "payload_bytes_by_block": {
+          "market": 34,
+          "finance": 178,
+          "governance": 22,
+          "audit_control": 9
+        },
+        "one_company_four_frame_bytes": 323,
+        "batch64_bytes_per_company": 244.25,
+        "one_time_int8_scale_manifest_bytes": 120,
+        "payload_fraction_of_fp32": 0.44587155963302755
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 1428,
+        "payload_bytes_by_block": {
+          "market": 194,
+          "finance": 1058,
+          "governance": 127,
+          "audit_control": 49
+        },
+        "one_company_four_frame_bytes": 1508,
+        "batch64_bytes_per_company": 1429.25,
+        "one_time_int8_scale_manifest_bytes": 700,
+        "payload_fraction_of_fp32": 0.44555382215288614
+      }
+    },
+    {
+      "candidate_number": 46,
+      "candidate_id": "market-fp16__finance-int8__governance-fp32__audit_control-fp32",
+      "precision_by_logical_block": {
+        "market": "fp16",
+        "finance": "int8",
+        "governance": "fp32",
+        "audit_control": "fp32"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 244,
+        "payload_bytes_by_block": {
+          "market": 34,
+          "finance": 89,
+          "governance": 88,
+          "audit_control": 33
+        },
+        "one_company_four_frame_bytes": 324,
+        "batch64_bytes_per_company": 245.25,
+        "one_time_int8_scale_manifest_bytes": 356,
+        "payload_fraction_of_fp32": 0.44770642201834865
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 1424,
+        "payload_bytes_by_block": {
+          "market": 194,
+          "finance": 529,
+          "governance": 508,
+          "audit_control": 193
+        },
+        "one_company_four_frame_bytes": 1504,
+        "batch64_bytes_per_company": 1425.25,
+        "one_time_int8_scale_manifest_bytes": 2116,
+        "payload_fraction_of_fp32": 0.44430577223088924
+      }
+    },
+    {
+      "candidate_number": 47,
+      "candidate_id": "market-fp16__finance-int8__governance-fp32__audit_control-fp16",
+      "precision_by_logical_block": {
+        "market": "fp16",
+        "finance": "int8",
+        "governance": "fp32",
+        "audit_control": "fp16"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 228,
+        "payload_bytes_by_block": {
+          "market": 34,
+          "finance": 89,
+          "governance": 88,
+          "audit_control": 17
+        },
+        "one_company_four_frame_bytes": 308,
+        "batch64_bytes_per_company": 229.25,
+        "one_time_int8_scale_manifest_bytes": 356,
+        "payload_fraction_of_fp32": 0.41834862385321103
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 1328,
+        "payload_bytes_by_block": {
+          "market": 194,
+          "finance": 529,
+          "governance": 508,
+          "audit_control": 97
+        },
+        "one_company_four_frame_bytes": 1408,
+        "batch64_bytes_per_company": 1329.25,
+        "one_time_int8_scale_manifest_bytes": 2116,
+        "payload_fraction_of_fp32": 0.4143525741029641
+      }
+    },
+    {
+      "candidate_number": 48,
+      "candidate_id": "market-fp16__finance-int8__governance-fp32__audit_control-int8",
+      "precision_by_logical_block": {
+        "market": "fp16",
+        "finance": "int8",
+        "governance": "fp32",
+        "audit_control": "int8"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 220,
+        "payload_bytes_by_block": {
+          "market": 34,
+          "finance": 89,
+          "governance": 88,
+          "audit_control": 9
+        },
+        "one_company_four_frame_bytes": 300,
+        "batch64_bytes_per_company": 221.25,
+        "one_time_int8_scale_manifest_bytes": 388,
+        "payload_fraction_of_fp32": 0.4036697247706422
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 1280,
+        "payload_bytes_by_block": {
+          "market": 194,
+          "finance": 529,
+          "governance": 508,
+          "audit_control": 49
+        },
+        "one_company_four_frame_bytes": 1360,
+        "batch64_bytes_per_company": 1281.25,
+        "one_time_int8_scale_manifest_bytes": 2308,
+        "payload_fraction_of_fp32": 0.3993759750390016
+      }
+    },
+    {
+      "candidate_number": 49,
+      "candidate_id": "market-fp16__finance-int8__governance-fp16__audit_control-fp32",
+      "precision_by_logical_block": {
+        "market": "fp16",
+        "finance": "int8",
+        "governance": "fp16",
+        "audit_control": "fp32"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 200,
+        "payload_bytes_by_block": {
+          "market": 34,
+          "finance": 89,
+          "governance": 44,
+          "audit_control": 33
+        },
+        "one_company_four_frame_bytes": 280,
+        "batch64_bytes_per_company": 201.25,
+        "one_time_int8_scale_manifest_bytes": 356,
+        "payload_fraction_of_fp32": 0.3669724770642202
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 1170,
+        "payload_bytes_by_block": {
+          "market": 194,
+          "finance": 529,
+          "governance": 254,
+          "audit_control": 193
+        },
+        "one_company_four_frame_bytes": 1250,
+        "batch64_bytes_per_company": 1171.25,
+        "one_time_int8_scale_manifest_bytes": 2116,
+        "payload_fraction_of_fp32": 0.36505460218408736
+      }
+    },
+    {
+      "candidate_number": 50,
+      "candidate_id": "market-fp16__finance-int8__governance-fp16__audit_control-fp16",
+      "precision_by_logical_block": {
+        "market": "fp16",
+        "finance": "int8",
+        "governance": "fp16",
+        "audit_control": "fp16"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 184,
+        "payload_bytes_by_block": {
+          "market": 34,
+          "finance": 89,
+          "governance": 44,
+          "audit_control": 17
+        },
+        "one_company_four_frame_bytes": 264,
+        "batch64_bytes_per_company": 185.25,
+        "one_time_int8_scale_manifest_bytes": 356,
+        "payload_fraction_of_fp32": 0.3376146788990826
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 1074,
+        "payload_bytes_by_block": {
+          "market": 194,
+          "finance": 529,
+          "governance": 254,
+          "audit_control": 97
+        },
+        "one_company_four_frame_bytes": 1154,
+        "batch64_bytes_per_company": 1075.25,
+        "one_time_int8_scale_manifest_bytes": 2116,
+        "payload_fraction_of_fp32": 0.33510140405616223
+      }
+    },
+    {
+      "candidate_number": 51,
+      "candidate_id": "market-fp16__finance-int8__governance-fp16__audit_control-int8",
+      "precision_by_logical_block": {
+        "market": "fp16",
+        "finance": "int8",
+        "governance": "fp16",
+        "audit_control": "int8"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 176,
+        "payload_bytes_by_block": {
+          "market": 34,
+          "finance": 89,
+          "governance": 44,
+          "audit_control": 9
+        },
+        "one_company_four_frame_bytes": 256,
+        "batch64_bytes_per_company": 177.25,
+        "one_time_int8_scale_manifest_bytes": 388,
+        "payload_fraction_of_fp32": 0.3229357798165138
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 1026,
+        "payload_bytes_by_block": {
+          "market": 194,
+          "finance": 529,
+          "governance": 254,
+          "audit_control": 49
+        },
+        "one_company_four_frame_bytes": 1106,
+        "batch64_bytes_per_company": 1027.25,
+        "one_time_int8_scale_manifest_bytes": 2308,
+        "payload_fraction_of_fp32": 0.3201248049921997
+      }
+    },
+    {
+      "candidate_number": 52,
+      "candidate_id": "market-fp16__finance-int8__governance-int8__audit_control-fp32",
+      "precision_by_logical_block": {
+        "market": "fp16",
+        "finance": "int8",
+        "governance": "int8",
+        "audit_control": "fp32"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 178,
+        "payload_bytes_by_block": {
+          "market": 34,
+          "finance": 89,
+          "governance": 22,
+          "audit_control": 33
+        },
+        "one_company_four_frame_bytes": 258,
+        "batch64_bytes_per_company": 179.25,
+        "one_time_int8_scale_manifest_bytes": 444,
+        "payload_fraction_of_fp32": 0.326605504587156
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 1043,
+        "payload_bytes_by_block": {
+          "market": 194,
+          "finance": 529,
+          "governance": 127,
+          "audit_control": 193
+        },
+        "one_company_four_frame_bytes": 1123,
+        "batch64_bytes_per_company": 1044.25,
+        "one_time_int8_scale_manifest_bytes": 2624,
+        "payload_fraction_of_fp32": 0.32542901716068645
+      }
+    },
+    {
+      "candidate_number": 53,
+      "candidate_id": "market-fp16__finance-int8__governance-int8__audit_control-fp16",
+      "precision_by_logical_block": {
+        "market": "fp16",
+        "finance": "int8",
+        "governance": "int8",
+        "audit_control": "fp16"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 162,
+        "payload_bytes_by_block": {
+          "market": 34,
+          "finance": 89,
+          "governance": 22,
+          "audit_control": 17
+        },
+        "one_company_four_frame_bytes": 242,
+        "batch64_bytes_per_company": 163.25,
+        "one_time_int8_scale_manifest_bytes": 444,
+        "payload_fraction_of_fp32": 0.29724770642201837
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 947,
+        "payload_bytes_by_block": {
+          "market": 194,
+          "finance": 529,
+          "governance": 127,
+          "audit_control": 97
+        },
+        "one_company_four_frame_bytes": 1027,
+        "batch64_bytes_per_company": 948.25,
+        "one_time_int8_scale_manifest_bytes": 2624,
+        "payload_fraction_of_fp32": 0.2954758190327613
+      }
+    },
+    {
+      "candidate_number": 54,
+      "candidate_id": "market-fp16__finance-int8__governance-int8__audit_control-int8",
+      "precision_by_logical_block": {
+        "market": "fp16",
+        "finance": "int8",
+        "governance": "int8",
+        "audit_control": "int8"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 154,
+        "payload_bytes_by_block": {
+          "market": 34,
+          "finance": 89,
+          "governance": 22,
+          "audit_control": 9
+        },
+        "one_company_four_frame_bytes": 234,
+        "batch64_bytes_per_company": 155.25,
+        "one_time_int8_scale_manifest_bytes": 476,
+        "payload_fraction_of_fp32": 0.28256880733944956
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 899,
+        "payload_bytes_by_block": {
+          "market": 194,
+          "finance": 529,
+          "governance": 127,
+          "audit_control": 49
+        },
+        "one_company_four_frame_bytes": 979,
+        "batch64_bytes_per_company": 900.25,
+        "one_time_int8_scale_manifest_bytes": 2816,
+        "payload_fraction_of_fp32": 0.28049921996879873
+      }
+    },
+    {
+      "candidate_number": 55,
+      "candidate_id": "market-int8__finance-fp32__governance-fp32__audit_control-fp32",
+      "precision_by_logical_block": {
+        "market": "int8",
+        "finance": "fp32",
+        "governance": "fp32",
+        "audit_control": "fp32"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 494,
+        "payload_bytes_by_block": {
+          "market": 17,
+          "finance": 356,
+          "governance": 88,
+          "audit_control": 33
+        },
+        "one_company_four_frame_bytes": 574,
+        "batch64_bytes_per_company": 495.25,
+        "one_time_int8_scale_manifest_bytes": 68,
+        "payload_fraction_of_fp32": 0.9064220183486239
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 2914,
+        "payload_bytes_by_block": {
+          "market": 97,
+          "finance": 2116,
+          "governance": 508,
+          "audit_control": 193
+        },
+        "one_company_four_frame_bytes": 2994,
+        "batch64_bytes_per_company": 2915.25,
+        "one_time_int8_scale_manifest_bytes": 388,
+        "payload_fraction_of_fp32": 0.9092043681747269
+      }
+    },
+    {
+      "candidate_number": 56,
+      "candidate_id": "market-int8__finance-fp32__governance-fp32__audit_control-fp16",
+      "precision_by_logical_block": {
+        "market": "int8",
+        "finance": "fp32",
+        "governance": "fp32",
+        "audit_control": "fp16"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 478,
+        "payload_bytes_by_block": {
+          "market": 17,
+          "finance": 356,
+          "governance": 88,
+          "audit_control": 17
+        },
+        "one_company_four_frame_bytes": 558,
+        "batch64_bytes_per_company": 479.25,
+        "one_time_int8_scale_manifest_bytes": 68,
+        "payload_fraction_of_fp32": 0.8770642201834863
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 2818,
+        "payload_bytes_by_block": {
+          "market": 97,
+          "finance": 2116,
+          "governance": 508,
+          "audit_control": 97
+        },
+        "one_company_four_frame_bytes": 2898,
+        "batch64_bytes_per_company": 2819.25,
+        "one_time_int8_scale_manifest_bytes": 388,
+        "payload_fraction_of_fp32": 0.8792511700468019
+      }
+    },
+    {
+      "candidate_number": 57,
+      "candidate_id": "market-int8__finance-fp32__governance-fp32__audit_control-int8",
+      "precision_by_logical_block": {
+        "market": "int8",
+        "finance": "fp32",
+        "governance": "fp32",
+        "audit_control": "int8"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 470,
+        "payload_bytes_by_block": {
+          "market": 17,
+          "finance": 356,
+          "governance": 88,
+          "audit_control": 9
+        },
+        "one_company_four_frame_bytes": 550,
+        "batch64_bytes_per_company": 471.25,
+        "one_time_int8_scale_manifest_bytes": 100,
+        "payload_fraction_of_fp32": 0.8623853211009175
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 2770,
+        "payload_bytes_by_block": {
+          "market": 97,
+          "finance": 2116,
+          "governance": 508,
+          "audit_control": 49
+        },
+        "one_company_four_frame_bytes": 2850,
+        "batch64_bytes_per_company": 2771.25,
+        "one_time_int8_scale_manifest_bytes": 580,
+        "payload_fraction_of_fp32": 0.8642745709828393
+      }
+    },
+    {
+      "candidate_number": 58,
+      "candidate_id": "market-int8__finance-fp32__governance-fp16__audit_control-fp32",
+      "precision_by_logical_block": {
+        "market": "int8",
+        "finance": "fp32",
+        "governance": "fp16",
+        "audit_control": "fp32"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 450,
+        "payload_bytes_by_block": {
+          "market": 17,
+          "finance": 356,
+          "governance": 44,
+          "audit_control": 33
+        },
+        "one_company_four_frame_bytes": 530,
+        "batch64_bytes_per_company": 451.25,
+        "one_time_int8_scale_manifest_bytes": 68,
+        "payload_fraction_of_fp32": 0.8256880733944955
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 2660,
+        "payload_bytes_by_block": {
+          "market": 97,
+          "finance": 2116,
+          "governance": 254,
+          "audit_control": 193
+        },
+        "one_company_four_frame_bytes": 2740,
+        "batch64_bytes_per_company": 2661.25,
+        "one_time_int8_scale_manifest_bytes": 388,
+        "payload_fraction_of_fp32": 0.8299531981279251
+      }
+    },
+    {
+      "candidate_number": 59,
+      "candidate_id": "market-int8__finance-fp32__governance-fp16__audit_control-fp16",
+      "precision_by_logical_block": {
+        "market": "int8",
+        "finance": "fp32",
+        "governance": "fp16",
+        "audit_control": "fp16"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 434,
+        "payload_bytes_by_block": {
+          "market": 17,
+          "finance": 356,
+          "governance": 44,
+          "audit_control": 17
+        },
+        "one_company_four_frame_bytes": 514,
+        "batch64_bytes_per_company": 435.25,
+        "one_time_int8_scale_manifest_bytes": 68,
+        "payload_fraction_of_fp32": 0.7963302752293578
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 2564,
+        "payload_bytes_by_block": {
+          "market": 97,
+          "finance": 2116,
+          "governance": 254,
+          "audit_control": 97
+        },
+        "one_company_four_frame_bytes": 2644,
+        "batch64_bytes_per_company": 2565.25,
+        "one_time_int8_scale_manifest_bytes": 388,
+        "payload_fraction_of_fp32": 0.8
+      }
+    },
+    {
+      "candidate_number": 60,
+      "candidate_id": "market-int8__finance-fp32__governance-fp16__audit_control-int8",
+      "precision_by_logical_block": {
+        "market": "int8",
+        "finance": "fp32",
+        "governance": "fp16",
+        "audit_control": "int8"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 426,
+        "payload_bytes_by_block": {
+          "market": 17,
+          "finance": 356,
+          "governance": 44,
+          "audit_control": 9
+        },
+        "one_company_four_frame_bytes": 506,
+        "batch64_bytes_per_company": 427.25,
+        "one_time_int8_scale_manifest_bytes": 100,
+        "payload_fraction_of_fp32": 0.781651376146789
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 2516,
+        "payload_bytes_by_block": {
+          "market": 97,
+          "finance": 2116,
+          "governance": 254,
+          "audit_control": 49
+        },
+        "one_company_four_frame_bytes": 2596,
+        "batch64_bytes_per_company": 2517.25,
+        "one_time_int8_scale_manifest_bytes": 580,
+        "payload_fraction_of_fp32": 0.7850234009360374
+      }
+    },
+    {
+      "candidate_number": 61,
+      "candidate_id": "market-int8__finance-fp32__governance-int8__audit_control-fp32",
+      "precision_by_logical_block": {
+        "market": "int8",
+        "finance": "fp32",
+        "governance": "int8",
+        "audit_control": "fp32"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 428,
+        "payload_bytes_by_block": {
+          "market": 17,
+          "finance": 356,
+          "governance": 22,
+          "audit_control": 33
+        },
+        "one_company_four_frame_bytes": 508,
+        "batch64_bytes_per_company": 429.25,
+        "one_time_int8_scale_manifest_bytes": 156,
+        "payload_fraction_of_fp32": 0.7853211009174312
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 2533,
+        "payload_bytes_by_block": {
+          "market": 97,
+          "finance": 2116,
+          "governance": 127,
+          "audit_control": 193
+        },
+        "one_company_four_frame_bytes": 2613,
+        "batch64_bytes_per_company": 2534.25,
+        "one_time_int8_scale_manifest_bytes": 896,
+        "payload_fraction_of_fp32": 0.7903276131045242
+      }
+    },
+    {
+      "candidate_number": 62,
+      "candidate_id": "market-int8__finance-fp32__governance-int8__audit_control-fp16",
+      "precision_by_logical_block": {
+        "market": "int8",
+        "finance": "fp32",
+        "governance": "int8",
+        "audit_control": "fp16"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 412,
+        "payload_bytes_by_block": {
+          "market": 17,
+          "finance": 356,
+          "governance": 22,
+          "audit_control": 17
+        },
+        "one_company_four_frame_bytes": 492,
+        "batch64_bytes_per_company": 413.25,
+        "one_time_int8_scale_manifest_bytes": 156,
+        "payload_fraction_of_fp32": 0.7559633027522936
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 2437,
+        "payload_bytes_by_block": {
+          "market": 97,
+          "finance": 2116,
+          "governance": 127,
+          "audit_control": 97
+        },
+        "one_company_four_frame_bytes": 2517,
+        "batch64_bytes_per_company": 2438.25,
+        "one_time_int8_scale_manifest_bytes": 896,
+        "payload_fraction_of_fp32": 0.7603744149765991
+      }
+    },
+    {
+      "candidate_number": 63,
+      "candidate_id": "market-int8__finance-fp32__governance-int8__audit_control-int8",
+      "precision_by_logical_block": {
+        "market": "int8",
+        "finance": "fp32",
+        "governance": "int8",
+        "audit_control": "int8"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 404,
+        "payload_bytes_by_block": {
+          "market": 17,
+          "finance": 356,
+          "governance": 22,
+          "audit_control": 9
+        },
+        "one_company_four_frame_bytes": 484,
+        "batch64_bytes_per_company": 405.25,
+        "one_time_int8_scale_manifest_bytes": 188,
+        "payload_fraction_of_fp32": 0.7412844036697248
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 2389,
+        "payload_bytes_by_block": {
+          "market": 97,
+          "finance": 2116,
+          "governance": 127,
+          "audit_control": 49
+        },
+        "one_company_four_frame_bytes": 2469,
+        "batch64_bytes_per_company": 2390.25,
+        "one_time_int8_scale_manifest_bytes": 1088,
+        "payload_fraction_of_fp32": 0.7453978159126365
+      }
+    },
+    {
+      "candidate_number": 64,
+      "candidate_id": "market-int8__finance-fp16__governance-fp32__audit_control-fp32",
+      "precision_by_logical_block": {
+        "market": "int8",
+        "finance": "fp16",
+        "governance": "fp32",
+        "audit_control": "fp32"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 316,
+        "payload_bytes_by_block": {
+          "market": 17,
+          "finance": 178,
+          "governance": 88,
+          "audit_control": 33
+        },
+        "one_company_four_frame_bytes": 396,
+        "batch64_bytes_per_company": 317.25,
+        "one_time_int8_scale_manifest_bytes": 68,
+        "payload_fraction_of_fp32": 0.5798165137614679
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 1856,
+        "payload_bytes_by_block": {
+          "market": 97,
+          "finance": 1058,
+          "governance": 508,
+          "audit_control": 193
+        },
+        "one_company_four_frame_bytes": 1936,
+        "batch64_bytes_per_company": 1857.25,
+        "one_time_int8_scale_manifest_bytes": 388,
+        "payload_fraction_of_fp32": 0.5790951638065522
+      }
+    },
+    {
+      "candidate_number": 65,
+      "candidate_id": "market-int8__finance-fp16__governance-fp32__audit_control-fp16",
+      "precision_by_logical_block": {
+        "market": "int8",
+        "finance": "fp16",
+        "governance": "fp32",
+        "audit_control": "fp16"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 300,
+        "payload_bytes_by_block": {
+          "market": 17,
+          "finance": 178,
+          "governance": 88,
+          "audit_control": 17
+        },
+        "one_company_four_frame_bytes": 380,
+        "batch64_bytes_per_company": 301.25,
+        "one_time_int8_scale_manifest_bytes": 68,
+        "payload_fraction_of_fp32": 0.5504587155963303
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 1760,
+        "payload_bytes_by_block": {
+          "market": 97,
+          "finance": 1058,
+          "governance": 508,
+          "audit_control": 97
+        },
+        "one_company_four_frame_bytes": 1840,
+        "batch64_bytes_per_company": 1761.25,
+        "one_time_int8_scale_manifest_bytes": 388,
+        "payload_fraction_of_fp32": 0.5491419656786272
+      }
+    },
+    {
+      "candidate_number": 66,
+      "candidate_id": "market-int8__finance-fp16__governance-fp32__audit_control-int8",
+      "precision_by_logical_block": {
+        "market": "int8",
+        "finance": "fp16",
+        "governance": "fp32",
+        "audit_control": "int8"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 292,
+        "payload_bytes_by_block": {
+          "market": 17,
+          "finance": 178,
+          "governance": 88,
+          "audit_control": 9
+        },
+        "one_company_four_frame_bytes": 372,
+        "batch64_bytes_per_company": 293.25,
+        "one_time_int8_scale_manifest_bytes": 100,
+        "payload_fraction_of_fp32": 0.5357798165137615
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 1712,
+        "payload_bytes_by_block": {
+          "market": 97,
+          "finance": 1058,
+          "governance": 508,
+          "audit_control": 49
+        },
+        "one_company_four_frame_bytes": 1792,
+        "batch64_bytes_per_company": 1713.25,
+        "one_time_int8_scale_manifest_bytes": 580,
+        "payload_fraction_of_fp32": 0.5341653666146646
+      }
+    },
+    {
+      "candidate_number": 67,
+      "candidate_id": "market-int8__finance-fp16__governance-fp16__audit_control-fp32",
+      "precision_by_logical_block": {
+        "market": "int8",
+        "finance": "fp16",
+        "governance": "fp16",
+        "audit_control": "fp32"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 272,
+        "payload_bytes_by_block": {
+          "market": 17,
+          "finance": 178,
+          "governance": 44,
+          "audit_control": 33
+        },
+        "one_company_four_frame_bytes": 352,
+        "batch64_bytes_per_company": 273.25,
+        "one_time_int8_scale_manifest_bytes": 68,
+        "payload_fraction_of_fp32": 0.4990825688073395
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 1602,
+        "payload_bytes_by_block": {
+          "market": 97,
+          "finance": 1058,
+          "governance": 254,
+          "audit_control": 193
+        },
+        "one_company_four_frame_bytes": 1682,
+        "batch64_bytes_per_company": 1603.25,
+        "one_time_int8_scale_manifest_bytes": 388,
+        "payload_fraction_of_fp32": 0.4998439937597504
+      }
+    },
+    {
+      "candidate_number": 68,
+      "candidate_id": "market-int8__finance-fp16__governance-fp16__audit_control-fp16",
+      "precision_by_logical_block": {
+        "market": "int8",
+        "finance": "fp16",
+        "governance": "fp16",
+        "audit_control": "fp16"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 256,
+        "payload_bytes_by_block": {
+          "market": 17,
+          "finance": 178,
+          "governance": 44,
+          "audit_control": 17
+        },
+        "one_company_four_frame_bytes": 336,
+        "batch64_bytes_per_company": 257.25,
+        "one_time_int8_scale_manifest_bytes": 68,
+        "payload_fraction_of_fp32": 0.46972477064220186
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 1506,
+        "payload_bytes_by_block": {
+          "market": 97,
+          "finance": 1058,
+          "governance": 254,
+          "audit_control": 97
+        },
+        "one_company_four_frame_bytes": 1586,
+        "batch64_bytes_per_company": 1507.25,
+        "one_time_int8_scale_manifest_bytes": 388,
+        "payload_fraction_of_fp32": 0.4698907956318253
+      }
+    },
+    {
+      "candidate_number": 69,
+      "candidate_id": "market-int8__finance-fp16__governance-fp16__audit_control-int8",
+      "precision_by_logical_block": {
+        "market": "int8",
+        "finance": "fp16",
+        "governance": "fp16",
+        "audit_control": "int8"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 248,
+        "payload_bytes_by_block": {
+          "market": 17,
+          "finance": 178,
+          "governance": 44,
+          "audit_control": 9
+        },
+        "one_company_four_frame_bytes": 328,
+        "batch64_bytes_per_company": 249.25,
+        "one_time_int8_scale_manifest_bytes": 100,
+        "payload_fraction_of_fp32": 0.45504587155963305
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 1458,
+        "payload_bytes_by_block": {
+          "market": 97,
+          "finance": 1058,
+          "governance": 254,
+          "audit_control": 49
+        },
+        "one_company_four_frame_bytes": 1538,
+        "batch64_bytes_per_company": 1459.25,
+        "one_time_int8_scale_manifest_bytes": 580,
+        "payload_fraction_of_fp32": 0.4549141965678627
+      }
+    },
+    {
+      "candidate_number": 70,
+      "candidate_id": "market-int8__finance-fp16__governance-int8__audit_control-fp32",
+      "precision_by_logical_block": {
+        "market": "int8",
+        "finance": "fp16",
+        "governance": "int8",
+        "audit_control": "fp32"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 250,
+        "payload_bytes_by_block": {
+          "market": 17,
+          "finance": 178,
+          "governance": 22,
+          "audit_control": 33
+        },
+        "one_company_four_frame_bytes": 330,
+        "batch64_bytes_per_company": 251.25,
+        "one_time_int8_scale_manifest_bytes": 156,
+        "payload_fraction_of_fp32": 0.45871559633027525
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 1475,
+        "payload_bytes_by_block": {
+          "market": 97,
+          "finance": 1058,
+          "governance": 127,
+          "audit_control": 193
+        },
+        "one_company_four_frame_bytes": 1555,
+        "batch64_bytes_per_company": 1476.25,
+        "one_time_int8_scale_manifest_bytes": 896,
+        "payload_fraction_of_fp32": 0.46021840873634945
+      }
+    },
+    {
+      "candidate_number": 71,
+      "candidate_id": "market-int8__finance-fp16__governance-int8__audit_control-fp16",
+      "precision_by_logical_block": {
+        "market": "int8",
+        "finance": "fp16",
+        "governance": "int8",
+        "audit_control": "fp16"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 234,
+        "payload_bytes_by_block": {
+          "market": 17,
+          "finance": 178,
+          "governance": 22,
+          "audit_control": 17
+        },
+        "one_company_four_frame_bytes": 314,
+        "batch64_bytes_per_company": 235.25,
+        "one_time_int8_scale_manifest_bytes": 156,
+        "payload_fraction_of_fp32": 0.42935779816513764
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 1379,
+        "payload_bytes_by_block": {
+          "market": 97,
+          "finance": 1058,
+          "governance": 127,
+          "audit_control": 97
+        },
+        "one_company_four_frame_bytes": 1459,
+        "batch64_bytes_per_company": 1380.25,
+        "one_time_int8_scale_manifest_bytes": 896,
+        "payload_fraction_of_fp32": 0.4302652106084243
+      }
+    },
+    {
+      "candidate_number": 72,
+      "candidate_id": "market-int8__finance-fp16__governance-int8__audit_control-int8",
+      "precision_by_logical_block": {
+        "market": "int8",
+        "finance": "fp16",
+        "governance": "int8",
+        "audit_control": "int8"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 226,
+        "payload_bytes_by_block": {
+          "market": 17,
+          "finance": 178,
+          "governance": 22,
+          "audit_control": 9
+        },
+        "one_company_four_frame_bytes": 306,
+        "batch64_bytes_per_company": 227.25,
+        "one_time_int8_scale_manifest_bytes": 188,
+        "payload_fraction_of_fp32": 0.41467889908256883
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 1331,
+        "payload_bytes_by_block": {
+          "market": 97,
+          "finance": 1058,
+          "governance": 127,
+          "audit_control": 49
+        },
+        "one_company_four_frame_bytes": 1411,
+        "batch64_bytes_per_company": 1332.25,
+        "one_time_int8_scale_manifest_bytes": 1088,
+        "payload_fraction_of_fp32": 0.4152886115444618
+      }
+    },
+    {
+      "candidate_number": 73,
+      "candidate_id": "market-int8__finance-int8__governance-fp32__audit_control-fp32",
+      "precision_by_logical_block": {
+        "market": "int8",
+        "finance": "int8",
+        "governance": "fp32",
+        "audit_control": "fp32"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 227,
+        "payload_bytes_by_block": {
+          "market": 17,
+          "finance": 89,
+          "governance": 88,
+          "audit_control": 33
+        },
+        "one_company_four_frame_bytes": 307,
+        "batch64_bytes_per_company": 228.25,
+        "one_time_int8_scale_manifest_bytes": 424,
+        "payload_fraction_of_fp32": 0.41651376146788993
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 1327,
+        "payload_bytes_by_block": {
+          "market": 97,
+          "finance": 529,
+          "governance": 508,
+          "audit_control": 193
+        },
+        "one_company_four_frame_bytes": 1407,
+        "batch64_bytes_per_company": 1328.25,
+        "one_time_int8_scale_manifest_bytes": 2504,
+        "payload_fraction_of_fp32": 0.4140405616224649
+      }
+    },
+    {
+      "candidate_number": 74,
+      "candidate_id": "market-int8__finance-int8__governance-fp32__audit_control-fp16",
+      "precision_by_logical_block": {
+        "market": "int8",
+        "finance": "int8",
+        "governance": "fp32",
+        "audit_control": "fp16"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 211,
+        "payload_bytes_by_block": {
+          "market": 17,
+          "finance": 89,
+          "governance": 88,
+          "audit_control": 17
+        },
+        "one_company_four_frame_bytes": 291,
+        "batch64_bytes_per_company": 212.25,
+        "one_time_int8_scale_manifest_bytes": 424,
+        "payload_fraction_of_fp32": 0.3871559633027523
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 1231,
+        "payload_bytes_by_block": {
+          "market": 97,
+          "finance": 529,
+          "governance": 508,
+          "audit_control": 97
+        },
+        "one_company_four_frame_bytes": 1311,
+        "batch64_bytes_per_company": 1232.25,
+        "one_time_int8_scale_manifest_bytes": 2504,
+        "payload_fraction_of_fp32": 0.38408736349453976
+      }
+    },
+    {
+      "candidate_number": 75,
+      "candidate_id": "market-int8__finance-int8__governance-fp32__audit_control-int8",
+      "precision_by_logical_block": {
+        "market": "int8",
+        "finance": "int8",
+        "governance": "fp32",
+        "audit_control": "int8"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 203,
+        "payload_bytes_by_block": {
+          "market": 17,
+          "finance": 89,
+          "governance": 88,
+          "audit_control": 9
+        },
+        "one_company_four_frame_bytes": 283,
+        "batch64_bytes_per_company": 204.25,
+        "one_time_int8_scale_manifest_bytes": 456,
+        "payload_fraction_of_fp32": 0.3724770642201835
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 1183,
+        "payload_bytes_by_block": {
+          "market": 97,
+          "finance": 529,
+          "governance": 508,
+          "audit_control": 49
+        },
+        "one_company_four_frame_bytes": 1263,
+        "batch64_bytes_per_company": 1184.25,
+        "one_time_int8_scale_manifest_bytes": 2696,
+        "payload_fraction_of_fp32": 0.3691107644305772
+      }
+    },
+    {
+      "candidate_number": 76,
+      "candidate_id": "market-int8__finance-int8__governance-fp16__audit_control-fp32",
+      "precision_by_logical_block": {
+        "market": "int8",
+        "finance": "int8",
+        "governance": "fp16",
+        "audit_control": "fp32"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 183,
+        "payload_bytes_by_block": {
+          "market": 17,
+          "finance": 89,
+          "governance": 44,
+          "audit_control": 33
+        },
+        "one_company_four_frame_bytes": 263,
+        "batch64_bytes_per_company": 184.25,
+        "one_time_int8_scale_manifest_bytes": 424,
+        "payload_fraction_of_fp32": 0.3357798165137615
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 1073,
+        "payload_bytes_by_block": {
+          "market": 97,
+          "finance": 529,
+          "governance": 254,
+          "audit_control": 193
+        },
+        "one_company_four_frame_bytes": 1153,
+        "batch64_bytes_per_company": 1074.25,
+        "one_time_int8_scale_manifest_bytes": 2504,
+        "payload_fraction_of_fp32": 0.334789391575663
+      }
+    },
+    {
+      "candidate_number": 77,
+      "candidate_id": "market-int8__finance-int8__governance-fp16__audit_control-fp16",
+      "precision_by_logical_block": {
+        "market": "int8",
+        "finance": "int8",
+        "governance": "fp16",
+        "audit_control": "fp16"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 167,
+        "payload_bytes_by_block": {
+          "market": 17,
+          "finance": 89,
+          "governance": 44,
+          "audit_control": 17
+        },
+        "one_company_four_frame_bytes": 247,
+        "batch64_bytes_per_company": 168.25,
+        "one_time_int8_scale_manifest_bytes": 424,
+        "payload_fraction_of_fp32": 0.30642201834862387
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 977,
+        "payload_bytes_by_block": {
+          "market": 97,
+          "finance": 529,
+          "governance": 254,
+          "audit_control": 97
+        },
+        "one_company_four_frame_bytes": 1057,
+        "batch64_bytes_per_company": 978.25,
+        "one_time_int8_scale_manifest_bytes": 2504,
+        "payload_fraction_of_fp32": 0.30483619344773794
+      }
+    },
+    {
+      "candidate_number": 78,
+      "candidate_id": "market-int8__finance-int8__governance-fp16__audit_control-int8",
+      "precision_by_logical_block": {
+        "market": "int8",
+        "finance": "int8",
+        "governance": "fp16",
+        "audit_control": "int8"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 159,
+        "payload_bytes_by_block": {
+          "market": 17,
+          "finance": 89,
+          "governance": 44,
+          "audit_control": 9
+        },
+        "one_company_four_frame_bytes": 239,
+        "batch64_bytes_per_company": 160.25,
+        "one_time_int8_scale_manifest_bytes": 456,
+        "payload_fraction_of_fp32": 0.29174311926605506
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 929,
+        "payload_bytes_by_block": {
+          "market": 97,
+          "finance": 529,
+          "governance": 254,
+          "audit_control": 49
+        },
+        "one_company_four_frame_bytes": 1009,
+        "batch64_bytes_per_company": 930.25,
+        "one_time_int8_scale_manifest_bytes": 2696,
+        "payload_fraction_of_fp32": 0.28985959438377534
+      }
+    },
+    {
+      "candidate_number": 79,
+      "candidate_id": "market-int8__finance-int8__governance-int8__audit_control-fp32",
+      "precision_by_logical_block": {
+        "market": "int8",
+        "finance": "int8",
+        "governance": "int8",
+        "audit_control": "fp32"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 161,
+        "payload_bytes_by_block": {
+          "market": 17,
+          "finance": 89,
+          "governance": 22,
+          "audit_control": 33
+        },
+        "one_company_four_frame_bytes": 241,
+        "batch64_bytes_per_company": 162.25,
+        "one_time_int8_scale_manifest_bytes": 512,
+        "payload_fraction_of_fp32": 0.29541284403669726
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 946,
+        "payload_bytes_by_block": {
+          "market": 97,
+          "finance": 529,
+          "governance": 127,
+          "audit_control": 193
+        },
+        "one_company_four_frame_bytes": 1026,
+        "batch64_bytes_per_company": 947.25,
+        "one_time_int8_scale_manifest_bytes": 3012,
+        "payload_fraction_of_fp32": 0.2951638065522621
+      }
+    },
+    {
+      "candidate_number": 80,
+      "candidate_id": "market-int8__finance-int8__governance-int8__audit_control-fp16",
+      "precision_by_logical_block": {
+        "market": "int8",
+        "finance": "int8",
+        "governance": "int8",
+        "audit_control": "fp16"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 145,
+        "payload_bytes_by_block": {
+          "market": 17,
+          "finance": 89,
+          "governance": 22,
+          "audit_control": 17
+        },
+        "one_company_four_frame_bytes": 225,
+        "batch64_bytes_per_company": 146.25,
+        "one_time_int8_scale_manifest_bytes": 512,
+        "payload_fraction_of_fp32": 0.26605504587155965
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 850,
+        "payload_bytes_by_block": {
+          "market": 97,
+          "finance": 529,
+          "governance": 127,
+          "audit_control": 97
+        },
+        "one_company_four_frame_bytes": 930,
+        "batch64_bytes_per_company": 851.25,
+        "one_time_int8_scale_manifest_bytes": 3012,
+        "payload_fraction_of_fp32": 0.26521060842433697
+      }
+    },
+    {
+      "candidate_number": 81,
+      "candidate_id": "market-int8__finance-int8__governance-int8__audit_control-int8",
+      "precision_by_logical_block": {
+        "market": "int8",
+        "finance": "int8",
+        "governance": "int8",
+        "audit_control": "int8"
+      },
+      "single_model": {
+        "payload_bytes_per_company": 137,
+        "payload_bytes_by_block": {
+          "market": 17,
+          "finance": 89,
+          "governance": 22,
+          "audit_control": 9
+        },
+        "one_company_four_frame_bytes": 217,
+        "batch64_bytes_per_company": 138.25,
+        "one_time_int8_scale_manifest_bytes": 544,
+        "payload_fraction_of_fp32": 0.25137614678899084
+      },
+      "six_model_logit_ensemble_shared_q_r": {
+        "payload_bytes_per_company": 802,
+        "payload_bytes_by_block": {
+          "market": 97,
+          "finance": 529,
+          "governance": 127,
+          "audit_control": 49
+        },
+        "one_company_four_frame_bytes": 882,
+        "batch64_bytes_per_company": 803.25,
+        "one_time_int8_scale_manifest_bytes": 3204,
+        "payload_fraction_of_fp32": 0.25023400936037443
+      }
+    }
+  ]
+}

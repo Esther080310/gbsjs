@@ -1,0 +1,124 @@
+{
+  "status": "complete",
+  "random_sample": 128,
+  "positive_case_pool": 148,
+  "distinct_explained_rows": 255,
+  "case_count": 4,
+  "backgrounds_per_row": 4,
+  "fields": 23,
+  "folds_loaded": [
+    0,
+    1
+  ],
+  "economic_years": [
+    2018
+  ],
+  "main_prediction_replay": true,
+  "additivity_max_errors": {
+    "Main": 8.881784197001252e-16,
+    "S0": 8.881784197001252e-16,
+    "MID": 8.881784197001252e-16
+  },
+  "model_sources": [
+    {
+      "arm": "S0",
+      "seed": 100,
+      "path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/dCor稳定性复检/20261021-v1/results/S0_s100/model.pt",
+      "sha256": "5d57ad8c2572dba67f76c291b3d2ed9dd765bb5b0a8d9f74918ad1349263273d"
+    },
+    {
+      "arm": "S0",
+      "seed": 17,
+      "path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/dCor稳定性复检/20261021-v1/results/S0_s17/model.pt",
+      "sha256": "94ea2dfce8c8881311242e03981a01a9accc72d80ff0b402312419b2df48c0ca"
+    },
+    {
+      "arm": "S0",
+      "seed": 223,
+      "path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/dCor稳定性复检/20261021-v1/results/S0_s223/model.pt",
+      "sha256": "f061f18d199ff1b5132686d36cbe06590e39157b599ae4d7b3383b781cd39045"
+    },
+    {
+      "arm": "S0",
+      "seed": 483,
+      "path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/dCor稳定性复检/20261021-v1/results/S0_s483/model.pt",
+      "sha256": "2ee969f5043e01de86c756a96eebc4e038512108215d0280708b466cdb13d17b"
+    },
+    {
+      "arm": "S0",
+      "seed": 907,
+      "path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/dCor稳定性复检/20261021-v1/results/S0_s907/model.pt",
+      "sha256": "f93883e4f76a5f43f29ca80484c6face9707b90a9ea6453b97b2c21280d45f0f"
+    },
+    {
+      "arm": "MID",
+      "seed": 100,
+      "path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/MID稳定性复检/20261022-v1/results/models/MID_s100/model.pt",
+      "sha256": "c544dd8dce4ac821088c4beef9a0b4f0c222fc1fd705b9f141afe15cb412af56"
+    },
+    {
+      "arm": "MID",
+      "seed": 17,
+      "path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/MID稳定性复检/20261022-v1/results/models/MID_s17/model.pt",
+      "sha256": "1e42a9d616eea61c32fbbc4813a1181cc46c7bc335a1323920fc01a7f9667ac7"
+    },
+    {
+      "arm": "MID",
+      "seed": 223,
+      "path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/MID稳定性复检/20261022-v1/results/models/MID_s223/model.pt",
+      "sha256": "146f590cc25cc7ed05bc3db55d141abbdf5ab90579358a74b7ec38dbce48c456"
+    },
+    {
+      "arm": "MID",
+      "seed": 483,
+      "path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/MID稳定性复检/20261022-v1/results/models/MID_s483/model.pt",
+      "sha256": "74ab58c9f9aefb3a150741c6dc4fcc9ba757ef528659ebef33ad0e38516da532"
+    },
+    {
+      "arm": "MID",
+      "seed": 907,
+      "path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/MID稳定性复检/20261022-v1/results/models/MID_s907/model.pt",
+      "sha256": "5d19c93f40b67a0db2ad659896984d66b0c3e5cbd40103440b236322ad439b0a"
+    },
+    {
+      "arm": "Main",
+      "seed": 42,
+      "path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/控制消息架构/20261018-v1/artifacts/2020/FiLM-L_s42/model.pt",
+      "sha256": "4a0b8503ab651f0856b53b32abf39d2bd72e07d499d29974490428029fb3233e"
+    },
+    {
+      "arm": "Main",
+      "seed": 100,
+      "path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/控制消息架构/20261018-v1/artifacts/2020/FiLM-L_s100/model.pt",
+      "sha256": "ea696055f483e042590bb531d949d6c91bf8d3e20a119a2506177458b78cb314"
+    },
+    {
+      "arm": "Main",
+      "seed": 17,
+      "path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/控制消息架构/20261018-v1/artifacts/2020/FiLM-L_s17/model.pt",
+      "sha256": "418513cebca83353e915c9820b315a3e3f5939c8d61685ffb91c48ed37ef1572"
+    },
+    {
+      "arm": "Main",
+      "seed": 223,
+      "path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/控制消息架构/20261018-v1/artifacts/2020/FiLM-L_s223/model.pt",
+      "sha256": "845488fb940c102e0b8cd0c4aab1d01c93ca98bcad0a80ed158bca50c978770e"
+    },
+    {
+      "arm": "Main",
+      "seed": 483,
+      "path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/控制消息架构/20261018-v1/artifacts/2020/FiLM-L_s483/model.pt",
+      "sha256": "c008f072c0cfb694bdc5db99855fe37149199d2bf7f2102460e9fc0f45ccfc9f"
+    },
+    {
+      "arm": "Main",
+      "seed": 907,
+      "path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/控制消息架构/20261018-v1/artifacts/2020/FiLM-L_s907/model.pt",
+      "sha256": "944514b6ddeb9fb52bdb913ed0287562652deeb2ce8f38545a4bc0a11981d0f6"
+    }
+  ],
+  "protocol_sha256": "1860916efd34f3bd169479215dd4f53cbea725fab5ffc45e7290ce2a9ec94e50",
+  "source_sha256": "37e2e1ed9fb8382d11148b779ce3ceb89815c8e72ba981068a867e03507fbf86",
+  "new_training": false,
+  "postcheck_correction": "节点汇总改为先提取风险列，再选择样本，明确保持模型×样本×因素轴；原始逐样本分解不变。"
+}

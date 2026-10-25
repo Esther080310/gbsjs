@@ -1,0 +1,64 @@
+{
+  "sources": {
+    "/Users/how/Desktop/分布式企业违规检测/实验与代码/大创数据集/X2 财务信息/偿债能力/FI_T1.xlsx": "fba6c575752ccab91f82b9a88e41b4fdb9e0402723c8f17ce03803a6ad047d3b",
+    "/Users/how/Desktop/分布式企业违规检测/实验与代码/大创数据集/X2 财务信息/经营能力/FI_T4.xlsx": "a69230bf3f1ec4303da5e9b3e181d4b55431a74cdf13fbd3e35986e19150a983",
+    "/Users/how/Desktop/分布式企业违规检测/实验与代码/大创数据集/X2 财务信息/盈利能力/FI_T5.xlsx": "77630e7c96910a629c0ac2745eaca07b8c404450fd927e04200c2607ae953842",
+    "/Users/how/Desktop/分布式企业违规检测/实验与代码/data_v16_canonical/x1.csv.gz": "15c7518bb8bbb90e27387e51a776bb6e9ac003a789b056c1b0f6209ea4929fa4",
+    "/Users/how/Desktop/分布式企业违规检测/实验与代码/data_v16_canonical/x2.csv.gz": "533cccf65951add4f9d75c1dc3ac3cd396f161e5802be96aa332c66f0d95dcaf",
+    "/Users/how/Desktop/分布式企业违规检测/实验与代码/财务年度配对修正/build_finance.py": "0867bd4cfbea012f9cca6fb696f2628295362f4442dc43940c33797fc827482f",
+    "/Users/how/Desktop/分布式企业违规检测/实验与代码/财务年度配对修正/执行约定.md": "0cf200ea00797e0a0d45c80504f78e8698e48e8eb55d48131f1c7a4681dfcddf"
+  },
+  "scans": [
+    {
+      "table": "FI_T1",
+      "rows_scanned": 569747,
+      "annual_rows": 176094,
+      "retained_keys": 66697,
+      "field_count": 28
+    },
+    {
+      "table": "FI_T4",
+      "rows_scanned": 561124,
+      "annual_rows": 172812,
+      "retained_keys": 66647,
+      "field_count": 67
+    },
+    {
+      "table": "FI_T5",
+      "rows_scanned": 575636,
+      "annual_rows": 176075,
+      "retained_keys": 66697,
+      "field_count": 68
+    }
+  ],
+  "samples": 67055,
+  "raw_financial_fields": 163,
+  "existing_key_rows": 61202,
+  "existing_numeric_cells_checked": 9975926,
+  "existing_cell_changes": 0,
+  "newly_recovered_company_years": 5545,
+  "recovery_by_year": {
+    "2004": 2,
+    "2005": 1,
+    "2006": 21,
+    "2007": 16,
+    "2008": 6,
+    "2009": 8,
+    "2010": 6,
+    "2011": 3,
+    "2012": 1,
+    "2013": 2,
+    "2014": 4,
+    "2015": 5,
+    "2016": 6,
+    "2017": 1,
+    "2018": 3,
+    "2019": 2,
+    "2020": 2,
+    "2021": 3,
+    "2022": 1,
+    "2024": 5452
+  },
+  "input_hashes_unchanged": true,
+  "key_definition": "same market/sample year; no next-year membership condition"
+}

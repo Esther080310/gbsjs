@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-21",
+  "allow_formal_communication_evaluation": true,
+  "model_under_test": "frozen six-seed FiLM-L deployment",
+  "message_interface": "market, finance, governance, audit_control; dimensions unchanged",
+  "privacy_audit_status": "strong empirical recoverability detected in all 30 primary endpoints",
+  "defense_pilot_status": "lambda=0.1 reduced some node-wise reconstruction but full-deployment gain fell only 0.01235 and practical leakage remained",
+  "decision": "do not promote the pilot defense; evaluate communication precision on the frozen main model",
+  "claim_boundary": "FP16/INT8 are communication encodings only and are not treated as privacy protection",
+  "selection_boundary": "the 81-policy evaluation reports all candidates and applies only the preregistered utility gates"
+}

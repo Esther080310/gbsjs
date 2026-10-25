@@ -1,0 +1,8 @@
+project_root = "/Users/how/Desktop/分布式企业违规检测/实验与代码/违规通报结构化研究"
+normalized = "artifacts/followup/csmar/processed/20261016-v1/normalized"
+output = "artifacts/followup/csmar/processed/20261016-v1/aligned"
+raw = "artifacts/followup/csmar/raw/20261016"
+dictionary = "artifacts/followup/csmar/字段字典汇总.csv"
+target_years = [2020, 2021]
+cache_paths = ["../财务年度配对修正/cache/2020.npz", "../财务年度配对修正/cache/2021.npz"]
+old_financial = "../财务年度配对修正/data/x2_annual.csv.gz"

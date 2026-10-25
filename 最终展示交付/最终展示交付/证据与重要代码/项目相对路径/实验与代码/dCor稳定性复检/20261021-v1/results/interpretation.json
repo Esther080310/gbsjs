@@ -1,0 +1,24 @@
+{
+  "new_seeds": 5,
+  "positive_recall_pairs": 0,
+  "mean_paired_recall_difference": -0.007843137254901955,
+  "seed_t_interval95": [
+    -0.018531534566641333,
+    0.0028452600568374224
+  ],
+  "mean_S0_recall": 0.30126874279123417,
+  "mean_D1_recall": 0.2934256055363322,
+  "mean_ap_difference": -0.01394646641016184,
+  "mean_relative_error_increase": 0.4227580842622233,
+  "privacy_positive_pairs": 5,
+  "external_main_recall": 0.3044982698961938,
+  "D1_above_external_main": 0,
+  "mean_D1_minus_external_main": -0.011072664359861584,
+  "D1_minus_main_seed_t_interval95": [
+    -0.020764760881718476,
+    -0.001380567838004691
+  ],
+  "privacy_stable": true,
+  "utility_preserved": false,
+  "eligible_for_future_cross_year": false
+}

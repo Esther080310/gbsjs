@@ -1,0 +1,93 @@
+[
+  {
+    "date": "2021-04-30",
+    "policy": {
+      "prefer_full": false,
+      "events": [
+        {
+          "id": "securities_law_2020",
+          "status": "POLICY_WAIT",
+          "completed": 0,
+          "required": 2,
+          "support": 0
+        }
+      ]
+    },
+    "accepted_full": false,
+    "completed": {}
+  },
+  {
+    "date": "2023-04-30",
+    "policy": {
+      "prefer_full": true,
+      "events": [
+        {
+          "id": "securities_law_2020",
+          "status": "POLICY_FULL",
+          "completed": 0,
+          "required": 2,
+          "support": 50
+        }
+      ]
+    },
+    "accepted_full": false,
+    "completed": {}
+  },
+  {
+    "date": "2023-05-01",
+    "policy": {
+      "prefer_full": true,
+      "events": [
+        {
+          "id": "securities_law_2020",
+          "status": "POLICY_FULL",
+          "completed": 0,
+          "required": 2,
+          "support": 50
+        }
+      ]
+    },
+    "accepted_full": true,
+    "completed": {
+      "securities_law_2020": 1
+    }
+  },
+  {
+    "date": "2024-04-30",
+    "policy": {
+      "prefer_full": true,
+      "events": [
+        {
+          "id": "securities_law_2020",
+          "status": "POLICY_FULL",
+          "completed": 1,
+          "required": 2,
+          "support": 70
+        }
+      ]
+    },
+    "accepted_full": true,
+    "completed": {
+      "securities_law_2020": 2
+    }
+  },
+  {
+    "date": "2025-04-30",
+    "policy": {
+      "prefer_full": false,
+      "events": [
+        {
+          "id": "securities_law_2020",
+          "status": "COMPLETED",
+          "completed": 2,
+          "required": 2,
+          "support": 90
+        }
+      ]
+    },
+    "accepted_full": false,
+    "completed": {
+      "securities_law_2020": 2
+    }
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "six_heads_all_receive_gradient": true,
+  "three_shared_encoders_all_receive_gradient": true,
+  "noise_key_order_invariance_exact": true,
+  "head_grad_norm1": [
+    90.99771539866924,
+    97.34634125977755,
+    81.06310379877687,
+    88.90142965316772,
+    100.2202804684639,
+    91.2855107486248
+  ],
+  "encoder_grad_norm1": [
+    44.08082991838455,
+    673.8779833316803,
+    4.4440876469016075
+  ],
+  "model_state_not_saved_or_changed": true
+}

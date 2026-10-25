@@ -1,0 +1,672 @@
+{
+  "status": "preflight passed: FP32 identity plus one FP16 label-free smoke; full matrix not run",
+  "run_full_matrix": false,
+  "candidate_count_evaluated": 2,
+  "candidate_count_available": 81,
+  "labels_read_for_metrics": false,
+  "privacy_interface": null,
+  "frozen_prediction_order": "per-seed messages -> quantize/dequantize -> per-seed fusion raw logits -> per-seed calibration -> equal mean of six calibrated logits -> sigmoid",
+  "scale_manifest": {
+    "path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/FiLM-L通信优化/20261020-v1/results/int8_scale_manifest.json",
+    "sha256": "05382f4f6e8eb1ed81cd4057d5656af4ce017446bae38b45b74e7cabafd38f70",
+    "npz_path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/FiLM-L通信优化/20261020-v1/results/int8_scales_training_fold.npz",
+    "npz_sha256": "5205f55eb76661dc9afc41ef006c7b4b487fa4309fa4d5a59aa6f655f14014a5",
+    "fit_rule": "per year, per seed, per logical block, per channel; full training fold absolute maximum / 127"
+  },
+  "protocol_contract": {
+    "path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/FiLM-L通信优化/20261020-v1/protocol_contract.json",
+    "sha256": "07059da59726fefe33e02fa3fe89df7022e7dfed0e9baa78b0bb834eddbb1715"
+  },
+  "candidate_manifest": {
+    "path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/FiLM-L通信优化/20261020-v1/results/candidate_manifest.json",
+    "sha256": "55365b5bb3ebe91388daa6c43438681cfe928beffc0483a6f75c8be5f2cd0f8c"
+  },
+  "batch_size": 256,
+  "preparation_seconds": 4.198360874957871,
+  "evaluations": [
+    {
+      "candidate_number": 1,
+      "candidate_id": "market-fp32__finance-fp32__governance-fp32__audit_control-fp32",
+      "precision_by_logical_block": {
+        "market": "fp32",
+        "finance": "fp32",
+        "governance": "fp32",
+        "audit_control": "fp32"
+      },
+      "evaluation_status": "label_free_smoke_only",
+      "labels_read_for_metrics": false,
+      "fp32_seed_and_ensemble_identity_exact": true,
+      "years": [
+        {
+          "year": 2020,
+          "rows": 4292,
+          "top10_budget": 430,
+          "strict": {
+            "top10_company_set_exact": true,
+            "top2_type_set_exact_on_baseline_top10": true,
+            "max_overall_probability_absolute_error": 0.0,
+            "max_type_probability_absolute_error": 0.0,
+            "overall_probability_error_within_0_005": true,
+            "type_probability_error_within_0_005": true,
+            "all_required_pass": true
+          },
+          "secondary": {
+            "top10_jaccard": 1.0,
+            "top2_set_agreement_on_baseline_top10": 1.0,
+            "top2_set_agreement_all_rows": 1.0,
+            "top10_changed_members_symmetric_difference": 0,
+            "top10_jaccard_at_least_0_995": true,
+            "top2_agreement_at_least_0_995": true,
+            "recall_at_10_percent_drop_percentage_points": null,
+            "recall_drop_at_most_0_5pp": null,
+            "all_secondary_thresholds_pass": null,
+            "may_replace_main_decision": false
+          },
+          "supplementary_label_metrics": null,
+          "candidate_a_logit_sha256": "40fac5abc5b8d84f005fd32bd7e3796b43d2db786adf3d829f2513f2310b87e1",
+          "candidate_b_logit_sha256": "f8dd22b600c6ec7d2ab02772badc54fd21ad9c14a3712b0b1b570ddf35af07d5"
+        },
+        {
+          "year": 2021,
+          "rows": 4794,
+          "top10_budget": 480,
+          "strict": {
+            "top10_company_set_exact": true,
+            "top2_type_set_exact_on_baseline_top10": true,
+            "max_overall_probability_absolute_error": 0.0,
+            "max_type_probability_absolute_error": 0.0,
+            "overall_probability_error_within_0_005": true,
+            "type_probability_error_within_0_005": true,
+            "all_required_pass": true
+          },
+          "secondary": {
+            "top10_jaccard": 1.0,
+            "top2_set_agreement_on_baseline_top10": 1.0,
+            "top2_set_agreement_all_rows": 1.0,
+            "top10_changed_members_symmetric_difference": 0,
+            "top10_jaccard_at_least_0_995": true,
+            "top2_agreement_at_least_0_995": true,
+            "recall_at_10_percent_drop_percentage_points": null,
+            "recall_drop_at_most_0_5pp": null,
+            "all_secondary_thresholds_pass": null,
+            "may_replace_main_decision": false
+          },
+          "supplementary_label_metrics": null,
+          "candidate_a_logit_sha256": "ed5f26bcc95e4f1e84d30a5093ddd9588b0a802305d7039038f5903b6d6f0c74",
+          "candidate_b_logit_sha256": "562b8e8a9a98919e41eb124195ce92c0e9a845ad4966d9caeb92b57fdc9c0123"
+        },
+        {
+          "year": 2022,
+          "rows": 5199,
+          "top10_budget": 520,
+          "strict": {
+            "top10_company_set_exact": true,
+            "top2_type_set_exact_on_baseline_top10": true,
+            "max_overall_probability_absolute_error": 0.0,
+            "max_type_probability_absolute_error": 0.0,
+            "overall_probability_error_within_0_005": true,
+            "type_probability_error_within_0_005": true,
+            "all_required_pass": true
+          },
+          "secondary": {
+            "top10_jaccard": 1.0,
+            "top2_set_agreement_on_baseline_top10": 1.0,
+            "top2_set_agreement_all_rows": 1.0,
+            "top10_changed_members_symmetric_difference": 0,
+            "top10_jaccard_at_least_0_995": true,
+            "top2_agreement_at_least_0_995": true,
+            "recall_at_10_percent_drop_percentage_points": null,
+            "recall_drop_at_most_0_5pp": null,
+            "all_secondary_thresholds_pass": null,
+            "may_replace_main_decision": false
+          },
+          "supplementary_label_metrics": null,
+          "candidate_a_logit_sha256": "5a72d4986328d003c25ee0f01e55ac5e5a7458a60d141dd69a5a769112adf6e9",
+          "candidate_b_logit_sha256": "81f8a234a665600f138fa71b1ec85a78caa80e555289f3f9b5770c928c2bdba0"
+        }
+      ],
+      "three_year": {
+        "strict": {
+          "all_years_top10_exact": true,
+          "all_years_top2_exact": true,
+          "max_overall_probability_absolute_error": 0.0,
+          "max_type_probability_absolute_error": 0.0,
+          "all_required_pass_all_years": true
+        },
+        "secondary": {
+          "minimum_top10_jaccard": 1.0,
+          "minimum_top2_set_agreement_on_baseline_top10": 1.0,
+          "maximum_recall_drop_percentage_points": null,
+          "all_secondary_thresholds_pass_all_years": null,
+          "may_replace_main_decision": false
+        },
+        "supplementary_label_metrics": null
+      },
+      "bytes": {
+        "single_model": {
+          "payload_bytes_per_company": 545,
+          "payload_bytes_by_block": {
+            "market": 68,
+            "finance": 356,
+            "governance": 88,
+            "audit_control": 33
+          },
+          "one_company_four_frame_bytes": 625,
+          "batch64_bytes_per_company": 546.25,
+          "one_time_int8_scale_manifest_bytes": 0,
+          "payload_fraction_of_fp32": 1.0
+        },
+        "six_model_shared_q_r": {
+          "payload_bytes_per_company": 3205,
+          "payload_bytes_by_block": {
+            "market": 388,
+            "finance": 2116,
+            "governance": 508,
+            "audit_control": 193
+          },
+          "one_company_four_frame_bytes": 3285,
+          "batch64_bytes_per_company": 3206.25,
+          "one_time_int8_scale_manifest_bytes": 0,
+          "payload_fraction_of_fp32": 1.0
+        },
+        "per_year": [
+          {
+            "year": 2020,
+            "rows": 4292,
+            "batches": 17,
+            "payload_bytes": 13755860,
+            "four_frame_header_bytes": 1360,
+            "one_time_scale_manifest_bytes": 0,
+            "inference_wire_bytes_excluding_scale_manifest": 13757220,
+            "inference_plus_one_time_scale_bytes": 13757220
+          },
+          {
+            "year": 2021,
+            "rows": 4794,
+            "batches": 19,
+            "payload_bytes": 15364770,
+            "four_frame_header_bytes": 1520,
+            "one_time_scale_manifest_bytes": 0,
+            "inference_wire_bytes_excluding_scale_manifest": 15366290,
+            "inference_plus_one_time_scale_bytes": 15366290
+          },
+          {
+            "year": 2022,
+            "rows": 5199,
+            "batches": 21,
+            "payload_bytes": 16662795,
+            "four_frame_header_bytes": 1680,
+            "one_time_scale_manifest_bytes": 0,
+            "inference_wire_bytes_excluding_scale_manifest": 16664475,
+            "inference_plus_one_time_scale_bytes": 16664475
+          }
+        ],
+        "three_year_rows": 14285,
+        "three_year_payload_bytes": 45783425,
+        "three_year_header_bytes": 4560,
+        "three_year_one_time_scale_manifest_bytes": 0,
+        "three_year_inference_plus_scale_bytes": 45787985,
+        "physical_data_nodes": 3,
+        "logical_frames_per_batch": 4,
+        "transport_rounds_per_batch": 1,
+        "downlink_bytes": 0,
+        "excluded": [
+          "request/acknowledgement",
+          "TCP/TLS",
+          "encryption expansion"
+        ]
+      },
+      "quantize_fuse_calibrate_seconds": 0.1763738750014454,
+      "seed_output_checks": [
+        {
+          "year": 2020,
+          "seed": 42,
+          "fp32_matches_saved_fold3_exact": true,
+          "calibrated_a_sha256": "67620da3bd6810acba5390eb75385cb5e22b8044f8fa8ac95e67cc434e1465db",
+          "calibrated_b_sha256": "148e3651e464674d77c3f9569554040a96b86a0d59f170fbf2da2b68ad17cfcb"
+        },
+        {
+          "year": 2020,
+          "seed": 100,
+          "fp32_matches_saved_fold3_exact": true,
+          "calibrated_a_sha256": "3c65e8a4f2755a830097da8a4f9aa729bef8af6b3f8de453ca5893184f9d9e2f",
+          "calibrated_b_sha256": "c2597ed57ebb14f681073e40a1ac53c5f2559adc856e66bf450db631bfdfcb63"
+        },
+        {
+          "year": 2020,
+          "seed": 17,
+          "fp32_matches_saved_fold3_exact": true,
+          "calibrated_a_sha256": "c743222c3dc26b14a3aa7bc5e2f9b228857c2d2705eb18cbb8409de28aa3ef3d",
+          "calibrated_b_sha256": "0a4174721ff9eb8f9b68e9a982bf25fcb96bb1809b964321d5b5f77f6f3f2a00"
+        },
+        {
+          "year": 2020,
+          "seed": 223,
+          "fp32_matches_saved_fold3_exact": true,
+          "calibrated_a_sha256": "a4d6a9fc3bdc6cb00f9fc0ae7db7f51c359f941e65573afb736b1a91b04fca36",
+          "calibrated_b_sha256": "fa3724ae5116f0c1a2e6daa76bdf2cbd0108e32514ab4ca2e54432574fc839e3"
+        },
+        {
+          "year": 2020,
+          "seed": 483,
+          "fp32_matches_saved_fold3_exact": true,
+          "calibrated_a_sha256": "2fb837677075692981175ba6b36b765f18aa43ce7ec1c7919788f4efc7fc6109",
+          "calibrated_b_sha256": "8866e050c2e962e2b95afdc33041b9c91d93a401ef5e9117b29100b93e3f3f0d"
+        },
+        {
+          "year": 2020,
+          "seed": 907,
+          "fp32_matches_saved_fold3_exact": true,
+          "calibrated_a_sha256": "dcdf30c64c08b8021014f0b9894f3ac0fcbbcda792f20208ca5d51ddf093e5c7",
+          "calibrated_b_sha256": "a607ca8e6d8a096ef0143d1ffd16b2dc90965e159902765bfa52242aab15f5aa"
+        },
+        {
+          "year": 2021,
+          "seed": 42,
+          "fp32_matches_saved_fold3_exact": true,
+          "calibrated_a_sha256": "8511726844ed9907d8cf00744eb3186945012da08f163cea3a02d49210b06cb9",
+          "calibrated_b_sha256": "f2f8d5b2413b75677b3f47f1cca759d7c7cf65d42354cb2f9ee9df08e7a200ae"
+        },
+        {
+          "year": 2021,
+          "seed": 100,
+          "fp32_matches_saved_fold3_exact": true,
+          "calibrated_a_sha256": "b2743b364338599104bae07fc5bebd0dda06f6edb376d07258de0b6d36955ed7",
+          "calibrated_b_sha256": "8a1101e77defa4ce7467f231fa3898ebb2efb69c0f5ceb6eb95885b5ec32b8e7"
+        },
+        {
+          "year": 2021,
+          "seed": 17,
+          "fp32_matches_saved_fold3_exact": true,
+          "calibrated_a_sha256": "fa9b51ff77a7b0e51d1e8799cb347e5bd4dd9ccddd57c15aec47b235bee12c71",
+          "calibrated_b_sha256": "e11295e197a003e3a0efe13175813e881ea4c24b54e296d546fe55583d0acb16"
+        },
+        {
+          "year": 2021,
+          "seed": 223,
+          "fp32_matches_saved_fold3_exact": true,
+          "calibrated_a_sha256": "68d35d03367a0a8f388b211d84eea3800b990ef8c1226aa86d2272d2599d7a44",
+          "calibrated_b_sha256": "cedeb39fcad04520e2dc18830800fc8b7817ec75bc3a1a0bc2a6457ed028bc2d"
+        },
+        {
+          "year": 2021,
+          "seed": 483,
+          "fp32_matches_saved_fold3_exact": true,
+          "calibrated_a_sha256": "6ebbaaa34ef5c16439f0990564836a6ca7fc0d56f3222fed77cefcbfe328db25",
+          "calibrated_b_sha256": "f7707e6d8ece3c597ea79f89b706362c4b21493b34e09dfbb60fc6a0d73ab6f1"
+        },
+        {
+          "year": 2021,
+          "seed": 907,
+          "fp32_matches_saved_fold3_exact": true,
+          "calibrated_a_sha256": "23209a84b1eadfb92df901314f697ef9daa080accb7b3136152be003b6a7ad48",
+          "calibrated_b_sha256": "778847d145dade4cbcf148766209ae09aafdd160d2d31260ffd76f418d699c72"
+        },
+        {
+          "year": 2022,
+          "seed": 42,
+          "fp32_matches_saved_fold3_exact": true,
+          "calibrated_a_sha256": "e94df5b48f54db71b6465017eb3e9c8628992e4e004734fc4ea6184f1d894c9c",
+          "calibrated_b_sha256": "8e76691fb1e2d454fde2c05de9d84a7ce8ef81abd7cc618f1d4dcc657596d279"
+        },
+        {
+          "year": 2022,
+          "seed": 100,
+          "fp32_matches_saved_fold3_exact": true,
+          "calibrated_a_sha256": "8342be788085952786352f277c5a4d13609b32454a11fa69cfe8747ab334ddc6",
+          "calibrated_b_sha256": "db729de6a013121da5ddfda279b59d7097822256791dd7ce77b74930f4450ed9"
+        },
+        {
+          "year": 2022,
+          "seed": 17,
+          "fp32_matches_saved_fold3_exact": true,
+          "calibrated_a_sha256": "8932062cddad314ac55a99332f87fdd6c81c33487bc8915d225f14acf2f4b7ce",
+          "calibrated_b_sha256": "dbabea9de986cb6005614af5cbeca1fc22b97717845227d3e19dfb9f362eb30a"
+        },
+        {
+          "year": 2022,
+          "seed": 223,
+          "fp32_matches_saved_fold3_exact": true,
+          "calibrated_a_sha256": "14ba9c341485c05ef1308144bbf40046f9228530b10e6693fbb81082255b0061",
+          "calibrated_b_sha256": "268aa355d09739594d6543ff0b0a27778bb9dfb3a8f9581f35d0cf66874c6f9b"
+        },
+        {
+          "year": 2022,
+          "seed": 483,
+          "fp32_matches_saved_fold3_exact": true,
+          "calibrated_a_sha256": "f58f40f24b22a2d7de9796fb3418fdac28cffa92665a0abdc05b1da663f4550d",
+          "calibrated_b_sha256": "0da8c86e20ef5939d4a96775a8ecb05282f21764a5019e13f767f4749f2f68e4"
+        },
+        {
+          "year": 2022,
+          "seed": 907,
+          "fp32_matches_saved_fold3_exact": true,
+          "calibrated_a_sha256": "6152c3233e21cc01f16892bc34783324c90dae9d1ff6cb2945e3cef86f356bc5",
+          "calibrated_b_sha256": "50199d8b62b17d227f8c212bd946fc622c63de5ec52300269610d3ac5bc3a055"
+        }
+      ]
+    },
+    {
+      "candidate_number": 41,
+      "candidate_id": "market-fp16__finance-fp16__governance-fp16__audit_control-fp16",
+      "precision_by_logical_block": {
+        "market": "fp16",
+        "finance": "fp16",
+        "governance": "fp16",
+        "audit_control": "fp16"
+      },
+      "evaluation_status": "label_free_smoke_only",
+      "labels_read_for_metrics": false,
+      "fp32_seed_and_ensemble_identity_exact": null,
+      "years": [
+        {
+          "year": 2020,
+          "rows": 4292,
+          "top10_budget": 430,
+          "strict": {
+            "top10_company_set_exact": true,
+            "top2_type_set_exact_on_baseline_top10": true,
+            "max_overall_probability_absolute_error": 5.482388308181152e-05,
+            "max_type_probability_absolute_error": 3.1343996680199826e-05,
+            "overall_probability_error_within_0_005": true,
+            "type_probability_error_within_0_005": true,
+            "all_required_pass": true
+          },
+          "secondary": {
+            "top10_jaccard": 1.0,
+            "top2_set_agreement_on_baseline_top10": 1.0,
+            "top2_set_agreement_all_rows": 1.0,
+            "top10_changed_members_symmetric_difference": 0,
+            "top10_jaccard_at_least_0_995": true,
+            "top2_agreement_at_least_0_995": true,
+            "recall_at_10_percent_drop_percentage_points": null,
+            "recall_drop_at_most_0_5pp": null,
+            "all_secondary_thresholds_pass": null,
+            "may_replace_main_decision": false
+          },
+          "supplementary_label_metrics": null,
+          "candidate_a_logit_sha256": "a61d95b8cc7748512e99ec349430164550e18b9f5b0e38b4c9909e24f9dd8c24",
+          "candidate_b_logit_sha256": "382533b2d8aa8331d32ad9f5a67e8814cdb49cccd4943e7ace763457f8fd664f"
+        },
+        {
+          "year": 2021,
+          "rows": 4794,
+          "top10_budget": 480,
+          "strict": {
+            "top10_company_set_exact": true,
+            "top2_type_set_exact_on_baseline_top10": true,
+            "max_overall_probability_absolute_error": 5.989385353222243e-05,
+            "max_type_probability_absolute_error": 3.4758846174487434e-05,
+            "overall_probability_error_within_0_005": true,
+            "type_probability_error_within_0_005": true,
+            "all_required_pass": true
+          },
+          "secondary": {
+            "top10_jaccard": 1.0,
+            "top2_set_agreement_on_baseline_top10": 1.0,
+            "top2_set_agreement_all_rows": 1.0,
+            "top10_changed_members_symmetric_difference": 0,
+            "top10_jaccard_at_least_0_995": true,
+            "top2_agreement_at_least_0_995": true,
+            "recall_at_10_percent_drop_percentage_points": null,
+            "recall_drop_at_most_0_5pp": null,
+            "all_secondary_thresholds_pass": null,
+            "may_replace_main_decision": false
+          },
+          "supplementary_label_metrics": null,
+          "candidate_a_logit_sha256": "8e95ecf64be8480fcf4e5fdb37ff5ec0d48878d02198d7cc92752ea0d0745f82",
+          "candidate_b_logit_sha256": "7a5aed5f74aa14a82c9848b814f691f6a5b6986af90559fcb3d95a6ff040d508"
+        },
+        {
+          "year": 2022,
+          "rows": 5199,
+          "top10_budget": 520,
+          "strict": {
+            "top10_company_set_exact": true,
+            "top2_type_set_exact_on_baseline_top10": true,
+            "max_overall_probability_absolute_error": 5.581294496403988e-05,
+            "max_type_probability_absolute_error": 2.6761365172101037e-05,
+            "overall_probability_error_within_0_005": true,
+            "type_probability_error_within_0_005": true,
+            "all_required_pass": true
+          },
+          "secondary": {
+            "top10_jaccard": 1.0,
+            "top2_set_agreement_on_baseline_top10": 1.0,
+            "top2_set_agreement_all_rows": 1.0,
+            "top10_changed_members_symmetric_difference": 0,
+            "top10_jaccard_at_least_0_995": true,
+            "top2_agreement_at_least_0_995": true,
+            "recall_at_10_percent_drop_percentage_points": null,
+            "recall_drop_at_most_0_5pp": null,
+            "all_secondary_thresholds_pass": null,
+            "may_replace_main_decision": false
+          },
+          "supplementary_label_metrics": null,
+          "candidate_a_logit_sha256": "92245cf895314e68f37ac8f1f782580956ef29ae6c8a894734c6231d17ab16f2",
+          "candidate_b_logit_sha256": "03f5cf4f5bcc93cfbd69212cbab9336c061b51c524ddaf113a25e9daeef5b340"
+        }
+      ],
+      "three_year": {
+        "strict": {
+          "all_years_top10_exact": true,
+          "all_years_top2_exact": true,
+          "max_overall_probability_absolute_error": 5.989385353222243e-05,
+          "max_type_probability_absolute_error": 3.4758846174487434e-05,
+          "all_required_pass_all_years": true
+        },
+        "secondary": {
+          "minimum_top10_jaccard": 1.0,
+          "minimum_top2_set_agreement_on_baseline_top10": 1.0,
+          "maximum_recall_drop_percentage_points": null,
+          "all_secondary_thresholds_pass_all_years": null,
+          "may_replace_main_decision": false
+        },
+        "supplementary_label_metrics": null
+      },
+      "bytes": {
+        "single_model": {
+          "payload_bytes_per_company": 273,
+          "payload_bytes_by_block": {
+            "market": 34,
+            "finance": 178,
+            "governance": 44,
+            "audit_control": 17
+          },
+          "one_company_four_frame_bytes": 353,
+          "batch64_bytes_per_company": 274.25,
+          "one_time_int8_scale_manifest_bytes": 0,
+          "payload_fraction_of_fp32": 0.5009174311926605
+        },
+        "six_model_shared_q_r": {
+          "payload_bytes_per_company": 1603,
+          "payload_bytes_by_block": {
+            "market": 194,
+            "finance": 1058,
+            "governance": 254,
+            "audit_control": 97
+          },
+          "one_company_four_frame_bytes": 1683,
+          "batch64_bytes_per_company": 1604.25,
+          "one_time_int8_scale_manifest_bytes": 0,
+          "payload_fraction_of_fp32": 0.5001560062402496
+        },
+        "per_year": [
+          {
+            "year": 2020,
+            "rows": 4292,
+            "batches": 17,
+            "payload_bytes": 6880076,
+            "four_frame_header_bytes": 1360,
+            "one_time_scale_manifest_bytes": 0,
+            "inference_wire_bytes_excluding_scale_manifest": 6881436,
+            "inference_plus_one_time_scale_bytes": 6881436
+          },
+          {
+            "year": 2021,
+            "rows": 4794,
+            "batches": 19,
+            "payload_bytes": 7684782,
+            "four_frame_header_bytes": 1520,
+            "one_time_scale_manifest_bytes": 0,
+            "inference_wire_bytes_excluding_scale_manifest": 7686302,
+            "inference_plus_one_time_scale_bytes": 7686302
+          },
+          {
+            "year": 2022,
+            "rows": 5199,
+            "batches": 21,
+            "payload_bytes": 8333997,
+            "four_frame_header_bytes": 1680,
+            "one_time_scale_manifest_bytes": 0,
+            "inference_wire_bytes_excluding_scale_manifest": 8335677,
+            "inference_plus_one_time_scale_bytes": 8335677
+          }
+        ],
+        "three_year_rows": 14285,
+        "three_year_payload_bytes": 22898855,
+        "three_year_header_bytes": 4560,
+        "three_year_one_time_scale_manifest_bytes": 0,
+        "three_year_inference_plus_scale_bytes": 22903415,
+        "physical_data_nodes": 3,
+        "logical_frames_per_batch": 4,
+        "transport_rounds_per_batch": 1,
+        "downlink_bytes": 0,
+        "excluded": [
+          "request/acknowledgement",
+          "TCP/TLS",
+          "encryption expansion"
+        ]
+      },
+      "quantize_fuse_calibrate_seconds": 0.1667368330527097,
+      "seed_output_checks": [
+        {
+          "year": 2020,
+          "seed": 42,
+          "fp32_matches_saved_fold3_exact": null,
+          "calibrated_a_sha256": "d1d9b2101bd2c69dcc70afc5291855b2c77e6b9eb5a432b3b0e3a275c9bf26fd",
+          "calibrated_b_sha256": "161227083743c6e26567e6e4e64c458b8d6e3f0cd5ebf160857d06f1a3ddec76"
+        },
+        {
+          "year": 2020,
+          "seed": 100,
+          "fp32_matches_saved_fold3_exact": null,
+          "calibrated_a_sha256": "04f3e9fe63ad0cb7cb59c17ae46ee1ba6d7afb139be422c72aa94e72a6c82f72",
+          "calibrated_b_sha256": "a39d0075c6221cd0c95497e17f2a15c0f4f9ccaa862893d3ba3db226db6c576b"
+        },
+        {
+          "year": 2020,
+          "seed": 17,
+          "fp32_matches_saved_fold3_exact": null,
+          "calibrated_a_sha256": "4f37dba4a10c297358e44b32dd30eb4a6a98e6f1c41264100282c9c38dc3d8db",
+          "calibrated_b_sha256": "5c61313de1d3c118fe10164cb75b5c9b8a65e4eb3c37a59820da1ab00e2f866a"
+        },
+        {
+          "year": 2020,
+          "seed": 223,
+          "fp32_matches_saved_fold3_exact": null,
+          "calibrated_a_sha256": "00ec0291c42ebee54f64f28aaf193cc5fadd5777fbe8c2d5fadffe2f7ab0aa0d",
+          "calibrated_b_sha256": "42871d5f0dc202dddb215b30d64b6571c4c2450953fd71a32df586fdaf6984d9"
+        },
+        {
+          "year": 2020,
+          "seed": 483,
+          "fp32_matches_saved_fold3_exact": null,
+          "calibrated_a_sha256": "d46db6e3d05758931d1f7d923c3ff66d484fa4817916023cf8b0f6c736acc04b",
+          "calibrated_b_sha256": "7d2b343c20823b1356a379059a2c3e968dfe25213db6e4b8cbec270f5a3c7d88"
+        },
+        {
+          "year": 2020,
+          "seed": 907,
+          "fp32_matches_saved_fold3_exact": null,
+          "calibrated_a_sha256": "642e01fa9425af7c1372ed9edec376c799086196d80e3bad143805fb1cc501be",
+          "calibrated_b_sha256": "9d6f5ff2e9d5b88865916dcc8f974666c4028514cc9898bfc8b6da06cfa085e2"
+        },
+        {
+          "year": 2021,
+          "seed": 42,
+          "fp32_matches_saved_fold3_exact": null,
+          "calibrated_a_sha256": "47fc75630d7557d8fb23aa5ac16f13763df8e0acdb6ce031412fd7ab92dd9ec6",
+          "calibrated_b_sha256": "a7b05a1d5908fa0eba5c1b427e448514749e6bd4d8a641528d0e40f1934eebac"
+        },
+        {
+          "year": 2021,
+          "seed": 100,
+          "fp32_matches_saved_fold3_exact": null,
+          "calibrated_a_sha256": "20dab5b65d941b20a84b136da76f10f7bbd5bb58c2d20dd6b1e87e807d781bb0",
+          "calibrated_b_sha256": "4d4dad107ac540355d70ac54af8a58e5bce7fa43ecf4da38f45ada393fcd5002"
+        },
+        {
+          "year": 2021,
+          "seed": 17,
+          "fp32_matches_saved_fold3_exact": null,
+          "calibrated_a_sha256": "5fae29f824a749a97637bc9b12168822ea9390e089b9c5f526a918eacad4e6ae",
+          "calibrated_b_sha256": "b3315128a99fb7cc68445de91917f8a5854973fe7dce93e03389c099b3093eba"
+        },
+        {
+          "year": 2021,
+          "seed": 223,
+          "fp32_matches_saved_fold3_exact": null,
+          "calibrated_a_sha256": "c55a19bac658d56fa1e64018e9e76be487ae1077c2d6ed36fc4b0844142abcff",
+          "calibrated_b_sha256": "34b8655c5355dd2186a0508cdcb7aee289c667786b3da5721cf53a34bbb2416f"
+        },
+        {
+          "year": 2021,
+          "seed": 483,
+          "fp32_matches_saved_fold3_exact": null,
+          "calibrated_a_sha256": "fb9b385a741ee537bd804a0226901aa154c01814dec0b84c20e2f9535508a775",
+          "calibrated_b_sha256": "164160fdf484720cf6f1adb1412dd6fb093d4fc92e3d54060daa6afdd2e2d559"
+        },
+        {
+          "year": 2021,
+          "seed": 907,
+          "fp32_matches_saved_fold3_exact": null,
+          "calibrated_a_sha256": "5d915c4708c0701a4c361520d5fb94b54dc3ab78636ae46fa68523421f1d0cc7",
+          "calibrated_b_sha256": "095f6b4eabe3a12a67d8f2f6f71e41dadd1037a3e4f9dd8777bece7dfaa4cb37"
+        },
+        {
+          "year": 2022,
+          "seed": 42,
+          "fp32_matches_saved_fold3_exact": null,
+          "calibrated_a_sha256": "f3f1b50d2139278d5017968970a5d31814a5c4760808a3d90faafe070b2eb395",
+          "calibrated_b_sha256": "89cdfa7f53887d423055f2e1775a06d3320cd81500758f78e9fddfe1b3853d54"
+        },
+        {
+          "year": 2022,
+          "seed": 100,
+          "fp32_matches_saved_fold3_exact": null,
+          "calibrated_a_sha256": "a8cc2f1c105d478b22db66da16efda50323fe504e8c027ca84a62f42be83d2db",
+          "calibrated_b_sha256": "bd0f599cef3da95793e7f5196a801e04368e45187f666f691bbdc31e25d891e9"
+        },
+        {
+          "year": 2022,
+          "seed": 17,
+          "fp32_matches_saved_fold3_exact": null,
+          "calibrated_a_sha256": "b8bf3d7219c5b8229d6871ec308b87ce669b975ed293fe1e0c22ad3574be1be6",
+          "calibrated_b_sha256": "cac7a61f4417478e1634b42972ef33f39c8b8c548c6c6715e940f51fe0a9e8e6"
+        },
+        {
+          "year": 2022,
+          "seed": 223,
+          "fp32_matches_saved_fold3_exact": null,
+          "calibrated_a_sha256": "89bbd9926966519e49335c5e973fc397571691d9b3c756c137d5ceaecf6cb5c9",
+          "calibrated_b_sha256": "6fb017fc0330905a3565a1cd361559e488f89908e7db05e76bb067dffebe77bd"
+        },
+        {
+          "year": 2022,
+          "seed": 483,
+          "fp32_matches_saved_fold3_exact": null,
+          "calibrated_a_sha256": "6265e852648cbc90c1dbe2d2717055e80716626e12d28e537902fb815dc59ae9",
+          "calibrated_b_sha256": "adde221c6d3b455bb4910069ac991b69a42e949299fea9a988fd0a8b3c1ac49c"
+        },
+        {
+          "year": 2022,
+          "seed": 907,
+          "fp32_matches_saved_fold3_exact": null,
+          "calibrated_a_sha256": "ad3975ab6242db4cf8d94c53ce0ca7f9a62f750fda506f5e6668b8a2b497ada2",
+          "calibrated_b_sha256": "afb45307b249d84ed60e921a00928d52b358ab5c256705f8d95caff321d11d5c"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "epochs": 13,
+  "best_epoch": 7,
+  "selection_loss": 0.8864647510177954,
+  "train_seconds": 2.194703417015262,
+  "train_forward_bytes": 227987968,
+  "train_backward_bytes": 222644500,
+  "epoch_validation_bytes": 24427520,
+  "year": 2020,
+  "arm": "FiLM-L",
+  "seed": 483,
+  "content_dims": [
+    16,
+    88,
+    21
+  ],
+  "budget_floats": 128,
+  "parameters": 38538,
+  "final_hash": "4fbb3b4f7ad1e67db7c9d093d4f51da718394e251084ffd46b4e26b0f658747c"
+}

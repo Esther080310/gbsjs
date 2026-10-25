@@ -1,0 +1,19 @@
+{
+  "status": "complete",
+  "seeds": [
+    42,
+    100,
+    17
+  ],
+  "updates": 2,
+  "initial_checkpoints_reused": 3,
+  "first_full_checkpoints_reused": 3,
+  "new_full_trainings": 3,
+  "new_head_trainings": 12,
+  "policy_effectiveness_tested": false,
+  "policy_pending_branches_exercised": true,
+  "final_year_labels_used_for_routing": false,
+  "source_sha256": "97e7029a5a40ff4e9b0794e51e26335002f999c4c43f7b0d1dc161eba4658547",
+  "protocol_sha256": "696ca1ef9bd89edfb61d3656cd22bf8c0779ecf57f128d9706e2ec0075021c17",
+  "config_sha256": "daa00ccb0bfa833c446a4929f70d5a908e871996cfdd0f8b2bb6659b1e7828a9"
+}

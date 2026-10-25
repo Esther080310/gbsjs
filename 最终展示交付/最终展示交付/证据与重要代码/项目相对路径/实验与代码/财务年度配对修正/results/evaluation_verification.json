@@ -1,0 +1,18 @@
+{
+  "fixed_cutoff": "June30 of economic year+1",
+  "report_publication_proxy": "CG_Ybasic annual report first publication on or after report period end",
+  "publication_before_period_end_rows_excluded": 0,
+  "subgroup_selection_uses_dates_not_model_scores": true,
+  "same_year_known_violation_excluded": true,
+  "prior_year_violations_retained": true,
+  "full_sample_metrics_reproduced": true,
+  "source_hashes": {
+    "/Users/how/Desktop/分布式企业违规检测/实验与代码/大创数据集/X3 监管机构信息/治理综合信息文件/CG_Ybasic.xlsx": "5d3bf773cfb3749c358271dfe5fe3258e938d354e426cf067c85a6d9d42844f0",
+    "/Users/how/Desktop/分布式企业违规检测/实验与代码/标签成熟度与后续记录核查/results/all_event_years.csv.gz": "e86fd86b724da555ef0740cc8822134c1845528265ccb844c3a4b85fac5256e0",
+    "/Users/how/Desktop/分布式企业违规检测/实验与代码/财务年度配对修正/evaluate.py": "7f3138fbb34e12282b8fd65cbc60402876d01ba1701fa0576dd0f631bcae2668"
+  },
+  "source_hashes_unchanged": true,
+  "rows": 216,
+  "AP_cluster_bootstrap_replicates": 400,
+  "scope": "retrospective development evaluation; financial historical vintage not verified"
+}

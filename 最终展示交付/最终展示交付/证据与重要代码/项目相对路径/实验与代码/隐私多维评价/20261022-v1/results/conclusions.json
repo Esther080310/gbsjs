@@ -1,0 +1,159 @@
+{
+  "S0": {
+    "public": {
+      "nrmse": 0.8948132196816058,
+      "success_0.1": 0.10870338329153066,
+      "success_0.319": 0.35056534361578784,
+      "success_0.5": 0.5160191101468212,
+      "auc": 0.6728028520541245,
+      "balanced_accuracy": 0.621331132886505
+    },
+    "top2": {
+      "nrmse": 0.8037986950224336,
+      "success_0.1": 0.13033946594717186,
+      "success_0.319": 0.40067086802787866,
+      "success_0.5": 0.5673198118038432,
+      "auc": 0.7759681063439209,
+      "balanced_accuracy": 0.7004487656927985
+    },
+    "outputs": {
+      "nrmse": 0.6782925058937229,
+      "success_0.1": 0.16428237899140538,
+      "success_0.319": 0.4695442955436775,
+      "success_0.5": 0.6414976764622551,
+      "auc": 0.858275420404204,
+      "balanced_accuracy": 0.7740775115085781
+    },
+    "messages": {
+      "nrmse": 0.35678916328858507,
+      "success_0.1": 0.3397195519466756,
+      "success_0.319": 0.751519661415541,
+      "success_0.5": 0.8782808433069164,
+      "auc": 0.9602011341529317,
+      "balanced_accuracy": 0.892848927057954
+    }
+  },
+  "D1": {
+    "public": {
+      "nrmse": 0.8948132196816058,
+      "success_0.1": 0.10870338329153066,
+      "success_0.319": 0.35056534361578784,
+      "success_0.5": 0.5160191101468212,
+      "auc": 0.6728028520541245,
+      "balanced_accuracy": 0.621331132886505
+    },
+    "top2": {
+      "nrmse": 0.8093631300442047,
+      "success_0.1": 0.12674200901738747,
+      "success_0.319": 0.393238478177574,
+      "success_0.5": 0.5606881571244755,
+      "auc": 0.7675443700554505,
+      "balanced_accuracy": 0.6940218982171684
+    },
+    "outputs": {
+      "nrmse": 0.7191200154446179,
+      "success_0.1": 0.15040783378343775,
+      "success_0.319": 0.44385936256257724,
+      "success_0.5": 0.6139704006089711,
+      "auc": 0.830992582379705,
+      "balanced_accuracy": 0.7489521656372172
+    },
+    "messages": {
+      "nrmse": 0.45134614982187393,
+      "success_0.1": 0.26550066974265807,
+      "success_0.319": 0.6526772602504686,
+      "success_0.5": 0.81108073194581,
+      "auc": 0.9360217238370101,
+      "balanced_accuracy": 0.8601914908987747
+    }
+  },
+  "extra_disclosure": {
+    "S0": {
+      "outputs": {
+        "extra_success_0319": 0.28197536587186345,
+        "extra_attribute_auc": 0.10192571374872779,
+        "extra_balanced_accuracy": 0.11877141554937605
+      },
+      "public": {
+        "extra_success_0319": 0.4009543177997532,
+        "extra_attribute_auc": 0.2873982820988073,
+        "extra_balanced_accuracy": 0.27151779417144906
+      },
+      "top2": {
+        "extra_success_0319": 0.3508487933876624,
+        "extra_attribute_auc": 0.1842330278090109,
+        "extra_balanced_accuracy": 0.19240016136515556
+      }
+    },
+    "D1": {
+      "outputs": {
+        "extra_success_0319": 0.20881789768789139,
+        "extra_attribute_auc": 0.10502914145730513,
+        "extra_balanced_accuracy": 0.11123932526155729
+      },
+      "public": {
+        "extra_success_0319": 0.3021119166346808,
+        "extra_attribute_auc": 0.2632188717828855,
+        "extra_balanced_accuracy": 0.23886035801226954
+      },
+      "top2": {
+        "extra_success_0319": 0.25943878207289467,
+        "extra_attribute_auc": 0.16847735378155948,
+        "extra_balanced_accuracy": 0.16616959268160614
+      }
+    }
+  },
+  "task": {
+    "D1": {
+      "recall": 0.2934256055363322,
+      "ap": 0.5628140042501604
+    },
+    "S0": {
+      "recall": 0.3012687427912341,
+      "ap": 0.5767604706603222
+    }
+  },
+  "task_checks": [
+    {
+      "tag": "S0_s100",
+      "task_unchanged": true
+    },
+    {
+      "tag": "D1_s100",
+      "task_unchanged": true
+    },
+    {
+      "tag": "S0_s17",
+      "task_unchanged": true
+    },
+    {
+      "tag": "D1_s17",
+      "task_unchanged": true
+    },
+    {
+      "tag": "S0_s223",
+      "task_unchanged": true
+    },
+    {
+      "tag": "D1_s223",
+      "task_unchanged": true
+    },
+    {
+      "tag": "S0_s483",
+      "task_unchanged": true
+    },
+    {
+      "tag": "D1_s483",
+      "task_unchanged": true
+    },
+    {
+      "tag": "S0_s907",
+      "task_unchanged": true
+    },
+    {
+      "tag": "D1_s907",
+      "task_unchanged": true
+    }
+  ],
+  "privacy_field_success_reduced_all_seeds": 13
+}

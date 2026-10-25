@@ -1,0 +1,602 @@
+[
+  {
+    "epochs": 23,
+    "best_epoch": 17,
+    "selection_loss": 0.8801048979333339,
+    "train_seconds": 3.936563416995341,
+    "train_forward_bytes": 387606948,
+    "train_backward_bytes": 378153120,
+    "epoch_validation_bytes": 41529720,
+    "year": 2020,
+    "arm": "CMA-G",
+    "seed": 42,
+    "content_dims": [
+      16,
+      88,
+      16
+    ],
+    "budget_floats": 123,
+    "parameters": 38314,
+    "final_hash": "7b939d0e96a93c3b58aac224cf7e2708760437b23d99dbcae36a015632222d1f"
+  },
+  {
+    "epochs": 19,
+    "best_epoch": 13,
+    "selection_loss": 0.8763339546136191,
+    "train_seconds": 3.3164759160135873,
+    "train_forward_bytes": 320197044,
+    "train_backward_bytes": 312387360,
+    "epoch_validation_bytes": 34307160,
+    "year": 2020,
+    "arm": "CMA-G",
+    "seed": 100,
+    "content_dims": [
+      16,
+      88,
+      16
+    ],
+    "budget_floats": 123,
+    "parameters": 38314,
+    "final_hash": "56443f61d0cfe54ed71d3a5fad21e3f22d70bd270c8b07fab4c00b8db16245fa"
+  },
+  {
+    "epochs": 16,
+    "best_epoch": 10,
+    "selection_loss": 0.8835856724945602,
+    "train_seconds": 2.726415209006518,
+    "train_forward_bytes": 269639616,
+    "train_backward_bytes": 263063040,
+    "epoch_validation_bytes": 28890240,
+    "year": 2020,
+    "arm": "CMA-G",
+    "seed": 17,
+    "content_dims": [
+      16,
+      88,
+      16
+    ],
+    "budget_floats": 123,
+    "parameters": 38314,
+    "final_hash": "f2215f6e5167eb3e157f9a6b888d0f2d59f5b5e2c4b76a0f6804bdcba927648e"
+  },
+  {
+    "epochs": 17,
+    "best_epoch": 11,
+    "selection_loss": 0.8812362634871195,
+    "train_seconds": 2.909011834010016,
+    "train_forward_bytes": 286492092,
+    "train_backward_bytes": 279504480,
+    "epoch_validation_bytes": 30695880,
+    "year": 2020,
+    "arm": "CMA-G",
+    "seed": 223,
+    "content_dims": [
+      16,
+      88,
+      16
+    ],
+    "budget_floats": 123,
+    "parameters": 38314,
+    "final_hash": "8130284c54b250140861256f829aad05da4a1a14a54c2e9879e1ee2280c6c202"
+  },
+  {
+    "epochs": 24,
+    "best_epoch": 18,
+    "selection_loss": 0.8832345310604781,
+    "train_seconds": 4.122275458008517,
+    "train_forward_bytes": 404459424,
+    "train_backward_bytes": 394594560,
+    "epoch_validation_bytes": 43335360,
+    "year": 2020,
+    "arm": "CMA-G",
+    "seed": 483,
+    "content_dims": [
+      16,
+      88,
+      16
+    ],
+    "budget_floats": 123,
+    "parameters": 38314,
+    "final_hash": "1c1bcea25399048db375b4ad0fd359bea7847ff6428ad8c8083005eaae0fbe04"
+  },
+  {
+    "epochs": 16,
+    "best_epoch": 10,
+    "selection_loss": 0.8825571260792542,
+    "train_seconds": 2.746670124994125,
+    "train_forward_bytes": 269639616,
+    "train_backward_bytes": 263063040,
+    "epoch_validation_bytes": 28890240,
+    "year": 2020,
+    "arm": "CMA-G",
+    "seed": 907,
+    "content_dims": [
+      16,
+      88,
+      16
+    ],
+    "budget_floats": 123,
+    "parameters": 38314,
+    "final_hash": "20d25f2afb5eb6ac1f531f268a48c576ed569697563695084f4f34dedf63aaa8"
+  },
+  {
+    "epochs": 18,
+    "best_epoch": 12,
+    "selection_loss": 0.8902278708709568,
+    "train_seconds": 3.094292082998436,
+    "train_forward_bytes": 315675648,
+    "train_backward_bytes": 308277000,
+    "epoch_validation_bytes": 33822720,
+    "year": 2020,
+    "arm": "FiLM-L",
+    "seed": 42,
+    "content_dims": [
+      16,
+      88,
+      21
+    ],
+    "budget_floats": 128,
+    "parameters": 38538,
+    "final_hash": "d7cfa17635bfa4780ddbe003f8c7c0fca0d4b483b36952113115b2420c808146"
+  },
+  {
+    "epochs": 19,
+    "best_epoch": 13,
+    "selection_loss": 0.8808206126820903,
+    "train_seconds": 3.200491833005799,
+    "train_forward_bytes": 333213184,
+    "train_backward_bytes": 325403500,
+    "epoch_validation_bytes": 35701760,
+    "year": 2020,
+    "arm": "FiLM-L",
+    "seed": 100,
+    "content_dims": [
+      16,
+      88,
+      21
+    ],
+    "budget_floats": 128,
+    "parameters": 38538,
+    "final_hash": "d78258925dfb997ac80776153bd5d70a87f60a2a939f5bd1ae4edce3c93bb3f9"
+  },
+  {
+    "epochs": 24,
+    "best_epoch": 18,
+    "selection_loss": 0.8812576803818251,
+    "train_seconds": 4.345677167002577,
+    "train_forward_bytes": 420900864,
+    "train_backward_bytes": 411036000,
+    "epoch_validation_bytes": 45096960,
+    "year": 2020,
+    "arm": "FiLM-L",
+    "seed": 17,
+    "content_dims": [
+      16,
+      88,
+      21
+    ],
+    "budget_floats": 128,
+    "parameters": 38538,
+    "final_hash": "600f7bb1e689a9c917caf23404a939073ebc77ad568d09ce71055f1c4092ef10"
+  },
+  {
+    "epochs": 22,
+    "best_epoch": 16,
+    "selection_loss": 0.8809345631026135,
+    "train_seconds": 3.9106767089979257,
+    "train_forward_bytes": 385825792,
+    "train_backward_bytes": 376783000,
+    "epoch_validation_bytes": 41338880,
+    "year": 2020,
+    "arm": "FiLM-L",
+    "seed": 223,
+    "content_dims": [
+      16,
+      88,
+      21
+    ],
+    "budget_floats": 128,
+    "parameters": 38538,
+    "final_hash": "eee13754af0fc47f6cd21085c561337b2b14acfc89cea084ee6f7bbdc1de1b05"
+  },
+  {
+    "epochs": 13,
+    "best_epoch": 7,
+    "selection_loss": 0.8864647510177954,
+    "train_seconds": 2.194703417015262,
+    "train_forward_bytes": 227987968,
+    "train_backward_bytes": 222644500,
+    "epoch_validation_bytes": 24427520,
+    "year": 2020,
+    "arm": "FiLM-L",
+    "seed": 483,
+    "content_dims": [
+      16,
+      88,
+      21
+    ],
+    "budget_floats": 128,
+    "parameters": 38538,
+    "final_hash": "4fbb3b4f7ad1e67db7c9d093d4f51da718394e251084ffd46b4e26b0f658747c"
+  },
+  {
+    "epochs": 13,
+    "best_epoch": 7,
+    "selection_loss": 0.8910559899320367,
+    "train_seconds": 2.2045858339988627,
+    "train_forward_bytes": 227987968,
+    "train_backward_bytes": 222644500,
+    "epoch_validation_bytes": 24427520,
+    "year": 2020,
+    "arm": "FiLM-L",
+    "seed": 907,
+    "content_dims": [
+      16,
+      88,
+      21
+    ],
+    "budget_floats": 128,
+    "parameters": 38538,
+    "final_hash": "3d76ec7d696f391672524e735aae30b9948039997128169a1108d7675050665a"
+  },
+  {
+    "epochs": 17,
+    "best_epoch": 11,
+    "selection_loss": 0.8315108362886765,
+    "train_seconds": 3.3307073340110946,
+    "train_forward_bytes": 317187972,
+    "train_backward_bytes": 309451680,
+    "epoch_validation_bytes": 32318496,
+    "year": 2021,
+    "arm": "CMA-G",
+    "seed": 42,
+    "content_dims": [
+      16,
+      88,
+      16
+    ],
+    "budget_floats": 123,
+    "parameters": 38442,
+    "final_hash": "bc0331540e3f8a432945cd0f9a64d3f3020a1faabc14c4e450703c81b49c2592"
+  },
+  {
+    "epochs": 20,
+    "best_epoch": 14,
+    "selection_loss": 0.8263682334291684,
+    "train_seconds": 3.790358708007261,
+    "train_forward_bytes": 373162320,
+    "train_backward_bytes": 364060800,
+    "epoch_validation_bytes": 38021760,
+    "year": 2021,
+    "arm": "CMA-G",
+    "seed": 100,
+    "content_dims": [
+      16,
+      88,
+      16
+    ],
+    "budget_floats": 123,
+    "parameters": 38442,
+    "final_hash": "b8ab6b5eaa82a55dd7a8a631032f0cc579953674eb4d71dffb9208786f7d9d57"
+  },
+  {
+    "epochs": 22,
+    "best_epoch": 16,
+    "selection_loss": 0.830343428669521,
+    "train_seconds": 4.174987375008641,
+    "train_forward_bytes": 410478552,
+    "train_backward_bytes": 400466880,
+    "epoch_validation_bytes": 41823936,
+    "year": 2021,
+    "arm": "CMA-G",
+    "seed": 17,
+    "content_dims": [
+      16,
+      88,
+      16
+    ],
+    "budget_floats": 123,
+    "parameters": 38442,
+    "final_hash": "0eecce970ff5d940254659d359e4b9ee5c4837cd3c1fda0dffa30dc2a1c723ea"
+  },
+  {
+    "epochs": 21,
+    "best_epoch": 15,
+    "selection_loss": 0.8289707468596225,
+    "train_seconds": 3.985554624989163,
+    "train_forward_bytes": 391820436,
+    "train_backward_bytes": 382263840,
+    "epoch_validation_bytes": 39922848,
+    "year": 2021,
+    "arm": "CMA-G",
+    "seed": 223,
+    "content_dims": [
+      16,
+      88,
+      16
+    ],
+    "budget_floats": 123,
+    "parameters": 38442,
+    "final_hash": "0dd08febe222efaf17a2b1134afa826e8e723f21b9227c5a5afc8d0a0e9fbe75"
+  },
+  {
+    "epochs": 18,
+    "best_epoch": 12,
+    "selection_loss": 0.8293764412208653,
+    "train_seconds": 3.4656044589937665,
+    "train_forward_bytes": 335846088,
+    "train_backward_bytes": 327654720,
+    "epoch_validation_bytes": 34219584,
+    "year": 2021,
+    "arm": "CMA-G",
+    "seed": 483,
+    "content_dims": [
+      16,
+      88,
+      16
+    ],
+    "budget_floats": 123,
+    "parameters": 38442,
+    "final_hash": "fa28901a9618257cbb108306eeab23d291c1d437b5c49836bbf509b5f134ffca"
+  },
+  {
+    "epochs": 19,
+    "best_epoch": 13,
+    "selection_loss": 0.8354988130694061,
+    "train_seconds": 3.726437708013691,
+    "train_forward_bytes": 354504204,
+    "train_backward_bytes": 345857760,
+    "epoch_validation_bytes": 36120672,
+    "year": 2021,
+    "arm": "CMA-G",
+    "seed": 907,
+    "content_dims": [
+      16,
+      88,
+      16
+    ],
+    "budget_floats": 123,
+    "parameters": 38442,
+    "final_hash": "4afc9d3a86065bb665ccefaab3a54da314e16aba4f18068d758c484465b44380"
+  },
+  {
+    "epochs": 23,
+    "best_epoch": 17,
+    "selection_loss": 0.830721431395038,
+    "train_seconds": 4.273732500005281,
+    "train_forward_bytes": 446581248,
+    "train_backward_bytes": 436114500,
+    "epoch_validation_bytes": 45502464,
+    "year": 2021,
+    "arm": "FiLM-L",
+    "seed": 42,
+    "content_dims": [
+      16,
+      88,
+      21
+    ],
+    "budget_floats": 128,
+    "parameters": 38666,
+    "final_hash": "cec9168b7bdc7763680ebc53672bd717265bcde901233ecc166ca9dcedd96d47"
+  },
+  {
+    "epochs": 20,
+    "best_epoch": 14,
+    "selection_loss": 0.8297399497459537,
+    "train_seconds": 3.7152198329858948,
+    "train_forward_bytes": 388331520,
+    "train_backward_bytes": 379230000,
+    "epoch_validation_bytes": 39567360,
+    "year": 2021,
+    "arm": "FiLM-L",
+    "seed": 100,
+    "content_dims": [
+      16,
+      88,
+      21
+    ],
+    "budget_floats": 128,
+    "parameters": 38666,
+    "final_hash": "f8e2227ceae33dfdf651895d230a22d73e8d70d06a7fd5a005e9747238e764d7"
+  },
+  {
+    "epochs": 17,
+    "best_epoch": 11,
+    "selection_loss": 0.8291328675646439,
+    "train_seconds": 3.180871832999401,
+    "train_forward_bytes": 330081792,
+    "train_backward_bytes": 322345500,
+    "epoch_validation_bytes": 33632256,
+    "year": 2021,
+    "arm": "FiLM-L",
+    "seed": 17,
+    "content_dims": [
+      16,
+      88,
+      21
+    ],
+    "budget_floats": 128,
+    "parameters": 38666,
+    "final_hash": "d0aa0768fcbe816fcb40816ad351c06002ed963d47f253aca32136126917119c"
+  },
+  {
+    "epochs": 21,
+    "best_epoch": 15,
+    "selection_loss": 0.8245409923867048,
+    "train_seconds": 3.937325292004971,
+    "train_forward_bytes": 407748096,
+    "train_backward_bytes": 398191500,
+    "epoch_validation_bytes": 41545728,
+    "year": 2021,
+    "arm": "FiLM-L",
+    "seed": 223,
+    "content_dims": [
+      16,
+      88,
+      21
+    ],
+    "budget_floats": 128,
+    "parameters": 38666,
+    "final_hash": "25102dd432bde0419c9dac6c02608c68c068070873a3d3235efde534764ab14a"
+  },
+  {
+    "epochs": 17,
+    "best_epoch": 11,
+    "selection_loss": 0.824646506472986,
+    "train_seconds": 3.265752249979414,
+    "train_forward_bytes": 330081792,
+    "train_backward_bytes": 322345500,
+    "epoch_validation_bytes": 33632256,
+    "year": 2021,
+    "arm": "FiLM-L",
+    "seed": 483,
+    "content_dims": [
+      16,
+      88,
+      21
+    ],
+    "budget_floats": 128,
+    "parameters": 38666,
+    "final_hash": "14a399f87fb92ba964c4d7b34f4484cafb484d46a7a1ad3e1ab8c92612ef8e44"
+  },
+  {
+    "epochs": 18,
+    "best_epoch": 12,
+    "selection_loss": 0.8292591676644434,
+    "train_seconds": 3.340117875020951,
+    "train_forward_bytes": 349498368,
+    "train_backward_bytes": 341307000,
+    "epoch_validation_bytes": 35610624,
+    "year": 2021,
+    "arm": "FiLM-L",
+    "seed": 907,
+    "content_dims": [
+      16,
+      88,
+      21
+    ],
+    "budget_floats": 128,
+    "parameters": 38666,
+    "final_hash": "11545dd36b729adb25bc9e34e8b64c4c1dbc4ca61351e5db5ce4922f55e1dfa2"
+  },
+  {
+    "epochs": 15,
+    "best_epoch": 9,
+    "selection_loss": 0.7957957709362227,
+    "train_seconds": 3.050327750010183,
+    "train_forward_bytes": 320924160,
+    "train_backward_bytes": 313402500,
+    "epoch_validation_bytes": 32962560,
+    "year": 2022,
+    "arm": "FiLM-L",
+    "seed": 42,
+    "content_dims": [
+      16,
+      88,
+      21
+    ],
+    "budget_floats": 128,
+    "parameters": 38986,
+    "final_hash": "053b9db5065ade8dd22a4045bb12730e68464871b98bd56e0fff88c881a2d0b9"
+  },
+  {
+    "epochs": 17,
+    "best_epoch": 11,
+    "selection_loss": 0.7989004648817595,
+    "train_seconds": 3.5467179999977816,
+    "train_forward_bytes": 363714048,
+    "train_backward_bytes": 355189500,
+    "epoch_validation_bytes": 37357568,
+    "year": 2022,
+    "arm": "FiLM-L",
+    "seed": 100,
+    "content_dims": [
+      16,
+      88,
+      21
+    ],
+    "budget_floats": 128,
+    "parameters": 38986,
+    "final_hash": "ace8fde4495f48c6436d386af1141e8fc594fb2e79b053c150484963df99f0b1"
+  },
+  {
+    "epochs": 19,
+    "best_epoch": 13,
+    "selection_loss": 0.795652402419562,
+    "train_seconds": 3.995401416992536,
+    "train_forward_bytes": 406503936,
+    "train_backward_bytes": 396976500,
+    "epoch_validation_bytes": 41752576,
+    "year": 2022,
+    "arm": "FiLM-L",
+    "seed": 17,
+    "content_dims": [
+      16,
+      88,
+      21
+    ],
+    "budget_floats": 128,
+    "parameters": 38986,
+    "final_hash": "70f9b0610af0396d50d644e46fe1eb983bfa93f3cf3269fbad8f6d0a40a0da87"
+  },
+  {
+    "epochs": 16,
+    "best_epoch": 10,
+    "selection_loss": 0.7961433389046743,
+    "train_seconds": 3.5796473329828586,
+    "train_forward_bytes": 342319104,
+    "train_backward_bytes": 334296000,
+    "epoch_validation_bytes": 35160064,
+    "year": 2022,
+    "arm": "FiLM-L",
+    "seed": 223,
+    "content_dims": [
+      16,
+      88,
+      21
+    ],
+    "budget_floats": 128,
+    "parameters": 38986,
+    "final_hash": "ef6287a4957b5415864bf1124002173fd3f8111133a34eec5deb60f1885e40fe"
+  },
+  {
+    "epochs": 19,
+    "best_epoch": 13,
+    "selection_loss": 0.7939626762699321,
+    "train_seconds": 3.8550564170000143,
+    "train_forward_bytes": 406503936,
+    "train_backward_bytes": 396976500,
+    "epoch_validation_bytes": 41752576,
+    "year": 2022,
+    "arm": "FiLM-L",
+    "seed": 483,
+    "content_dims": [
+      16,
+      88,
+      21
+    ],
+    "budget_floats": 128,
+    "parameters": 38986,
+    "final_hash": "241dcc1895ec656fbea1429ddbad8c8196cd43bbc2d455d15903efb0f6f08b2b"
+  },
+  {
+    "epochs": 18,
+    "best_epoch": 12,
+    "selection_loss": 0.7963180256632022,
+    "train_seconds": 3.6713635829801206,
+    "train_forward_bytes": 385108992,
+    "train_backward_bytes": 376083000,
+    "epoch_validation_bytes": 39555072,
+    "year": 2022,
+    "arm": "FiLM-L",
+    "seed": 907,
+    "content_dims": [
+      16,
+      88,
+      21
+    ],
+    "budget_floats": 128,
+    "parameters": 38986,
+    "final_hash": "b0e161d1443ffab2eaa59b7b8a59a358c69602d35cce71ba911ce377e42a890e"
+  }
+]

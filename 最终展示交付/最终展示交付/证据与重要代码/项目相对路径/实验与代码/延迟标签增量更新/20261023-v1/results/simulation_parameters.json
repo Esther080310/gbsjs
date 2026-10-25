@@ -1,0 +1,48 @@
+{
+  "feature_column_indices": [
+    [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  ],
+  "n_initial": 3000,
+  "n_new": 1000,
+  "n_test": 2000,
+  "finite_snapshot_positive_rate": 0.15436513721942902,
+  "old_initial_recording_probability": 0.8664914965629578,
+  "old_updated_recording_probability": 0.9166467785835266,
+  "new_recording_probability": 0.679411768913269,
+  "mechanisms": [
+    "stable",
+    "head_shift",
+    "new_coordinates"
+  ],
+  "signal_scale": 1.5,
+  "note": "empirical feature resampling plus imposed response/delay; not a fitted real-world mechanism"
+}

@@ -1,0 +1,20 @@
+{
+  "epochs": 23,
+  "best_epoch": 17,
+  "selection_loss": 0.8801048979333339,
+  "train_seconds": 3.936563416995341,
+  "train_forward_bytes": 387606948,
+  "train_backward_bytes": 378153120,
+  "epoch_validation_bytes": 41529720,
+  "year": 2020,
+  "arm": "CMA-G",
+  "seed": 42,
+  "content_dims": [
+    16,
+    88,
+    16
+  ],
+  "budget_floats": 123,
+  "parameters": 38314,
+  "final_hash": "7b939d0e96a93c3b58aac224cf7e2708760437b23d99dbcae36a015632222d1f"
+}

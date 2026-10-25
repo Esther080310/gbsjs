@@ -1,0 +1,137 @@
+{
+  "years": [
+    {
+      "rows": 4292,
+      "positives": 787,
+      "budget": 430,
+      "found": 258,
+      "recall": 0.3278271918678526,
+      "precision": 0.6,
+      "eligible_selected_positives": 258,
+      "conditional_top2_hit": 0.875968992248062,
+      "common_top2_hit": 0.8488372093023255,
+      "type_macro_coverage": 0.07322277770841226,
+      "common_macro_coverage": 0.07170315810715366,
+      "year": 2020,
+      "predictor": "six_seed_mean_calibrated_logit",
+      "common_type_1": "P2599",
+      "common_type_2": "P2504"
+    },
+    {
+      "rows": 4794,
+      "positives": 747,
+      "budget": 480,
+      "found": 227,
+      "recall": 0.3038821954484605,
+      "precision": 0.47291666666666665,
+      "eligible_selected_positives": 227,
+      "conditional_top2_hit": 0.8854625550660793,
+      "common_top2_hit": 0.8722466960352423,
+      "type_macro_coverage": 0.06428032683846638,
+      "common_macro_coverage": 0.06243243243243244,
+      "year": 2021,
+      "predictor": "six_seed_mean_calibrated_logit",
+      "common_type_1": "P2599",
+      "common_type_2": "P2504"
+    },
+    {
+      "rows": 5199,
+      "positives": 629,
+      "budget": 520,
+      "found": 210,
+      "recall": 0.3338632750397456,
+      "precision": 0.40384615384615385,
+      "eligible_selected_positives": 209,
+      "conditional_top2_hit": 0.8564593301435407,
+      "common_top2_hit": 0.8660287081339713,
+      "type_macro_coverage": 0.0658789515206742,
+      "common_macro_coverage": 0.06936475998850244,
+      "year": 2022,
+      "predictor": "six_seed_mean_calibrated_logit",
+      "common_type_1": "P2599",
+      "common_type_2": "P2504"
+    }
+  ],
+  "three_year_equal_weight": {
+    "conditional_ap": 0.2874869835671121,
+    "joint_ap": 0.1347197298072049,
+    "coverage": 0.06779401868918428,
+    "common_coverage": 0.06783345017602951
+  },
+  "three_year_mean_application": {
+    "recall": 0.3218575541186863,
+    "precision": 0.4922542735042734,
+    "conditional_top2_hit": 0.8726302924858941,
+    "common_top2_hit": 0.8623708711571796,
+    "type_macro_coverage": 0.06779401868918428,
+    "common_macro_coverage": 0.06783345017602951
+  },
+  "major_industries": [
+    "C",
+    "D",
+    "E",
+    "F",
+    "I",
+    "K",
+    "L",
+    "N"
+  ],
+  "other_industries": [
+    "A",
+    "B",
+    "G",
+    "H",
+    "J",
+    "M",
+    "O",
+    "P",
+    "Q",
+    "R",
+    "S"
+  ],
+  "industry_analysis_years": [
+    2020,
+    2021
+  ],
+  "aggregation_sensitivity": [
+    {
+      "year": 2020,
+      "budget": 430,
+      "mean_logit_hits": 258,
+      "mean_probability_hits": 258,
+      "risk_list_overlap": 430,
+      "risk_list_changed_members": 0,
+      "risk_list_jaccard": 1.0,
+      "top2_same_all_rows": 0.9986020503261882,
+      "top2_same_on_canonical_list": 0.9976744186046511,
+      "max_overall_probability_difference": 0.036877619770512876,
+      "max_type_probability_difference": 0.026729170363945023
+    },
+    {
+      "year": 2021,
+      "budget": 480,
+      "mean_logit_hits": 227,
+      "mean_probability_hits": 227,
+      "risk_list_overlap": 478,
+      "risk_list_changed_members": 4,
+      "risk_list_jaccard": 0.991701244813278,
+      "top2_same_all_rows": 0.9974968710888611,
+      "top2_same_on_canonical_list": 1.0,
+      "max_overall_probability_difference": 0.020254176058360357,
+      "max_type_probability_difference": 0.017212456897677916
+    },
+    {
+      "year": 2022,
+      "budget": 520,
+      "mean_logit_hits": 210,
+      "mean_probability_hits": 210,
+      "risk_list_overlap": 517,
+      "risk_list_changed_members": 6,
+      "risk_list_jaccard": 0.988527724665392,
+      "top2_same_all_rows": 0.9969224850932872,
+      "top2_same_on_canonical_list": 0.9961538461538462,
+      "max_overall_probability_difference": 0.026222520611454928,
+      "max_type_probability_difference": 0.015995736979255326
+    }
+  ]
+}

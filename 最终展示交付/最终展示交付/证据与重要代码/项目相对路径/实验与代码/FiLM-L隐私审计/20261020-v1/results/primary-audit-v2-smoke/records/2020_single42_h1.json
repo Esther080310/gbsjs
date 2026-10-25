@@ -1,0 +1,146 @@
+{
+  "year": 2020,
+  "scope": "single42",
+  "view": "h1",
+  "attack_input_dimensions": 16,
+  "target_dimensions": 19,
+  "fold_rows": {
+    "train0": 512,
+    "select1": 512,
+    "test3": 512
+  },
+  "ridge_selection": [
+    {
+      "alpha": 0.1,
+      "selection_nrmse": 3.466840798742524
+    },
+    {
+      "alpha": 1.0,
+      "selection_nrmse": 3.658248810832399
+    }
+  ],
+  "mlp_selection": {
+    "best_epoch": 2,
+    "selection_nrmse": 4.6859721378611585,
+    "history": [
+      {
+        "epoch": 1,
+        "train_mse": 0.9100686311721802,
+        "selection_nrmse": 4.693863337998192
+      },
+      {
+        "epoch": 2,
+        "train_mse": 0.8980261087417603,
+        "selection_nrmse": 4.6859721378611585
+      }
+    ]
+  },
+  "attacker_selection_nrmse": {
+    "ridge": 3.466840798742524,
+    "mlp": 4.6859721378611585
+  },
+  "selected_attacker": "ridge",
+  "test_metrics": {
+    "constant": {
+      "macro_nrmse_all": 6.416836511313738,
+      "macro_nrmse_numeric": 11.048642478654637,
+      "macro_nrmse_binary": 0.04810330622000257,
+      "macro_r2": -4.7541245357119415,
+      "macro_spearman": NaN,
+      "fields": 19,
+      "binary_fields": 8,
+      "x1_macro_nrmse": 6.416836511313738
+    },
+    "ridge": {
+      "macro_nrmse_all": 5.281352178265639,
+      "macro_nrmse_numeric": 7.842781202303019,
+      "macro_nrmse_binary": 1.7593872702142417,
+      "macro_r2": -1.005655234957324,
+      "macro_spearman": 0.5155884821316736,
+      "fields": 19,
+      "binary_fields": 8,
+      "x1_macro_nrmse": 5.281352178265639
+    },
+    "mlp": {
+      "macro_nrmse_all": 6.731323571107814,
+      "macro_nrmse_numeric": 11.200553336687996,
+      "macro_nrmse_binary": 0.5861326434350624,
+      "macro_r2": -4.818846121587622,
+      "macro_spearman": -0.08283907027112246,
+      "fields": 19,
+      "binary_fields": 8,
+      "x1_macro_nrmse": 6.731323571107814
+    }
+  },
+  "selected_gain_vs_constant": {
+    "estimate": 1.1266510486602783,
+    "ci95": [
+      0.8470860823988915,
+      1.4328435629606247
+    ],
+    "null": 0.0,
+    "lower_above_null": true,
+    "replicates": 500,
+    "point_estimate": 1.1354843330480993
+  },
+  "attribute_macro_auc": null,
+  "attribute_fields_point": [],
+  "direct_attribute_attack": {
+    "solver": "multi-output linear logistic head, AdamW L2",
+    "learning_rate": 0.01,
+    "weight_decay": 0.0001,
+    "positive_weight_cap": 20.0,
+    "best_epoch": 2,
+    "selection_loss": 0.44901424646377563,
+    "history": [
+      {
+        "epoch": 1,
+        "train_loss": 1.0007301568984985,
+        "selection_loss": 0.457167387008667
+      },
+      {
+        "epoch": 2,
+        "train_loss": 0.9265724420547485,
+        "selection_loss": 0.44901424646377563
+      }
+    ],
+    "registered_fields": 4,
+    "variable_train_fields": 4,
+    "evaluable_test_fields": 0
+  },
+  "reconstruction_attribute_fields_point": [],
+  "subgroups": {
+    "seen_company": {
+      "rows": 453,
+      "share": 0.884765625,
+      "constant_nrmse": 6.0535086306325745,
+      "selected_nrmse": 5.138440808516357,
+      "gain_vs_constant": 0.9150678221162174,
+      "attribute_macro_auc": null,
+      "attribute_fields": 0
+    },
+    "unseen_company": {
+      "rows": 59,
+      "share": 0.115234375,
+      "constant_nrmse": 8.484987598563142,
+      "selected_nrmse": 6.196921002477131,
+      "gain_vs_constant": 2.2880665960860114,
+      "attribute_macro_auc": null,
+      "attribute_fields": 0
+    }
+  },
+  "statistical_recoverability_detected": true,
+  "leakage_criterion_met": true,
+  "practical_thresholds": {
+    "nrmse_gain": 0.05,
+    "attribute_auc": 0.6
+  },
+  "pca_reference": {
+    "not_run_in_primary_stage": true
+  },
+  "random_projection_reference": {
+    "not_run_in_primary_stage": true
+  },
+  "elapsed_seconds": 0.8460044999956153,
+  "target_semantics": "preprocessed_model_input"
+}

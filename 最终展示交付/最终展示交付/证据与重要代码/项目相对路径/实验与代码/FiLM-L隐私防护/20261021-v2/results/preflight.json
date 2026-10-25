@@ -1,0 +1,10 @@
+{
+  "head42_forward_exact": true,
+  "dcor_identity_and_finite_gradient": true,
+  "mid_repeat_transcript_exact": true,
+  "folds_loaded": [
+    0,
+    1
+  ],
+  "protocol_sha": "882c570e3693c5d547e648660de4d1be3fe62767ac929c330ad98261dd2819b5"
+}

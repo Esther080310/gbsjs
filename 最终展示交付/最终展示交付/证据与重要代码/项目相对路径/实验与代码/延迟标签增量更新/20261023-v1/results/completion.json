@@ -1,0 +1,8 @@
+{
+  "status": "complete",
+  "real_initial_models": 3,
+  "real_retrains": 3,
+  "real_head_updates": 6,
+  "simulation_settings": 9,
+  "protocol_sha256": "807adc6f6e4f2847328f51872f326949b317ab386c001aec4df76c100570815b"
+}

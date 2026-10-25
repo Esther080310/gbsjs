@@ -1,0 +1,39 @@
+{
+  "status": "hypothesis, not trained",
+  "move_from_solv": [
+    "F011201A",
+    "F011601A",
+    "F011701A",
+    "F011801A",
+    "F020502A"
+  ],
+  "move_from_oper": [
+    "F041701B",
+    "F041702B",
+    "F041703B"
+  ],
+  "group_order": [
+    "其余偿债",
+    "其余营运",
+    "盈利—周转—杠杆联结"
+  ],
+  "content_dimensions": [
+    11,
+    10,
+    10
+  ],
+  "metadata_dimensions": 1,
+  "random_control_seed": 20261007,
+  "control_move_from_solv": [
+    "solv__F010401A",
+    "solv__F011901A",
+    "solv__F012601B",
+    "solv__F010901B",
+    "solv__F012001A"
+  ],
+  "control_move_from_oper": [
+    "oper__F040703B",
+    "oper__F040602B",
+    "oper__F041003B"
+  ]
+}

@@ -1,0 +1,33 @@
+[study]
+version = "20261016-evidence-v1-audit-distributed"
+output = "artifacts/experiments/20261016-evidence-v1/audit_information/distributed"
+budgets = [32, 64, 128]
+evaluation_years = [2020, 2021]
+pilot_seeds = [42, 100]
+expansion_seeds = [17, 223, 483, 907]
+arms = ["U0", "UM", "UA"]
+
+[model]
+append_node = "X3"
+audit_seed_offset = 2000
+audit_hidden = 16
+audit_activation = "Linear7to16 ReLU Linear16tod3 Tanh; no Dropout"
+original_q_unchanged = true
+audit_gate = "h3=h_exec+r*a([r,c]); independent of executive state"
+
+[training]
+threads = 4
+optimizer = "original AdamW lr .001 weight_decay .0001 batch1024 max30 patience6 clipnorm1"
+selector = "original fold1 proper BCE"
+calibration = "original fold2 overall Platt and type shrinkage"
+
+[selection]
+capacity_score = "four pilot cells mean UA fold1 proper BCE"
+tie_tolerance = 0.0001
+tie_preference = "smaller total message budget"
+expansion_comparison = "selected_capacity_UA minus D32_U0"
+per_year_mean_maximum = 0.0
+macro_mean_maximum = -0.001
+expand_groups = "selected capacity and D32 reference, all U0/UM/UA arms; deduplicate D32"
+read_fold3_after_selection_and_gate = true
+global_improvement_is_prerequisite = false

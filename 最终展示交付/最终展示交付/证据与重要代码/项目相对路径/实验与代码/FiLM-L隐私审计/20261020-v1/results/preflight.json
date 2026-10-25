@@ -1,0 +1,91 @@
+{
+  "status": "preflight_only_no_formal_attack_metrics",
+  "formal_target_split_opened": false,
+  "year": 2020,
+  "seed": 42,
+  "rows_used_from_attack_training_split": 384,
+  "source_input_shapes": [
+    [
+      34253,
+      19
+    ],
+    [
+      34253,
+      238
+    ],
+    [
+      34253,
+      23
+    ]
+  ],
+  "message_shapes": {
+    "h1": [
+      384,
+      16
+    ],
+    "h2": [
+      384,
+      88
+    ],
+    "h2_post": [
+      384,
+      88
+    ],
+    "h3": [
+      384,
+      21
+    ],
+    "c": [
+      384,
+      8
+    ],
+    "r": [
+      384,
+      1
+    ],
+    "q": [
+      384,
+      3
+    ],
+    "deployment_view": [
+      384,
+      138
+    ],
+    "implementation_view": [
+      384,
+      129
+    ]
+  },
+  "six_model_deployment_joint_view_shape": [
+    64,
+    803
+  ],
+  "six_model_implementation_joint_view_shape": [
+    64,
+    754
+  ],
+  "six_model_seed_blocks_nonidentical": true,
+  "six_model_max_abs_difference_vs_seed42": [
+    5.2982072830200195,
+    5.338586807250977,
+    7.844224452972412,
+    5.09789514541626,
+    3.914341926574707
+  ],
+  "canonical_forward_messages_exact": true,
+  "ridge_shape_smoke_passed": true,
+  "implementation_payload_floats_excluding_industry": 128,
+  "declared_deployment_payload_floats_excluding_industry": 137,
+  "declared_deployment_protocol_floats_with_audit_control_and_q": 137,
+  "report_accounting_floats_if_industry_excluded_as_public_context": 137,
+  "six_model_deployment_joint_attack_features_excluding_public_industry": 802,
+  "six_model_implementation_joint_attack_features_excluding_public_industry": 753,
+  "six_model_deployment_physical_payload_floats_without_deduplication": 822,
+  "six_model_implementation_physical_payload_floats_without_deduplication": 768,
+  "note": "The report's 137-float accounting counts 128 main-message floats plus c(8)+r(1). The explicit deployment tensor here contains h1(16)+h2(88)+h3(21)+q(3)+c(8)+r(1)=137; industry is appended only for attack-view construction and is excluded from payload accounting.",
+  "source_sha256": {
+    "/Users/how/Desktop/分布式企业违规检测/实验与代码/控制消息架构/20261018-v1/ablation_lib.py": "6d7be1b0a38b349762d7aa8c922b0398df792bd799f885b84785ef2a0c3be530",
+    "/Users/how/Desktop/分布式企业违规检测/实验与代码/控制消息架构/20261018-v1/cma_lib.py": "437e3fb23c6e40021188e81a98d16f2f2bf8520f3b30247bd5d0682d9511649e",
+    "/Users/how/Desktop/分布式企业违规检测/实验与代码/控制消息架构/20261018-v1/artifacts/2020/FiLM-L_s42/model.pt": "4a0b8503ab651f0856b53b32abf39d2bd72e07d499d29974490428029fb3233e"
+  }
+}

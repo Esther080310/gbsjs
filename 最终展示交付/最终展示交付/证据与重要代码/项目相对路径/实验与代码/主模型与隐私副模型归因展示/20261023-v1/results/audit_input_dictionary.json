@@ -1,0 +1,63 @@
+{
+  "feature_names": [
+    "audit::unique_company_year_match",
+    "audit::standard_unqualified",
+    "audit::unqualified_with_explanation",
+    "audit::qualified",
+    "audit::adverse",
+    "audit::disclaimer_or_refusal",
+    "audit::unknown"
+  ],
+  "patterns": [
+    {
+      "audit::unique_company_year_match": 1.0,
+      "audit::standard_unqualified": 1.0,
+      "audit::unqualified_with_explanation": 0.0,
+      "audit::qualified": 0.0,
+      "audit::adverse": 0.0,
+      "audit::disclaimer_or_refusal": 0.0,
+      "audit::unknown": 0.0,
+      "rows": 3357
+    },
+    {
+      "audit::unique_company_year_match": 1.0,
+      "audit::standard_unqualified": 0.0,
+      "audit::unqualified_with_explanation": 1.0,
+      "audit::qualified": 0.0,
+      "audit::adverse": 0.0,
+      "audit::disclaimer_or_refusal": 0.0,
+      "audit::unknown": 0.0,
+      "rows": 101
+    },
+    {
+      "audit::unique_company_year_match": 0.0,
+      "audit::standard_unqualified": 0.0,
+      "audit::unqualified_with_explanation": 0.0,
+      "audit::qualified": 0.0,
+      "audit::adverse": 0.0,
+      "audit::disclaimer_or_refusal": 0.0,
+      "audit::unknown": 0.0,
+      "rows": 92
+    },
+    {
+      "audit::unique_company_year_match": 1.0,
+      "audit::standard_unqualified": 0.0,
+      "audit::unqualified_with_explanation": 0.0,
+      "audit::qualified": 1.0,
+      "audit::adverse": 0.0,
+      "audit::disclaimer_or_refusal": 0.0,
+      "audit::unknown": 0.0,
+      "rows": 82
+    },
+    {
+      "audit::unique_company_year_match": 1.0,
+      "audit::standard_unqualified": 0.0,
+      "audit::unqualified_with_explanation": 0.0,
+      "audit::qualified": 0.0,
+      "audit::adverse": 0.0,
+      "audit::disclaimer_or_refusal": 1.0,
+      "audit::unknown": 0.0,
+      "rows": 38
+    }
+  ]
+}

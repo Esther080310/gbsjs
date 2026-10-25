@@ -1,0 +1,100 @@
+{
+  "new_trainings": 0,
+  "corrected_model_versions": 12,
+  "global_versions": 12,
+  "protocol_configurations": 60,
+  "timing_replays": 180,
+  "source_hashes_unchanged": true,
+  "feature_cache_exact": true,
+  "saved_logits_and_calibrated_probabilities_exact": true,
+  "codec_actual_frames_roundtrip": true,
+  "repeated_protocol_predictions_exact": true,
+  "main_target": "epsilon=.001, top10% list and selected Top2 set",
+  "timing_scope": "in-memory encode/compress/decode/fuse/bounds/request; excludes local encoder, disk and actual network",
+  "model_inventory": [
+    {
+      "year": 2020,
+      "seed": 42,
+      "source_model": "/Users/how/Desktop/分布式企业违规检测/实验与代码/财务年度配对修正/results/2020/S32_s42",
+      "feature_cache_reproduced": true,
+      "model_probabilities_reproduced": true
+    },
+    {
+      "year": 2020,
+      "seed": 100,
+      "source_model": "/Users/how/Desktop/分布式企业违规检测/实验与代码/财务年度配对修正/results/2020/S32_s100",
+      "feature_cache_reproduced": true,
+      "model_probabilities_reproduced": true
+    },
+    {
+      "year": 2020,
+      "seed": 17,
+      "source_model": "/Users/how/Desktop/分布式企业违规检测/实验与代码/财务年度配对修正/results/2020/S32_s17",
+      "feature_cache_reproduced": true,
+      "model_probabilities_reproduced": true
+    },
+    {
+      "year": 2020,
+      "seed": 223,
+      "source_model": "/Users/how/Desktop/分布式企业违规检测/实验与代码/财务年度配对修正/results/2020/S32_s223",
+      "feature_cache_reproduced": true,
+      "model_probabilities_reproduced": true
+    },
+    {
+      "year": 2020,
+      "seed": 483,
+      "source_model": "/Users/how/Desktop/分布式企业违规检测/实验与代码/财务年度配对修正/results/2020/S32_s483",
+      "feature_cache_reproduced": true,
+      "model_probabilities_reproduced": true
+    },
+    {
+      "year": 2020,
+      "seed": 907,
+      "source_model": "/Users/how/Desktop/分布式企业违规检测/实验与代码/财务年度配对修正/results/2020/S32_s907",
+      "feature_cache_reproduced": true,
+      "model_probabilities_reproduced": true
+    },
+    {
+      "year": 2021,
+      "seed": 42,
+      "source_model": "/Users/how/Desktop/分布式企业违规检测/实验与代码/财务年度配对修正/results/2021/S32_s42",
+      "feature_cache_reproduced": true,
+      "model_probabilities_reproduced": true
+    },
+    {
+      "year": 2021,
+      "seed": 100,
+      "source_model": "/Users/how/Desktop/分布式企业违规检测/实验与代码/财务年度配对修正/results/2021/S32_s100",
+      "feature_cache_reproduced": true,
+      "model_probabilities_reproduced": true
+    },
+    {
+      "year": 2021,
+      "seed": 17,
+      "source_model": "/Users/how/Desktop/分布式企业违规检测/实验与代码/财务年度配对修正/results/2021/S32_s17",
+      "feature_cache_reproduced": true,
+      "model_probabilities_reproduced": true
+    },
+    {
+      "year": 2021,
+      "seed": 223,
+      "source_model": "/Users/how/Desktop/分布式企业违规检测/实验与代码/财务年度配对修正/results/2021/S32_s223",
+      "feature_cache_reproduced": true,
+      "model_probabilities_reproduced": true
+    },
+    {
+      "year": 2021,
+      "seed": 483,
+      "source_model": "/Users/how/Desktop/分布式企业违规检测/实验与代码/财务年度配对修正/results/2021/S32_s483",
+      "feature_cache_reproduced": true,
+      "model_probabilities_reproduced": true
+    },
+    {
+      "year": 2021,
+      "seed": 907,
+      "source_model": "/Users/how/Desktop/分布式企业违规检测/实验与代码/财务年度配对修正/results/2021/S32_s907",
+      "feature_cache_reproduced": true,
+      "model_probabilities_reproduced": true
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "source_files_checked": 1506,
+  "source_hash_mismatches": [],
+  "main_ranking_matches_classification": [
+    {
+      "year": 2020,
+      "rows": 4292,
+      "positives": 787,
+      "budget": 430,
+      "found": 258
+    },
+    {
+      "year": 2021,
+      "rows": 4794,
+      "positives": 747,
+      "budget": 480,
+      "found": 227
+    },
+    {
+      "year": 2022,
+      "rows": 5199,
+      "positives": 629,
+      "budget": 520,
+      "found": 210
+    }
+  ],
+  "communication_payload_checked": [
+    3205,
+    899
+  ],
+  "privacy_five_seed_means": [
+    {
+      "arm": "S0",
+      "recall": 0.3012687427912341,
+      "guess_success": 0.751519661415541
+    },
+    {
+      "arm": "D1",
+      "recall": 0.2934256055363322,
+      "guess_success": 0.6526772602504686
+    },
+    {
+      "arm": "MID",
+      "recall": 0.2931949250288351,
+      "guess_success": 0.5472871051116162
+    }
+  ],
+  "figure_index_rows": 20,
+  "portable_plot_smoke": {
+    "independent_temporary_directory": true,
+    "without_training_tree": true,
+    "png_count": 20,
+    "all_scripts_completed": true
+  },
+  "new_training": false
+}

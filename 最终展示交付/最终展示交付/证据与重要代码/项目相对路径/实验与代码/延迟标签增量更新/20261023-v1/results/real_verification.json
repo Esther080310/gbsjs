@@ -1,0 +1,9 @@
+{
+  "saved_score_recomputations": 24,
+  "all_exact": true,
+  "no_target_label_used_for_training": true,
+  "protocol_sha256": "807adc6f6e4f2847328f51872f326949b317ab386c001aec4df76c100570815b",
+  "source_sha256": "96c643a659bc56eb4e5a8e713a736aa5797b5d19e0fd3f7a626d21a7526b15cf",
+  "frozen_models_modified": false,
+  "accounting_revision": "Backward logical payload includes 8-dimensional audit-control gradient; training algorithm unchanged."
+}

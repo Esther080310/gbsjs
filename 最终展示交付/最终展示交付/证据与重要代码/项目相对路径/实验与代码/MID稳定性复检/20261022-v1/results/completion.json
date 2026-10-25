@@ -1,0 +1,14 @@
+{
+  "status": "complete",
+  "seconds": 254.78027041599853,
+  "seeds": [
+    100,
+    17,
+    223,
+    483,
+    907
+  ],
+  "new_predictor_count": 5,
+  "protocol_sha256": "e0f589e8372e89d95bd88e280bd72c748ff6d25c18bd7d9c5e6ad71820f9e88a",
+  "source_sha256": "97f12bc762befde73bc9aa5a7f408ecaf0275394e34c0dbd1e5e0e294051176f"
+}

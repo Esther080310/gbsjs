@@ -1,0 +1,66 @@
+{
+  "status": "complete",
+  "selection_sha": "93384ba3d2476d26e1eeb8db6316cc8326190411a1cff37172073035d28b9554",
+  "results": [
+    {
+      "arm": "S0",
+      "task": {
+        "rows": 4292,
+        "positives": 787,
+        "budget": 430,
+        "found": 251,
+        "recall_at_10pct": 0.3189326556543837,
+        "precision_at_10pct": 0.5837209302325581,
+        "overall_average_precision": 0.4781401677416609,
+        "eligible_selected_positives": 251,
+        "conditional_top2_hit": 0.8725099601593626,
+        "common_top2_hit": 0.8764940239043825,
+        "type_macro_coverage": 0.07216384130103567,
+        "common_macro_coverage": 0.0730400565028756,
+        "conditional_type_macro_ap": 0.3079881288596047
+      },
+      "privacy": [
+        {
+          "view": "full_deployment",
+          "gain": 0.691429396797307,
+          "auc": 0.9987665427650199,
+          "practical_leakage": true
+        },
+        {
+          "view": "public_side_only",
+          "gain": 0.2245432103093562,
+          "auc": 0.966613721675112,
+          "practical_leakage": true
+        },
+        {
+          "view": "h1",
+          "gain": 0.5626380600940555,
+          "auc": 0.9924496179581321,
+          "practical_leakage": true
+        },
+        {
+          "view": "h2",
+          "gain": 0.7457093330223629,
+          "auc": 0.9989345480155217,
+          "practical_leakage": true
+        },
+        {
+          "view": "h3",
+          "gain": 0.8820793492817487,
+          "auc": 0.9982082456053791,
+          "practical_leakage": true
+        }
+      ],
+      "payload_fp32_bytes": 545,
+      "shared_message_dimensions": 137,
+      "public_industry_transmitted_separately": true
+    }
+  ],
+  "folds_used": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "year": 2020
+}

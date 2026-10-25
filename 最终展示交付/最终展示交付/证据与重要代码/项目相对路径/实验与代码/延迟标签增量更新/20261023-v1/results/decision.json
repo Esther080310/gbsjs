@@ -1,0 +1,14 @@
+{
+  "FINETUNE": {
+    "retrain_recall_difference_pp": -1.1083741982777895,
+    "old_retention_difference_pp": -1.7429197827974974,
+    "time_saving_percent": 97.8452069814977,
+    "three_engineering_targets_met": false
+  },
+  "REPLAY": {
+    "retrain_recall_difference_pp": -0.6157636642456055,
+    "old_retention_difference_pp": 0.2178654074668912,
+    "time_saving_percent": 97.89676703620565,
+    "three_engineering_targets_met": true
+  }
+}

@@ -1,0 +1,27 @@
+[study]
+version = "20261016-evidence-v1-audit-information"
+evaluation_years = [2020, 2021]
+pilot_seeds = [42, 100]
+expansion_seeds = [17, 223, 483, 907]
+arms = ["U0", "UM", "UA"]
+output = "artifacts/experiments/20261016-evidence-v1/audit_information/global"
+append_node = 2
+append_node_name = "X3"
+current_snapshot_retrospective = true
+
+[training]
+threads = 4
+backbone = "RiskModel(pack,0,'Plain',seed)"
+old_x_q_labels_events_unchanged = true
+auxiliary_loss = false
+new_financial_amount_features = false
+selector = "original fold1 proper BCE"
+calibration = "original fold2 Platt and type shrinkage"
+
+[gate]
+candidate = "UA"
+reference = "UM"
+per_year_mean_maximum = 0.0
+macro_mean_maximum = -0.001
+expands_global_only = true
+constrains_distributed_experiments = false

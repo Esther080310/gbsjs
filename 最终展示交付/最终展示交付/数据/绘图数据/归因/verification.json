@@ -1,0 +1,16 @@
+{
+  "Main_additivity": 1.4338063669683265e-07,
+  "Main_unmatched_branch_max_error": 0.0,
+  "S0_additivity": 9.5367431640625e-07,
+  "S0_unmatched_branch_max_error": 0.0,
+  "MID_additivity": 9.536743168503392e-07,
+  "MID_unmatched_branch_max_error": 0.0,
+  "node_summary_axis_check": true,
+  "font": "Microsoft YaHei",
+  "new_training": false,
+  "figures": 5,
+  "all_node_share_sums_100": true,
+  "visual_review": "5张图均已逐张查看；修正节点占比文字与种子点重叠、案例图例与数据重叠和范围裁切。",
+  "report_control_char_check": true,
+  "formula_check": true
+}

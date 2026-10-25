@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="739.8pt" height="381.551987pt" viewBox="0 0 739.8 381.551987" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-24T23:39:46.485655</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 381.551987 
+L 739.8 381.551987 
+L 739.8 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 23.94 198.468 
+L 169.02 198.468 
+L 169.02 93.132 
+L 23.94 93.132 
+z
+" clip-path="url(#p842b020b30)" style="fill: #ffffff; stroke: #17324d; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 171.018501 145.8 
+Q 185.75816 145.8 199.156179 145.8 
+" clip-path="url(#p842b020b30)" style="fill: none; stroke: #5d6977; stroke-width: 1.2; stroke-linecap: round"/>
+    <path d="M 194.356179 143.4 
+L 199.156179 145.8 
+L 194.356179 148.2 
+z
+" clip-path="url(#p842b020b30)" style="fill: #5d6977; stroke: #5d6977; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 202.5 198.468 
+L 453.6 198.468 
+L 453.6 93.132 
+L 202.5 93.132 
+z
+" clip-path="url(#p842b020b30)" style="fill: #ffffff; stroke: #287c7e; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 455.596798 145.8 
+Q 471.731393 145.8 486.524348 145.8 
+" clip-path="url(#p842b020b30)" style="fill: none; stroke: #5d6977; stroke-width: 1.2; stroke-linecap: round"/>
+    <path d="M 481.724348 143.4 
+L 486.524348 145.8 
+L 481.724348 148.2 
+z
+" clip-path="url(#p842b020b30)" style="fill: #5d6977; stroke: #5d6977; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 489.87 198.468 
+L 713.07 198.468 
+L 713.07 93.132 
+L 489.87 93.132 
+z
+" clip-path="url(#p842b020b30)" style="fill: #ffffff; stroke: #17324d; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 23.94 323.208 
+L 453.6 323.208 
+L 453.6 234.504 
+L 23.94 234.504 
+z
+" clip-path="url(#p842b020b30)" style="fill: #ffffff; stroke: #287c7e; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 489.87 323.208 
+L 713.07 323.208 
+L 713.07 234.504 
+L 489.87 234.504 
+z
+" clip-path="url(#p842b020b30)" style="fill: #ffffff; stroke: #bc6138; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 601.47 200.469511 
+Q 601.47 216.487574 601.47 231.163996 
+" clip-path="url(#p842b020b30)" style="fill: none; stroke: #bc6138; stroke-width: 1.2; stroke-linecap: round"/>
+    <path d="M 603.87 226.363996 
+L 601.47 231.163996 
+L 599.07 226.363996 
+z
+" clip-path="url(#p842b020b30)" style="fill: #bc6138; stroke: #bc6138; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 18px; font-family: 'Microsoft YaHei'; text-anchor: start; fill: #17324d" x="23.94" y="40.102988" transform="rotate(-0 23.94 40.102988)">隐私副模型  学习带随机性的节点表示</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 10.4px; font-family: 'Microsoft YaHei'; text-anchor: start; fill: #5d6977" x="23.94" y="60.331875" transform="rotate(-0 23.94 60.331875)">MID随机瓶颈用于三个内容编码器；审计控制码等消息也纳入攻击者可见范围</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei'; text-anchor: middle; fill: #17324d" x="96.48" y="110.495555" transform="rotate(-0 96.48 110.495555)">本地原始数据</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 10.4px; font-family: 'Microsoft YaHei'; fill: #17324d" transform="translate(54.68175 153.8926)">市场 / 财务 / 治理</text>
+    <text style="font-size: 10.4px; font-family: 'Microsoft YaHei'; fill: #17324d" transform="translate(50.338938 171.242725)">编码得到均值 μ = h</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei'; text-anchor: middle; fill: #287c7e" x="328.05" y="110.48993" transform="rotate(-0 328.05 110.48993)">随机信息瓶颈</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 10.4px; font-family: 'Microsoft YaHei'; fill: #17324d" transform="translate(259.60175 144.403413)">学习 log σ²，采样 ε ~ N(0, I)</text>
+    <text style="font-size: 10.4px; font-family: 'Microsoft YaHei'; fill: #17324d" transform="translate(294.352375 161.288788)">z = μ + σ ⊙ ε</text>
+    <text style="font-size: 10.4px; font-family: 'Microsoft YaHei'; fill: #17324d" transform="translate(255.25 180.501163)">每个企业年度形成一份随机消息</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei'; text-anchor: middle; fill: #17324d" x="601.47" y="110.495555" transform="rotate(-0 601.47 110.495555)">融合端</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 10.4px; font-family: 'Microsoft YaHei'; fill: #17324d" transform="translate(523.47 145.003038)">同一组随机表示供六个融合头使用</text>
+    <text style="font-size: 10.4px; font-family: 'Microsoft YaHei'; fill: #17324d" transform="translate(544.27 162.705788)">预测企业风险与违规类型</text>
+    <text style="font-size: 10.4px; font-family: 'Microsoft YaHei'; fill: #17324d" transform="translate(570.27 180.45485)">评价筛查效用</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei'; text-anchor: middle; fill: #287c7e" x="238.77" y="251.856305" transform="rotate(-0 238.77 251.856305)">训练时共同优化</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 10.4px; font-family: 'Microsoft YaHei'; fill: #17324d" transform="translate(131.845813 286.917725)">总损失 = 风险与类型预测损失 + 0.1 × KL正则</text>
+    <text style="font-size: 10.4px; font-family: 'Microsoft YaHei'; fill: #17324d" transform="translate(66.400563 304.682225)">KL约束随机表示分布，使模型压缩非必要信息；三节点按维度与节点取平均</text>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei'; text-anchor: middle; fill: #bc6138" x="601.47" y="251.867555" transform="rotate(-0 601.47 251.867555)">模拟融合端攻击</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 10.4px; font-family: 'Microsoft YaHei'; fill: #17324d" transform="translate(549.47 278.074475)">读取消息并训练攻击器</text>
+    <text style="font-size: 10.4px; font-family: 'Microsoft YaHei'; fill: #17324d" transform="translate(532.87225 295.787787)">恢复13项财务数值 / 推断属性</text>
+    <text style="font-size: 10.4px; font-family: 'Microsoft YaHei'; fill: #17324d" transform="translate(548.619313 313.5466)">与相同架构S0配对比较</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 9px; font-family: 'Microsoft YaHei'; text-anchor: middle; fill: #bc6138" x="601.47" y="209.8332" transform="rotate(-0 601.47 209.8332)">同样的消息</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 10.5px; font-family: 'Microsoft YaHei'; text-anchor: start; fill: #17324d" x="23.94" y="353.7" transform="rotate(-0 23.94 353.7)">五次独立复检：数值猜中率 75.2% → 54.7%；Recall@10% 30.13% → 29.32%。</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 9.3px; font-family: 'Microsoft YaHei'; text-anchor: start; fill: #5d6977" x="23.94" y="371.9952" transform="rotate(-0 23.94 371.9952)">评价为指定攻击下的经验防护；随机瓶颈不自动提供差分隐私保证。五个种子不组成部署集成。</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p842b020b30">
+   <rect x="7.2" y="7.2" width="725.4" height="365.904"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -1,0 +1,2487 @@
+{
+  "year": 2021,
+  "scope": "single42",
+  "view": "full_deployment",
+  "attack_input_dimensions": 138,
+  "target_dimensions": 275,
+  "fold_rows": {
+    "train0": 37923,
+    "select1": 3864,
+    "test3": 4794
+  },
+  "ridge_selection": [
+    {
+      "alpha": 0.1,
+      "selection_nrmse": 0.5529489914976407
+    },
+    {
+      "alpha": 1.0,
+      "selection_nrmse": 0.5531265295467643
+    },
+    {
+      "alpha": 10.0,
+      "selection_nrmse": 0.5541096962195646
+    },
+    {
+      "alpha": 100.0,
+      "selection_nrmse": 0.5543747675440878
+    }
+  ],
+  "mlp_selection": {
+    "best_epoch": 30,
+    "selection_nrmse": 0.433741056868022,
+    "history": [
+      {
+        "epoch": 1,
+        "train_mse": 0.6875800670761811,
+        "selection_nrmse": 0.6647883054512146
+      },
+      {
+        "epoch": 2,
+        "train_mse": 0.34954434084264857,
+        "selection_nrmse": 0.5507769713625914
+      },
+      {
+        "epoch": 3,
+        "train_mse": 0.27516873102439077,
+        "selection_nrmse": 0.5144117948822294
+      },
+      {
+        "epoch": 4,
+        "train_mse": 0.24230045629175087,
+        "selection_nrmse": 0.5013089319536297
+      },
+      {
+        "epoch": 5,
+        "train_mse": 0.2220310768798778,
+        "selection_nrmse": 0.48564374896771495
+      },
+      {
+        "epoch": 6,
+        "train_mse": 0.2074529359999456,
+        "selection_nrmse": 0.48012586514783584
+      },
+      {
+        "epoch": 7,
+        "train_mse": 0.19617225033672234,
+        "selection_nrmse": 0.47152799253848127
+      },
+      {
+        "epoch": 8,
+        "train_mse": 0.18816570231789037,
+        "selection_nrmse": 0.46710275213268554
+      },
+      {
+        "epoch": 9,
+        "train_mse": 0.17957474252111033,
+        "selection_nrmse": 0.4608073237643914
+      },
+      {
+        "epoch": 10,
+        "train_mse": 0.17419112709007764,
+        "selection_nrmse": 0.4592772540850056
+      },
+      {
+        "epoch": 11,
+        "train_mse": 0.16940430120417946,
+        "selection_nrmse": 0.4571257902814373
+      },
+      {
+        "epoch": 12,
+        "train_mse": 0.16504839690108047,
+        "selection_nrmse": 0.4537747988322506
+      },
+      {
+        "epoch": 13,
+        "train_mse": 0.16039255535916278,
+        "selection_nrmse": 0.4512885106884492
+      },
+      {
+        "epoch": 14,
+        "train_mse": 0.15674592593782827,
+        "selection_nrmse": 0.4502743968668033
+      },
+      {
+        "epoch": 15,
+        "train_mse": 0.1549548502815397,
+        "selection_nrmse": 0.44618053078628855
+      },
+      {
+        "epoch": 16,
+        "train_mse": 0.15252358662454704,
+        "selection_nrmse": 0.44846533015283097
+      },
+      {
+        "epoch": 17,
+        "train_mse": 0.14954439511424616,
+        "selection_nrmse": 0.44564213432105715
+      },
+      {
+        "epoch": 18,
+        "train_mse": 0.1473458985749044,
+        "selection_nrmse": 0.4430718770232672
+      },
+      {
+        "epoch": 19,
+        "train_mse": 0.14515830262711174,
+        "selection_nrmse": 0.444584868662794
+      },
+      {
+        "epoch": 20,
+        "train_mse": 0.142699429079106,
+        "selection_nrmse": 0.4421409903737641
+      },
+      {
+        "epoch": 21,
+        "train_mse": 0.14086727994052986,
+        "selection_nrmse": 0.44063806993923516
+      },
+      {
+        "epoch": 22,
+        "train_mse": 0.14064397976586693,
+        "selection_nrmse": 0.44283131237953655
+      },
+      {
+        "epoch": 23,
+        "train_mse": 0.1385486412205194,
+        "selection_nrmse": 0.4411749442440868
+      },
+      {
+        "epoch": 24,
+        "train_mse": 0.13602745846698158,
+        "selection_nrmse": 0.4393693853680549
+      },
+      {
+        "epoch": 25,
+        "train_mse": 0.1353035324106091,
+        "selection_nrmse": 0.4375199405391096
+      },
+      {
+        "epoch": 26,
+        "train_mse": 0.1343126947942533,
+        "selection_nrmse": 0.43967596714539015
+      },
+      {
+        "epoch": 27,
+        "train_mse": 0.13225168048551209,
+        "selection_nrmse": 0.4392185952085703
+      },
+      {
+        "epoch": 28,
+        "train_mse": 0.1313672491202229,
+        "selection_nrmse": 0.4376123049098274
+      },
+      {
+        "epoch": 29,
+        "train_mse": 0.12996249351846545,
+        "selection_nrmse": 0.43727954781421435
+      },
+      {
+        "epoch": 30,
+        "train_mse": 0.1300530804223136,
+        "selection_nrmse": 0.433741056868022
+      }
+    ]
+  },
+  "attacker_selection_nrmse": {
+    "ridge": 0.5529489914976407,
+    "mlp": 0.433741056868022
+  },
+  "selected_attacker": "mlp",
+  "test_metrics": {
+    "constant": {
+      "macro_nrmse_all": 1.1019407547801099,
+      "macro_nrmse_numeric": 1.0790079756938329,
+      "macro_nrmse_binary": 1.1253794039932903,
+      "macro_r2": -0.12913997455477194,
+      "macro_spearman": NaN,
+      "fields": 275,
+      "binary_fields": 136,
+      "x1_macro_nrmse": 1.1543060547378314,
+      "x2_macro_nrmse": 1.1018656499255097,
+      "x3_macro_nrmse": 1.0408835338993236
+    },
+    "ridge": {
+      "macro_nrmse_all": 0.5632041678703879,
+      "macro_nrmse_numeric": 0.6048081540864451,
+      "macro_nrmse_binary": 0.5206824466642705,
+      "macro_r2": 0.5481911592235527,
+      "macro_spearman": 0.5644471120141814,
+      "fields": 275,
+      "binary_fields": 136,
+      "x1_macro_nrmse": 1.3431780714955912,
+      "x2_macro_nrmse": 0.5297186610479457,
+      "x3_macro_nrmse": 0.1392677596520923
+    },
+    "mlp": {
+      "macro_nrmse_all": 0.43926239375593623,
+      "macro_nrmse_numeric": 0.5366812530278751,
+      "macro_nrmse_binary": 0.3396945890588813,
+      "macro_r2": 0.6996795399544786,
+      "macro_spearman": 0.5749898537635414,
+      "fields": 275,
+      "binary_fields": 136,
+      "x1_macro_nrmse": 1.0510586028135671,
+      "x2_macro_nrmse": 0.39878284583954815,
+      "x3_macro_nrmse": 0.31994761424582185
+    }
+  },
+  "selected_gain_vs_constant": {
+    "estimate": 0.6626937389373779,
+    "ci95": [
+      0.6173676118254662,
+      0.7068518459796905
+    ],
+    "null": 0.0,
+    "lower_above_null": true,
+    "replicates": 500,
+    "point_estimate": 0.6626783610241737
+  },
+  "attribute_macro_auc": {
+    "estimate": 0.9983775019645691,
+    "ci95": [
+      0.9981529325246811,
+      0.9985252618789673
+    ],
+    "null": 0.5,
+    "lower_above_null": true,
+    "replicates": 20,
+    "point_estimate": 0.9984045922588282
+  },
+  "attribute_fields_point": [
+    {
+      "field": "x1::missing::mkt__Yretwd",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 524,
+      "n": 4794,
+      "score_column": 0
+    },
+    {
+      "field": "x1::missing::mkt__Yretnd",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 524,
+      "n": 4794,
+      "score_column": 1
+    },
+    {
+      "field": "x1::mkt__Yarkettype=1.0",
+      "kind": "encoded_binary",
+      "auc": 0.9926386155485212,
+      "positive": 1666,
+      "n": 4794,
+      "score_column": 3
+    },
+    {
+      "field": "x1::mkt__Yarkettype=2.0",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 48,
+      "n": 4794,
+      "score_column": 4
+    },
+    {
+      "field": "x1::mkt__Yarkettype=4.0",
+      "kind": "encoded_binary",
+      "auc": 0.9901187761568542,
+      "positive": 1485,
+      "n": 4794,
+      "score_column": 5
+    },
+    {
+      "field": "x1::mkt__Yarkettype=8.0",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 45,
+      "n": 4794,
+      "score_column": 6
+    },
+    {
+      "field": "x1::mkt__Yarkettype=16.0",
+      "kind": "encoded_binary",
+      "auc": 0.9467657333353465,
+      "positive": 1091,
+      "n": 4794,
+      "score_column": 7
+    },
+    {
+      "field": "x2::missing::solv__F010101A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 122,
+      "n": 4794,
+      "score_column": 8
+    },
+    {
+      "field": "x2::missing::solv__F010201A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 122,
+      "n": 4794,
+      "score_column": 9
+    },
+    {
+      "field": "x2::missing::solv__F010301A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 122,
+      "n": 4794,
+      "score_column": 10
+    },
+    {
+      "field": "x2::missing::solv__F010401A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 122,
+      "n": 4794,
+      "score_column": 11
+    },
+    {
+      "field": "x2::missing::solv__F010501A",
+      "kind": "encoded_binary",
+      "auc": 0.99686150501507,
+      "positive": 1094,
+      "n": 4794,
+      "score_column": 12
+    },
+    {
+      "field": "x2::missing::solv__F010601A",
+      "kind": "encoded_binary",
+      "auc": 0.9999964911295756,
+      "positive": 122,
+      "n": 4794,
+      "score_column": 13
+    },
+    {
+      "field": "x2::missing::solv__F010701B",
+      "kind": "encoded_binary",
+      "auc": 0.9927916210295729,
+      "positive": 1474,
+      "n": 4794,
+      "score_column": 14
+    },
+    {
+      "field": "x2::missing::solv__F010702B",
+      "kind": "encoded_binary",
+      "auc": 0.9932433260858904,
+      "positive": 1474,
+      "n": 4794,
+      "score_column": 15
+    },
+    {
+      "field": "x2::missing::solv__F010801B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 122,
+      "n": 4794,
+      "score_column": 16
+    },
+    {
+      "field": "x2::missing::solv__F010901B",
+      "kind": "encoded_binary",
+      "auc": 0.9929703209036962,
+      "positive": 1474,
+      "n": 4794,
+      "score_column": 17
+    },
+    {
+      "field": "x2::missing::solv__F011001B",
+      "kind": "encoded_binary",
+      "auc": 0.987082788906386,
+      "positive": 281,
+      "n": 4794,
+      "score_column": 18
+    },
+    {
+      "field": "x2::missing::solv__F011201A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794,
+      "score_column": 19
+    },
+    {
+      "field": "x2::missing::solv__F011301A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794,
+      "score_column": 20
+    },
+    {
+      "field": "x2::missing::solv__F011401A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794,
+      "score_column": 21
+    },
+    {
+      "field": "x2::missing::solv__F011501A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794,
+      "score_column": 22
+    },
+    {
+      "field": "x2::missing::solv__F011601A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794,
+      "score_column": 23
+    },
+    {
+      "field": "x2::missing::solv__F011701A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794,
+      "score_column": 24
+    },
+    {
+      "field": "x2::missing::solv__F011801A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794,
+      "score_column": 25
+    },
+    {
+      "field": "x2::missing::solv__F011901A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794,
+      "score_column": 26
+    },
+    {
+      "field": "x2::missing::solv__F012001A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794,
+      "score_column": 27
+    },
+    {
+      "field": "x2::missing::solv__F012101A",
+      "kind": "encoded_binary",
+      "auc": 0.9999999999999999,
+      "positive": 122,
+      "n": 4794,
+      "score_column": 28
+    },
+    {
+      "field": "x2::missing::solv__F012201B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 125,
+      "n": 4794,
+      "score_column": 29
+    },
+    {
+      "field": "x2::missing::solv__F012301B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 28,
+      "n": 4794,
+      "score_column": 30
+    },
+    {
+      "field": "x2::missing::solv__F012401B",
+      "kind": "encoded_binary",
+      "auc": 0.9999954253613392,
+      "positive": 93,
+      "n": 4794,
+      "score_column": 31
+    },
+    {
+      "field": "x2::missing::solv__F012501B",
+      "kind": "encoded_binary",
+      "auc": 0.9999650153932269,
+      "positive": 30,
+      "n": 4794,
+      "score_column": 32
+    },
+    {
+      "field": "x2::missing::solv__F012601B",
+      "kind": "encoded_binary",
+      "auc": 0.9944401259535448,
+      "positive": 147,
+      "n": 4794,
+      "score_column": 33
+    },
+    {
+      "field": "x2::missing::solv__F012701B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 29,
+      "n": 4794,
+      "score_column": 34
+    },
+    {
+      "field": "x2::missing::solv__F020502A",
+      "kind": "encoded_binary",
+      "auc": 0.9999637111406798,
+      "positive": 70,
+      "n": 4794,
+      "score_column": 35
+    },
+    {
+      "field": "x2::missing::oper__F040101B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794,
+      "score_column": 36
+    },
+    {
+      "field": "x2::missing::oper__F040201B",
+      "kind": "encoded_binary",
+      "auc": 0.9980059463396578,
+      "positive": 89,
+      "n": 4794,
+      "score_column": 37
+    },
+    {
+      "field": "x2::missing::oper__F040202B",
+      "kind": "encoded_binary",
+      "auc": 0.9999974724497018,
+      "positive": 84,
+      "n": 4794,
+      "score_column": 38
+    },
+    {
+      "field": "x2::missing::oper__F040203B",
+      "kind": "encoded_binary",
+      "auc": 0.999989889798807,
+      "positive": 84,
+      "n": 4794,
+      "score_column": 39
+    },
+    {
+      "field": "x2::missing::oper__F040301B",
+      "kind": "encoded_binary",
+      "auc": 0.9979510203106903,
+      "positive": 89,
+      "n": 4794,
+      "score_column": 40
+    },
+    {
+      "field": "x2::missing::oper__F040302B",
+      "kind": "encoded_binary",
+      "auc": 0.9999924173491053,
+      "positive": 84,
+      "n": 4794,
+      "score_column": 41
+    },
+    {
+      "field": "x2::missing::oper__F040303B",
+      "kind": "encoded_binary",
+      "auc": 0.9999873622485087,
+      "positive": 84,
+      "n": 4794,
+      "score_column": 42
+    },
+    {
+      "field": "x2::missing::oper__F040304C",
+      "kind": "encoded_binary",
+      "auc": 0.999989889798807,
+      "positive": 84,
+      "n": 4794,
+      "score_column": 43
+    },
+    {
+      "field": "x2::missing::oper__F040401B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794,
+      "score_column": 44
+    },
+    {
+      "field": "x2::missing::oper__F040501B",
+      "kind": "encoded_binary",
+      "auc": 0.9971642762233365,
+      "positive": 199,
+      "n": 4794,
+      "score_column": 45
+    },
+    {
+      "field": "x2::missing::oper__F040502B",
+      "kind": "encoded_binary",
+      "auc": 0.9999896065261777,
+      "positive": 188,
+      "n": 4794,
+      "score_column": 46
+    },
+    {
+      "field": "x2::missing::oper__F040503B",
+      "kind": "encoded_binary",
+      "auc": 0.9999895532141858,
+      "positive": 187,
+      "n": 4794,
+      "score_column": 47
+    },
+    {
+      "field": "x2::missing::oper__F040601B",
+      "kind": "encoded_binary",
+      "auc": 0.9977373264581886,
+      "positive": 199,
+      "n": 4794,
+      "score_column": 48
+    },
+    {
+      "field": "x2::missing::oper__F040602B",
+      "kind": "encoded_binary",
+      "auc": 0.9999872968653283,
+      "positive": 188,
+      "n": 4794,
+      "score_column": 49
+    },
+    {
+      "field": "x2::missing::oper__F040603B",
+      "kind": "encoded_binary",
+      "auc": 0.9999941962301032,
+      "positive": 187,
+      "n": 4794,
+      "score_column": 50
+    },
+    {
+      "field": "x2::missing::oper__F040604C",
+      "kind": "encoded_binary",
+      "auc": 0.9999895532141858,
+      "positive": 187,
+      "n": 4794,
+      "score_column": 51
+    },
+    {
+      "field": "x2::missing::oper__F040701B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 74,
+      "n": 4794,
+      "score_column": 52
+    },
+    {
+      "field": "x2::missing::oper__F040702B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 74,
+      "n": 4794,
+      "score_column": 53
+    },
+    {
+      "field": "x2::missing::oper__F040703B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 74,
+      "n": 4794,
+      "score_column": 54
+    },
+    {
+      "field": "x2::missing::oper__F040704C",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 74,
+      "n": 4794,
+      "score_column": 55
+    },
+    {
+      "field": "x2::missing::oper__F040801B",
+      "kind": "encoded_binary",
+      "auc": 0.9999934517797244,
+      "positive": 131,
+      "n": 4794,
+      "score_column": 56
+    },
+    {
+      "field": "x2::missing::oper__F040802B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 129,
+      "n": 4794,
+      "score_column": 57
+    },
+    {
+      "field": "x2::missing::oper__F040803B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 129,
+      "n": 4794,
+      "score_column": 58
+    },
+    {
+      "field": "x2::missing::oper__F040901B",
+      "kind": "encoded_binary",
+      "auc": 0.9996928204058084,
+      "positive": 820,
+      "n": 4794,
+      "score_column": 59
+    },
+    {
+      "field": "x2::missing::oper__F040902B",
+      "kind": "encoded_binary",
+      "auc": 0.9943043818309936,
+      "positive": 802,
+      "n": 4794,
+      "score_column": 60
+    },
+    {
+      "field": "x2::missing::oper__F040903B",
+      "kind": "encoded_binary",
+      "auc": 0.9942686843048993,
+      "positive": 801,
+      "n": 4794,
+      "score_column": 61
+    },
+    {
+      "field": "x2::missing::oper__F041001B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794,
+      "score_column": 62
+    },
+    {
+      "field": "x2::missing::oper__F041002B",
+      "kind": "encoded_binary",
+      "auc": 0.9997746855309263,
+      "positive": 27,
+      "n": 4794,
+      "score_column": 63
+    },
+    {
+      "field": "x2::missing::oper__F041003B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 30,
+      "n": 4794,
+      "score_column": 64
+    },
+    {
+      "field": "x2::missing::oper__F041101B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 122,
+      "n": 4794,
+      "score_column": 65
+    },
+    {
+      "field": "x2::missing::oper__F041201B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 122,
+      "n": 4794,
+      "score_column": 66
+    },
+    {
+      "field": "x2::missing::oper__F041202B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 122,
+      "n": 4794,
+      "score_column": 67
+    },
+    {
+      "field": "x2::missing::oper__F041203B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 123,
+      "n": 4794,
+      "score_column": 68
+    },
+    {
+      "field": "x2::missing::oper__F041301B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 28,
+      "n": 4794,
+      "score_column": 69
+    },
+    {
+      "field": "x2::missing::oper__F041401B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 28,
+      "n": 4794,
+      "score_column": 70
+    },
+    {
+      "field": "x2::missing::oper__F041402B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 28,
+      "n": 4794,
+      "score_column": 71
+    },
+    {
+      "field": "x2::missing::oper__F041403B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 29,
+      "n": 4794,
+      "score_column": 72
+    },
+    {
+      "field": "x2::missing::oper__F041501B",
+      "kind": "encoded_binary",
+      "auc": 0.9999982594559407,
+      "positive": 123,
+      "n": 4794,
+      "score_column": 73
+    },
+    {
+      "field": "x2::missing::oper__F041502B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 123,
+      "n": 4794,
+      "score_column": 74
+    },
+    {
+      "field": "x2::missing::oper__F041503B",
+      "kind": "encoded_binary",
+      "auc": 0.9999965462457692,
+      "positive": 124,
+      "n": 4794,
+      "score_column": 75
+    },
+    {
+      "field": "x2::missing::oper__F041601B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794,
+      "score_column": 76
+    },
+    {
+      "field": "x2::missing::oper__F041701B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794,
+      "score_column": 77
+    },
+    {
+      "field": "x2::missing::oper__F041702B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794,
+      "score_column": 78
+    },
+    {
+      "field": "x2::missing::oper__F041703B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 28,
+      "n": 4794,
+      "score_column": 79
+    },
+    {
+      "field": "x2::missing::oper__F041801B",
+      "kind": "encoded_binary",
+      "auc": 0.9996879749574739,
+      "positive": 63,
+      "n": 4794,
+      "score_column": 80
+    },
+    {
+      "field": "x2::missing::oper__F041802B",
+      "kind": "encoded_binary",
+      "auc": 0.9999485907826298,
+      "positive": 70,
+      "n": 4794,
+      "score_column": 81
+    },
+    {
+      "field": "x2::missing::oper__F041803B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 72,
+      "n": 4794,
+      "score_column": 82
+    },
+    {
+      "field": "x2::missing::prof__F050101B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794,
+      "score_column": 83
+    },
+    {
+      "field": "x2::missing::prof__F050102B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794,
+      "score_column": 84
+    },
+    {
+      "field": "x2::missing::prof__F050103B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 28,
+      "n": 4794,
+      "score_column": 85
+    },
+    {
+      "field": "x2::missing::prof__F050201B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794,
+      "score_column": 86
+    },
+    {
+      "field": "x2::missing::prof__F050202B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794,
+      "score_column": 87
+    },
+    {
+      "field": "x2::missing::prof__F050203B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 28,
+      "n": 4794,
+      "score_column": 88
+    },
+    {
+      "field": "x2::missing::prof__F050301B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 122,
+      "n": 4794,
+      "score_column": 89
+    },
+    {
+      "field": "x2::missing::prof__F050302B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 122,
+      "n": 4794,
+      "score_column": 90
+    },
+    {
+      "field": "x2::missing::prof__F050303B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 123,
+      "n": 4794,
+      "score_column": 91
+    },
+    {
+      "field": "x2::missing::prof__F050401B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 28,
+      "n": 4794,
+      "score_column": 92
+    },
+    {
+      "field": "x2::missing::prof__F050402B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 28,
+      "n": 4794,
+      "score_column": 93
+    },
+    {
+      "field": "x2::missing::prof__F050403B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 29,
+      "n": 4794,
+      "score_column": 94
+    },
+    {
+      "field": "x2::missing::prof__F050501B",
+      "kind": "encoded_binary",
+      "auc": 0.999711460713363,
+      "positive": 63,
+      "n": 4794,
+      "score_column": 95
+    },
+    {
+      "field": "x2::missing::prof__F050502B",
+      "kind": "encoded_binary",
+      "auc": 0.9999637111406798,
+      "positive": 70,
+      "n": 4794,
+      "score_column": 96
+    },
+    {
+      "field": "x2::missing::prof__F050503B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 72,
+      "n": 4794,
+      "score_column": 97
+    },
+    {
+      "field": "x2::missing::prof__F050601B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 124,
+      "n": 4794,
+      "score_column": 98
+    },
+    {
+      "field": "x2::missing::prof__F050701B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 124,
+      "n": 4794,
+      "score_column": 99
+    },
+    {
+      "field": "x2::missing::prof__F050801B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 124,
+      "n": 4794,
+      "score_column": 100
+    },
+    {
+      "field": "x2::missing::prof__F050901B",
+      "kind": "encoded_binary",
+      "auc": 0.9988733981129418,
+      "positive": 789,
+      "n": 4794,
+      "score_column": 101
+    },
+    {
+      "field": "x2::missing::prof__F051001B",
+      "kind": "encoded_binary",
+      "auc": 0.9986733543923493,
+      "positive": 838,
+      "n": 4794,
+      "score_column": 102
+    },
+    {
+      "field": "x2::missing::prof__F051101B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 124,
+      "n": 4794,
+      "score_column": 103
+    },
+    {
+      "field": "x2::missing::prof__F051201B",
+      "kind": "encoded_binary",
+      "auc": 0.9998488748488749,
+      "positive": 132,
+      "n": 4794,
+      "score_column": 104
+    },
+    {
+      "field": "x2::missing::prof__F053201B",
+      "kind": "encoded_binary",
+      "auc": 0.9998107734973902,
+      "positive": 142,
+      "n": 4794,
+      "score_column": 105
+    },
+    {
+      "field": "x2::missing::prof__F053301B",
+      "kind": "encoded_binary",
+      "auc": 0.9999732104586369,
+      "positive": 128,
+      "n": 4794,
+      "score_column": 106
+    },
+    {
+      "field": "x2::missing::prof__F051301B",
+      "kind": "encoded_binary",
+      "auc": 0.9999715361123017,
+      "positive": 128,
+      "n": 4794,
+      "score_column": 107
+    },
+    {
+      "field": "x2::missing::prof__F051401B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794,
+      "score_column": 108
+    },
+    {
+      "field": "x2::missing::prof__F051501B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794,
+      "score_column": 109
+    },
+    {
+      "field": "x2::missing::prof__F051601B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794,
+      "score_column": 110
+    },
+    {
+      "field": "x2::missing::prof__F051701B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794,
+      "score_column": 111
+    },
+    {
+      "field": "x2::missing::prof__F051801B",
+      "kind": "encoded_binary",
+      "auc": 0.9999982594559407,
+      "positive": 123,
+      "n": 4794,
+      "score_column": 112
+    },
+    {
+      "field": "x2::missing::prof__F051901B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 124,
+      "n": 4794,
+      "score_column": 113
+    },
+    {
+      "field": "x2::missing::prof__F053401B",
+      "kind": "encoded_binary",
+      "auc": 0.9822322574062853,
+      "positive": 487,
+      "n": 4794,
+      "score_column": 114
+    },
+    {
+      "field": "x2::missing::prof__F052001B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 125,
+      "n": 4794,
+      "score_column": 115
+    },
+    {
+      "field": "x2::missing::prof__F052101B",
+      "kind": "encoded_binary",
+      "auc": 0.9998022549581661,
+      "positive": 129,
+      "n": 4794,
+      "score_column": 116
+    },
+    {
+      "field": "x2::missing::prof__F052201B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794,
+      "score_column": 117
+    },
+    {
+      "field": "x2::missing::prof__F052301B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 124,
+      "n": 4794,
+      "score_column": 118
+    },
+    {
+      "field": "x2::missing::prof__F052401B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 124,
+      "n": 4794,
+      "score_column": 119
+    },
+    {
+      "field": "x2::missing::prof__F052901B",
+      "kind": "encoded_binary",
+      "auc": 0.9988639042768149,
+      "positive": 789,
+      "n": 4794,
+      "score_column": 120
+    },
+    {
+      "field": "x2::missing::prof__F053001B",
+      "kind": "encoded_binary",
+      "auc": 0.9994351215644821,
+      "positive": 64,
+      "n": 4794,
+      "score_column": 121
+    },
+    {
+      "field": "x2::missing::prof__F053002B",
+      "kind": "encoded_binary",
+      "auc": 0.9999830472557746,
+      "positive": 75,
+      "n": 4794,
+      "score_column": 122
+    },
+    {
+      "field": "x2::missing::prof__F053003B",
+      "kind": "encoded_binary",
+      "auc": 0.999991633386136,
+      "positive": 76,
+      "n": 4794,
+      "score_column": 123
+    },
+    {
+      "field": "x2::missing::prof__F053101B",
+      "kind": "encoded_binary",
+      "auc": 0.9973297790123319,
+      "positive": 95,
+      "n": 4794,
+      "score_column": 124
+    },
+    {
+      "field": "x2::missing::prof__F053102B",
+      "kind": "encoded_binary",
+      "auc": 0.9916567390044434,
+      "positive": 106,
+      "n": 4794,
+      "score_column": 125
+    },
+    {
+      "field": "x2::missing::prof__F053103B",
+      "kind": "encoded_binary",
+      "auc": 0.9916352448310998,
+      "positive": 107,
+      "n": 4794,
+      "score_column": 126
+    },
+    {
+      "field": "x2::missing::prof__F053202B",
+      "kind": "encoded_binary",
+      "auc": 0.9588239155167886,
+      "positive": 664,
+      "n": 4794,
+      "score_column": 127
+    },
+    {
+      "field": "x3::missing::exec__events",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 3165,
+      "n": 4794,
+      "score_column": 128
+    },
+    {
+      "field": "x3::missing::exec__resign",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 3165,
+      "n": 4794,
+      "score_column": 129
+    },
+    {
+      "field": "x3::missing::exec__chair",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 3165,
+      "n": 4794,
+      "score_column": 130
+    },
+    {
+      "field": "x3::missing::exec__manager",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 3165,
+      "n": 4794,
+      "score_column": 131
+    },
+    {
+      "field": "x3::missing::exec__external",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 3165,
+      "n": 4794,
+      "score_column": 132
+    },
+    {
+      "field": "x3::missing::exec__mean_age",
+      "kind": "encoded_binary",
+      "auc": 0.999934063067589,
+      "positive": 3664,
+      "n": 4794,
+      "score_column": 133
+    },
+    {
+      "field": "x3::missing::exec__mean_tenure",
+      "kind": "encoded_binary",
+      "auc": 0.9999355122309387,
+      "positive": 3664,
+      "n": 4794,
+      "score_column": 134
+    },
+    {
+      "field": "x3::missing::exec__mean_notice_lag",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 3165,
+      "n": 4794,
+      "score_column": 135
+    },
+    {
+      "field": "x3::exec__resign::event_present",
+      "kind": "event_present",
+      "auc": 0.9999085481790123,
+      "positive": 4295,
+      "n": 4794,
+      "score_column": 136
+    },
+    {
+      "field": "x3::exec__chair::event_present",
+      "kind": "event_present",
+      "auc": 0.9996835168724785,
+      "positive": 4276,
+      "n": 4794,
+      "score_column": 137
+    },
+    {
+      "field": "x3::exec__manager::event_present",
+      "kind": "event_present",
+      "auc": 0.9982505085430049,
+      "positive": 4493,
+      "n": 4794,
+      "score_column": 138
+    },
+    {
+      "field": "x3::exec__external::event_present",
+      "kind": "event_present",
+      "auc": 0.9986830408586574,
+      "positive": 455,
+      "n": 4794,
+      "score_column": 139
+    }
+  ],
+  "direct_attribute_attack": {
+    "solver": "multi-output linear logistic head, AdamW L2",
+    "learning_rate": 0.01,
+    "weight_decay": 0.0001,
+    "positive_weight_cap": 20.0,
+    "best_epoch": 20,
+    "selection_loss": 0.09820693731307983,
+    "history": [
+      {
+        "epoch": 1,
+        "train_loss": 0.6780369971927843,
+        "selection_loss": 0.5557525753974915
+      },
+      {
+        "epoch": 2,
+        "train_loss": 0.5160995423793793,
+        "selection_loss": 0.46809348464012146
+      },
+      {
+        "epoch": 3,
+        "train_loss": 0.437394579774455,
+        "selection_loss": 0.3879378139972687
+      },
+      {
+        "epoch": 4,
+        "train_loss": 0.37925226123709427,
+        "selection_loss": 0.331476092338562
+      },
+      {
+        "epoch": 5,
+        "train_loss": 0.33222651795337077,
+        "selection_loss": 0.2964158058166504
+      },
+      {
+        "epoch": 6,
+        "train_loss": 0.2944032800825019,
+        "selection_loss": 0.26092472672462463
+      },
+      {
+        "epoch": 7,
+        "train_loss": 0.2619523484455912,
+        "selection_loss": 0.2319919914007187
+      },
+      {
+        "epoch": 8,
+        "train_loss": 0.23531981047831083,
+        "selection_loss": 0.2110925018787384
+      },
+      {
+        "epoch": 9,
+        "train_loss": 0.2126858375574413,
+        "selection_loss": 0.19500583410263062
+      },
+      {
+        "epoch": 10,
+        "train_loss": 0.1932742250593085,
+        "selection_loss": 0.18156568706035614
+      },
+      {
+        "epoch": 11,
+        "train_loss": 0.17680572757595464,
+        "selection_loss": 0.16846320033073425
+      },
+      {
+        "epoch": 12,
+        "train_loss": 0.1625192902590099,
+        "selection_loss": 0.15457682311534882
+      },
+      {
+        "epoch": 13,
+        "train_loss": 0.15010262319916173,
+        "selection_loss": 0.1435379683971405
+      },
+      {
+        "epoch": 14,
+        "train_loss": 0.13938737072442708,
+        "selection_loss": 0.13386669754981995
+      },
+      {
+        "epoch": 15,
+        "train_loss": 0.12983576953411102,
+        "selection_loss": 0.12815316021442413
+      },
+      {
+        "epoch": 16,
+        "train_loss": 0.1216105799141683,
+        "selection_loss": 0.1191764771938324
+      },
+      {
+        "epoch": 17,
+        "train_loss": 0.11389028477041345,
+        "selection_loss": 0.11324921995401382
+      },
+      {
+        "epoch": 18,
+        "train_loss": 0.10728048925337039,
+        "selection_loss": 0.10567376762628555
+      },
+      {
+        "epoch": 19,
+        "train_loss": 0.10130032348005395,
+        "selection_loss": 0.10271897166967392
+      },
+      {
+        "epoch": 20,
+        "train_loss": 0.0958682086906935,
+        "selection_loss": 0.09820693731307983
+      }
+    ],
+    "registered_fields": 141,
+    "variable_train_fields": 140,
+    "evaluable_test_fields": 139
+  },
+  "reconstruction_attribute_fields_point": [
+    {
+      "field": "x1::missing::mkt__Yretwd",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 524,
+      "n": 4794
+    },
+    {
+      "field": "x1::missing::mkt__Yretnd",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 524,
+      "n": 4794
+    },
+    {
+      "field": "x1::mkt__Yarkettype=1.0",
+      "kind": "encoded_binary",
+      "auc": 0.979188478460438,
+      "positive": 1666,
+      "n": 4794
+    },
+    {
+      "field": "x1::mkt__Yarkettype=2.0",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 48,
+      "n": 4794
+    },
+    {
+      "field": "x1::mkt__Yarkettype=4.0",
+      "kind": "encoded_binary",
+      "auc": 0.9765553184713052,
+      "positive": 1485,
+      "n": 4794
+    },
+    {
+      "field": "x1::mkt__Yarkettype=8.0",
+      "kind": "encoded_binary",
+      "auc": 0.9999766032615054,
+      "positive": 45,
+      "n": 4794
+    },
+    {
+      "field": "x1::mkt__Yarkettype=16.0",
+      "kind": "encoded_binary",
+      "auc": 0.9386008272827565,
+      "positive": 1091,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::solv__F010101A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 122,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::solv__F010201A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 122,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::solv__F010301A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 122,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::solv__F010401A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 122,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::solv__F010501A",
+      "kind": "encoded_binary",
+      "auc": 0.9949799891298978,
+      "positive": 1094,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::solv__F010601A",
+      "kind": "encoded_binary",
+      "auc": 0.9999947366943633,
+      "positive": 122,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::solv__F010701B",
+      "kind": "encoded_binary",
+      "auc": 0.996723324778081,
+      "positive": 1474,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::solv__F010702B",
+      "kind": "encoded_binary",
+      "auc": 0.9967343594186787,
+      "positive": 1474,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::solv__F010801B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 122,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::solv__F010901B",
+      "kind": "encoded_binary",
+      "auc": 0.9966763253829429,
+      "positive": 1474,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::solv__F011001B",
+      "kind": "encoded_binary",
+      "auc": 0.991122522282406,
+      "positive": 281,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::solv__F011201A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::solv__F011301A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::solv__F011401A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::solv__F011501A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::solv__F011601A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::solv__F011701A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::solv__F011801A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::solv__F011901A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::solv__F012001A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::solv__F012101A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 122,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::solv__F012201B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 125,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::solv__F012301B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 28,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::solv__F012401B",
+      "kind": "encoded_binary",
+      "auc": 0.9999634028907142,
+      "positive": 93,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::solv__F012501B",
+      "kind": "encoded_binary",
+      "auc": 0.9999300307864539,
+      "positive": 30,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::solv__F012601B",
+      "kind": "encoded_binary",
+      "auc": 0.9840303670424486,
+      "positive": 147,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::solv__F012701B",
+      "kind": "encoded_binary",
+      "auc": 0.9999855266490574,
+      "positive": 29,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::solv__F020502A",
+      "kind": "encoded_binary",
+      "auc": 0.9999818555703399,
+      "positive": 70,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::oper__F040101B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::oper__F040201B",
+      "kind": "encoded_binary",
+      "auc": 0.99304588711507,
+      "positive": 89,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::oper__F040202B",
+      "kind": "encoded_binary",
+      "auc": 0.9999974724497017,
+      "positive": 84,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::oper__F040203B",
+      "kind": "encoded_binary",
+      "auc": 0.9999974724497017,
+      "positive": 84,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::oper__F040301B",
+      "kind": "encoded_binary",
+      "auc": 0.9941229149004763,
+      "positive": 89,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::oper__F040302B",
+      "kind": "encoded_binary",
+      "auc": 0.9999974724497017,
+      "positive": 84,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::oper__F040303B",
+      "kind": "encoded_binary",
+      "auc": 0.9999974724497017,
+      "positive": 84,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::oper__F040304C",
+      "kind": "encoded_binary",
+      "auc": 0.9999974724497017,
+      "positive": 84,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::oper__F040401B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::oper__F040501B",
+      "kind": "encoded_binary",
+      "auc": 0.995369666613809,
+      "positive": 199,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::oper__F040502B",
+      "kind": "encoded_binary",
+      "auc": 0.9999965355087259,
+      "positive": 188,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::oper__F040503B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 187,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::oper__F040601B",
+      "kind": "encoded_binary",
+      "auc": 0.9954352830529141,
+      "positive": 199,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::oper__F040602B",
+      "kind": "encoded_binary",
+      "auc": 0.9999965355087259,
+      "positive": 188,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::oper__F040603B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 187,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::oper__F040604C",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 187,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::oper__F040701B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 74,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::oper__F040702B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 74,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::oper__F040703B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 74,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::oper__F040704C",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 74,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::oper__F040801B",
+      "kind": "encoded_binary",
+      "auc": 0.9999770812290355,
+      "positive": 131,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::oper__F040802B",
+      "kind": "encoded_binary",
+      "auc": 0.9999950148308782,
+      "positive": 129,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::oper__F040803B",
+      "kind": "encoded_binary",
+      "auc": 0.9999950148308782,
+      "positive": 129,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::oper__F040901B",
+      "kind": "encoded_binary",
+      "auc": 0.9997732210588336,
+      "positive": 820,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::oper__F040902B",
+      "kind": "encoded_binary",
+      "auc": 0.9968443745346054,
+      "positive": 802,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::oper__F040903B",
+      "kind": "encoded_binary",
+      "auc": 0.997153570558715,
+      "positive": 801,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::oper__F041001B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::oper__F041002B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::oper__F041003B",
+      "kind": "encoded_binary",
+      "auc": 0.9999860061572908,
+      "positive": 30,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::oper__F041101B",
+      "kind": "encoded_binary",
+      "auc": 0.9999964911295756,
+      "positive": 122,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::oper__F041201B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 122,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::oper__F041202B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 122,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::oper__F041203B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 123,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::oper__F041301B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 28,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::oper__F041401B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 28,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::oper__F041402B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 28,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::oper__F041403B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 29,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::oper__F041501B",
+      "kind": "encoded_binary",
+      "auc": 0.9999965189118815,
+      "positive": 123,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::oper__F041502B",
+      "kind": "encoded_binary",
+      "auc": 0.9999947783678222,
+      "positive": 123,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::oper__F041503B",
+      "kind": "encoded_binary",
+      "auc": 0.9999965462457692,
+      "positive": 124,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::oper__F041601B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::oper__F041701B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::oper__F041702B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::oper__F041703B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 28,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::oper__F041801B",
+      "kind": "encoded_binary",
+      "auc": 0.9996678443095691,
+      "positive": 63,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::oper__F041802B",
+      "kind": "encoded_binary",
+      "auc": 0.9999788314987299,
+      "positive": 70,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::oper__F041803B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 72,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::prof__F050101B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::prof__F050102B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::prof__F050103B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 28,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::prof__F050201B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::prof__F050202B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::prof__F050203B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 28,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::prof__F050301B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 122,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::prof__F050302B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 122,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::prof__F050303B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 123,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::prof__F050401B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 28,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::prof__F050402B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 28,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::prof__F050403B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 29,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::prof__F050501B",
+      "kind": "encoded_binary",
+      "auc": 0.9996242279057751,
+      "positive": 63,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::prof__F050502B",
+      "kind": "encoded_binary",
+      "auc": 0.9999818555703399,
+      "positive": 70,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::prof__F050503B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 72,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::prof__F050601B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 124,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::prof__F050701B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 124,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::prof__F050801B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 124,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::prof__F050901B",
+      "kind": "encoded_binary",
+      "auc": 0.9992151762135101,
+      "positive": 789,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::prof__F051001B",
+      "kind": "encoded_binary",
+      "auc": 0.9994760383309483,
+      "positive": 838,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::prof__F051101B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 124,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::prof__F051201B",
+      "kind": "encoded_binary",
+      "auc": 0.9998456248456248,
+      "positive": 132,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::prof__F053201B",
+      "kind": "encoded_binary",
+      "auc": 0.9997880663170771,
+      "positive": 142,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::prof__F053301B",
+      "kind": "encoded_binary",
+      "auc": 0.9999849308829833,
+      "positive": 128,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::prof__F051301B",
+      "kind": "encoded_binary",
+      "auc": 0.9999832565366481,
+      "positive": 128,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::prof__F051401B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::prof__F051501B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::prof__F051601B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::prof__F051701B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::prof__F051801B",
+      "kind": "encoded_binary",
+      "auc": 0.9999965189118815,
+      "positive": 123,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::prof__F051901B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 124,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::prof__F053401B",
+      "kind": "encoded_binary",
+      "auc": 0.9859766990272748,
+      "positive": 487,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::prof__F052001B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 125,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::prof__F052101B",
+      "kind": "encoded_binary",
+      "auc": 0.9999817210465533,
+      "positive": 129,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::prof__F052201B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::prof__F052301B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 124,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::prof__F052401B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 124,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::prof__F052901B",
+      "kind": "encoded_binary",
+      "auc": 0.9992366955753977,
+      "positive": 789,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::prof__F053001B",
+      "kind": "encoded_binary",
+      "auc": 0.9986423097251586,
+      "positive": 64,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::prof__F053002B",
+      "kind": "encoded_binary",
+      "auc": 0.9999604435968072,
+      "positive": 75,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::prof__F053003B",
+      "kind": "encoded_binary",
+      "auc": 0.9999721112871199,
+      "positive": 76,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::prof__F053101B",
+      "kind": "encoded_binary",
+      "auc": 0.9967361476685969,
+      "positive": 95,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::prof__F053102B",
+      "kind": "encoded_binary",
+      "auc": 0.9930875297829868,
+      "positive": 106,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::prof__F053103B",
+      "kind": "encoded_binary",
+      "auc": 0.9933022139183943,
+      "positive": 107,
+      "n": 4794
+    },
+    {
+      "field": "x2::missing::prof__F053202B",
+      "kind": "encoded_binary",
+      "auc": 0.9350735873275184,
+      "positive": 664,
+      "n": 4794
+    },
+    {
+      "field": "x3::missing::exec__events",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 3165,
+      "n": 4794
+    },
+    {
+      "field": "x3::missing::exec__resign",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 3165,
+      "n": 4794
+    },
+    {
+      "field": "x3::missing::exec__chair",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 3165,
+      "n": 4794
+    },
+    {
+      "field": "x3::missing::exec__manager",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 3165,
+      "n": 4794
+    },
+    {
+      "field": "x3::missing::exec__external",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 3165,
+      "n": 4794
+    },
+    {
+      "field": "x3::missing::exec__mean_age",
+      "kind": "encoded_binary",
+      "auc": 0.9999992754183252,
+      "positive": 3664,
+      "n": 4794
+    },
+    {
+      "field": "x3::missing::exec__mean_tenure",
+      "kind": "encoded_binary",
+      "auc": 0.9999990338911002,
+      "positive": 3664,
+      "n": 4794
+    },
+    {
+      "field": "x3::missing::exec__mean_notice_lag",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 3165,
+      "n": 4794
+    },
+    {
+      "field": "x3::exec__resign::event_present",
+      "kind": "event_present",
+      "auc": 0.9999692049990552,
+      "positive": 4295,
+      "n": 4794
+    },
+    {
+      "field": "x3::exec__chair::event_present",
+      "kind": "event_present",
+      "auc": 0.9493629253334586,
+      "positive": 4276,
+      "n": 4794
+    },
+    {
+      "field": "x3::exec__manager::event_present",
+      "kind": "event_present",
+      "auc": 0.991970529276623,
+      "positive": 4493,
+      "n": 4794
+    },
+    {
+      "field": "x3::exec__external::event_present",
+      "kind": "event_present",
+      "auc": 0.9993141682010085,
+      "positive": 455,
+      "n": 4794
+    }
+  ],
+  "subgroups": {
+    "seen_company": {
+      "rows": 3629,
+      "share": 0.7569879015435962,
+      "constant_nrmse": 1.1272767673000677,
+      "selected_nrmse": 0.44328043159108577,
+      "gain_vs_constant": 0.6839963357089819,
+      "attribute_macro_auc": 0.9985483855589898,
+      "attribute_fields": 137
+    },
+    "unseen_company": {
+      "rows": 1165,
+      "share": 0.24301209845640384,
+      "constant_nrmse": 0.8896772282860216,
+      "selected_nrmse": 0.4139565193822351,
+      "gain_vs_constant": 0.4757207089037865,
+      "attribute_macro_auc": 0.997403645157318,
+      "attribute_fields": 103
+    }
+  },
+  "statistical_recoverability_detected": true,
+  "leakage_criterion_met": true,
+  "practical_thresholds": {
+    "nrmse_gain": 0.05,
+    "attribute_auc": 0.6
+  },
+  "pca_reference": {
+    "not_run_in_primary_stage": true
+  },
+  "random_projection_reference": {
+    "not_run_in_primary_stage": true
+  },
+  "elapsed_seconds": 20.19647979194997,
+  "target_semantics": "preprocessed_model_input"
+}

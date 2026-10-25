@@ -1,0 +1,36 @@
+{
+  "exact_saved_prediction_checks": 24,
+  "all_exact": true,
+  "preexisting_checkpoint_paths_not_written": true,
+  "font": "Microsoft YaHei",
+  "figure_count": 2,
+  "source_sha256": "786f28f59821178ebf54102287f5b92106db8998860550c2a7b9596bf95a3646",
+  "checkpoint_encoder_checks": {
+    "FINETUNE_s42": {
+      "encoder_tensors_exact": 40,
+      "fusion_tensors_changed": 20
+    },
+    "REPLAY_s42": {
+      "encoder_tensors_exact": 40,
+      "fusion_tensors_changed": 20
+    },
+    "FINETUNE_s100": {
+      "encoder_tensors_exact": 40,
+      "fusion_tensors_changed": 20
+    },
+    "REPLAY_s100": {
+      "encoder_tensors_exact": 40,
+      "fusion_tensors_changed": 20
+    },
+    "FINETUNE_s17": {
+      "encoder_tensors_exact": 40,
+      "fusion_tensors_changed": 20
+    },
+    "REPLAY_s17": {
+      "encoder_tensors_exact": 40,
+      "fusion_tensors_changed": 20
+    }
+  },
+  "visual_qa": "两张PNG已查看；文字、坐标与三种子点显示正常；SVG文字可编辑。",
+  "executed_source_snapshot": "执行源码快照.txt"
+}

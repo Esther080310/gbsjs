@@ -1,0 +1,13 @@
+{
+  "status": "rebuilt_without_attack_rerun",
+  "output_dir": "/Users/how/Desktop/分布式企业违规检测/实验与代码/FiLM-L隐私审计/20261020-v1/results/primary-audit-v2-formal",
+  "records_read": 30,
+  "record_keys_exact": true,
+  "numeric_snapshot_sha256_before": "6972aefe743298852821ee4f4885bf16e2a860a3349626e8ce67cfd9e2bf5c1b",
+  "numeric_snapshot_sha256_after": "6972aefe743298852821ee4f4885bf16e2a860a3349626e8ce67cfd9e2bf5c1b",
+  "numeric_values_unchanged": true,
+  "statistical_recoverability_records": 30,
+  "practical_leakage_records": 30,
+  "models_hashed": 18,
+  "data_pack_files_hashed": 11
+}

@@ -1,0 +1,14 @@
+{
+  "metric_groups": 48,
+  "all_recomputed": true,
+  "rollback_paths_checked": 12,
+  "cached_old_labels_require_no_reencoding": true,
+  "new_year_only_missing_keys_encoded": true,
+  "new_encoder_invalidates_cache": true,
+  "no_research_version_auto_published": true,
+  "policy_branch_logic_exercised": true,
+  "policy_causal_effect_validated": false,
+  "notes": "Cache interface semantic tests are separate from rolling benchmark, whose timing conservatively rebuilds all feature messages. No real cross-institution network was run.",
+  "visual_qa": "图已查看；横轴明确2019/2020，不使用年份偏移记法；SVG文字可编辑。",
+  "entry_links_checked": true
+}

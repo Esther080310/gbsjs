@@ -1,0 +1,22 @@
+[study]
+version = "20261016-evidence-v1-financial"
+evaluation_years = [2020, 2021]
+pilot_seeds = [42, 100]
+expansion_seeds = [17, 223, 483, 907]
+arms = ["F0", "FM", "FV"]
+output = "artifacts/experiments/20261016-evidence-v1/financial"
+
+[training]
+threads = 4
+backbone = "RiskModel(pack,0,'Plain',seed)"
+optimizer = "original AdamW lr .001 weight_decay .0001"
+selection = "original fold1 proper BCE"
+calibration = "original fold2 Platt and type shrinkage"
+
+[gate]
+candidate = "FV"
+reference = "FM"
+per_year_mean_maximum = 0.0
+macro_mean_maximum = -0.001
+bootstrap_replicates = 1000
+bootstrap_seed = 20261016

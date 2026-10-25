@@ -1,0 +1,86 @@
+[
+  {
+    "tag": "S0_s100",
+    "path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/dCor稳定性复检/20261021-v1/results/S0_s100/model.pt",
+    "sha256": "5d57ad8c2572dba67f76c291b3d2ed9dd765bb5b0a8d9f74918ad1349263273d",
+    "simulated_sigma": null
+  },
+  {
+    "tag": "D1_s100",
+    "path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/dCor稳定性复检/20261021-v1/results/D1_s100/model.pt",
+    "sha256": "cc885bc51d86086e5bb18c1f213627903c6b05306836c2c55e884676b1dfb6d7",
+    "simulated_sigma": null
+  },
+  {
+    "tag": "S0_s17",
+    "path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/dCor稳定性复检/20261021-v1/results/S0_s17/model.pt",
+    "sha256": "94ea2dfce8c8881311242e03981a01a9accc72d80ff0b402312419b2df48c0ca",
+    "simulated_sigma": null
+  },
+  {
+    "tag": "D1_s17",
+    "path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/dCor稳定性复检/20261021-v1/results/D1_s17/model.pt",
+    "sha256": "834e29a1c6ca6f60dc74ea0099d4b0859bf2ce7989098ba2ef37cb96c2b75e01",
+    "simulated_sigma": null
+  },
+  {
+    "tag": "S0_s223",
+    "path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/dCor稳定性复检/20261021-v1/results/S0_s223/model.pt",
+    "sha256": "f061f18d199ff1b5132686d36cbe06590e39157b599ae4d7b3383b781cd39045",
+    "simulated_sigma": null
+  },
+  {
+    "tag": "D1_s223",
+    "path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/dCor稳定性复检/20261021-v1/results/D1_s223/model.pt",
+    "sha256": "962ef6fecee50b9ce668867fa50af298fd95550e42a97eb98f7c74fae2b1571f",
+    "simulated_sigma": null
+  },
+  {
+    "tag": "S0_s483",
+    "path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/dCor稳定性复检/20261021-v1/results/S0_s483/model.pt",
+    "sha256": "2ee969f5043e01de86c756a96eebc4e038512108215d0280708b466cdb13d17b",
+    "simulated_sigma": null
+  },
+  {
+    "tag": "D1_s483",
+    "path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/dCor稳定性复检/20261021-v1/results/D1_s483/model.pt",
+    "sha256": "5af5023706a21177f4453241b25e19114b61d5971ee2109304c2431d3b06a330",
+    "simulated_sigma": null
+  },
+  {
+    "tag": "S0_s907",
+    "path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/dCor稳定性复检/20261021-v1/results/S0_s907/model.pt",
+    "sha256": "f93883e4f76a5f43f29ca80484c6face9707b90a9ea6453b97b2c21280d45f0f",
+    "simulated_sigma": null
+  },
+  {
+    "tag": "D1_s907",
+    "path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/dCor稳定性复检/20261021-v1/results/D1_s907/model.pt",
+    "sha256": "22a5237ced5e81f0a1d03156e421133b39b921264875f223529e6e0a999dd6cb",
+    "simulated_sigma": null
+  },
+  {
+    "tag": "S0_s42",
+    "path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/FiLM-L隐私防护/20261021-v2/results/S0/model.pt",
+    "sha256": "c05cec55911269501f0903c09ac763c2f63d379c2f71ee0a242114e6e4adc879",
+    "simulated_sigma": null
+  },
+  {
+    "tag": "D1_s42",
+    "path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/FiLM-L隐私防护/20261021-v2/results/D1/model.pt",
+    "sha256": "5c690dae64bcf141dcd495aab8a200cfe0794e4bf1cb942f152dff7e3bc2c9bd",
+    "simulated_sigma": null
+  },
+  {
+    "tag": "M01_s42",
+    "path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/FiLM-L隐私防护/20261021-v2/results/M01/model.pt",
+    "sha256": "6272e669b56fe9266264aa8ed6f6539ca9f63d4b398fe138c1f613ec17f3fa74",
+    "simulated_sigma": null
+  },
+  {
+    "tag": "G1_s42",
+    "path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/FiLM-L隐私防护/20261021-v2/results/S0/model.pt",
+    "sha256": "c05cec55911269501f0903c09ac763c2f63d379c2f71ee0a242114e6e4adc879",
+    "simulated_sigma": 1.0
+  }
+]

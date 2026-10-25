@@ -1,0 +1,20 @@
+{
+  "precision": {
+    "market": "fp32",
+    "finance": "fp32",
+    "governance": "fp32",
+    "audit_control": "fp32"
+  },
+  "frame_bytes": {
+    "market": 249580,
+    "finance": 1306540,
+    "governance": 322980,
+    "audit_control": 121130
+  },
+  "payload_bytes": {
+    "market": 249560,
+    "finance": 1306520,
+    "governance": 322960,
+    "audit_control": 121110
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "status": "passed",
+  "scope": "2020 seed42, 64 rows; shapes/round-trip only, no labels and no policy selection",
+  "physical_topology": "three data nodes, one transport round; X3 carries governance and audit-control logical blocks",
+  "logical_shapes": {
+    "market": [
+      64,
+      17
+    ],
+    "finance": [
+      64,
+      89
+    ],
+    "governance": [
+      64,
+      22
+    ],
+    "audit_control": [
+      64,
+      9
+    ]
+  },
+  "unquantized_manual_forward_exact": true,
+  "roundtrips": {
+    "fp32": {
+      "rows": 64,
+      "four_frames_bytes": 34960,
+      "header_bytes": 80,
+      "payload_bytes_per_row": 545.0,
+      "one_company_four_frame_bytes": 625.0,
+      "bytes_per_row_including_amortized_headers": 546.25,
+      "max_message_abs_error": 0.0,
+      "max_overall_logit_abs_error": 0.0,
+      "max_type_logit_abs_error": 0.0,
+      "message_sha256": {
+        "market": "fb5de84f0faed64d6c04c5cf4d2df6c472f573b181e8b841450d07f37eb7e56e",
+        "finance": "3b24b21f868a8ddee2e2ac40e60c686a6153c6ad2c6db92f73be6eaf89e05953",
+        "governance": "490a3e805be96693203a8e62d1774ead9f7d52e94cc497a46ad9e6701cff5976",
+        "audit_control": "41abb913b17d4df4d09899c45c6d1a12b4a102dbc2594002cdc11f365d4ee8d3"
+      }
+    },
+    "fp16": {
+      "rows": 64,
+      "four_frames_bytes": 17552,
+      "header_bytes": 80,
+      "payload_bytes_per_row": 273.0,
+      "one_company_four_frame_bytes": 353.0,
+      "bytes_per_row_including_amortized_headers": 274.25,
+      "max_message_abs_error": 0.0018434524536132812,
+      "max_overall_logit_abs_error": 0.00027817487716674805,
+      "max_type_logit_abs_error": 0.0005037784576416016,
+      "message_sha256": {
+        "market": "225d6e7330e9372c4ca7b9bc8d5b9576473e1c468fa43e69ba3b1906b91108be",
+        "finance": "a9dc467134bf36a45567074180b999294330009692fd00aef11f585417eb6919",
+        "governance": "a59f26115bf9ecff8e355d3608d2b99ad03acdabba9a94b0cb53a5c038960ca8",
+        "audit_control": "3e60fa9c7ad88dc87e3c08d18c3e42b58040d69c102ec343d0eaff129e6cf329"
+      }
+    },
+    "int8": {
+      "rows": 64,
+      "four_frames_bytes": 8848,
+      "header_bytes": 80,
+      "payload_bytes_per_row": 137.0,
+      "one_company_four_frame_bytes": 217.0,
+      "bytes_per_row_including_amortized_headers": 138.25,
+      "max_message_abs_error": 1.7562421560287476,
+      "max_overall_logit_abs_error": 0.1679999828338623,
+      "max_type_logit_abs_error": 0.24006545543670654,
+      "message_sha256": {
+        "market": "6ce93e1cab5c0b00c9c6301acdf36b21402977c35494f66cc0176c5e198ff75b",
+        "finance": "da13115df0916c8de46e0a184107b892c9d4c08f3a81d71c2f0c1a60b9723987",
+        "governance": "a94baa6bfe4a1741527565137b1a88855ccd0d0152dcca90e0dd6be4661dd43a",
+        "audit_control": "6c762ec5d3d5f70c964fd13c7228b598331a7f9591857916e243e72e9f934500"
+      }
+    }
+  },
+  "seed42_vs_other_seeds_max_content_difference": {
+    "market": 6.749536991119385,
+    "finance": 3.8639402389526367,
+    "governance": 3.66162109375,
+    "audit_control": 1.5801396369934082
+  },
+  "six_seed_messages_required": true,
+  "naive_average_message_is_not_exact": {
+    "overall_logit_max_abs_error_raw_uncalibrated_smoke": 3.275120735168457,
+    "type_logit_max_abs_error_raw_uncalibrated_smoke": 2.796849489212036
+  },
+  "ensemble_rule_for_formal_evaluation": "fuse each seed's messages to raw logits; apply that seed's calibration; equal-average six calibrated logits; apply sigmoid once",
+  "int8_scales_fitted_from": "first 512 training rows; smoke only, not formal deployment scales"
+}

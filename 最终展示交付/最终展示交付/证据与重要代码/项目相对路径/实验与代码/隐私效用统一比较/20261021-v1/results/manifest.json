@@ -1,0 +1,12 @@
+{
+  "year": 2020,
+  "folds_loaded": [
+    0,
+    1
+  ],
+  "fold2_loaded": false,
+  "fold3_loaded": false,
+  "predictor_training": false,
+  "protocol_sha": "b026c695f48fd8376450d996d6d7f8e83c10d692b7cf33c201117202639919fe",
+  "source_sha": "b22840cecddeab15982c43dfdb63f61bcf677550b4da715f8416d7b91684a734"
+}

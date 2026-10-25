@@ -1,0 +1,1901 @@
+{
+  "year": 2020,
+  "scope": "single42",
+  "view": "h2_post",
+  "attack_input_dimensions": 88,
+  "target_dimensions": 238,
+  "fold_rows": {
+    "train0": 512,
+    "select1": 512,
+    "test3": 512
+  },
+  "ridge_selection": [
+    {
+      "alpha": 0.1,
+      "selection_nrmse": 1.8800917588841422
+    },
+    {
+      "alpha": 1.0,
+      "selection_nrmse": 1.8746777886491812
+    }
+  ],
+  "mlp_selection": {
+    "best_epoch": 2,
+    "selection_nrmse": 1.4222068891916329,
+    "history": [
+      {
+        "epoch": 1,
+        "train_mse": 1.0359218120574951,
+        "selection_nrmse": 1.4359806277336962
+      },
+      {
+        "epoch": 2,
+        "train_mse": 1.0071314573287964,
+        "selection_nrmse": 1.4222068891916329
+      }
+    ]
+  },
+  "attacker_selection_nrmse": {
+    "ridge": 1.8746777886491812,
+    "mlp": 1.4222068891916329
+  },
+  "selected_attacker": "mlp",
+  "test_metrics": {
+    "constant": {
+      "macro_nrmse_all": 1.322222183474841,
+      "macro_nrmse_numeric": 1.5211657866317942,
+      "macro_nrmse_binary": 1.1232785803178875,
+      "macro_r2": -1.2111996831906218,
+      "macro_spearman": NaN,
+      "fields": 238,
+      "binary_fields": 119,
+      "x2_macro_nrmse": 1.322222183474841
+    },
+    "ridge": {
+      "macro_nrmse_all": 1.7169492588356567,
+      "macro_nrmse_numeric": 1.3787347468078888,
+      "macro_nrmse_binary": 2.0551637708634245,
+      "macro_r2": -3.656303796104173,
+      "macro_spearman": 0.4626549667046852,
+      "fields": 238,
+      "binary_fields": 119,
+      "x2_macro_nrmse": 1.7169492588356567
+    },
+    "mlp": {
+      "macro_nrmse_all": 1.3711690166755266,
+      "macro_nrmse_numeric": 1.5660462184132833,
+      "macro_nrmse_binary": 1.1762918149377697,
+      "macro_r2": -1.319916387842549,
+      "macro_spearman": 0.05492591484318839,
+      "fields": 238,
+      "binary_fields": 119,
+      "x2_macro_nrmse": 1.3711690166755266
+    }
+  },
+  "selected_gain_vs_constant": {
+    "estimate": -0.051232825964689255,
+    "ci95": [
+      -0.07551289927214384,
+      -0.04067509351298213
+    ],
+    "null": 0.0,
+    "lower_above_null": false,
+    "replicates": 500,
+    "point_estimate": -0.04894683320068549
+  },
+  "attribute_macro_auc": {
+    "estimate": 0.942287802696228,
+    "ci95": [
+      0.9302334010601043,
+      0.9511422038078308
+    ],
+    "null": 0.5,
+    "lower_above_null": true,
+    "replicates": 5,
+    "point_estimate": 0.9440218860291568
+  },
+  "attribute_fields_point": [
+    {
+      "field": "missing::solv__F010101A",
+      "kind": "encoded_binary",
+      "auc": 0.997,
+      "positive": 12,
+      "n": 512,
+      "score_column": 0
+    },
+    {
+      "field": "missing::solv__F010201A",
+      "kind": "encoded_binary",
+      "auc": 0.997,
+      "positive": 12,
+      "n": 512,
+      "score_column": 1
+    },
+    {
+      "field": "missing::solv__F010301A",
+      "kind": "encoded_binary",
+      "auc": 0.997,
+      "positive": 12,
+      "n": 512,
+      "score_column": 2
+    },
+    {
+      "field": "missing::solv__F010401A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 12,
+      "n": 512,
+      "score_column": 3
+    },
+    {
+      "field": "missing::solv__F010501A",
+      "kind": "encoded_binary",
+      "auc": 0.8187403200826019,
+      "positive": 65,
+      "n": 512,
+      "score_column": 4
+    },
+    {
+      "field": "missing::solv__F010601A",
+      "kind": "encoded_binary",
+      "auc": 0.997,
+      "positive": 12,
+      "n": 512,
+      "score_column": 5
+    },
+    {
+      "field": "missing::solv__F010701B",
+      "kind": "encoded_binary",
+      "auc": 0.9233365790327815,
+      "positive": 117,
+      "n": 512,
+      "score_column": 6
+    },
+    {
+      "field": "missing::solv__F010702B",
+      "kind": "encoded_binary",
+      "auc": 0.9233365790327815,
+      "positive": 117,
+      "n": 512,
+      "score_column": 7
+    },
+    {
+      "field": "missing::solv__F010801B",
+      "kind": "encoded_binary",
+      "auc": 0.997,
+      "positive": 12,
+      "n": 512,
+      "score_column": 8
+    },
+    {
+      "field": "missing::solv__F010901B",
+      "kind": "encoded_binary",
+      "auc": 0.9233365790327815,
+      "positive": 117,
+      "n": 512,
+      "score_column": 9
+    },
+    {
+      "field": "missing::solv__F011001B",
+      "kind": "encoded_binary",
+      "auc": 0.808740990192603,
+      "positive": 78,
+      "n": 512,
+      "score_column": 10
+    },
+    {
+      "field": "missing::solv__F011201A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 3,
+      "n": 512,
+      "score_column": 11
+    },
+    {
+      "field": "missing::solv__F011301A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 3,
+      "n": 512,
+      "score_column": 12
+    },
+    {
+      "field": "missing::solv__F011401A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 3,
+      "n": 512,
+      "score_column": 13
+    },
+    {
+      "field": "missing::solv__F011501A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 3,
+      "n": 512,
+      "score_column": 14
+    },
+    {
+      "field": "missing::solv__F011601A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 3,
+      "n": 512,
+      "score_column": 15
+    },
+    {
+      "field": "missing::solv__F011701A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 3,
+      "n": 512,
+      "score_column": 16
+    },
+    {
+      "field": "missing::solv__F011801A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 3,
+      "n": 512,
+      "score_column": 17
+    },
+    {
+      "field": "missing::solv__F011901A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 3,
+      "n": 512,
+      "score_column": 18
+    },
+    {
+      "field": "missing::solv__F012001A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 3,
+      "n": 512,
+      "score_column": 19
+    },
+    {
+      "field": "missing::solv__F012101A",
+      "kind": "encoded_binary",
+      "auc": 0.997,
+      "positive": 12,
+      "n": 512,
+      "score_column": 20
+    },
+    {
+      "field": "missing::solv__F012201B",
+      "kind": "encoded_binary",
+      "auc": 0.9978418375211963,
+      "positive": 13,
+      "n": 512,
+      "score_column": 21
+    },
+    {
+      "field": "missing::solv__F012301B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 3,
+      "n": 512,
+      "score_column": 22
+    },
+    {
+      "field": "missing::solv__F012401B",
+      "kind": "encoded_binary",
+      "auc": 0.8816733067729083,
+      "positive": 10,
+      "n": 512,
+      "score_column": 23
+    },
+    {
+      "field": "missing::solv__F012501B",
+      "kind": "encoded_binary",
+      "auc": 0.7979249011857706,
+      "positive": 6,
+      "n": 512,
+      "score_column": 24
+    },
+    {
+      "field": "missing::solv__F012601B",
+      "kind": "encoded_binary",
+      "auc": 0.8529663739558792,
+      "positive": 29,
+      "n": 512,
+      "score_column": 25
+    },
+    {
+      "field": "missing::solv__F012701B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 3,
+      "n": 512,
+      "score_column": 26
+    },
+    {
+      "field": "missing::solv__F020502A",
+      "kind": "encoded_binary",
+      "auc": 0.993,
+      "positive": 12,
+      "n": 512,
+      "score_column": 27
+    },
+    {
+      "field": "missing::oper__F040101B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 3,
+      "n": 512,
+      "score_column": 28
+    },
+    {
+      "field": "missing::oper__F040201B",
+      "kind": "encoded_binary",
+      "auc": 0.7355577689243028,
+      "positive": 10,
+      "n": 512,
+      "score_column": 29
+    },
+    {
+      "field": "missing::oper__F040202B",
+      "kind": "encoded_binary",
+      "auc": 0.7658493483543186,
+      "positive": 9,
+      "n": 512,
+      "score_column": 30
+    },
+    {
+      "field": "missing::oper__F040203B",
+      "kind": "encoded_binary",
+      "auc": 0.7658493483543186,
+      "positive": 9,
+      "n": 512,
+      "score_column": 31
+    },
+    {
+      "field": "missing::oper__F040301B",
+      "kind": "encoded_binary",
+      "auc": 0.7355577689243028,
+      "positive": 10,
+      "n": 512,
+      "score_column": 32
+    },
+    {
+      "field": "missing::oper__F040302B",
+      "kind": "encoded_binary",
+      "auc": 0.7658493483543186,
+      "positive": 9,
+      "n": 512,
+      "score_column": 33
+    },
+    {
+      "field": "missing::oper__F040303B",
+      "kind": "encoded_binary",
+      "auc": 0.7658493483543186,
+      "positive": 9,
+      "n": 512,
+      "score_column": 34
+    },
+    {
+      "field": "missing::oper__F040304C",
+      "kind": "encoded_binary",
+      "auc": 0.7658493483543186,
+      "positive": 9,
+      "n": 512,
+      "score_column": 35
+    },
+    {
+      "field": "missing::oper__F040401B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 3,
+      "n": 512,
+      "score_column": 36
+    },
+    {
+      "field": "missing::oper__F040501B",
+      "kind": "encoded_binary",
+      "auc": 0.8364368150518864,
+      "positive": 21,
+      "n": 512,
+      "score_column": 37
+    },
+    {
+      "field": "missing::oper__F040502B",
+      "kind": "encoded_binary",
+      "auc": 0.8378349524927938,
+      "positive": 19,
+      "n": 512,
+      "score_column": 38
+    },
+    {
+      "field": "missing::oper__F040503B",
+      "kind": "encoded_binary",
+      "auc": 0.8378349524927938,
+      "positive": 19,
+      "n": 512,
+      "score_column": 39
+    },
+    {
+      "field": "missing::oper__F040601B",
+      "kind": "encoded_binary",
+      "auc": 0.8364368150518864,
+      "positive": 21,
+      "n": 512,
+      "score_column": 40
+    },
+    {
+      "field": "missing::oper__F040602B",
+      "kind": "encoded_binary",
+      "auc": 0.8378349524927938,
+      "positive": 19,
+      "n": 512,
+      "score_column": 41
+    },
+    {
+      "field": "missing::oper__F040603B",
+      "kind": "encoded_binary",
+      "auc": 0.8378349524927938,
+      "positive": 19,
+      "n": 512,
+      "score_column": 42
+    },
+    {
+      "field": "missing::oper__F040604C",
+      "kind": "encoded_binary",
+      "auc": 0.8378349524927938,
+      "positive": 19,
+      "n": 512,
+      "score_column": 43
+    },
+    {
+      "field": "missing::oper__F040701B",
+      "kind": "encoded_binary",
+      "auc": 0.9072793148880106,
+      "positive": 6,
+      "n": 512,
+      "score_column": 44
+    },
+    {
+      "field": "missing::oper__F040702B",
+      "kind": "encoded_binary",
+      "auc": 0.9072793148880106,
+      "positive": 6,
+      "n": 512,
+      "score_column": 45
+    },
+    {
+      "field": "missing::oper__F040703B",
+      "kind": "encoded_binary",
+      "auc": 0.9072793148880106,
+      "positive": 6,
+      "n": 512,
+      "score_column": 46
+    },
+    {
+      "field": "missing::oper__F040704C",
+      "kind": "encoded_binary",
+      "auc": 0.9072793148880106,
+      "positive": 6,
+      "n": 512,
+      "score_column": 47
+    },
+    {
+      "field": "missing::oper__F040801B",
+      "kind": "encoded_binary",
+      "auc": 0.8949092741935484,
+      "positive": 16,
+      "n": 512,
+      "score_column": 48
+    },
+    {
+      "field": "missing::oper__F040802B",
+      "kind": "encoded_binary",
+      "auc": 0.90234375,
+      "positive": 16,
+      "n": 512,
+      "score_column": 49
+    },
+    {
+      "field": "missing::oper__F040803B",
+      "kind": "encoded_binary",
+      "auc": 0.90234375,
+      "positive": 16,
+      "n": 512,
+      "score_column": 50
+    },
+    {
+      "field": "missing::oper__F040901B",
+      "kind": "encoded_binary",
+      "auc": 0.8639779005524862,
+      "positive": 150,
+      "n": 512,
+      "score_column": 51
+    },
+    {
+      "field": "missing::oper__F040902B",
+      "kind": "encoded_binary",
+      "auc": 0.8763964371980676,
+      "positive": 144,
+      "n": 512,
+      "score_column": 52
+    },
+    {
+      "field": "missing::oper__F040903B",
+      "kind": "encoded_binary",
+      "auc": 0.8551206784083496,
+      "positive": 147,
+      "n": 512,
+      "score_column": 53
+    },
+    {
+      "field": "missing::oper__F041001B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 3,
+      "n": 512,
+      "score_column": 54
+    },
+    {
+      "field": "missing::oper__F041002B",
+      "kind": "encoded_binary",
+      "auc": 0.5,
+      "positive": 3,
+      "n": 512,
+      "score_column": 55
+    },
+    {
+      "field": "missing::oper__F041003B",
+      "kind": "encoded_binary",
+      "auc": 0.9921414538310414,
+      "positive": 3,
+      "n": 512,
+      "score_column": 56
+    },
+    {
+      "field": "missing::oper__F041101B",
+      "kind": "encoded_binary",
+      "auc": 0.997,
+      "positive": 12,
+      "n": 512,
+      "score_column": 57
+    },
+    {
+      "field": "missing::oper__F041201B",
+      "kind": "encoded_binary",
+      "auc": 0.997,
+      "positive": 12,
+      "n": 512,
+      "score_column": 58
+    },
+    {
+      "field": "missing::oper__F041202B",
+      "kind": "encoded_binary",
+      "auc": 0.997,
+      "positive": 12,
+      "n": 512,
+      "score_column": 59
+    },
+    {
+      "field": "missing::oper__F041203B",
+      "kind": "encoded_binary",
+      "auc": 0.9565284414983815,
+      "positive": 13,
+      "n": 512,
+      "score_column": 60
+    },
+    {
+      "field": "missing::oper__F041301B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 3,
+      "n": 512,
+      "score_column": 61
+    },
+    {
+      "field": "missing::oper__F041401B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 3,
+      "n": 512,
+      "score_column": 62
+    },
+    {
+      "field": "missing::oper__F041402B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 3,
+      "n": 512,
+      "score_column": 63
+    },
+    {
+      "field": "missing::oper__F041403B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 3,
+      "n": 512,
+      "score_column": 64
+    },
+    {
+      "field": "missing::oper__F041501B",
+      "kind": "encoded_binary",
+      "auc": 0.997,
+      "positive": 12,
+      "n": 512,
+      "score_column": 65
+    },
+    {
+      "field": "missing::oper__F041502B",
+      "kind": "encoded_binary",
+      "auc": 0.997,
+      "positive": 12,
+      "n": 512,
+      "score_column": 66
+    },
+    {
+      "field": "missing::oper__F041503B",
+      "kind": "encoded_binary",
+      "auc": 0.9565284414983815,
+      "positive": 13,
+      "n": 512,
+      "score_column": 67
+    },
+    {
+      "field": "missing::oper__F041601B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 3,
+      "n": 512,
+      "score_column": 68
+    },
+    {
+      "field": "missing::oper__F041701B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 3,
+      "n": 512,
+      "score_column": 69
+    },
+    {
+      "field": "missing::oper__F041702B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 3,
+      "n": 512,
+      "score_column": 70
+    },
+    {
+      "field": "missing::oper__F041703B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 3,
+      "n": 512,
+      "score_column": 71
+    },
+    {
+      "field": "missing::oper__F041801B",
+      "kind": "encoded_binary",
+      "auc": 0.9530000000000001,
+      "positive": 12,
+      "n": 512,
+      "score_column": 72
+    },
+    {
+      "field": "missing::oper__F041802B",
+      "kind": "encoded_binary",
+      "auc": 0.993,
+      "positive": 12,
+      "n": 512,
+      "score_column": 73
+    },
+    {
+      "field": "missing::oper__F041803B",
+      "kind": "encoded_binary",
+      "auc": 0.993,
+      "positive": 12,
+      "n": 512,
+      "score_column": 74
+    },
+    {
+      "field": "missing::prof__F050101B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 3,
+      "n": 512,
+      "score_column": 75
+    },
+    {
+      "field": "missing::prof__F050102B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 3,
+      "n": 512,
+      "score_column": 76
+    },
+    {
+      "field": "missing::prof__F050103B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 3,
+      "n": 512,
+      "score_column": 77
+    },
+    {
+      "field": "missing::prof__F050201B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 3,
+      "n": 512,
+      "score_column": 78
+    },
+    {
+      "field": "missing::prof__F050202B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 3,
+      "n": 512,
+      "score_column": 79
+    },
+    {
+      "field": "missing::prof__F050203B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 3,
+      "n": 512,
+      "score_column": 80
+    },
+    {
+      "field": "missing::prof__F050301B",
+      "kind": "encoded_binary",
+      "auc": 0.997,
+      "positive": 12,
+      "n": 512,
+      "score_column": 81
+    },
+    {
+      "field": "missing::prof__F050302B",
+      "kind": "encoded_binary",
+      "auc": 0.997,
+      "positive": 12,
+      "n": 512,
+      "score_column": 82
+    },
+    {
+      "field": "missing::prof__F050303B",
+      "kind": "encoded_binary",
+      "auc": 0.9565284414983815,
+      "positive": 13,
+      "n": 512,
+      "score_column": 83
+    },
+    {
+      "field": "missing::prof__F050401B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 3,
+      "n": 512,
+      "score_column": 84
+    },
+    {
+      "field": "missing::prof__F050402B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 3,
+      "n": 512,
+      "score_column": 85
+    },
+    {
+      "field": "missing::prof__F050403B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 3,
+      "n": 512,
+      "score_column": 86
+    },
+    {
+      "field": "missing::prof__F050501B",
+      "kind": "encoded_binary",
+      "auc": 0.9530000000000001,
+      "positive": 12,
+      "n": 512,
+      "score_column": 87
+    },
+    {
+      "field": "missing::prof__F050502B",
+      "kind": "encoded_binary",
+      "auc": 0.993,
+      "positive": 12,
+      "n": 512,
+      "score_column": 88
+    },
+    {
+      "field": "missing::prof__F050503B",
+      "kind": "encoded_binary",
+      "auc": 0.993,
+      "positive": 12,
+      "n": 512,
+      "score_column": 89
+    },
+    {
+      "field": "missing::prof__F050601B",
+      "kind": "encoded_binary",
+      "auc": 0.9978418375211963,
+      "positive": 13,
+      "n": 512,
+      "score_column": 90
+    },
+    {
+      "field": "missing::prof__F050701B",
+      "kind": "encoded_binary",
+      "auc": 0.9978418375211963,
+      "positive": 13,
+      "n": 512,
+      "score_column": 91
+    },
+    {
+      "field": "missing::prof__F050801B",
+      "kind": "encoded_binary",
+      "auc": 0.9978418375211963,
+      "positive": 13,
+      "n": 512,
+      "score_column": 92
+    },
+    {
+      "field": "missing::prof__F050901B",
+      "kind": "encoded_binary",
+      "auc": 0.991417392401868,
+      "positive": 95,
+      "n": 512,
+      "score_column": 93
+    },
+    {
+      "field": "missing::prof__F051001B",
+      "kind": "encoded_binary",
+      "auc": 0.9673524844720497,
+      "positive": 92,
+      "n": 512,
+      "score_column": 94
+    },
+    {
+      "field": "missing::prof__F051101B",
+      "kind": "encoded_binary",
+      "auc": 0.9978418375211963,
+      "positive": 13,
+      "n": 512,
+      "score_column": 95
+    },
+    {
+      "field": "missing::prof__F051201B",
+      "kind": "encoded_binary",
+      "auc": 0.9672379032258065,
+      "positive": 16,
+      "n": 512,
+      "score_column": 96
+    },
+    {
+      "field": "missing::prof__F053201B",
+      "kind": "encoded_binary",
+      "auc": 0.9635627530364372,
+      "positive": 18,
+      "n": 512,
+      "score_column": 97
+    },
+    {
+      "field": "missing::prof__F053301B",
+      "kind": "encoded_binary",
+      "auc": 0.9295774647887324,
+      "positive": 15,
+      "n": 512,
+      "score_column": 98
+    },
+    {
+      "field": "missing::prof__F051301B",
+      "kind": "encoded_binary",
+      "auc": 0.9295774647887324,
+      "positive": 15,
+      "n": 512,
+      "score_column": 99
+    },
+    {
+      "field": "missing::prof__F051401B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 3,
+      "n": 512,
+      "score_column": 100
+    },
+    {
+      "field": "missing::prof__F051501B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 3,
+      "n": 512,
+      "score_column": 101
+    },
+    {
+      "field": "missing::prof__F051601B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 3,
+      "n": 512,
+      "score_column": 102
+    },
+    {
+      "field": "missing::prof__F051701B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 3,
+      "n": 512,
+      "score_column": 103
+    },
+    {
+      "field": "missing::prof__F051801B",
+      "kind": "encoded_binary",
+      "auc": 0.997,
+      "positive": 12,
+      "n": 512,
+      "score_column": 104
+    },
+    {
+      "field": "missing::prof__F051901B",
+      "kind": "encoded_binary",
+      "auc": 0.9978418375211963,
+      "positive": 13,
+      "n": 512,
+      "score_column": 105
+    },
+    {
+      "field": "missing::prof__F052001B",
+      "kind": "encoded_binary",
+      "auc": 0.9942962848774471,
+      "positive": 13,
+      "n": 512,
+      "score_column": 106
+    },
+    {
+      "field": "missing::prof__F052101B",
+      "kind": "encoded_binary",
+      "auc": 0.9321260898725687,
+      "positive": 15,
+      "n": 512,
+      "score_column": 107
+    },
+    {
+      "field": "missing::prof__F052201B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 3,
+      "n": 512,
+      "score_column": 108
+    },
+    {
+      "field": "missing::prof__F052301B",
+      "kind": "encoded_binary",
+      "auc": 0.9978418375211963,
+      "positive": 13,
+      "n": 512,
+      "score_column": 109
+    },
+    {
+      "field": "missing::prof__F052401B",
+      "kind": "encoded_binary",
+      "auc": 0.9978418375211963,
+      "positive": 13,
+      "n": 512,
+      "score_column": 110
+    },
+    {
+      "field": "missing::prof__F052901B",
+      "kind": "encoded_binary",
+      "auc": 0.991417392401868,
+      "positive": 95,
+      "n": 512,
+      "score_column": 111
+    },
+    {
+      "field": "missing::prof__F053001B",
+      "kind": "encoded_binary",
+      "auc": 0.9530000000000001,
+      "positive": 12,
+      "n": 512,
+      "score_column": 112
+    },
+    {
+      "field": "missing::prof__F053002B",
+      "kind": "encoded_binary",
+      "auc": 0.9528287343918607,
+      "positive": 13,
+      "n": 512,
+      "score_column": 113
+    },
+    {
+      "field": "missing::prof__F053003B",
+      "kind": "encoded_binary",
+      "auc": 0.9528287343918607,
+      "positive": 13,
+      "n": 512,
+      "score_column": 114
+    },
+    {
+      "field": "missing::prof__F053202B",
+      "kind": "encoded_binary",
+      "auc": 0.7911792508566703,
+      "positive": 78,
+      "n": 512,
+      "score_column": 115
+    }
+  ],
+  "direct_attribute_attack": {
+    "solver": "OneVsRest SGDClassifier(loss=log_loss, penalty=l2)",
+    "alpha": 0.0001,
+    "max_iter": 20,
+    "registered_fields": 116,
+    "variable_train_fields": 116,
+    "evaluable_test_fields": 116
+  },
+  "reconstruction_attribute_fields_point": [
+    {
+      "field": "missing::solv__F010101A",
+      "kind": "encoded_binary",
+      "auc": 0.8653333333333334,
+      "positive": 12,
+      "n": 512
+    },
+    {
+      "field": "missing::solv__F010201A",
+      "kind": "encoded_binary",
+      "auc": 0.7938333333333334,
+      "positive": 12,
+      "n": 512
+    },
+    {
+      "field": "missing::solv__F010301A",
+      "kind": "encoded_binary",
+      "auc": 0.3446666666666666,
+      "positive": 12,
+      "n": 512
+    },
+    {
+      "field": "missing::solv__F010401A",
+      "kind": "encoded_binary",
+      "auc": 0.14116666666666666,
+      "positive": 12,
+      "n": 512
+    },
+    {
+      "field": "missing::solv__F010501A",
+      "kind": "encoded_binary",
+      "auc": 0.5965926690758906,
+      "positive": 65,
+      "n": 512
+    },
+    {
+      "field": "missing::solv__F010601A",
+      "kind": "encoded_binary",
+      "auc": 0.9473333333333334,
+      "positive": 12,
+      "n": 512
+    },
+    {
+      "field": "missing::solv__F010701B",
+      "kind": "encoded_binary",
+      "auc": 0.5848534025749216,
+      "positive": 117,
+      "n": 512
+    },
+    {
+      "field": "missing::solv__F010702B",
+      "kind": "encoded_binary",
+      "auc": 0.6194525586930649,
+      "positive": 117,
+      "n": 512
+    },
+    {
+      "field": "missing::solv__F010801B",
+      "kind": "encoded_binary",
+      "auc": 0.31483333333333335,
+      "positive": 12,
+      "n": 512
+    },
+    {
+      "field": "missing::solv__F010901B",
+      "kind": "encoded_binary",
+      "auc": 0.7179054419560749,
+      "positive": 117,
+      "n": 512
+    },
+    {
+      "field": "missing::solv__F011001B",
+      "kind": "encoded_binary",
+      "auc": 0.717505612666903,
+      "positive": 78,
+      "n": 512
+    },
+    {
+      "field": "missing::solv__F011201A",
+      "kind": "encoded_binary",
+      "auc": 0.22003929273084477,
+      "positive": 3,
+      "n": 512
+    },
+    {
+      "field": "missing::solv__F011301A",
+      "kind": "encoded_binary",
+      "auc": 0.10216110019646363,
+      "positive": 3,
+      "n": 512
+    },
+    {
+      "field": "missing::solv__F011401A",
+      "kind": "encoded_binary",
+      "auc": 0.025540275049115935,
+      "positive": 3,
+      "n": 512
+    },
+    {
+      "field": "missing::solv__F011501A",
+      "kind": "encoded_binary",
+      "auc": 0.6954813359528487,
+      "positive": 3,
+      "n": 512
+    },
+    {
+      "field": "missing::solv__F011601A",
+      "kind": "encoded_binary",
+      "auc": 0.9587426326129665,
+      "positive": 3,
+      "n": 512
+    },
+    {
+      "field": "missing::solv__F011701A",
+      "kind": "encoded_binary",
+      "auc": 0.7819253438113949,
+      "positive": 3,
+      "n": 512
+    },
+    {
+      "field": "missing::solv__F011801A",
+      "kind": "encoded_binary",
+      "auc": 0.23772102161100195,
+      "positive": 3,
+      "n": 512
+    },
+    {
+      "field": "missing::solv__F011901A",
+      "kind": "encoded_binary",
+      "auc": 0.45186640471512773,
+      "positive": 3,
+      "n": 512
+    },
+    {
+      "field": "missing::solv__F012001A",
+      "kind": "encoded_binary",
+      "auc": 0.6797642436149313,
+      "positive": 3,
+      "n": 512
+    },
+    {
+      "field": "missing::solv__F012101A",
+      "kind": "encoded_binary",
+      "auc": 0.20983333333333334,
+      "positive": 12,
+      "n": 512
+    },
+    {
+      "field": "missing::solv__F012201B",
+      "kind": "encoded_binary",
+      "auc": 0.8948666563897025,
+      "positive": 13,
+      "n": 512
+    },
+    {
+      "field": "missing::solv__F012301B",
+      "kind": "encoded_binary",
+      "auc": 0.2612966601178782,
+      "positive": 3,
+      "n": 512
+    },
+    {
+      "field": "missing::solv__F012401B",
+      "kind": "encoded_binary",
+      "auc": 0.795816733067729,
+      "positive": 10,
+      "n": 512
+    },
+    {
+      "field": "missing::solv__F012501B",
+      "kind": "encoded_binary",
+      "auc": 0.6314229249011857,
+      "positive": 6,
+      "n": 512
+    },
+    {
+      "field": "missing::solv__F012601B",
+      "kind": "encoded_binary",
+      "auc": 0.4943242664382095,
+      "positive": 29,
+      "n": 512
+    },
+    {
+      "field": "missing::solv__F012701B",
+      "kind": "encoded_binary",
+      "auc": 0.7053045186640472,
+      "positive": 3,
+      "n": 512
+    },
+    {
+      "field": "missing::solv__F020502A",
+      "kind": "encoded_binary",
+      "auc": 0.6641666666666666,
+      "positive": 12,
+      "n": 512
+    },
+    {
+      "field": "missing::oper__F040101B",
+      "kind": "encoded_binary",
+      "auc": 0.5854616895874263,
+      "positive": 3,
+      "n": 512
+    },
+    {
+      "field": "missing::oper__F040201B",
+      "kind": "encoded_binary",
+      "auc": 0.601394422310757,
+      "positive": 10,
+      "n": 512
+    },
+    {
+      "field": "missing::oper__F040202B",
+      "kind": "encoded_binary",
+      "auc": 0.4285398718798321,
+      "positive": 9,
+      "n": 512
+    },
+    {
+      "field": "missing::oper__F040203B",
+      "kind": "encoded_binary",
+      "auc": 0.35785288270377735,
+      "positive": 9,
+      "n": 512
+    },
+    {
+      "field": "missing::oper__F040301B",
+      "kind": "encoded_binary",
+      "auc": 0.547609561752988,
+      "positive": 10,
+      "n": 512
+    },
+    {
+      "field": "missing::oper__F040302B",
+      "kind": "encoded_binary",
+      "auc": 0.45858184227965537,
+      "positive": 9,
+      "n": 512
+    },
+    {
+      "field": "missing::oper__F040303B",
+      "kind": "encoded_binary",
+      "auc": 0.5144687430969737,
+      "positive": 9,
+      "n": 512
+    },
+    {
+      "field": "missing::oper__F040304C",
+      "kind": "encoded_binary",
+      "auc": 0.6973713275900154,
+      "positive": 9,
+      "n": 512
+    },
+    {
+      "field": "missing::oper__F040401B",
+      "kind": "encoded_binary",
+      "auc": 0.35363457760314343,
+      "positive": 3,
+      "n": 512
+    },
+    {
+      "field": "missing::oper__F040501B",
+      "kind": "encoded_binary",
+      "auc": 0.7905149839976724,
+      "positive": 21,
+      "n": 512
+    },
+    {
+      "field": "missing::oper__F040502B",
+      "kind": "encoded_binary",
+      "auc": 0.749332763958578,
+      "positive": 19,
+      "n": 512
+    },
+    {
+      "field": "missing::oper__F040503B",
+      "kind": "encoded_binary",
+      "auc": 0.5678445606917903,
+      "positive": 19,
+      "n": 512
+    },
+    {
+      "field": "missing::oper__F040601B",
+      "kind": "encoded_binary",
+      "auc": 0.35020851517796525,
+      "positive": 21,
+      "n": 512
+    },
+    {
+      "field": "missing::oper__F040602B",
+      "kind": "encoded_binary",
+      "auc": 0.7254190242340129,
+      "positive": 19,
+      "n": 512
+    },
+    {
+      "field": "missing::oper__F040603B",
+      "kind": "encoded_binary",
+      "auc": 0.6054232945446781,
+      "positive": 19,
+      "n": 512
+    },
+    {
+      "field": "missing::oper__F040604C",
+      "kind": "encoded_binary",
+      "auc": 0.703960713141881,
+      "positive": 19,
+      "n": 512
+    },
+    {
+      "field": "missing::oper__F040701B",
+      "kind": "encoded_binary",
+      "auc": 0.5494071146245059,
+      "positive": 6,
+      "n": 512
+    },
+    {
+      "field": "missing::oper__F040702B",
+      "kind": "encoded_binary",
+      "auc": 0.34848484848484845,
+      "positive": 6,
+      "n": 512
+    },
+    {
+      "field": "missing::oper__F040703B",
+      "kind": "encoded_binary",
+      "auc": 0.852437417654809,
+      "positive": 6,
+      "n": 512
+    },
+    {
+      "field": "missing::oper__F040704C",
+      "kind": "encoded_binary",
+      "auc": 0.8162055335968379,
+      "positive": 6,
+      "n": 512
+    },
+    {
+      "field": "missing::oper__F040801B",
+      "kind": "encoded_binary",
+      "auc": 0.19947076612903228,
+      "positive": 16,
+      "n": 512
+    },
+    {
+      "field": "missing::oper__F040802B",
+      "kind": "encoded_binary",
+      "auc": 0.39238911290322576,
+      "positive": 16,
+      "n": 512
+    },
+    {
+      "field": "missing::oper__F040803B",
+      "kind": "encoded_binary",
+      "auc": 0.26247479838709675,
+      "positive": 16,
+      "n": 512
+    },
+    {
+      "field": "missing::oper__F040901B",
+      "kind": "encoded_binary",
+      "auc": 0.6295580110497239,
+      "positive": 150,
+      "n": 512
+    },
+    {
+      "field": "missing::oper__F040902B",
+      "kind": "encoded_binary",
+      "auc": 0.7511133756038648,
+      "positive": 144,
+      "n": 512
+    },
+    {
+      "field": "missing::oper__F040903B",
+      "kind": "encoded_binary",
+      "auc": 0.6057217407510949,
+      "positive": 147,
+      "n": 512
+    },
+    {
+      "field": "missing::oper__F041001B",
+      "kind": "encoded_binary",
+      "auc": 0.9941060903732809,
+      "positive": 3,
+      "n": 512
+    },
+    {
+      "field": "missing::oper__F041002B",
+      "kind": "encoded_binary",
+      "auc": 0.37524557956777993,
+      "positive": 3,
+      "n": 512
+    },
+    {
+      "field": "missing::oper__F041003B",
+      "kind": "encoded_binary",
+      "auc": 0.6974459724950883,
+      "positive": 3,
+      "n": 512
+    },
+    {
+      "field": "missing::oper__F041101B",
+      "kind": "encoded_binary",
+      "auc": 0.14266666666666666,
+      "positive": 12,
+      "n": 512
+    },
+    {
+      "field": "missing::oper__F041201B",
+      "kind": "encoded_binary",
+      "auc": 0.935,
+      "positive": 12,
+      "n": 512
+    },
+    {
+      "field": "missing::oper__F041202B",
+      "kind": "encoded_binary",
+      "auc": 0.852,
+      "positive": 12,
+      "n": 512
+    },
+    {
+      "field": "missing::oper__F041203B",
+      "kind": "encoded_binary",
+      "auc": 0.6866039771851395,
+      "positive": 13,
+      "n": 512
+    },
+    {
+      "field": "missing::oper__F041301B",
+      "kind": "encoded_binary",
+      "auc": 0.8487229862475442,
+      "positive": 3,
+      "n": 512
+    },
+    {
+      "field": "missing::oper__F041401B",
+      "kind": "encoded_binary",
+      "auc": 0.693516699410609,
+      "positive": 3,
+      "n": 512
+    },
+    {
+      "field": "missing::oper__F041402B",
+      "kind": "encoded_binary",
+      "auc": 0.762278978388998,
+      "positive": 3,
+      "n": 512
+    },
+    {
+      "field": "missing::oper__F041403B",
+      "kind": "encoded_binary",
+      "auc": 0.4047151277013753,
+      "positive": 3,
+      "n": 512
+    },
+    {
+      "field": "missing::oper__F041501B",
+      "kind": "encoded_binary",
+      "auc": 0.4971666666666667,
+      "positive": 12,
+      "n": 512
+    },
+    {
+      "field": "missing::oper__F041502B",
+      "kind": "encoded_binary",
+      "auc": 0.4178333333333334,
+      "positive": 12,
+      "n": 512
+    },
+    {
+      "field": "missing::oper__F041503B",
+      "kind": "encoded_binary",
+      "auc": 0.36403576383536307,
+      "positive": 13,
+      "n": 512
+    },
+    {
+      "field": "missing::oper__F041601B",
+      "kind": "encoded_binary",
+      "auc": 0.7524557956777996,
+      "positive": 3,
+      "n": 512
+    },
+    {
+      "field": "missing::oper__F041701B",
+      "kind": "encoded_binary",
+      "auc": 0.28683693516699416,
+      "positive": 3,
+      "n": 512
+    },
+    {
+      "field": "missing::oper__F041702B",
+      "kind": "encoded_binary",
+      "auc": 0.5383104125736738,
+      "positive": 3,
+      "n": 512
+    },
+    {
+      "field": "missing::oper__F041703B",
+      "kind": "encoded_binary",
+      "auc": 0.023575638506876273,
+      "positive": 3,
+      "n": 512
+    },
+    {
+      "field": "missing::oper__F041801B",
+      "kind": "encoded_binary",
+      "auc": 0.7475,
+      "positive": 12,
+      "n": 512
+    },
+    {
+      "field": "missing::oper__F041802B",
+      "kind": "encoded_binary",
+      "auc": 0.16166666666666668,
+      "positive": 12,
+      "n": 512
+    },
+    {
+      "field": "missing::oper__F041803B",
+      "kind": "encoded_binary",
+      "auc": 0.5468333333333334,
+      "positive": 12,
+      "n": 512
+    },
+    {
+      "field": "missing::prof__F050101B",
+      "kind": "encoded_binary",
+      "auc": 0.2357563850687623,
+      "positive": 3,
+      "n": 512
+    },
+    {
+      "field": "missing::prof__F050102B",
+      "kind": "encoded_binary",
+      "auc": 0.7740667976424361,
+      "positive": 3,
+      "n": 512
+    },
+    {
+      "field": "missing::prof__F050103B",
+      "kind": "encoded_binary",
+      "auc": 0.9764243614931237,
+      "positive": 3,
+      "n": 512
+    },
+    {
+      "field": "missing::prof__F050201B",
+      "kind": "encoded_binary",
+      "auc": 0.925343811394892,
+      "positive": 3,
+      "n": 512
+    },
+    {
+      "field": "missing::prof__F050202B",
+      "kind": "encoded_binary",
+      "auc": 0.5422396856581533,
+      "positive": 3,
+      "n": 512
+    },
+    {
+      "field": "missing::prof__F050203B",
+      "kind": "encoded_binary",
+      "auc": 0.28094302554027506,
+      "positive": 3,
+      "n": 512
+    },
+    {
+      "field": "missing::prof__F050301B",
+      "kind": "encoded_binary",
+      "auc": 0.36683333333333334,
+      "positive": 12,
+      "n": 512
+    },
+    {
+      "field": "missing::prof__F050302B",
+      "kind": "encoded_binary",
+      "auc": 0.8613333333333334,
+      "positive": 12,
+      "n": 512
+    },
+    {
+      "field": "missing::prof__F050303B",
+      "kind": "encoded_binary",
+      "auc": 0.6540773855403114,
+      "positive": 13,
+      "n": 512
+    },
+    {
+      "field": "missing::prof__F050401B",
+      "kind": "encoded_binary",
+      "auc": 0.8388998035363457,
+      "positive": 3,
+      "n": 512
+    },
+    {
+      "field": "missing::prof__F050402B",
+      "kind": "encoded_binary",
+      "auc": 0.9980353634577603,
+      "positive": 3,
+      "n": 512
+    },
+    {
+      "field": "missing::prof__F050403B",
+      "kind": "encoded_binary",
+      "auc": 0.4715127701375246,
+      "positive": 3,
+      "n": 512
+    },
+    {
+      "field": "missing::prof__F050501B",
+      "kind": "encoded_binary",
+      "auc": 0.6585,
+      "positive": 12,
+      "n": 512
+    },
+    {
+      "field": "missing::prof__F050502B",
+      "kind": "encoded_binary",
+      "auc": 0.8788333333333335,
+      "positive": 12,
+      "n": 512
+    },
+    {
+      "field": "missing::prof__F050503B",
+      "kind": "encoded_binary",
+      "auc": 0.7483333333333334,
+      "positive": 12,
+      "n": 512
+    },
+    {
+      "field": "missing::prof__F050601B",
+      "kind": "encoded_binary",
+      "auc": 0.4535224294743333,
+      "positive": 13,
+      "n": 512
+    },
+    {
+      "field": "missing::prof__F050701B",
+      "kind": "encoded_binary",
+      "auc": 0.3784492061045167,
+      "positive": 13,
+      "n": 512
+    },
+    {
+      "field": "missing::prof__F050801B",
+      "kind": "encoded_binary",
+      "auc": 0.6455988900878681,
+      "positive": 13,
+      "n": 512
+    },
+    {
+      "field": "missing::prof__F050901B",
+      "kind": "encoded_binary",
+      "auc": 0.4329420673987126,
+      "positive": 95,
+      "n": 512
+    },
+    {
+      "field": "missing::prof__F051001B",
+      "kind": "encoded_binary",
+      "auc": 0.6463250517598345,
+      "positive": 92,
+      "n": 512
+    },
+    {
+      "field": "missing::prof__F051101B",
+      "kind": "encoded_binary",
+      "auc": 0.9198396793587175,
+      "positive": 13,
+      "n": 512
+    },
+    {
+      "field": "missing::prof__F051201B",
+      "kind": "encoded_binary",
+      "auc": 0.8090977822580645,
+      "positive": 16,
+      "n": 512
+    },
+    {
+      "field": "missing::prof__F053201B",
+      "kind": "encoded_binary",
+      "auc": 0.3089293747188484,
+      "positive": 18,
+      "n": 512
+    },
+    {
+      "field": "missing::prof__F053301B",
+      "kind": "encoded_binary",
+      "auc": 0.9004694835680751,
+      "positive": 15,
+      "n": 512
+    },
+    {
+      "field": "missing::prof__F051301B",
+      "kind": "encoded_binary",
+      "auc": 0.21502347417840376,
+      "positive": 15,
+      "n": 512
+    },
+    {
+      "field": "missing::prof__F051401B",
+      "kind": "encoded_binary",
+      "auc": 0.7131630648330058,
+      "positive": 3,
+      "n": 512
+    },
+    {
+      "field": "missing::prof__F051501B",
+      "kind": "encoded_binary",
+      "auc": 0.381139489194499,
+      "positive": 3,
+      "n": 512
+    },
+    {
+      "field": "missing::prof__F051601B",
+      "kind": "encoded_binary",
+      "auc": 0.5383104125736738,
+      "positive": 3,
+      "n": 512
+    },
+    {
+      "field": "missing::prof__F051701B",
+      "kind": "encoded_binary",
+      "auc": 0.7445972495088409,
+      "positive": 3,
+      "n": 512
+    },
+    {
+      "field": "missing::prof__F051801B",
+      "kind": "encoded_binary",
+      "auc": 0.16033333333333338,
+      "positive": 12,
+      "n": 512
+    },
+    {
+      "field": "missing::prof__F051901B",
+      "kind": "encoded_binary",
+      "auc": 0.8893170957299215,
+      "positive": 13,
+      "n": 512
+    },
+    {
+      "field": "missing::prof__F052001B",
+      "kind": "encoded_binary",
+      "auc": 0.8879297055649762,
+      "positive": 13,
+      "n": 512
+    },
+    {
+      "field": "missing::prof__F052101B",
+      "kind": "encoded_binary",
+      "auc": 0.5314553990610329,
+      "positive": 15,
+      "n": 512
+    },
+    {
+      "field": "missing::prof__F052201B",
+      "kind": "encoded_binary",
+      "auc": 0.3929273084479371,
+      "positive": 3,
+      "n": 512
+    },
+    {
+      "field": "missing::prof__F052301B",
+      "kind": "encoded_binary",
+      "auc": 0.7891166949283182,
+      "positive": 13,
+      "n": 512
+    },
+    {
+      "field": "missing::prof__F052401B",
+      "kind": "encoded_binary",
+      "auc": 0.3271157700015416,
+      "positive": 13,
+      "n": 512
+    },
+    {
+      "field": "missing::prof__F052901B",
+      "kind": "encoded_binary",
+      "auc": 0.7223274012369052,
+      "positive": 95,
+      "n": 512
+    },
+    {
+      "field": "missing::prof__F053001B",
+      "kind": "encoded_binary",
+      "auc": 0.28049999999999997,
+      "positive": 12,
+      "n": 512
+    },
+    {
+      "field": "missing::prof__F053002B",
+      "kind": "encoded_binary",
+      "auc": 0.21412054878988748,
+      "positive": 13,
+      "n": 512
+    },
+    {
+      "field": "missing::prof__F053003B",
+      "kind": "encoded_binary",
+      "auc": 0.3616463696624017,
+      "positive": 13,
+      "n": 512
+    },
+    {
+      "field": "missing::prof__F053202B",
+      "kind": "encoded_binary",
+      "auc": 0.7702942219071252,
+      "positive": 78,
+      "n": 512
+    }
+  ],
+  "subgroups": {
+    "seen_company": {
+      "rows": 453,
+      "share": 0.884765625,
+      "constant_nrmse": 1.3459131449362285,
+      "selected_nrmse": 1.3925246725674474,
+      "gain_vs_constant": -0.046611527631218896,
+      "attribute_macro_auc": 0.9428379603489614,
+      "attribute_fields": 116
+    },
+    "unseen_company": {
+      "rows": 59,
+      "share": 0.115234375,
+      "constant_nrmse": 1.0558892491560847,
+      "selected_nrmse": 1.1529576217234723,
+      "gain_vs_constant": -0.09706837256738754,
+      "attribute_macro_auc": 0.9780860574035439,
+      "attribute_fields": 54
+    },
+    "audit_match_r1": {
+      "rows": 509,
+      "share": 0.994140625,
+      "constant_nrmse": 1.213107695545309,
+      "selected_nrmse": 1.2885476573604648,
+      "gain_vs_constant": -0.07543996181515578,
+      "attribute_macro_auc": 0.9005345716588145,
+      "attribute_fields": 78
+    },
+    "audit_unmatched_r0": {
+      "rows": 3,
+      "share": 0.005859375,
+      "constant_nrmse": 3.283350742751869,
+      "selected_nrmse": 3.26920768175004,
+      "gain_vs_constant": 0.014143061001828716,
+      "attribute_macro_auc": null,
+      "attribute_fields": 0
+    }
+  },
+  "statistical_recoverability_detected": true,
+  "leakage_criterion_met": true,
+  "practical_thresholds": {
+    "nrmse_gain": 0.05,
+    "attribute_auc": 0.6
+  },
+  "pca_reference": {
+    "not_run_in_primary_stage": true
+  },
+  "random_projection_reference": {
+    "not_run_in_primary_stage": true
+  },
+  "elapsed_seconds": 1.8404271250474267,
+  "target_semantics": "preprocessed_model_input"
+}

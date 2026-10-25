@@ -1,0 +1,63 @@
+# 首轮协议配置。准备数据/组件已完成；扩批、D支持量核对后再正式训练。
+[study]
+version = "llm-auxiliary-ad-v1"
+data_version = "FINAL-2026-10-14-Corrected-Snapshot2023"
+time_protocol = "retrospective_snapshot2023"
+label_cutoff = "2023-12-31"
+evaluation_years = [2020, 2021]
+seeds = [42, 100]
+arms = ["A", "B", "C", "D"]
+planned_trainings = 16
+
+[backbone]
+factory = "RiskModel(corrected_pack,32,'Plain',seed)"
+content_dimensions = [7, 15, 7]
+quality_dimensions = [1, 1, 1]
+message_dimensions = 32
+inference_uses_notice = false
+
+[text_encoder]
+model_id = "BAAI/bge-small-zh-v1.5"
+revision = "7999e1d3359715c523056ef9478215996d62a620"
+dimension = 512
+pooling = "CLS"
+normalize = true
+frozen = true
+retrieval_prefix = ""
+truncate = false
+
+[auxiliary]
+head = "Linear(32,512)"
+weight = 0.1
+distance = "mean_per_available_sample(sum_per_dimension((normalized_prediction-normalized_target)^2))"
+unobserved_target = "mask0"
+empty_auxiliary_batch_loss = 0.0
+clip_backbone_norm = 1.0
+clip_auxiliary_head_norm = 1.0
+oversample_auxiliary_records = false
+original_pilot_holdout_is_training = false
+
+[training]
+optimizer = "AdamW"
+learning_rate = 0.001
+weight_decay = 0.0001
+batch_size = 1024
+max_epochs = 30
+early_stopping_patience = 6
+selection = "original proper BCE on fold1"
+calibration = "original fold2 overall Platt and type shrinkage"
+primary_report_metric = "top10_percent_recall"
+secondary_report_metrics = ["top10_percent_precision", "AP", "type_probability_quality"]
+
+[permutation]
+seed = 20261015
+case_block = "connected_by_company_or_candidate_document"
+signature = "multiset(economic_year,B_coarse_text)"
+allow_same_company_exchange = false
+zero_changed_targets_allows_D_training = false
+
+[status]
+paid_extraction_authorized = true
+paid_extraction_started = true
+formal_training_started = false
+next_step = "restore API network connection, resume 481 pending records, rebuild supervision and recheck D"

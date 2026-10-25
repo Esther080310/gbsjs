@@ -1,0 +1,81 @@
+{
+  "checks": [
+    {
+      "seed": 42,
+      "arm": "S0",
+      "recall_ap_exact": true,
+      "strongest_attacker_selected": true
+    },
+    {
+      "seed": 42,
+      "arm": "D1",
+      "recall_ap_exact": true,
+      "strongest_attacker_selected": true
+    },
+    {
+      "seed": 100,
+      "arm": "S0",
+      "recall_ap_exact": true,
+      "strongest_attacker_selected": true
+    },
+    {
+      "seed": 100,
+      "arm": "D1",
+      "recall_ap_exact": true,
+      "strongest_attacker_selected": true
+    },
+    {
+      "seed": 17,
+      "arm": "S0",
+      "recall_ap_exact": true,
+      "strongest_attacker_selected": true
+    },
+    {
+      "seed": 17,
+      "arm": "D1",
+      "recall_ap_exact": true,
+      "strongest_attacker_selected": true
+    },
+    {
+      "seed": 223,
+      "arm": "S0",
+      "recall_ap_exact": true,
+      "strongest_attacker_selected": true
+    },
+    {
+      "seed": 223,
+      "arm": "D1",
+      "recall_ap_exact": true,
+      "strongest_attacker_selected": true
+    },
+    {
+      "seed": 483,
+      "arm": "S0",
+      "recall_ap_exact": true,
+      "strongest_attacker_selected": true
+    },
+    {
+      "seed": 483,
+      "arm": "D1",
+      "recall_ap_exact": true,
+      "strongest_attacker_selected": true
+    },
+    {
+      "seed": 907,
+      "arm": "S0",
+      "recall_ap_exact": true,
+      "strongest_attacker_selected": true
+    },
+    {
+      "seed": 907,
+      "arm": "D1",
+      "recall_ap_exact": true,
+      "strongest_attacker_selected": true
+    }
+  ],
+  "all_passed": true,
+  "folds_loaded": [
+    0,
+    1
+  ]
+}

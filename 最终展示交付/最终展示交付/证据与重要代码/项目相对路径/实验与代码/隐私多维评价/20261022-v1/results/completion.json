@@ -1,0 +1,8 @@
+{
+  "status": "complete",
+  "seconds": 544.9416699170251,
+  "models": 14,
+  "new_predictor_training": false,
+  "protocol_sha256": "a03628502f652cb3aed3e6eab5d490faafcc7b9eab08fe55540762e80eb1575e",
+  "source_sha256": "af74c3095488f4c13cdb1bff65e575fdcb258234a22354fcff852983f3ad2c20"
+}

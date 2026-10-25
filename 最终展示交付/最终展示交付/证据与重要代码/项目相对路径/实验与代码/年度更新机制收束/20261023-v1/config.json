@@ -1,0 +1,18 @@
+{
+  "recall_tolerance": 0.01,
+  "ap_tolerance": 0.01,
+  "min_monitor_positives": 30,
+  "max_replay_rows": 2048,
+  "update_steps": 60,
+  "policies": [{
+    "id": "securities_law_2020",
+    "name": "2019修订证券法实施",
+    "known_date": "2019-12-28",
+    "effective_date": "2020-03-01",
+    "first_full_cohort": 2021,
+    "minimum_recorded_positive_rows": 30,
+    "successful_full_updates": 2,
+    "source": "https://www.csrc.gov.cn/csrc/c100028/c1000829/content.shtml"
+  }],
+  "release_checks_required": ["data_and_schema", "calibration", "quantized_task_replay", "privacy_scope", "six_model_aggregation"]
+}

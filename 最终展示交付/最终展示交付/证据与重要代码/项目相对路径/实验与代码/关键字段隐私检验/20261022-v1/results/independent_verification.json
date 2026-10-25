@@ -1,0 +1,8 @@
+{
+  "independent_reconstruction_metric_max_error": 5.551115123125783e-17,
+  "predictor_pairs": 5,
+  "neural_attacks_completed": 22,
+  "source_hash_matches_manifest": true,
+  "new_predictor_training": false,
+  "frozen_candidate_financial_fields": 13
+}
