@@ -1,0 +1,33 @@
+# 所有相对路径从本研究目录解析。更改样本/提示词/模型时请使用新的 run_id。
+[study]
+run_id = "auxtrain-b1-20261015-snapshot2023-v1"
+snapshot_cutoff = "2023-12-31"
+sample_size = 500
+seed = 20261015
+holdout_fraction = 0.0
+
+[source]
+path = "../大创数据集/Y 经营违规公司名录/STK_Violation_Main.xlsx"
+sheet = ""
+prior_audit = "../results_label_audit/final_adjudication_summary.json"
+
+[output]
+root = "artifacts/runs"
+
+[api]
+base_url = "https://api.deepseek.com"
+model = "deepseek-flash"
+max_tokens = 8192
+timeout_seconds = 180
+max_attempts = 3
+concurrency = 2
+# 密钥使用环境变量 DEEPSEEK_API_KEY 或 extract --ask-key 隐藏输入。
+
+[references]
+api_contract_checked_on = "2026-10-15"
+api_docs = "https://api-docs.deepseek.com/"
+json_mode = "https://api-docs.deepseek.com/guides/json_mode/"
+
+# 只使用已保存的训练期候选ID；prepare不会重抽样。
+[selection]
+record_ids_file = "artifacts/followup/supervision_setup/batch1_record_ids.json"

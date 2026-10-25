@@ -1,0 +1,61 @@
+{
+  "rows": 16,
+  "points": 10,
+  "checks": [
+    {
+      "arm": "S0",
+      "mean_exact": true,
+      "pareto_independent_check": true
+    },
+    {
+      "arm": "D001",
+      "mean_exact": true,
+      "pareto_independent_check": true
+    },
+    {
+      "arm": "D01",
+      "mean_exact": true,
+      "pareto_independent_check": true
+    },
+    {
+      "arm": "D1",
+      "mean_exact": true,
+      "pareto_independent_check": true
+    },
+    {
+      "arm": "M0001",
+      "mean_exact": true,
+      "pareto_independent_check": true
+    },
+    {
+      "arm": "M001",
+      "mean_exact": true,
+      "pareto_independent_check": true
+    },
+    {
+      "arm": "M01",
+      "mean_exact": true,
+      "pareto_independent_check": true
+    },
+    {
+      "arm": "Gaussian0.2",
+      "mean_exact": true,
+      "pareto_independent_check": true
+    },
+    {
+      "arm": "Gaussian0.5",
+      "mean_exact": true,
+      "pareto_independent_check": true
+    },
+    {
+      "arm": "Gaussian1",
+      "mean_exact": true,
+      "pareto_independent_check": true
+    }
+  ],
+  "folds_loaded": [
+    0,
+    1
+  ],
+  "predictor_retrained": false
+}

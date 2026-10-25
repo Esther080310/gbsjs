@@ -1,0 +1,38 @@
+{
+  "time_definition": "feature year t year-end -> violation first disclosed in t+1 (primary)",
+  "secondary_endpoint": "actual occurrence year t+1; use only for censoring sensitivity analysis",
+  "finance_and_annual_governance_lag_years": 1,
+  "n_samples": 67055,
+  "feature_year_range": [
+    2002,
+    2024
+  ],
+  "n_positive_company_years": 7694,
+  "n_positive_occurrence_company_years": 11022,
+  "view_shapes": {
+    "x1": [
+      67055,
+      17
+    ],
+    "x2": [
+      67055,
+      165
+    ],
+    "x3": [
+      67055,
+      56
+    ]
+  },
+  "label_disclosure_delay_years": {
+    "count": 21765.0,
+    "mean": 2.198391913622789,
+    "std": 2.323906106899708,
+    "min": -5.0,
+    "50%": 2.0,
+    "75%": 3.0,
+    "90%": 5.0,
+    "95%": 7.0,
+    "max": 27.0
+  },
+  "important_note": "原始表不含财务公告日，故 t 年预测仅使用 t-1 年报财务，避免把 t 年报的未来披露信息带入。"
+}

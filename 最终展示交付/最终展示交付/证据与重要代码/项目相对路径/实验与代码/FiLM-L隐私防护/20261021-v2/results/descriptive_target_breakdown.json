@@ -1,0 +1,37 @@
+{
+  "numeric_binary": [
+    {
+      "model": "原六模型",
+      "numeric_gain": 0.75774444091058,
+      "binary_gain": 0.915409564993979
+    },
+    {
+      "model": "共享S0完整消息",
+      "numeric_gain": 0.5521053750071231,
+      "binary_gain": 0.8338495079606061
+    },
+    {
+      "model": "共享S0仅侧信息",
+      "numeric_gain": -0.055264918695023146,
+      "binary_gain": 0.5105692977360554
+    }
+  ],
+  "single42_task": {
+    "rows": 4292,
+    "positives": 787,
+    "budget": 430,
+    "found": 248,
+    "recall_at_10pct": 0.31512071156289706,
+    "precision_at_10pct": 0.5767441860465117,
+    "overall_average_precision": 0.4856660417771817,
+    "eligible_selected_positives": 248,
+    "conditional_top2_hit": 0.8951612903225806,
+    "common_top2_hit": 0.8629032258064516,
+    "type_macro_coverage": 0.07150656675546932,
+    "common_macro_coverage": 0.07101705176066997,
+    "conditional_type_macro_ap": 0.30589230446958604
+  },
+  "single42_gain": 0.6740270964342537,
+  "descriptive_only": true,
+  "model_selection_changed": false
+}

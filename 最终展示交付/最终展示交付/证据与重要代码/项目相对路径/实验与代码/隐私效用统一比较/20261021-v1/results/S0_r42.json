@@ -1,0 +1,39 @@
+{
+  "method": "无防护",
+  "arm": "S0",
+  "strength": 0.0,
+  "rep": 42,
+  "recall": 0.2918108419838524,
+  "ap": 0.5739966319719649,
+  "numeric_nrmse": 0.4260434270645951,
+  "normalized_error": 0.4167720701039326,
+  "gain": 0.5962022022031014,
+  "constant_nrmse": 1.0222456292676965,
+  "task": {
+    "rows": 3670,
+    "positives": 867,
+    "budget": 367,
+    "found": 253,
+    "recall_at_10pct": 0.2918108419838524,
+    "precision_at_10pct": 0.6893732970027248,
+    "overall_average_precision": 0.5739966319719649,
+    "eligible_selected_positives": 253,
+    "conditional_top2_hit": 0.525691699604743,
+    "common_top2_hit": 0.9169960474308301,
+    "type_macro_coverage": 0.10970777695254533,
+    "common_macro_coverage": 0.07236795787042904,
+    "conditional_type_macro_ap": 0.3679036445278907
+  },
+  "attack": {
+    "gain": 0.5962022022031014,
+    "constant_nrmse": 1.0222456292676965,
+    "attacker_nrmse": {
+      "ridge": 0.5103617440075128,
+      "mlp": 0.4260434270645951
+    },
+    "selected": "mlp"
+  },
+  "message_dimensions": 138,
+  "target_dimensions": 138,
+  "same_shared_backbone": true
+}

@@ -1,0 +1,146 @@
+{
+  "year": 2020,
+  "scope": "joint6",
+  "view": "h1",
+  "attack_input_dimensions": 96,
+  "target_dimensions": 19,
+  "fold_rows": {
+    "train0": 512,
+    "select1": 512,
+    "test3": 512
+  },
+  "ridge_selection": [
+    {
+      "alpha": 0.1,
+      "selection_nrmse": 3.4868514158896646
+    },
+    {
+      "alpha": 1.0,
+      "selection_nrmse": 3.2067471764550057
+    }
+  ],
+  "mlp_selection": {
+    "best_epoch": 2,
+    "selection_nrmse": 4.661201625631347,
+    "history": [
+      {
+        "epoch": 1,
+        "train_mse": 0.8105594515800476,
+        "selection_nrmse": 4.705541604492272
+      },
+      {
+        "epoch": 2,
+        "train_mse": 0.7452936768531799,
+        "selection_nrmse": 4.661201625631347
+      }
+    ]
+  },
+  "attacker_selection_nrmse": {
+    "ridge": 3.2067471764550057,
+    "mlp": 4.661201625631347
+  },
+  "selected_attacker": "ridge",
+  "test_metrics": {
+    "constant": {
+      "macro_nrmse_all": 6.416836511313738,
+      "macro_nrmse_numeric": 11.048642478654637,
+      "macro_nrmse_binary": 0.04810330622000257,
+      "macro_r2": -4.7541245357119415,
+      "macro_spearman": NaN,
+      "fields": 19,
+      "binary_fields": 8,
+      "x1_macro_nrmse": 6.416836511313738
+    },
+    "ridge": {
+      "macro_nrmse_all": 4.7928305240241205,
+      "macro_nrmse_numeric": 7.928475305696338,
+      "macro_nrmse_binary": 0.4813189492248208,
+      "macro_r2": -0.2729406186776001,
+      "macro_spearman": 0.6719103006408117,
+      "fields": 19,
+      "binary_fields": 8,
+      "x1_macro_nrmse": 4.7928305240241205
+    },
+    "mlp": {
+      "macro_nrmse_all": 6.6377217133244475,
+      "macro_nrmse_numeric": 11.046646074233523,
+      "macro_nrmse_binary": 0.5754507170744672,
+      "macro_r2": -4.6302645269904765,
+      "macro_spearman": 0.06611763790811422,
+      "fields": 19,
+      "binary_fields": 8,
+      "x1_macro_nrmse": 6.6377217133244475
+    }
+  },
+  "selected_gain_vs_constant": {
+    "estimate": 1.622852087020874,
+    "ci95": [
+      1.5476894080638885,
+      1.6922049343585968
+    ],
+    "null": 0.0,
+    "lower_above_null": true,
+    "replicates": 500,
+    "point_estimate": 1.6240059872896175
+  },
+  "attribute_macro_auc": null,
+  "attribute_fields_point": [],
+  "direct_attribute_attack": {
+    "solver": "multi-output linear logistic head, AdamW L2",
+    "learning_rate": 0.01,
+    "weight_decay": 0.0001,
+    "positive_weight_cap": 20.0,
+    "best_epoch": 1,
+    "selection_loss": 0.4050710201263428,
+    "history": [
+      {
+        "epoch": 1,
+        "train_loss": 0.7781171798706055,
+        "selection_loss": 0.4050710201263428
+      },
+      {
+        "epoch": 2,
+        "train_loss": 0.6933705806732178,
+        "selection_loss": 0.4897952675819397
+      }
+    ],
+    "registered_fields": 4,
+    "variable_train_fields": 4,
+    "evaluable_test_fields": 0
+  },
+  "reconstruction_attribute_fields_point": [],
+  "subgroups": {
+    "seen_company": {
+      "rows": 453,
+      "share": 0.884765625,
+      "constant_nrmse": 6.0535086306325745,
+      "selected_nrmse": 4.470373388918025,
+      "gain_vs_constant": 1.5831352417145492,
+      "attribute_macro_auc": null,
+      "attribute_fields": 0
+    },
+    "unseen_company": {
+      "rows": 59,
+      "share": 0.115234375,
+      "constant_nrmse": 8.484987598563142,
+      "selected_nrmse": 6.6742265498390285,
+      "gain_vs_constant": 1.810761048724114,
+      "attribute_macro_auc": null,
+      "attribute_fields": 0
+    }
+  },
+  "statistical_recoverability_detected": true,
+  "leakage_criterion_met": true,
+  "practical_thresholds": {
+    "nrmse_gain": 0.05,
+    "attribute_auc": 0.6
+  },
+  "pca_reference": {
+    "not_run_in_primary_stage": true
+  },
+  "random_projection_reference": {
+    "not_run_in_primary_stage": true
+  },
+  "elapsed_seconds": 0.03294991696020588,
+  "target_semantics": "preprocessed_model_input"
+}

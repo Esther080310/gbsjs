@@ -1,0 +1,20 @@
+{
+  "precision": {
+    "market": "fp16",
+    "finance": "fp16",
+    "governance": "fp16",
+    "audit_control": "fp16"
+  },
+  "frame_bytes": {
+    "market": 124800,
+    "finance": 653280,
+    "governance": 161500,
+    "audit_control": 62410
+  },
+  "payload_bytes": {
+    "market": 124780,
+    "finance": 653260,
+    "governance": 161480,
+    "audit_control": 62390
+  }
+}

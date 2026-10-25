@@ -1,0 +1,576 @@
+{
+  "year": 2020,
+  "scope": "joint6",
+  "view": "h3",
+  "attack_input_dimensions": 126,
+  "target_dimensions": 16,
+  "fold_rows": {
+    "train0": 34253,
+    "select1": 3670,
+    "test3": 4292
+  },
+  "ridge_selection": [
+    {
+      "alpha": 0.1,
+      "selection_nrmse": 0.021548584648931134
+    },
+    {
+      "alpha": 1.0,
+      "selection_nrmse": 0.02334429576643826
+    },
+    {
+      "alpha": 10.0,
+      "selection_nrmse": 0.029349728885771295
+    },
+    {
+      "alpha": 100.0,
+      "selection_nrmse": 0.04364582357355608
+    }
+  ],
+  "mlp_selection": {
+    "best_epoch": 30,
+    "selection_nrmse": 0.037514905934080925,
+    "history": [
+      {
+        "epoch": 1,
+        "train_mse": 0.23605209841009447,
+        "selection_nrmse": 0.2198253575428119
+      },
+      {
+        "epoch": 2,
+        "train_mse": 0.04056582249262754,
+        "selection_nrmse": 0.15731924414488113
+      },
+      {
+        "epoch": 3,
+        "train_mse": 0.025113042717909113,
+        "selection_nrmse": 0.1293965049646995
+      },
+      {
+        "epoch": 4,
+        "train_mse": 0.0175787164720104,
+        "selection_nrmse": 0.11030825357313895
+      },
+      {
+        "epoch": 5,
+        "train_mse": 0.013017503106418778,
+        "selection_nrmse": 0.09667936438357366
+      },
+      {
+        "epoch": 6,
+        "train_mse": 0.009971069774645217,
+        "selection_nrmse": 0.08527272019276172
+      },
+      {
+        "epoch": 7,
+        "train_mse": 0.007826998651794651,
+        "selection_nrmse": 0.07623318486543007
+      },
+      {
+        "epoch": 8,
+        "train_mse": 0.006329477025086389,
+        "selection_nrmse": 0.06987006072947276
+      },
+      {
+        "epoch": 9,
+        "train_mse": 0.005366176017560065,
+        "selection_nrmse": 0.06510784652454252
+      },
+      {
+        "epoch": 10,
+        "train_mse": 0.004664497395210406,
+        "selection_nrmse": 0.06179385301404049
+      },
+      {
+        "epoch": 11,
+        "train_mse": 0.004187038777779569,
+        "selection_nrmse": 0.05923032925405275
+      },
+      {
+        "epoch": 12,
+        "train_mse": 0.0037412834901581794,
+        "selection_nrmse": 0.056470139415411846
+      },
+      {
+        "epoch": 13,
+        "train_mse": 0.0033760027795591775,
+        "selection_nrmse": 0.05438747187294542
+      },
+      {
+        "epoch": 14,
+        "train_mse": 0.0030683289069737144,
+        "selection_nrmse": 0.052430114864946385
+      },
+      {
+        "epoch": 15,
+        "train_mse": 0.002831081589273013,
+        "selection_nrmse": 0.05064208131398047
+      },
+      {
+        "epoch": 16,
+        "train_mse": 0.0026171583894585423,
+        "selection_nrmse": 0.04935347525078081
+      },
+      {
+        "epoch": 17,
+        "train_mse": 0.0024194449960144564,
+        "selection_nrmse": 0.04806255190044509
+      },
+      {
+        "epoch": 18,
+        "train_mse": 0.002270671378081555,
+        "selection_nrmse": 0.04674642427652047
+      },
+      {
+        "epoch": 19,
+        "train_mse": 0.002135274558574619,
+        "selection_nrmse": 0.046010114399785945
+      },
+      {
+        "epoch": 20,
+        "train_mse": 0.0020050816785763294,
+        "selection_nrmse": 0.04478874920416
+      },
+      {
+        "epoch": 21,
+        "train_mse": 0.0019060992190669127,
+        "selection_nrmse": 0.04390404001136032
+      },
+      {
+        "epoch": 22,
+        "train_mse": 0.0018063410431804025,
+        "selection_nrmse": 0.04313567570910139
+      },
+      {
+        "epoch": 23,
+        "train_mse": 0.0017297387581921236,
+        "selection_nrmse": 0.04203238610238759
+      },
+      {
+        "epoch": 24,
+        "train_mse": 0.0016348015701891307,
+        "selection_nrmse": 0.04118878995084467
+      },
+      {
+        "epoch": 25,
+        "train_mse": 0.0015672397087602055,
+        "selection_nrmse": 0.04055473100278032
+      },
+      {
+        "epoch": 26,
+        "train_mse": 0.0015144680527394965,
+        "selection_nrmse": 0.039601002111903524
+      },
+      {
+        "epoch": 27,
+        "train_mse": 0.0014303937530391576,
+        "selection_nrmse": 0.03922728254459075
+      },
+      {
+        "epoch": 28,
+        "train_mse": 0.001401718642548932,
+        "selection_nrmse": 0.03853815376106583
+      },
+      {
+        "epoch": 29,
+        "train_mse": 0.0013683130502399495,
+        "selection_nrmse": 0.038284550228583666
+      },
+      {
+        "epoch": 30,
+        "train_mse": 0.001288118342499194,
+        "selection_nrmse": 0.037514905934080925
+      }
+    ]
+  },
+  "attacker_selection_nrmse": {
+    "ridge": 0.021548584648931134,
+    "mlp": 0.037514905934080925
+  },
+  "selected_attacker": "ridge",
+  "test_metrics": {
+    "constant": {
+      "macro_nrmse_all": 1.0536508189912628,
+      "macro_nrmse_numeric": 1.1030244334648163,
+      "macro_nrmse_binary": 1.0042772045177095,
+      "macro_r2": -0.004456842896593996,
+      "macro_spearman": NaN,
+      "fields": 16,
+      "binary_fields": 8,
+      "x3_macro_nrmse": 1.0536508189912628
+    },
+    "ridge": {
+      "macro_nrmse_all": 0.029343569596475074,
+      "macro_nrmse_numeric": 0.051974044383441526,
+      "macro_nrmse_binary": 0.006713094809508632,
+      "macro_r2": 0.9986123520697071,
+      "macro_spearman": 0.8463371354161529,
+      "fields": 16,
+      "binary_fields": 8,
+      "x3_macro_nrmse": 0.029343569596475074
+    },
+    "mlp": {
+      "macro_nrmse_all": 0.03822744759767628,
+      "macro_nrmse_numeric": 0.05696443444926976,
+      "macro_nrmse_binary": 0.0194904607460828,
+      "macro_r2": 0.9983457000157101,
+      "macro_spearman": 0.8438092710778236,
+      "fields": 16,
+      "binary_fields": 8,
+      "x3_macro_nrmse": 0.03822744759767628
+    }
+  },
+  "selected_gain_vs_constant": {
+    "estimate": 1.0249438285827637,
+    "ci95": [
+      1.005136814713478,
+      1.0447011768817902
+    ],
+    "null": 0.0,
+    "lower_above_null": true,
+    "replicates": 500,
+    "point_estimate": 1.0243072493947878
+  },
+  "attribute_macro_auc": {
+    "estimate": 0.999974250793457,
+    "ci95": [
+      0.9999573111534119,
+      0.9999879643321037
+    ],
+    "null": 0.5,
+    "lower_above_null": true,
+    "replicates": 20,
+    "point_estimate": 0.9999740688325001
+  },
+  "attribute_fields_point": [
+    {
+      "field": "missing::exec__events",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 2830,
+      "n": 4292,
+      "score_column": 0
+    },
+    {
+      "field": "missing::exec__resign",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 2830,
+      "n": 4292,
+      "score_column": 1
+    },
+    {
+      "field": "missing::exec__chair",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 2830,
+      "n": 4292,
+      "score_column": 2
+    },
+    {
+      "field": "missing::exec__manager",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 2830,
+      "n": 4292,
+      "score_column": 3
+    },
+    {
+      "field": "missing::exec__external",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 2830,
+      "n": 4292,
+      "score_column": 4
+    },
+    {
+      "field": "missing::exec__mean_age",
+      "kind": "encoded_binary",
+      "auc": 0.9998571236343945,
+      "positive": 3259,
+      "n": 4292,
+      "score_column": 5
+    },
+    {
+      "field": "missing::exec__mean_tenure",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 3257,
+      "n": 4292,
+      "score_column": 6
+    },
+    {
+      "field": "missing::exec__mean_notice_lag",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 2830,
+      "n": 4292,
+      "score_column": 7
+    },
+    {
+      "field": "exec__resign::event_present",
+      "kind": "event_present",
+      "auc": 1.0,
+      "positive": 3865,
+      "n": 4292,
+      "score_column": 8
+    },
+    {
+      "field": "exec__chair::event_present",
+      "kind": "event_present",
+      "auc": 0.9999466841068877,
+      "positive": 3854,
+      "n": 4292,
+      "score_column": 9
+    },
+    {
+      "field": "exec__manager::event_present",
+      "kind": "event_present",
+      "auc": 0.9998850182487167,
+      "positive": 4024,
+      "n": 4292,
+      "score_column": 10
+    },
+    {
+      "field": "exec__external::event_present",
+      "kind": "event_present",
+      "auc": 1.0,
+      "positive": 473,
+      "n": 4292,
+      "score_column": 11
+    }
+  ],
+  "direct_attribute_attack": {
+    "solver": "multi-output linear logistic head, AdamW L2",
+    "learning_rate": 0.01,
+    "weight_decay": 0.0001,
+    "positive_weight_cap": 20.0,
+    "best_epoch": 20,
+    "selection_loss": 0.006935132201761007,
+    "history": [
+      {
+        "epoch": 1,
+        "train_loss": 0.22623740092796438,
+        "selection_loss": 0.10213544219732285
+      },
+      {
+        "epoch": 2,
+        "train_loss": 0.08068385764079936,
+        "selection_loss": 0.06188885122537613
+      },
+      {
+        "epoch": 3,
+        "train_loss": 0.05327041118460543,
+        "selection_loss": 0.04433160647749901
+      },
+      {
+        "epoch": 4,
+        "train_loss": 0.03932592623374041,
+        "selection_loss": 0.03470486029982567
+      },
+      {
+        "epoch": 5,
+        "train_loss": 0.030888711157090524,
+        "selection_loss": 0.028071826323866844
+      },
+      {
+        "epoch": 6,
+        "train_loss": 0.02526279023903258,
+        "selection_loss": 0.023616421967744827
+      },
+      {
+        "epoch": 7,
+        "train_loss": 0.021307127659811693,
+        "selection_loss": 0.02032162807881832
+      },
+      {
+        "epoch": 8,
+        "train_loss": 0.018388257088030085,
+        "selection_loss": 0.01786734163761139
+      },
+      {
+        "epoch": 9,
+        "train_loss": 0.01612609690603088,
+        "selection_loss": 0.01594763621687889
+      },
+      {
+        "epoch": 10,
+        "train_loss": 0.014359599198488629,
+        "selection_loss": 0.014335001818835735
+      },
+      {
+        "epoch": 11,
+        "train_loss": 0.012849716962698628,
+        "selection_loss": 0.01304410956799984
+      },
+      {
+        "epoch": 12,
+        "train_loss": 0.011671535561189932,
+        "selection_loss": 0.01197859551757574
+      },
+      {
+        "epoch": 13,
+        "train_loss": 0.010651392971768099,
+        "selection_loss": 0.011079126968979836
+      },
+      {
+        "epoch": 14,
+        "train_loss": 0.009785777943975785,
+        "selection_loss": 0.01023488026112318
+      },
+      {
+        "epoch": 15,
+        "train_loss": 0.008977027883862747,
+        "selection_loss": 0.009518151171505451
+      },
+      {
+        "epoch": 16,
+        "train_loss": 0.008293889846433611,
+        "selection_loss": 0.008879996836185455
+      },
+      {
+        "epoch": 17,
+        "train_loss": 0.007689762860536575,
+        "selection_loss": 0.00832489226013422
+      },
+      {
+        "epoch": 18,
+        "train_loss": 0.007185219677493852,
+        "selection_loss": 0.007832814939320087
+      },
+      {
+        "epoch": 19,
+        "train_loss": 0.006716195877422304,
+        "selection_loss": 0.007368525490164757
+      },
+      {
+        "epoch": 20,
+        "train_loss": 0.0062708697446128905,
+        "selection_loss": 0.006935132201761007
+      }
+    ],
+    "registered_fields": 13,
+    "variable_train_fields": 12,
+    "evaluable_test_fields": 12
+  },
+  "reconstruction_attribute_fields_point": [
+    {
+      "field": "missing::exec__events",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 2830,
+      "n": 4292
+    },
+    {
+      "field": "missing::exec__resign",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 2830,
+      "n": 4292
+    },
+    {
+      "field": "missing::exec__chair",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 2830,
+      "n": 4292
+    },
+    {
+      "field": "missing::exec__manager",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 2830,
+      "n": 4292
+    },
+    {
+      "field": "missing::exec__external",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 2830,
+      "n": 4292
+    },
+    {
+      "field": "missing::exec__mean_age",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 3259,
+      "n": 4292
+    },
+    {
+      "field": "missing::exec__mean_tenure",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 3257,
+      "n": 4292
+    },
+    {
+      "field": "missing::exec__mean_notice_lag",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 2830,
+      "n": 4292
+    },
+    {
+      "field": "exec__resign::event_present",
+      "kind": "event_present",
+      "auc": 1.0,
+      "positive": 3865,
+      "n": 4292
+    },
+    {
+      "field": "exec__chair::event_present",
+      "kind": "event_present",
+      "auc": 0.9997405293201869,
+      "positive": 3854,
+      "n": 4292
+    },
+    {
+      "field": "exec__manager::event_present",
+      "kind": "event_present",
+      "auc": 1.0,
+      "positive": 4024,
+      "n": 4292
+    },
+    {
+      "field": "exec__external::event_present",
+      "kind": "event_present",
+      "auc": 1.0,
+      "positive": 473,
+      "n": 4292
+    }
+  ],
+  "subgroups": {
+    "seen_company": {
+      "rows": 3543,
+      "share": 0.8254892823858341,
+      "constant_nrmse": 0.978941269980755,
+      "selected_nrmse": 0.026834784019229806,
+      "gain_vs_constant": 0.9521064859615253,
+      "attribute_macro_auc": 0.9999672672028134,
+      "attribute_fields": 12
+    },
+    "unseen_company": {
+      "rows": 749,
+      "share": 0.1745107176141659,
+      "constant_nrmse": 1.1028867827025413,
+      "selected_nrmse": 0.03264548235611466,
+      "gain_vs_constant": 1.0702413003464266,
+      "attribute_macro_auc": 1.0,
+      "attribute_fields": 12
+    }
+  },
+  "statistical_recoverability_detected": true,
+  "leakage_criterion_met": true,
+  "practical_thresholds": {
+    "nrmse_gain": 0.05,
+    "attribute_auc": 0.6
+  },
+  "pca_reference": {
+    "not_run_in_primary_stage": true
+  },
+  "random_projection_reference": {
+    "not_run_in_primary_stage": true
+  },
+  "elapsed_seconds": 9.836262749973685,
+  "target_semantics": "preprocessed_model_input"
+}

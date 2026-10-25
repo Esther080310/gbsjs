@@ -1,0 +1,200 @@
+{
+  "classification": false,
+  "best_epoch": 40,
+  "best_score": 0.6649316964094187,
+  "history": [
+    {
+      "epoch": 1,
+      "selection_score": 0.7865844886234908
+    },
+    {
+      "epoch": 2,
+      "selection_score": 0.7571329688445096
+    },
+    {
+      "epoch": 3,
+      "selection_score": 0.7416408794422786
+    },
+    {
+      "epoch": 4,
+      "selection_score": 0.729532354137886
+    },
+    {
+      "epoch": 5,
+      "selection_score": 0.7223684094942021
+    },
+    {
+      "epoch": 6,
+      "selection_score": 0.7124504483390353
+    },
+    {
+      "epoch": 7,
+      "selection_score": 0.7101230440483568
+    },
+    {
+      "epoch": 8,
+      "selection_score": 0.7035457777328451
+    },
+    {
+      "epoch": 9,
+      "selection_score": 0.7029212200081338
+    },
+    {
+      "epoch": 10,
+      "selection_score": 0.6954500104471433
+    },
+    {
+      "epoch": 11,
+      "selection_score": 0.6942739971291334
+    },
+    {
+      "epoch": 12,
+      "selection_score": 0.6930128024352652
+    },
+    {
+      "epoch": 13,
+      "selection_score": 0.6941381635540065
+    },
+    {
+      "epoch": 14,
+      "selection_score": 0.6846280557110016
+    },
+    {
+      "epoch": 15,
+      "selection_score": 0.6866614756720639
+    },
+    {
+      "epoch": 16,
+      "selection_score": 0.6832065565182414
+    },
+    {
+      "epoch": 17,
+      "selection_score": 0.6811604960350679
+    },
+    {
+      "epoch": 18,
+      "selection_score": 0.6800701661547036
+    },
+    {
+      "epoch": 19,
+      "selection_score": 0.6766598173364216
+    },
+    {
+      "epoch": 20,
+      "selection_score": 0.6761453662453367
+    },
+    {
+      "epoch": 21,
+      "selection_score": 0.677814712466245
+    },
+    {
+      "epoch": 22,
+      "selection_score": 0.6760695691095062
+    },
+    {
+      "epoch": 23,
+      "selection_score": 0.6721580380004415
+    },
+    {
+      "epoch": 24,
+      "selection_score": 0.6753328530450157
+    },
+    {
+      "epoch": 25,
+      "selection_score": 0.6712169209506631
+    },
+    {
+      "epoch": 26,
+      "selection_score": 0.6712209826444646
+    },
+    {
+      "epoch": 27,
+      "selection_score": 0.6758619732459207
+    },
+    {
+      "epoch": 28,
+      "selection_score": 0.671373806288364
+    },
+    {
+      "epoch": 29,
+      "selection_score": 0.6691848285174739
+    },
+    {
+      "epoch": 30,
+      "selection_score": 0.6721841327914109
+    },
+    {
+      "epoch": 31,
+      "selection_score": 0.6708062419845727
+    },
+    {
+      "epoch": 32,
+      "selection_score": 0.6691122833906055
+    },
+    {
+      "epoch": 33,
+      "selection_score": 0.667062363202988
+    },
+    {
+      "epoch": 34,
+      "selection_score": 0.667993973586471
+    },
+    {
+      "epoch": 35,
+      "selection_score": 0.676176394272012
+    },
+    {
+      "epoch": 36,
+      "selection_score": 0.6680035004009865
+    },
+    {
+      "epoch": 37,
+      "selection_score": 0.6670926111676341
+    },
+    {
+      "epoch": 38,
+      "selection_score": 0.6659770358699775
+    },
+    {
+      "epoch": 39,
+      "selection_score": 0.6654913647691404
+    },
+    {
+      "epoch": 40,
+      "selection_score": 0.6649316964094187
+    },
+    {
+      "epoch": 41,
+      "selection_score": 0.6662056365600484
+    },
+    {
+      "epoch": 42,
+      "selection_score": 0.6670359073264787
+    },
+    {
+      "epoch": 43,
+      "selection_score": 0.6672334058510222
+    },
+    {
+      "epoch": 44,
+      "selection_score": 0.6658607706041823
+    },
+    {
+      "epoch": 45,
+      "selection_score": 0.6694790983751425
+    },
+    {
+      "epoch": 46,
+      "selection_score": 0.6668538232910591
+    },
+    {
+      "epoch": 47,
+      "selection_score": 0.6692703948326173
+    },
+    {
+      "epoch": 48,
+      "selection_score": 0.6668291040048485
+    }
+  ],
+  "checkpoint_sha256": "22acd04a94eaa72747dfb1e69caedc918f8b87e9412d2fbe2888205d19b32839"
+}

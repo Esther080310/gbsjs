@@ -1,0 +1,22 @@
+{
+  "task_year": 2020,
+  "validation_economic_years": [
+    2018
+  ],
+  "sample_rows": 148,
+  "fields_considered": 138,
+  "models": [
+    42,
+    100,
+    17,
+    223,
+    483,
+    907
+  ],
+  "scope": "recorded positive cases within selected industry/type cells; exploratory numeric replacement; no new training",
+  "folds_loaded": [
+    0,
+    1
+  ],
+  "protocol_sha256": "17df2631aaed5e64d10cb7710c6cbd0e862d6c062b6307abee94c84b76dede63"
+}

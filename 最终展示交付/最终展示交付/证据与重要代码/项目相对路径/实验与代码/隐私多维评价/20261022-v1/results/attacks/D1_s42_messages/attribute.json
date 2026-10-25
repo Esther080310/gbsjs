@@ -1,0 +1,208 @@
+{
+  "classification": true,
+  "best_epoch": 42,
+  "best_score": 0.940257873959798,
+  "history": [
+    {
+      "epoch": 1,
+      "selection_score": 0.8537514451430432
+    },
+    {
+      "epoch": 2,
+      "selection_score": 0.8927837740312277
+    },
+    {
+      "epoch": 3,
+      "selection_score": 0.907101230628909
+    },
+    {
+      "epoch": 4,
+      "selection_score": 0.9159147414482509
+    },
+    {
+      "epoch": 5,
+      "selection_score": 0.9203997809293955
+    },
+    {
+      "epoch": 6,
+      "selection_score": 0.9244122220027851
+    },
+    {
+      "epoch": 7,
+      "selection_score": 0.9268868420457466
+    },
+    {
+      "epoch": 8,
+      "selection_score": 0.9287205938283205
+    },
+    {
+      "epoch": 9,
+      "selection_score": 0.9307377220413736
+    },
+    {
+      "epoch": 10,
+      "selection_score": 0.9320129962202214
+    },
+    {
+      "epoch": 11,
+      "selection_score": 0.9334887760721658
+    },
+    {
+      "epoch": 12,
+      "selection_score": 0.934155918603123
+    },
+    {
+      "epoch": 13,
+      "selection_score": 0.9341710708271385
+    },
+    {
+      "epoch": 14,
+      "selection_score": 0.9353230070056469
+    },
+    {
+      "epoch": 15,
+      "selection_score": 0.9358850162587349
+    },
+    {
+      "epoch": 16,
+      "selection_score": 0.9368000805782053
+    },
+    {
+      "epoch": 17,
+      "selection_score": 0.9373983012879197
+    },
+    {
+      "epoch": 18,
+      "selection_score": 0.9375031342633753
+    },
+    {
+      "epoch": 19,
+      "selection_score": 0.9379193036291251
+    },
+    {
+      "epoch": 20,
+      "selection_score": 0.9379770907441236
+    },
+    {
+      "epoch": 21,
+      "selection_score": 0.9380862349447182
+    },
+    {
+      "epoch": 22,
+      "selection_score": 0.938014757024846
+    },
+    {
+      "epoch": 23,
+      "selection_score": 0.938300529866804
+    },
+    {
+      "epoch": 24,
+      "selection_score": 0.9387683219934922
+    },
+    {
+      "epoch": 25,
+      "selection_score": 0.9384334983084189
+    },
+    {
+      "epoch": 26,
+      "selection_score": 0.939179368454146
+    },
+    {
+      "epoch": 27,
+      "selection_score": 0.9393446057008763
+    },
+    {
+      "epoch": 28,
+      "selection_score": 0.9391473831866672
+    },
+    {
+      "epoch": 29,
+      "selection_score": 0.9396116681563785
+    },
+    {
+      "epoch": 30,
+      "selection_score": 0.9396407871975561
+    },
+    {
+      "epoch": 31,
+      "selection_score": 0.939014033379827
+    },
+    {
+      "epoch": 32,
+      "selection_score": 0.9396847081281225
+    },
+    {
+      "epoch": 33,
+      "selection_score": 0.9390392066460491
+    },
+    {
+      "epoch": 34,
+      "selection_score": 0.93935405990669
+    },
+    {
+      "epoch": 35,
+      "selection_score": 0.9394390289653916
+    },
+    {
+      "epoch": 36,
+      "selection_score": 0.9395469551237119
+    },
+    {
+      "epoch": 37,
+      "selection_score": 0.9392827450259714
+    },
+    {
+      "epoch": 38,
+      "selection_score": 0.9393583256318979
+    },
+    {
+      "epoch": 39,
+      "selection_score": 0.9386955148821219
+    },
+    {
+      "epoch": 40,
+      "selection_score": 0.9396970499254357
+    },
+    {
+      "epoch": 41,
+      "selection_score": 0.9401236032347471
+    },
+    {
+      "epoch": 42,
+      "selection_score": 0.940257873959798
+    },
+    {
+      "epoch": 43,
+      "selection_score": 0.9394886187538828
+    },
+    {
+      "epoch": 44,
+      "selection_score": 0.9398796757293015
+    },
+    {
+      "epoch": 45,
+      "selection_score": 0.9399514609079413
+    },
+    {
+      "epoch": 46,
+      "selection_score": 0.9396678294785328
+    },
+    {
+      "epoch": 47,
+      "selection_score": 0.9393452835923153
+    },
+    {
+      "epoch": 48,
+      "selection_score": 0.9396942007675567
+    },
+    {
+      "epoch": 49,
+      "selection_score": 0.9392007655278056
+    },
+    {
+      "epoch": 50,
+      "selection_score": 0.9391757140163747
+    }
+  ],
+  "checkpoint_sha256": "9e24c546311974e4050996e146a7dc10ddb2bc6ce419c084c8c677abae956857"
+}

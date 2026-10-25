@@ -1,0 +1,100 @@
+FIT public regressor 23 0.8567
+FIT public attribute 33 0.6893
+FIT S0_s100_top2 regressor 23 0.7886
+FIT S0_s100_top2 attribute 52 0.7761
+FIT S0_s100_outputs regressor 46 0.6599
+FIT S0_s100_outputs attribute 42 0.8635
+FIT S0_s100_messages regressor 58 0.3425
+FIT S0_s100_messages attribute 36 0.9623
+DONE S0_s100 recall 0.3045
+FIT D1_s100_top2 regressor 31 0.7799
+FIT D1_s100_top2 attribute 26 0.7783
+FIT D1_s100_outputs regressor 53 0.693
+FIT D1_s100_outputs attribute 52 0.84
+FIT D1_s100_messages regressor 43 0.3995
+FIT D1_s100_messages attribute 38 0.9479
+DONE D1_s100 recall 0.2826
+FIT S0_s17_top2 regressor 26 0.7844
+FIT S0_s17_top2 attribute 33 0.7787
+FIT S0_s17_outputs regressor 46 0.6701
+FIT S0_s17_outputs attribute 52 0.8598
+FIT S0_s17_messages regressor 55 0.3419
+FIT S0_s17_messages attribute 27 0.9607
+DONE S0_s17 recall 0.2987
+FIT D1_s17_top2 regressor 26 0.7692
+FIT D1_s17_top2 attribute 38 0.7886
+FIT D1_s17_outputs regressor 46 0.6707
+FIT D1_s17_outputs attribute 48 0.8539
+FIT D1_s17_messages regressor 46 0.4129
+FIT D1_s17_messages attribute 31 0.9439
+DONE D1_s17 recall 0.2895
+FIT S0_s223_top2 regressor 24 0.7768
+FIT S0_s223_top2 attribute 43 0.7829
+FIT S0_s223_outputs regressor 38 0.6498
+FIT S0_s223_outputs attribute 50 0.866
+FIT S0_s223_messages regressor 50 0.3318
+FIT S0_s223_messages attribute 27 0.9616
+DONE S0_s223 recall 0.3022
+FIT D1_s223_top2 regressor 35 0.7953
+FIT D1_s223_top2 attribute 33 0.763
+FIT D1_s223_outputs regressor 33 0.7115
+FIT D1_s223_outputs attribute 69 0.8348
+FIT D1_s223_messages regressor 44 0.4546
+FIT D1_s223_messages attribute 37 0.9344
+DONE D1_s223 recall 0.2964
+FIT S0_s483_top2 regressor 25 0.7663
+FIT S0_s483_top2 attribute 33 0.7891
+FIT S0_s483_outputs regressor 35 0.6487
+FIT S0_s483_outputs attribute 46 0.8686
+FIT S0_s483_messages regressor 45 0.3344
+FIT S0_s483_messages attribute 30 0.9638
+DONE S0_s483 recall 0.2976
+FIT D1_s483_top2 regressor 33 0.773
+FIT D1_s483_top2 attribute 26 0.782
+FIT D1_s483_outputs regressor 35 0.6975
+FIT D1_s483_outputs attribute 52 0.8407
+FIT D1_s483_messages regressor 43 0.4214
+FIT D1_s483_messages attribute 25 0.9416
+DONE D1_s483 recall 0.2953
+FIT S0_s907_top2 regressor 23 0.7839
+FIT S0_s907_top2 attribute 26 0.7748
+FIT S0_s907_outputs regressor 48 0.6525
+FIT S0_s907_outputs attribute 61 0.8641
+FIT S0_s907_messages regressor 33 0.3329
+FIT S0_s907_messages attribute 30 0.963
+DONE S0_s907 recall 0.3033
+FIT D1_s907_top2 regressor 33 0.779
+FIT D1_s907_top2 attribute 33 0.773
+FIT D1_s907_outputs regressor 51 0.6951
+FIT D1_s907_outputs attribute 48 0.8355
+FIT D1_s907_messages regressor 40 0.441
+FIT D1_s907_messages attribute 30 0.9348
+DONE D1_s907 recall 0.3033
+FIT S0_s42_top2 regressor 19 0.7913
+FIT S0_s42_top2 attribute 46 0.7678
+FIT S0_s42_outputs regressor 40 0.6649
+FIT S0_s42_outputs attribute 50 0.858
+FIT S0_s42_messages regressor 43 0.3364
+FIT S0_s42_messages attribute 28 0.9623
+DONE S0_s42 recall 0.2918
+FIT D1_s42_top2 regressor 33 0.7799
+FIT D1_s42_top2 attribute 23 0.7714
+FIT D1_s42_outputs regressor 53 0.6928
+FIT D1_s42_outputs attribute 77 0.8364
+FIT D1_s42_messages regressor 47 0.4159
+FIT D1_s42_messages attribute 42 0.9403
+DONE D1_s42 recall 0.308
+FIT M01_s42_top2 regressor 33 0.7948
+FIT M01_s42_top2 attribute 23 0.7604
+FIT M01_s42_outputs regressor 37 0.7128
+FIT M01_s42_outputs attribute 46 0.8298
+FIT M01_s42_messages regressor 10 0.5363
+FIT M01_s42_messages attribute 13 0.9135
+DONE M01_s42 recall 0.2999
+FIT G1_s42_top2 regressor 23 0.8141
+FIT G1_s42_top2 attribute 23 0.7438
+FIT G1_s42_outputs regressor 23 0.7444
+FIT G1_s42_outputs attribute 26 0.8055
+FIT G1_s42_messages regressor 10 0.5735
+FIT G1_s42_messages attribute 13 0.8994
+DONE G1_s42 recall 0.286

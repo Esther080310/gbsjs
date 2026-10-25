@@ -1,0 +1,279 @@
+{
+  "feature_names": [
+    "audit::unique_company_year_match",
+    "audit::standard_unqualified",
+    "audit::unqualified_with_explanation",
+    "audit::qualified",
+    "audit::adverse",
+    "audit::disclaimer_or_refusal",
+    "audit::unknown"
+  ],
+  "mapping": {
+    "标准无保留意见": 0,
+    "无保留意见加说明段": 1,
+    "带有解释性说明的无保留意见": 1,
+    "保留意见": 2,
+    "保留意见加说明段": 2,
+    "保留意见加事项段": 2,
+    "否定意见": 3,
+    "否定意见加说明段": 3,
+    "无法表示意见": 4,
+    "拒绝发表意见": 4
+  },
+  "groups": [
+    "standard_unqualified",
+    "unqualified_with_explanation",
+    "qualified",
+    "adverse",
+    "disclaimer_or_refusal",
+    "unknown"
+  ],
+  "source_sha256": {
+    "/Users/how/Desktop/分布式企业违规检测/实验与代码/违规通报结构化研究/artifacts/followup/csmar/processed/20261016-v1/aligned/FIN_Audit_annual_candidates.csv.gz": "88bfeddc7c7f228638d9fe6f60490a317b2b00e459472b0e257a7930eaf1f5e6",
+    "/Users/how/Desktop/分布式企业违规检测/实验与代码/违规通报结构化研究/artifacts/followup/csmar/字段字典汇总.csv": "d7efa5097830fdea890629f79d3f92a2a2254643c5aa78d658f7651da5f79247",
+    "/Users/how/Desktop/分布式企业违规检测/实验与代码/违规通报结构化研究/artifacts/experiments/20261016-evidence-v1/audit_source_quality/summary.json": "92c7fb9951463b17bf091126b4a6069e98af58eba2686e828b62c07329e8667b",
+    "/Users/how/Desktop/分布式企业违规检测/实验与代码/违规通报结构化研究/artifacts/followup/csmar/processed/20261016-v1/aligned/sample_alignment_2020.csv.gz": "16e1b9284fbc595e486afea3895962e7b03d61e189374727d098b7e389eaae2e",
+    "/Users/how/Desktop/分布式企业违规检测/实验与代码/违规通报结构化研究/artifacts/followup/csmar/processed/20261016-v1/aligned/sample_alignment_2021.csv.gz": "76c8856fb022bef3b8175217e3d67b949c5da82b32b706322a47678b160e3a83",
+    "/Users/how/Desktop/分布式企业违规检测/实验与代码/财务年度配对修正/cache/2020.npz": "64673df87531328306cc0b32b2272739373839ff8760646752b231dac2c59ffc",
+    "/Users/how/Desktop/分布式企业违规检测/实验与代码/财务年度配对修正/cache/2021.npz": "7ebfa316b6d41180084c62309b0bbcd8bce0ffc622a266de3093027f233857e7"
+  },
+  "append_node": 2,
+  "append_node_name": "X3",
+  "dimensions": 7,
+  "uses_text": false,
+  "uses_dates_as_input": false,
+  "uses_correction_mask": false,
+  "r_definition": "current-snapshot unique same-company-year aligned match; dates never modify r",
+  "historical_version_verified": false,
+  "retrospective_only": true,
+  "boundary_checks_passed": true,
+  "folds": [
+    {
+      "year": 2020,
+      "fold": 0,
+      "rows": 34253,
+      "matched": 32785,
+      "unmatched": 1468,
+      "unknown_matched": 0,
+      "raw_label_counts": {
+        "标准无保留意见": 30929,
+        "无保留意见加说明段": 102,
+        "拒绝发表意见": 20,
+        "保留意见": 302,
+        "保留意见加说明段": 26,
+        "带有解释性说明的无保留意见": 1074,
+        "无法表示意见": 228,
+        "保留意见加事项段": 104
+      },
+      "category_counts": {
+        "standard_unqualified": 30929,
+        "unqualified_with_explanation": 1176,
+        "qualified": 432,
+        "adverse": 0,
+        "disclaimer_or_refusal": 248,
+        "unknown": 0
+      },
+      "iar_common_cohort": 32747,
+      "iar_auditdate_common_cohort": 32387
+    },
+    {
+      "year": 2020,
+      "fold": 1,
+      "rows": 3670,
+      "matched": 3578,
+      "unmatched": 92,
+      "unknown_matched": 0,
+      "raw_label_counts": {
+        "标准无保留意见": 3357,
+        "带有解释性说明的无保留意见": 101,
+        "无法表示意见": 38,
+        "保留意见": 80,
+        "保留意见加事项段": 2
+      },
+      "category_counts": {
+        "standard_unqualified": 3357,
+        "unqualified_with_explanation": 101,
+        "qualified": 82,
+        "adverse": 0,
+        "disclaimer_or_refusal": 38,
+        "unknown": 0
+      },
+      "iar_common_cohort": 3578,
+      "iar_auditdate_common_cohort": 3577
+    },
+    {
+      "year": 2020,
+      "fold": 2,
+      "rows": 3864,
+      "matched": 3770,
+      "unmatched": 94,
+      "unknown_matched": 0,
+      "raw_label_counts": {
+        "标准无保留意见": 3499,
+        "保留意见": 73,
+        "带有解释性说明的无保留意见": 99,
+        "无法表示意见": 46,
+        "保留意见加事项段": 52,
+        "否定意见": 1
+      },
+      "category_counts": {
+        "standard_unqualified": 3499,
+        "unqualified_with_explanation": 99,
+        "qualified": 125,
+        "adverse": 1,
+        "disclaimer_or_refusal": 46,
+        "unknown": 0
+      },
+      "iar_common_cohort": 3767,
+      "iar_auditdate_common_cohort": 3767
+    },
+    {
+      "year": 2020,
+      "fold": 3,
+      "rows": 4292,
+      "matched": 4145,
+      "unmatched": 147,
+      "unknown_matched": 0,
+      "raw_label_counts": {
+        "标准无保留意见": 3889,
+        "保留意见": 76,
+        "保留意见加事项段": 33,
+        "带有解释性说明的无保留意见": 111,
+        "无法表示意见": 36
+      },
+      "category_counts": {
+        "standard_unqualified": 3889,
+        "unqualified_with_explanation": 111,
+        "qualified": 109,
+        "adverse": 0,
+        "disclaimer_or_refusal": 36,
+        "unknown": 0
+      },
+      "iar_common_cohort": 4143,
+      "iar_auditdate_common_cohort": 4141
+    },
+    {
+      "year": 2021,
+      "fold": 0,
+      "rows": 37923,
+      "matched": 36363,
+      "unmatched": 1560,
+      "unknown_matched": 0,
+      "raw_label_counts": {
+        "标准无保留意见": 34286,
+        "无保留意见加说明段": 102,
+        "拒绝发表意见": 20,
+        "保留意见": 382,
+        "保留意见加说明段": 26,
+        "带有解释性说明的无保留意见": 1175,
+        "无法表示意见": 266,
+        "保留意见加事项段": 106
+      },
+      "category_counts": {
+        "standard_unqualified": 34286,
+        "unqualified_with_explanation": 1277,
+        "qualified": 514,
+        "adverse": 0,
+        "disclaimer_or_refusal": 286,
+        "unknown": 0
+      },
+      "iar_common_cohort": 36325,
+      "iar_auditdate_common_cohort": 35964
+    },
+    {
+      "year": 2021,
+      "fold": 1,
+      "rows": 3864,
+      "matched": 3770,
+      "unmatched": 94,
+      "unknown_matched": 0,
+      "raw_label_counts": {
+        "标准无保留意见": 3499,
+        "保留意见": 73,
+        "带有解释性说明的无保留意见": 99,
+        "无法表示意见": 46,
+        "保留意见加事项段": 52,
+        "否定意见": 1
+      },
+      "category_counts": {
+        "standard_unqualified": 3499,
+        "unqualified_with_explanation": 99,
+        "qualified": 125,
+        "adverse": 1,
+        "disclaimer_or_refusal": 46,
+        "unknown": 0
+      },
+      "iar_common_cohort": 3767,
+      "iar_auditdate_common_cohort": 3767
+    },
+    {
+      "year": 2021,
+      "fold": 2,
+      "rows": 4292,
+      "matched": 4145,
+      "unmatched": 147,
+      "unknown_matched": 0,
+      "raw_label_counts": {
+        "标准无保留意见": 3889,
+        "保留意见": 76,
+        "保留意见加事项段": 33,
+        "带有解释性说明的无保留意见": 111,
+        "无法表示意见": 36
+      },
+      "category_counts": {
+        "standard_unqualified": 3889,
+        "unqualified_with_explanation": 111,
+        "qualified": 109,
+        "adverse": 0,
+        "disclaimer_or_refusal": 36,
+        "unknown": 0
+      },
+      "iar_common_cohort": 4143,
+      "iar_auditdate_common_cohort": 4141
+    },
+    {
+      "year": 2021,
+      "fold": 3,
+      "rows": 4794,
+      "matched": 4689,
+      "unmatched": 105,
+      "unknown_matched": 0,
+      "raw_label_counts": {
+        "标准无保留意见": 4433,
+        "保留意见": 73,
+        "带有解释性说明的无保留意见": 108,
+        "无法表示意见": 47,
+        "保留意见加事项段": 27,
+        "否定意见": 1
+      },
+      "category_counts": {
+        "standard_unqualified": 4433,
+        "unqualified_with_explanation": 108,
+        "qualified": 100,
+        "adverse": 1,
+        "disclaimer_or_refusal": 47,
+        "unknown": 0
+      },
+      "iar_common_cohort": 4688,
+      "iar_auditdate_common_cohort": 4688
+    }
+  ],
+  "unique_matched_company_years": 48967,
+  "unique_raw_category_counts": {
+    "标准无保留意见": 46107,
+    "无保留意见加说明段": 102,
+    "拒绝发表意见": 20,
+    "保留意见": 604,
+    "保留意见加说明段": 26,
+    "带有解释性说明的无保留意见": 1493,
+    "无法表示意见": 395,
+    "保留意见加事项段": 218,
+    "否定意见": 2
+  },
+  "unknown_rows": [],
+  "arrays_reloaded_exact": true,
+  "feature_sha256": {
+    "/Users/how/Desktop/分布式企业违规检测/实验与代码/违规通报结构化研究/artifacts/experiments/20261016-evidence-v1/audit_information/features/audit_features_2020.npz": "650154cbea320a24ef099983cfd33694d634b87da9643981627330d72c1e2754",
+    "/Users/how/Desktop/分布式企业违规检测/实验与代码/违规通报结构化研究/artifacts/experiments/20261016-evidence-v1/audit_information/features/audit_features_2021.npz": "5526e67051cff112bb1ced8031d2e0be39d92044340ec829f4cb860808068f13"
+  }
+}

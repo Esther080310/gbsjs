@@ -1,0 +1,20 @@
+{
+  "path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/dCor稳定性复检/20261021-v1/results/S0_s100/model.pt",
+  "sha256": "5d57ad8c2572dba67f76c291b3d2ed9dd765bb5b0a8d9f74918ad1349263273d",
+  "task": {
+    "rows": 3670,
+    "positives": 867,
+    "budget": 367,
+    "found": 264,
+    "recall_at_10pct": 0.3044982698961938,
+    "precision_at_10pct": 0.7193460490463215,
+    "overall_average_precision": 0.5750131696640669,
+    "eligible_selected_positives": 264,
+    "conditional_top2_hit": 0.5227272727272727,
+    "common_top2_hit": 0.9204545454545454,
+    "type_macro_coverage": 0.12795429896392185,
+    "common_macro_coverage": 0.07506582745462483,
+    "conditional_type_macro_ap": 0.3660159466322913
+  },
+  "new_predictor_training": false
+}

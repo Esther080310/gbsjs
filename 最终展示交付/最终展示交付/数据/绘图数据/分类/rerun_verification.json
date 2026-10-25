@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "second_run_byte_identical": true,
+  "files_checked": 14,
+  "sha256": {
+    "annual_summary.csv": "9252d2e3e69e5050202e8f905d879115068beab29739e401aa35a57849b253d8",
+    "seed_stability.csv": "1e38d2243cfca46fa89859de5c3cc0f860a16db3c9babedb951345c7be3c55fc",
+    "per_type.csv": "29377ee940c316b7fd4f79b92e4c2987c08074c6cdf63341ecb4ef1d45b68cc1",
+    "industry_annual.csv": "12074bed366f678bb2e73864522ee49581885d1abd406e93013d5d52acb2d899",
+    "industry_type_cells.csv": "c29c0290b550edc8d75d82f04cd4186acc6c1b5a093326bfa741a6e0629da343",
+    "industry_type_pooled.csv": "c487021976c4a4a715bd0628ca028088e2c4545f4b7e46493568f12b304317c0",
+    "industry_pooled.csv": "c7a3d087b2a19a16054858ad5389be7cf44084abae101099a44a355cbe16806c",
+    "industry_display.csv": "33e65e69c599cb7133e2859ff81dba8ab5996953ffac29695e5a2b237e99ba2d",
+    "industry_availability.csv": "dcda845551620c1b68e468fec9454a70b590062c1e9c0e44e95b25a5cd700fd4",
+    "aggregation_sensitivity.csv": "2fd99b324344d938d284c1eed85c71f1c5afdf9bc0c650f73b619611de37928b",
+    "summary.json": "b34757fbd3766c484f551d7ee313015c6e574c2bbc3ce703c6ff0b5401542457",
+    "verification.json": "87fafb2479c1a721f3c8b63afea4510f3efe96ca57b7ea4828590c57ea32ce7f",
+    "sources.json": "591db5ec8320c97a09a11ff0c535f3740ef768fb2a9c129add715f0182e936e4",
+    "结果解读.md": "82d7aeca9b3ad2422fb00d6570052c24fd2018a0fead883ff4d8014ce438e4b0"
+  }
+}

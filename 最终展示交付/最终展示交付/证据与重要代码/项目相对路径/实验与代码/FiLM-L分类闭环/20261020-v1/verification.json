@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "no_training": true,
+  "frozen_predictor": "mean_of_six_calibrated_logits_then_sigmoid",
+  "years": [
+    2020,
+    2021,
+    2022
+  ],
+  "seeds": [
+    42,
+    100,
+    17,
+    223,
+    483,
+    907
+  ],
+  "models_read": 18,
+  "expected_ensemble_hits_reproduced": true,
+  "aggregation_sensitivity_saved": true,
+  "labels_only_on_overall_positive_rows": true,
+  "industry_partition_matches_type_support": true,
+  "source_count": 18,
+  "data_signatures": {
+    "2020": {
+      "y": "86887ecfce5bc6b29f77d2bd79a10c46ee4ec0d517cac71797c7e1d17afa5c72",
+      "types": "e5d3fd90baedbd062775319f47dd7251f5d199f10eca758c35542ff129053024",
+      "industry": "f01ac556f12600d86e0550342b96561330f053c1a6116c7664ce8e0855ad1f86",
+      "symbols": "853f268b97bfb0b06af8119d6e000c8b873931385a3143ca54fbc7a7868bcabb"
+    },
+    "2021": {
+      "y": "f5179dd0c1df55307448fe45cac268a39430afe37e001633a6cb74f177f25968",
+      "types": "3b4d025a416b14b740084b085f499010dcd7106018c39ed8db24ecbf51d0790e",
+      "industry": "131bb2f2d48fe37e8a545504f7de0d0d702d630b605dd620ceab9e19769e25b6",
+      "symbols": "ab31a2d11ce2f66517db2d3015ea8f757009abd6908395d4d5aea8208fac1ea7"
+    },
+    "2022": {
+      "y": "7001a3f930e077d7683f56a81f0b0884c78d0a30718812df38c43534f7b06c08",
+      "types": "96378714d13c640838124dacad4e742d2ac93743ee8a4fbb5a408c89146ab5e9",
+      "industry": "3ebe99fff4e2b46ccd40d7cecf8c77a7f98ab550fb7db24dd992360a520663c1",
+      "symbols": "998721956b7deb75b122afef30e648b8644668846aba56d823dc690039748f02"
+    }
+  }
+}

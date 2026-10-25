@@ -1,0 +1,192 @@
+[
+  {
+    "项目相对路径": "实验与代码/违规通报结构化研究/artifacts/followup/csmar/processed/20261016-v1/format_quarantine.jsonl.gz",
+    "字节": 9187,
+    "是否复制": false
+  },
+  {
+    "项目相对路径": "实验与代码/违规通报结构化研究/artifacts/followup/csmar/processed/20261016-v1/normalized/FS_Combas.csv.gz",
+    "字节": 222953358,
+    "是否复制": false
+  },
+  {
+    "项目相对路径": "实验与代码/违规通报结构化研究/artifacts/followup/csmar/processed/20261016-v1/normalized/RPT_Transfer.csv.gz",
+    "字节": 148434813,
+    "是否复制": false
+  },
+  {
+    "项目相对路径": "实验与代码/违规通报结构化研究/artifacts/followup/csmar/processed/20261016-v1/normalized/IAR_Rept.csv.gz",
+    "字节": 36974210,
+    "是否复制": false
+  },
+  {
+    "项目相对路径": "实验与代码/违规通报结构化研究/artifacts/followup/csmar/processed/20261016-v1/normalized/FIN_Audit.csv.gz",
+    "字节": 18723084,
+    "是否复制": true
+  },
+  {
+    "项目相对路径": "实验与代码/违规通报结构化研究/artifacts/followup/csmar/processed/20261016-v1/normalized/FS_Comins.csv.gz",
+    "字节": 156224779,
+    "是否复制": false
+  },
+  {
+    "项目相对路径": "实验与代码/违规通报结构化研究/artifacts/followup/csmar/processed/20261016-v1/normalized/FS_Comscfd.csv.gz",
+    "字节": 160813875,
+    "是否复制": false
+  },
+  {
+    "项目相对路径": "实验与代码/违规通报结构化研究/artifacts/followup/csmar/processed/20261016-v1/normalized/RPT_Operation.csv.gz",
+    "字节": 366400008,
+    "是否复制": false
+  },
+  {
+    "项目相对路径": "实验与代码/违规通报结构化研究/artifacts/followup/csmar/processed/20261016-v1/aligned/RPT_Operation_annual_coverage.csv.gz",
+    "字节": 335482,
+    "是否复制": false
+  },
+  {
+    "项目相对路径": "实验与代码/违规通报结构化研究/artifacts/followup/csmar/processed/20261016-v1/aligned/FS_Comins_duplicates.csv.gz",
+    "字节": 421,
+    "是否复制": false
+  },
+  {
+    "项目相对路径": "实验与代码/违规通报结构化研究/artifacts/followup/csmar/processed/20261016-v1/aligned/numeric_column_coverage_2021.csv.gz",
+    "字节": 13570,
+    "是否复制": false
+  },
+  {
+    "项目相对路径": "实验与代码/违规通报结构化研究/artifacts/followup/csmar/processed/20261016-v1/aligned/FIN_Audit_conflicts.csv.gz",
+    "字节": 253,
+    "是否复制": true
+  },
+  {
+    "项目相对路径": "实验与代码/违规通报结构化研究/artifacts/followup/csmar/processed/20261016-v1/aligned/RPT_Transfer_multiplicity_diagnostic.csv.gz",
+    "字节": 1018310,
+    "是否复制": false
+  },
+  {
+    "项目相对路径": "实验与代码/违规通报结构化研究/artifacts/followup/csmar/processed/20261016-v1/aligned/annual_publication_dates.csv.gz",
+    "字节": 8327071,
+    "是否复制": false
+  },
+  {
+    "项目相对路径": "实验与代码/违规通报结构化研究/artifacts/followup/csmar/processed/20261016-v1/aligned/FS_Combas_conflicts.csv.gz",
+    "字节": 610,
+    "是否复制": false
+  },
+  {
+    "项目相对路径": "实验与代码/违规通报结构化研究/artifacts/followup/csmar/processed/20261016-v1/aligned/coverage_by_fold_type_2021.csv.gz",
+    "字节": 1348,
+    "是否复制": false
+  },
+  {
+    "项目相对路径": "实验与代码/违规通报结构化研究/artifacts/followup/csmar/processed/20261016-v1/aligned/FS_Comscfd_annual_candidates.csv.gz",
+    "字节": 24683839,
+    "是否复制": false
+  },
+  {
+    "项目相对路径": "实验与代码/违规通报结构化研究/artifacts/followup/csmar/processed/20261016-v1/aligned/sample_alignment_2021.csv.gz",
+    "字节": 15917718,
+    "是否复制": false
+  },
+  {
+    "项目相对路径": "实验与代码/违规通报结构化研究/artifacts/followup/csmar/processed/20261016-v1/aligned/FS_Comscfd_duplicates.csv.gz",
+    "字节": 392,
+    "是否复制": false
+  },
+  {
+    "项目相对路径": "实验与代码/违规通报结构化研究/artifacts/followup/csmar/processed/20261016-v1/aligned/FS_Combas_duplicates.csv.gz",
+    "字节": 611,
+    "是否复制": false
+  },
+  {
+    "项目相对路径": "实验与代码/违规通报结构化研究/artifacts/followup/csmar/processed/20261016-v1/aligned/FS_Comins_conflicts.csv.gz",
+    "字节": 420,
+    "是否复制": false
+  },
+  {
+    "项目相对路径": "实验与代码/违规通报结构化研究/artifacts/followup/csmar/processed/20261016-v1/aligned/FS_Comscfd_conflicts.csv.gz",
+    "字节": 391,
+    "是否复制": false
+  },
+  {
+    "项目相对路径": "实验与代码/违规通报结构化研究/artifacts/followup/csmar/processed/20261016-v1/aligned/numeric_column_coverage_2020.csv.gz",
+    "字节": 12719,
+    "是否复制": false
+  },
+  {
+    "项目相对路径": "实验与代码/违规通报结构化研究/artifacts/followup/csmar/processed/20261016-v1/aligned/FIN_Audit_annual_candidates.csv.gz",
+    "字节": 19744418,
+    "是否复制": true
+  },
+  {
+    "项目相对路径": "实验与代码/违规通报结构化研究/artifacts/followup/csmar/processed/20261016-v1/aligned/RPT_Transfer_annual_coverage.csv.gz",
+    "字节": 267563,
+    "是否复制": false
+  },
+  {
+    "项目相对路径": "实验与代码/违规通报结构化研究/artifacts/followup/csmar/processed/20261016-v1/aligned/FIN_Audit_duplicates.csv.gz",
+    "字节": 254,
+    "是否复制": true
+  },
+  {
+    "项目相对路径": "实验与代码/违规通报结构化研究/artifacts/followup/csmar/processed/20261016-v1/aligned/FS_Combas_annual_candidates.csv.gz",
+    "字节": 33545111,
+    "是否复制": false
+  },
+  {
+    "项目相对路径": "实验与代码/违规通报结构化研究/artifacts/followup/csmar/processed/20261016-v1/aligned/FS_Comins_annual_candidates.csv.gz",
+    "字节": 23634117,
+    "是否复制": false
+  },
+  {
+    "项目相对路径": "实验与代码/违规通报结构化研究/artifacts/followup/csmar/processed/20261016-v1/aligned/RPT_Operation_multiplicity_diagnostic.csv.gz",
+    "字节": 1167323,
+    "是否复制": false
+  },
+  {
+    "项目相对路径": "实验与代码/违规通报结构化研究/artifacts/followup/csmar/processed/20261016-v1/aligned/sample_alignment_2020.csv.gz",
+    "字节": 14423918,
+    "是否复制": false
+  },
+  {
+    "项目相对路径": "实验与代码/违规通报结构化研究/artifacts/followup/csmar/processed/20261016-v1/aligned/coverage_by_fold_type_2020.csv.gz",
+    "字节": 1348,
+    "是否复制": false
+  },
+  {
+    "项目相对路径": "实验与代码/违规通报结构化研究/artifacts/followup/csmar/raw/20261016/RPT_Operation_all_available.zip",
+    "字节": 139110141,
+    "是否复制": false
+  },
+  {
+    "项目相对路径": "实验与代码/违规通报结构化研究/artifacts/followup/csmar/raw/20261016/RPT_Transfer_all_available.zip",
+    "字节": 20228775,
+    "是否复制": false
+  },
+  {
+    "项目相对路径": "实验与代码/违规通报结构化研究/artifacts/followup/csmar/raw/20261016/FIN_Audit_all_available.zip",
+    "字节": 10592194,
+    "是否复制": true
+  },
+  {
+    "项目相对路径": "实验与代码/违规通报结构化研究/artifacts/followup/csmar/raw/20261016/IAR_Rept_all_available.zip",
+    "字节": 9166837,
+    "是否复制": false
+  },
+  {
+    "项目相对路径": "实验与代码/违规通报结构化研究/artifacts/followup/csmar/raw/20261016/FS_Combas_all_available.zip",
+    "字节": 155557176,
+    "是否复制": false
+  },
+  {
+    "项目相对路径": "实验与代码/违规通报结构化研究/artifacts/followup/csmar/raw/20261016/FS_Comscfd_all_available.zip",
+    "字节": 97058094,
+    "是否复制": false
+  },
+  {
+    "项目相对路径": "实验与代码/违规通报结构化研究/artifacts/followup/csmar/raw/20261016/FS_Comins_all_available.zip",
+    "字节": 90351204,
+    "是否复制": false
+  }
+]

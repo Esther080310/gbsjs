@@ -1,0 +1,344 @@
+{
+  "scope": "preflight accounting; no label evaluation and no 81-arm selection",
+  "topology": {
+    "physical_data_nodes": 3,
+    "physical_uplinks": [
+      "x1_market",
+      "x2_finance",
+      "x3_governance_and_audit"
+    ],
+    "logical_blocks": [
+      "market",
+      "finance",
+      "governance",
+      "audit_control"
+    ],
+    "transport_rounds": 1,
+    "note": "X3同一连接承载治理表示和审计控制支路；若未来审计由独立机构持有，物理上行增至4，但数值payload不变"
+  },
+  "serialization_assumptions": {
+    "frame_header_bytes_per_logical_block": 20,
+    "logical_frames_per_batched_single_model_request": 4,
+    "header_fields": "magic/version/block/precision/flags/row_count/dimension/body_length",
+    "int8_scales": "per-model, per-logical-block, per-channel; pre-shared deployment metadata",
+    "model_order_and_dimensions": "pre-shared deployment manifest",
+    "requests_tls_encryption": "not included"
+  },
+  "single_model": {
+    "float_slots_by_block": {
+      "market": 17,
+      "finance": 89,
+      "governance": 22,
+      "audit_control": 9
+    },
+    "fp32_account_by_block": {
+      "market": {
+        "float_slots": 17,
+        "fp32_payload_bytes": 68
+      },
+      "finance": {
+        "float_slots": 89,
+        "fp32_payload_bytes": 356
+      },
+      "governance": {
+        "float_slots": 22,
+        "fp32_payload_bytes": 88
+      },
+      "audit_control": {
+        "float_slots": 9,
+        "legacy_fp32_bytes": 36,
+        "packed_fp32_payload_bytes": 33,
+        "note": "c为8个FP32，r为1个uint8"
+      }
+    },
+    "float_slots": 137,
+    "legacy_numeric_bytes_fp32": 548,
+    "wire_payload_bytes_with_r_packed": {
+      "all_fp32": 545,
+      "all_fp16": 273,
+      "all_int8": 137
+    },
+    "one_company_four_frame_bytes": {
+      "all_fp32": 625,
+      "all_fp16": 353,
+      "all_int8": 217
+    },
+    "batch64_bytes_per_company": {
+      "all_fp32": 546.25,
+      "all_fp16": 274.25,
+      "all_int8": 138.25
+    },
+    "int8_scale_manifest_bytes_if_all_int8": 544
+  },
+  "six_model_ensemble": {
+    "aggregation": "six calibrated logits are equally averaged, then sigmoid is applied",
+    "naive_repeated_float_slots": 822,
+    "naive_repeated_fp32_bytes": 3288,
+    "naive_repeated_packed_fp32_payload_bytes": 3270,
+    "naive_repeated_one_company_24_frame_bytes": 3750,
+    "naive_repeated_batch64_bytes_per_company": 3277.5,
+    "shared_q_and_r_float_slots": 802,
+    "shared_q_and_r_fp32_equivalent_bytes": 3208,
+    "packed_by_logical_block_fp32_payload_bytes": 3205,
+    "packed_by_logical_block_one_company_frame_bytes": 3285,
+    "packed_by_logical_block_batch64_bytes_per_company": 3206.25,
+    "packed_fp32_by_block": {
+      "market": {
+        "continuous_values": 97,
+        "fp32_payload_bytes": 388
+      },
+      "finance": {
+        "continuous_values": 529,
+        "fp32_payload_bytes": 2116
+      },
+      "governance": {
+        "continuous_values": 127,
+        "fp32_payload_bytes": 508
+      },
+      "audit_control": {
+        "continuous_values": 48,
+        "packed_fp32_payload_bytes": 193
+      }
+    },
+    "all_fp16_packed_payload_bytes": 1603,
+    "all_int8_packed_payload_bytes": 802,
+    "int8_scale_manifest_bytes_if_all_int8": 3204,
+    "exact_local_average_possible": false,
+    "reason": "encoders, control maps and nonlinear fusion heads differ by seed; one averaged message does not reproduce the average of six post-sigmoid calibrated predictions"
+  },
+  "training_accounting": {
+    "kind": "numeric-slot compatibility estimate, not measured network traffic",
+    "old_forward_slots": 128,
+    "corrected_forward_slots": 137,
+    "old_backward_differentiable_slots": 125,
+    "corrected_backward_differentiable_slots": 133,
+    "runs": [
+      {
+        "year": 2020,
+        "seed": 42,
+        "epochs": 18,
+        "sample_updates": 616554,
+        "recorded_forward_bytes_128": 315675648,
+        "corrected_forward_bytes_137": 337871592,
+        "recorded_backward_bytes_125": 308277000,
+        "corrected_backward_bytes_133": 328006728,
+        "recorded_validation_bytes_128": 33822720,
+        "corrected_validation_bytes_137": 36200880
+      },
+      {
+        "year": 2020,
+        "seed": 100,
+        "epochs": 19,
+        "sample_updates": 650807,
+        "recorded_forward_bytes_128": 333213184,
+        "corrected_forward_bytes_137": 356642236,
+        "recorded_backward_bytes_125": 325403500,
+        "corrected_backward_bytes_133": 346229324,
+        "recorded_validation_bytes_128": 35701760,
+        "corrected_validation_bytes_137": 38212040
+      },
+      {
+        "year": 2020,
+        "seed": 17,
+        "epochs": 24,
+        "sample_updates": 822072,
+        "recorded_forward_bytes_128": 420900864,
+        "corrected_forward_bytes_137": 450495456,
+        "recorded_backward_bytes_125": 411036000,
+        "corrected_backward_bytes_133": 437342304,
+        "recorded_validation_bytes_128": 45096960,
+        "corrected_validation_bytes_137": 48267840
+      },
+      {
+        "year": 2020,
+        "seed": 223,
+        "epochs": 22,
+        "sample_updates": 753566,
+        "recorded_forward_bytes_128": 385825792,
+        "corrected_forward_bytes_137": 412954168,
+        "recorded_backward_bytes_125": 376783000,
+        "corrected_backward_bytes_133": 400897112,
+        "recorded_validation_bytes_128": 41338880,
+        "corrected_validation_bytes_137": 44245520
+      },
+      {
+        "year": 2020,
+        "seed": 483,
+        "epochs": 13,
+        "sample_updates": 445289,
+        "recorded_forward_bytes_128": 227987968,
+        "corrected_forward_bytes_137": 244018372,
+        "recorded_backward_bytes_125": 222644500,
+        "corrected_backward_bytes_133": 236893748,
+        "recorded_validation_bytes_128": 24427520,
+        "corrected_validation_bytes_137": 26145080
+      },
+      {
+        "year": 2020,
+        "seed": 907,
+        "epochs": 13,
+        "sample_updates": 445289,
+        "recorded_forward_bytes_128": 227987968,
+        "corrected_forward_bytes_137": 244018372,
+        "recorded_backward_bytes_125": 222644500,
+        "corrected_backward_bytes_133": 236893748,
+        "recorded_validation_bytes_128": 24427520,
+        "corrected_validation_bytes_137": 26145080
+      },
+      {
+        "year": 2021,
+        "seed": 42,
+        "epochs": 23,
+        "sample_updates": 872229,
+        "recorded_forward_bytes_128": 446581248,
+        "corrected_forward_bytes_137": 477981492,
+        "recorded_backward_bytes_125": 436114500,
+        "corrected_backward_bytes_133": 464025828,
+        "recorded_validation_bytes_128": 45502464,
+        "corrected_validation_bytes_137": 48701856
+      },
+      {
+        "year": 2021,
+        "seed": 100,
+        "epochs": 20,
+        "sample_updates": 758460,
+        "recorded_forward_bytes_128": 388331520,
+        "corrected_forward_bytes_137": 415636080,
+        "recorded_backward_bytes_125": 379230000,
+        "corrected_backward_bytes_133": 403500720,
+        "recorded_validation_bytes_128": 39567360,
+        "corrected_validation_bytes_137": 42349440
+      },
+      {
+        "year": 2021,
+        "seed": 17,
+        "epochs": 17,
+        "sample_updates": 644691,
+        "recorded_forward_bytes_128": 330081792,
+        "corrected_forward_bytes_137": 353290668,
+        "recorded_backward_bytes_125": 322345500,
+        "corrected_backward_bytes_133": 342975612,
+        "recorded_validation_bytes_128": 33632256,
+        "corrected_validation_bytes_137": 35997024
+      },
+      {
+        "year": 2021,
+        "seed": 223,
+        "epochs": 21,
+        "sample_updates": 796383,
+        "recorded_forward_bytes_128": 407748096,
+        "corrected_forward_bytes_137": 436417884,
+        "recorded_backward_bytes_125": 398191500,
+        "corrected_backward_bytes_133": 423675756,
+        "recorded_validation_bytes_128": 41545728,
+        "corrected_validation_bytes_137": 44466912
+      },
+      {
+        "year": 2021,
+        "seed": 483,
+        "epochs": 17,
+        "sample_updates": 644691,
+        "recorded_forward_bytes_128": 330081792,
+        "corrected_forward_bytes_137": 353290668,
+        "recorded_backward_bytes_125": 322345500,
+        "corrected_backward_bytes_133": 342975612,
+        "recorded_validation_bytes_128": 33632256,
+        "corrected_validation_bytes_137": 35997024
+      },
+      {
+        "year": 2021,
+        "seed": 907,
+        "epochs": 18,
+        "sample_updates": 682614,
+        "recorded_forward_bytes_128": 349498368,
+        "corrected_forward_bytes_137": 374072472,
+        "recorded_backward_bytes_125": 341307000,
+        "corrected_backward_bytes_133": 363150648,
+        "recorded_validation_bytes_128": 35610624,
+        "corrected_validation_bytes_137": 38114496
+      },
+      {
+        "year": 2022,
+        "seed": 42,
+        "epochs": 15,
+        "sample_updates": 626805,
+        "recorded_forward_bytes_128": 320924160,
+        "corrected_forward_bytes_137": 343489140,
+        "recorded_backward_bytes_125": 313402500,
+        "corrected_backward_bytes_133": 333460260,
+        "recorded_validation_bytes_128": 32962560,
+        "corrected_validation_bytes_137": 35280240
+      },
+      {
+        "year": 2022,
+        "seed": 100,
+        "epochs": 17,
+        "sample_updates": 710379,
+        "recorded_forward_bytes_128": 363714048,
+        "corrected_forward_bytes_137": 389287692,
+        "recorded_backward_bytes_125": 355189500,
+        "corrected_backward_bytes_133": 377921628,
+        "recorded_validation_bytes_128": 37357568,
+        "corrected_validation_bytes_137": 39984272
+      },
+      {
+        "year": 2022,
+        "seed": 17,
+        "epochs": 19,
+        "sample_updates": 793953,
+        "recorded_forward_bytes_128": 406503936,
+        "corrected_forward_bytes_137": 435086244,
+        "recorded_backward_bytes_125": 396976500,
+        "corrected_backward_bytes_133": 422382996,
+        "recorded_validation_bytes_128": 41752576,
+        "corrected_validation_bytes_137": 44688304
+      },
+      {
+        "year": 2022,
+        "seed": 223,
+        "epochs": 16,
+        "sample_updates": 668592,
+        "recorded_forward_bytes_128": 342319104,
+        "corrected_forward_bytes_137": 366388416,
+        "recorded_backward_bytes_125": 334296000,
+        "corrected_backward_bytes_133": 355690944,
+        "recorded_validation_bytes_128": 35160064,
+        "corrected_validation_bytes_137": 37632256
+      },
+      {
+        "year": 2022,
+        "seed": 483,
+        "epochs": 19,
+        "sample_updates": 793953,
+        "recorded_forward_bytes_128": 406503936,
+        "corrected_forward_bytes_137": 435086244,
+        "recorded_backward_bytes_125": 396976500,
+        "corrected_backward_bytes_133": 422382996,
+        "recorded_validation_bytes_128": 41752576,
+        "corrected_validation_bytes_137": 44688304
+      },
+      {
+        "year": 2022,
+        "seed": 907,
+        "epochs": 18,
+        "sample_updates": 752166,
+        "recorded_forward_bytes_128": 385108992,
+        "corrected_forward_bytes_137": 412186968,
+        "recorded_backward_bytes_125": 376083000,
+        "corrected_backward_bytes_133": 400152312,
+        "recorded_validation_bytes_128": 39555072,
+        "corrected_validation_bytes_137": 42336288
+      }
+    ],
+    "aggregate_recorded_bytes": 13291081380,
+    "aggregate_corrected_bytes": 14186225296,
+    "correction_percent": 6.734921639611535
+  },
+  "not_counted_yet": [
+    "requests and acknowledgements",
+    "TCP/TLS or encryption expansion",
+    "model-weight deployment (INT8 scale manifest is separately shown above)",
+    "industry code if it is not already held by the fusion server",
+    "wall-clock network latency and packet loss"
+  ]
+}

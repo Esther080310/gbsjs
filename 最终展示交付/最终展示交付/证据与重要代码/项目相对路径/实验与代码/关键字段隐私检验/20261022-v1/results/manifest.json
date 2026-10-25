@@ -1,0 +1,17 @@
+{
+  "fit_rows": 27329,
+  "inner_rows": 6924,
+  "validation_rows": 3670,
+  "validation_company_overlap_with_attack_fit": 2844,
+  "folds_loaded": [
+    0,
+    1
+  ],
+  "validation_economic_years": [
+    2018
+  ],
+  "public_dimensions": 34,
+  "fields": 138,
+  "source_sha256": "b504581e5bfcde3dd6aec5aa98c293fea60fe62df4ac6d85a79b8fc65522504a",
+  "protocol_sha256": "9329ada3a6fb29faf1862c32166562d14382367d4663a91681c57a2882c6a8b9"
+}

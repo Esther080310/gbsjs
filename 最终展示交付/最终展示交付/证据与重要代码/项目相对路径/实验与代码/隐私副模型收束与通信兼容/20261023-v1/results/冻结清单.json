@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-23",
+  "decision": "MID adapted stochastic information bottleneck selected as final research privacy secondary configuration; stop defense search",
+  "primary_predictor": "FiLM-L unchanged",
+  "strength": 0.1,
+  "model_evaluations": [
+    {
+      "seed": 100,
+      "path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/MID稳定性复检/20261022-v1/results/models/MID_s100/model.pt",
+      "sha256": "c544dd8dce4ac821088c4beef9a0b4f0c222fc1fd705b9f141afe15cb412af56"
+    },
+    {
+      "seed": 17,
+      "path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/MID稳定性复检/20261022-v1/results/models/MID_s17/model.pt",
+      "sha256": "1e42a9d616eea61c32fbbc4813a1181cc46c7bc335a1323920fc01a7f9667ac7"
+    },
+    {
+      "seed": 223,
+      "path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/MID稳定性复检/20261022-v1/results/models/MID_s223/model.pt",
+      "sha256": "146f590cc25cc7ed05bc3db55d141abbdf5ab90579358a74b7ec38dbce48c456"
+    },
+    {
+      "seed": 483,
+      "path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/MID稳定性复检/20261022-v1/results/models/MID_s483/model.pt",
+      "sha256": "74ab58c9f9aefb3a150741c6dc4fcc9ba757ef528659ebef33ad0e38516da532"
+    },
+    {
+      "seed": 907,
+      "path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/MID稳定性复检/20261022-v1/results/models/MID_s907/model.pt",
+      "sha256": "5d19c93f40b67a0db2ad659896984d66b0c3e5cbd40103440b236322ad439b0a"
+    }
+  ],
+  "deployment_semantics": "One local encoder per node, one cached noisy message per enterprise-period, six fusion heads; five training seeds evaluated separately, not five-encoder ensemble deployment",
+  "reported_privacy_message_precision": "fp32",
+  "utility_engineering_gate_previously_passed": false,
+  "communication_compatibility_candidate": "fp16",
+  "quantized_privacy_attacks_completed": false,
+  "scope": "Existing 2018 development validation; research utility-privacy evaluation, no production confidentiality certification",
+  "source_decision_sha256": "d46f753d37a3a053f1bd9064317e2a744c3dcca0c5319adf32cb991010165618"
+}

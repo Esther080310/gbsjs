@@ -1,0 +1,10 @@
+{
+  "old_cache_reproduced_exactly": true,
+  "unchanged_X1_X3_industry_labels_samples": true,
+  "training_preprocessing_refitted": true,
+  "same_feature_names": true,
+  "years": [
+    2020,
+    2021
+  ]
+}

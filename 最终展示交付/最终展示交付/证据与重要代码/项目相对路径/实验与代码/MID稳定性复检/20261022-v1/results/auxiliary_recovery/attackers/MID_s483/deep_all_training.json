@@ -1,0 +1,123 @@
+{
+  "best_epoch": 21,
+  "epochs": 29,
+  "history": [
+    {
+      "epoch": 1,
+      "inner_nrmse": 0.7122290213179545
+    },
+    {
+      "epoch": 2,
+      "inner_nrmse": 0.6497781663033806
+    },
+    {
+      "epoch": 3,
+      "inner_nrmse": 0.626491943294061
+    },
+    {
+      "epoch": 4,
+      "inner_nrmse": 0.6120578525411718
+    },
+    {
+      "epoch": 5,
+      "inner_nrmse": 0.6032022039861864
+    },
+    {
+      "epoch": 6,
+      "inner_nrmse": 0.5963307332202359
+    },
+    {
+      "epoch": 7,
+      "inner_nrmse": 0.5924814670434856
+    },
+    {
+      "epoch": 8,
+      "inner_nrmse": 0.5881373493543455
+    },
+    {
+      "epoch": 9,
+      "inner_nrmse": 0.5838437045992932
+    },
+    {
+      "epoch": 10,
+      "inner_nrmse": 0.5820596423514476
+    },
+    {
+      "epoch": 11,
+      "inner_nrmse": 0.5795670594267115
+    },
+    {
+      "epoch": 12,
+      "inner_nrmse": 0.5785070586647539
+    },
+    {
+      "epoch": 13,
+      "inner_nrmse": 0.5767468937500728
+    },
+    {
+      "epoch": 14,
+      "inner_nrmse": 0.5768653655886133
+    },
+    {
+      "epoch": 15,
+      "inner_nrmse": 0.5753676359980623
+    },
+    {
+      "epoch": 16,
+      "inner_nrmse": 0.5738375948474846
+    },
+    {
+      "epoch": 17,
+      "inner_nrmse": 0.5738928811157196
+    },
+    {
+      "epoch": 18,
+      "inner_nrmse": 0.5732784037527997
+    },
+    {
+      "epoch": 19,
+      "inner_nrmse": 0.5749675381526537
+    },
+    {
+      "epoch": 20,
+      "inner_nrmse": 0.5743019062347063
+    },
+    {
+      "epoch": 21,
+      "inner_nrmse": 0.5731132889427978
+    },
+    {
+      "epoch": 22,
+      "inner_nrmse": 0.5734047950014419
+    },
+    {
+      "epoch": 23,
+      "inner_nrmse": 0.5748606525998208
+    },
+    {
+      "epoch": 24,
+      "inner_nrmse": 0.5740312310289869
+    },
+    {
+      "epoch": 25,
+      "inner_nrmse": 0.5743441172017159
+    },
+    {
+      "epoch": 26,
+      "inner_nrmse": 0.5736216901076098
+    },
+    {
+      "epoch": 27,
+      "inner_nrmse": 0.5754134276042828
+    },
+    {
+      "epoch": 28,
+      "inner_nrmse": 0.5756294311077648
+    },
+    {
+      "epoch": 29,
+      "inner_nrmse": 0.5745301304247223
+    }
+  ],
+  "checkpoint_sha256": "53e2318964fbae922f4d8e33948413408fdff3165dfa870ddafd95acedc42434"
+}

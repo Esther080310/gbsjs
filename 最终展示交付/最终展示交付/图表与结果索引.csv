@@ -1,0 +1,21 @@
+﻿图表,源数据,修改代码,重画命令,解释口径
+图表/结果图/04_模型效果对照.png,数据/绘图数据/主模型/展示指标.json；各年完整排名CSV,代码/绘图/原始主结果绘图.py,python 代码/绘图/重画结果图.py --only main,六模型校准logit平均；固定2023标签快照；预算ceil
+图表/结果图/05_增量与排序质量.png,数据/绘图数据/主模型/展示指标.json；各年完整排名CSV,代码/绘图/原始主结果绘图.py,python 代码/绘图/重画结果图.py --only main,六模型校准logit平均；固定2023标签快照；预算ceil
+图表/结果图/06_前10前5前1名单密度.png,数据/绘图数据/主模型/展示指标.json；各年完整排名CSV,代码/绘图/原始主结果绘图.py,python 代码/绘图/重画结果图.py --only main,六模型校准logit平均；固定2023标签快照；预算ceil
+图表/结果图/06_名单密度_2021.png,数据/绘图数据/主模型/展示指标.json；各年完整排名CSV,代码/绘图/原始主结果绘图.py,python 代码/绘图/重画结果图.py --only main,六模型校准logit平均；固定2023标签快照；预算ceil
+图表/结果图/06_名单密度_2022.png,数据/绘图数据/主模型/展示指标.json；各年完整排名CSV,代码/绘图/原始主结果绘图.py,python 代码/绘图/重画结果图.py --only main,六模型校准logit平均；固定2023标签快照；预算ceil
+图表/结果图/07_预算与命中率.png,数据/绘图数据/主模型/展示指标.json；各年完整排名CSV,代码/绘图/原始主结果绘图.py,python 代码/绘图/重画结果图.py --only main,六模型校准logit平均；固定2023标签快照；预算ceil
+图表/结果图/08_类型提示对照.png,数据/绘图数据/分类/annual_summary.csv,代码/绘图/重画结果图.py,python 代码/绘图/重画结果图.py --only classification,条件Top2；不是全体分类准确率
+图表/结果图/09_节点通信载荷.png,数据/绘图数据/通信/strict_candidate_selection.json,代码/绘图/重画结果图.py,python 代码/绘图/重画结果图.py --only communication,同FiLM-L六模型接口载荷；元数据另计
+图表/结果图/10_隐私效用取舍.png,数据/绘图数据/隐私/task_comparison.csv；隐私/aggregate_comparison.csv,代码/绘图/重画结果图.py,python 代码/绘图/重画结果图.py --only privacy,同构S0/dCor/MID；五次独立训练；FP32攻击
+图表/结果图/11_年度更新效果与成本.png,数据/绘图数据/年度更新/rolling_metrics.csv,代码/绘图/重画结果图.py,python 代码/绘图/重画结果图.py --only update,两期三种子；同机计算时间
+图表/结果图/12_节点归因.png,数据/绘图数据/归因/node_shares.csv,代码/绘图/重画结果图.py,python 代码/绘图/重画结果图.py --only attribution,指定128家；按模型内部归一化
+图表/结果图/13_行业与违规类型归因.png,数据/绘图数据/归因/figure_type_heatmap.csv,代码/绘图/重画结果图.py,python 代码/绘图/重画结果图.py --only attribution-detail,固定13字段；小样本留空
+图表/结果图/14_审计分支排序变化.png,数据/绘图数据/归因/audit_actual_reranking.csv,代码/绘图/重画结果图.py,python 代码/绘图/重画结果图.py --only attribution-detail,全体验证企业重新排序；箱体为企业间分布
+图表/结果图/15_字段依赖与保护.png,数据/绘图数据/归因/figure_financial_dependence.csv；归因/paired_field_privacy.csv,代码/绘图/重画结果图.py,python 代码/绘图/重画结果图.py --only attribution-detail,两侧样本不同；不拟合因果
+图表/结果图/16_固定企业案例.png,数据/绘图数据/归因/cases.csv,代码/绘图/重画结果图.py,python 代码/绘图/重画结果图.py --only attribution-detail,名单内外固定正例；不是违规概率
+图表/原理图/01_通信缩减原理.png,冻结协议及代码；无新的模拟数值,代码/绘图/绘制三个原理图.py,python 代码/绘图/绘制三个原理图.py,按训练尺度量化并解码；不改变模型参数
+图表/原理图/02_MID隐私副模型原理.png,冻结协议及代码；无新的模拟数值,代码/绘图/绘制三个原理图.py,python 代码/绘图/绘制三个原理图.py,内容表示采样；审计等附加消息仍可见
+图表/原理图/03_年度更新与回退原理.png,冻结协议及代码；无新的模拟数值,代码/绘图/绘制三个原理图.py,python 代码/绘图/绘制三个原理图.py,增量回放加当前保留集；失败重训或保留
+图表/原理图/01_研究路径图_专业版.png,FilmKeepX3及实际协议账本,代码/绘图/原始主模型原理绘图.py；重画主模型原理.py,python 代码/绘图/重画主模型原理.py,原布局经包装入口更新545/3205字节账本
+图表/原理图/02_FiLM-L模型结构_专业版.png,FilmKeepX3及实际协议账本,代码/绘图/原始主模型原理绘图.py；重画主模型原理.py,python 代码/绘图/重画主模型原理.py,原布局经包装入口更新545/3205字节账本

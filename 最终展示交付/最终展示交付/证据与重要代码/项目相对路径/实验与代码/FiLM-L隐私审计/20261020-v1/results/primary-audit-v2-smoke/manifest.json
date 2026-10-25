@@ -1,0 +1,31 @@
+{
+  "status": "smoke",
+  "fold_contract": {
+    "train": 0,
+    "selection": 1,
+    "unused": 2,
+    "formal_test": 3
+  },
+  "target_semantics": "preprocessed_model_input_not_raw_csmar",
+  "years": [
+    2020
+  ],
+  "model_seeds": [
+    42,
+    100,
+    17,
+    223,
+    483,
+    907
+  ],
+  "attack_seed": 20261020,
+  "mode": "primary",
+  "records": 10,
+  "all_expected_records": true,
+  "leakage_records": 10,
+  "source_sha256": {
+    "/Users/how/Desktop/分布式企业违规检测/实验与代码/FiLM-L隐私审计/20261020-v1/训练前约定.md": "c95d2750670fd078187fb672b0f9d742bcb9cb76963beb552c21394794706188",
+    "/Users/how/Desktop/分布式企业违规检测/实验与代码/FiLM-L隐私审计/20261020-v1/run_formal_audit.py": "db4e83fb07807604723a346e931d0b008ebd03d8f8a64a308646a41b0b6054fb",
+    "/Users/how/Desktop/分布式企业违规检测/实验与代码/控制消息架构/20261018-v1/ablation_lib.py": "6d7be1b0a38b349762d7aa8c922b0398df792bd799f885b84785ef2a0c3be530"
+  }
+}

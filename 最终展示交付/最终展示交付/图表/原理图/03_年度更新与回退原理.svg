@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="739.8pt" height="424.656pt" viewBox="0 0 739.8 424.656" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-24T23:39:46.607040</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 424.656 
+L 739.8 424.656 
+L 739.8 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 23.94 143.028 
+L 205.29 143.028 
+L 205.29 82.044 
+L 23.94 82.044 
+z
+" clip-path="url(#pa3474df7c0)" style="fill: #ffffff; stroke: #17324d; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 23.94 231.732 
+L 205.29 231.732 
+L 205.29 167.976 
+L 23.94 167.976 
+z
+" clip-path="url(#pa3474df7c0)" style="fill: #ffffff; stroke: #17324d; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 114.336 145.028834 
+Q 114.336 155.503801 114.336 164.637127 
+" clip-path="url(#pa3474df7c0)" style="fill: none; stroke: #5d6977; stroke-width: 1.2; stroke-linecap: round"/>
+    <path d="M 116.736 159.837127 
+L 114.336 164.637127 
+L 111.936 159.837127 
+z
+" clip-path="url(#pa3474df7c0)" style="fill: #5d6977; stroke: #5d6977; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 247.14 231.732 
+L 473.13 231.732 
+L 473.13 82.044 
+L 247.14 82.044 
+z
+" clip-path="url(#pa3474df7c0)" style="fill: #ffffff; stroke: #287c7e; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 207.290034 200.1312 
+Q 226.215362 200.1312 243.799051 200.1312 
+" clip-path="url(#pa3474df7c0)" style="fill: none; stroke: #5d6977; stroke-width: 1.2; stroke-linecap: round"/>
+    <path d="M 238.999051 197.7312 
+L 243.799051 200.1312 
+L 238.999051 202.5312 
+z
+" clip-path="url(#pa3474df7c0)" style="fill: #5d6977; stroke: #5d6977; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 514.98 231.732 
+L 713.07 231.732 
+L 713.07 82.044 
+L 514.98 82.044 
+z
+" clip-path="url(#pa3474df7c0)" style="fill: #ffffff; stroke: #bc6138; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 475.130034 156.888 
+Q 494.055362 156.888 511.639051 156.888 
+" clip-path="url(#pa3474df7c0)" style="fill: none; stroke: #5d6977; stroke-width: 1.2; stroke-linecap: round"/>
+    <path d="M 506.839051 154.488 
+L 511.639051 156.888 
+L 506.839051 159.288 
+z
+" clip-path="url(#pa3474df7c0)" style="fill: #5d6977; stroke: #5d6977; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 23.94 367.56 
+L 205.29 367.56 
+L 205.29 278.856 
+L 23.94 278.856 
+z
+" clip-path="url(#pa3474df7c0)" style="fill: #ffffff; stroke: #bc6138; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 247.14 367.56 
+L 473.13 367.56 
+L 473.13 278.856 
+L 247.14 278.856 
+z
+" clip-path="url(#pa3474df7c0)" style="fill: #ffffff; stroke: #17324d; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 514.98 367.56 
+L 713.07 367.56 
+L 713.07 278.856 
+L 514.98 278.856 
+z
+" clip-path="url(#pa3474df7c0)" style="fill: #ffffff; stroke: #287c7e; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 613.746 233.730973 
+Q 613.746 255.29233 613.746 275.512046 
+" clip-path="url(#pa3474df7c0)" style="fill: none; stroke: #287c7e; stroke-width: 1.2; stroke-linecap: round"/>
+    <path d="M 616.146 270.712046 
+L 613.746 275.512046 
+L 611.346 270.712046 
+z
+" clip-path="url(#pa3474df7c0)" style="fill: #287c7e; stroke: #287c7e; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 114.336 259.786995 
+Q 114.336 268.322889 114.336 275.517142 
+" clip-path="url(#pa3474df7c0)" style="fill: none; stroke: #bc6138; stroke-width: 1.2; stroke-linecap: round"/>
+    <path d="M 116.736 270.717142 
+L 114.336 275.517142 
+L 111.936 270.717142 
+z
+" clip-path="url(#pa3474df7c0)" style="fill: #bc6138; stroke: #bc6138; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 207.290034 323.208 
+Q 226.215362 323.208 243.799051 323.208 
+" clip-path="url(#pa3474df7c0)" style="fill: none; stroke: #5d6977; stroke-width: 1.2; stroke-linecap: round"/>
+    <path d="M 238.999051 320.808 
+L 243.799051 323.208 
+L 238.999051 325.608 
+z
+" clip-path="url(#pa3474df7c0)" style="fill: #5d6977; stroke: #5d6977; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 514.98 212.328 
+L 492.66 212.328 
+L 492.66 257.7888 
+L 114.336 257.7888 
+L 114.336 278.856 
+" clip-path="url(#pa3474df7c0)" style="fill: none; stroke: #bc6138; stroke-width: 1.15; stroke-linecap: square"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 18px; font-family: 'Microsoft YaHei'; text-anchor: start; fill: #17324d" x="23.94" y="40.032675" transform="rotate(-0 23.94 40.032675)">年度更新  冻结节点编码器并回放历史样本</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 10.4px; font-family: 'Microsoft YaHei'; text-anchor: start; fill: #5d6977" x="23.94" y="60.312375" transform="rotate(-0 23.94 60.312375)">新通报按企业与违规发生年度修正标签；增量候选通过当前保留集检查后才接受</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei'; text-anchor: middle; fill: #17324d" x="114.615" y="99.40193" transform="rotate(-0 114.615 99.40193)">新信息到达</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 10.4px; font-family: 'Microsoft YaHei'; text-anchor: middle; fill: #17324d" x="114.615" y="129.4881" transform="rotate(-0 114.615 129.4881)">新年度特征 / 后续违规通报</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei'; text-anchor: middle; fill: #17324d" x="114.615" y="185.33393" transform="rotate(-0 114.615 185.33393)">标签与表示缓存</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 10.4px; font-family: 'Microsoft YaHei'; fill: #17324d" transform="translate(47.015 207.931162)">旧键修正标签，新键计算表示</text>
+    <text style="font-size: 10.4px; font-family: 'Microsoft YaHei'; fill: #17324d" transform="translate(52.215 225.6656)">编码器版本变化则重建缓存</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei'; text-anchor: middle; fill: #287c7e" x="360.135" y="99.407555" transform="rotate(-0 360.135 99.407555)">融合端增量训练</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 10.4px; font-family: 'Microsoft YaHei'; fill: #17324d" transform="translate(302.935 129.584037)">冻结：节点与审计编码器</text>
+    <text style="font-size: 10.4px; font-family: 'Microsoft YaHei'; fill: #17324d" transform="translate(318.535 147.211225)">更新：融合端参数</text>
+    <text style="font-size: 10.4px; font-family: 'Microsoft YaHei'; fill: #17324d" transform="translate(360.135 161.329225)"/>
+    <text style="font-size: 10.4px; font-family: 'Microsoft YaHei'; fill: #17324d" transform="translate(298.887937 182.704475)">每批128条新增 / 修正样本</text>
+    <text style="font-size: 10.4px; font-family: 'Microsoft YaHei'; fill: #17324d" transform="translate(309.19125 200.412912)">+ 128条历史回放样本</text>
+    <text style="font-size: 10.4px; font-family: 'Microsoft YaHei'; fill: #17324d" transform="translate(328.036375 218.151412)">固定训练60步</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei'; text-anchor: middle; fill: #bc6138" x="614.025" y="99.407555" transform="rotate(-0 614.025 99.407555)">保留集检查</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 10.4px; font-family: 'Microsoft YaHei'; fill: #17324d" transform="translate(549.890313 138.407787)">固定历史组 + 最新训练年度</text>
+    <text style="font-size: 10.4px; font-family: 'Microsoft YaHei'; fill: #17324d" transform="translate(556.825 156.08535)">使用当前已经公开的标签</text>
+    <text style="font-size: 10.4px; font-family: 'Microsoft YaHei'; fill: #17324d" transform="translate(614.025 170.1936)"/>
+    <text style="font-size: 10.4px; font-family: 'Microsoft YaHei'; fill: #17324d" transform="translate(562.441 191.558287)">召回下降 &gt; 1个百分点</text>
+    <text style="font-size: 10.4px; font-family: 'Microsoft YaHei'; fill: #17324d" transform="translate(551.911 209.266725)">或 AP下降 &gt; 0.01：不通过</text>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei'; text-anchor: middle; fill: #bc6138" x="114.615" y="296.196117" transform="rotate(-0 114.615 296.196117)">优先评估全量重训</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 10.4px; font-family: 'Microsoft YaHei'; fill: #17324d" transform="translate(62.615 322.425662)">重大政策后新监督充足</text>
+    <text style="font-size: 10.4px; font-family: 'Microsoft YaHei'; fill: #17324d" transform="translate(73.015 340.1601)">或增量候选未通过</text>
+    <text style="font-size: 10.4px; font-family: 'Microsoft YaHei'; fill: #17324d" transform="translate(57.415 357.88885)">重新学习编码器与融合端</text>
+   </g>
+   <g id="text_13">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei'; text-anchor: middle; fill: #17324d" x="360.135" y="296.219555" transform="rotate(-0 360.135 296.219555)">全量候选也按同一规则检查</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 10.4px; font-family: 'Microsoft YaHei'; fill: #17324d" transform="translate(292.535 322.430537)">通过：保存新版本并重建缓存</text>
+    <text style="font-size: 10.4px; font-family: 'Microsoft YaHei'; fill: #17324d" transform="translate(313.335 340.149537)">不通过：保留父版本</text>
+    <text style="font-size: 10.4px; font-family: 'Microsoft YaHei'; fill: #17324d" transform="translate(292.535 357.883162)">记录文件哈希与父版本供回退</text>
+   </g>
+   <g id="text_15">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Microsoft YaHei'; text-anchor: middle; fill: #287c7e" x="614.025" y="296.21393" transform="rotate(-0 614.025 296.21393)">保存增量候选版本</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 10.4px; font-family: 'Microsoft YaHei'; fill: #17324d" transform="translate(582.825 322.461412)">增量检查通过</text>
+    <text style="font-size: 10.4px; font-family: 'Microsoft YaHei'; fill: #17324d" transform="translate(551.625 340.139787)">保存新融合端并复用编码器</text>
+    <text style="font-size: 10.4px; font-family: 'Microsoft YaHei'; fill: #17324d" transform="translate(546.425 357.857975)">正式发布另做原接口兼容复核</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 9px; font-family: 'Microsoft YaHei'; text-anchor: middle; fill: #287c7e" x="613.746" y="248.6412" transform="rotate(-0 613.746 248.6412)">通过</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 9px; font-family: 'Microsoft YaHei'; text-anchor: middle; fill: #bc6138" x="358.74" y="251.136" transform="rotate(-0 358.74 251.136)">增量未通过</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 10px; font-family: 'Microsoft YaHei'; text-anchor: start; fill: #5d6977" x="23.94" y="401.9328" transform="rotate(-0 23.94 401.9328)">回放目的是兼顾新信号与历史表现。两期实验显示成本下降，后续召回仍低于每期全量重训。</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pa3474df7c0">
+   <rect x="7.2" y="7.2" width="725.4" height="410.256"/>
+  </clipPath>
+ </defs>
+</svg>

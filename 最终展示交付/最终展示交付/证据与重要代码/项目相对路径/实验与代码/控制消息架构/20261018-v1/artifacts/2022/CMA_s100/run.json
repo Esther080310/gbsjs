@@ -1,0 +1,23 @@
+{
+  "epochs": 17,
+  "best_epoch": 11,
+  "selection_loss": 0.7939934882377918,
+  "train_seconds": 3.1172547500173096,
+  "train_forward_bytes": 326774340,
+  "train_backward_bytes": 318249792,
+  "epoch_validation_bytes": 33563440,
+  "year": 2022,
+  "arm": "CMA",
+  "seed": 100,
+  "head": "mlp",
+  "content_dims": [
+    16,
+    88,
+    8
+  ],
+  "budget_floats": 115,
+  "parameters": 41728,
+  "initial_hash": "b5c5599bb7668cd23ce714bb3822c7437cd9b6928636434316a5c00eef3daf75",
+  "final_hash": "b5c5599bb7668cd23ce714bb3822c7437cd9b6928636434316a5c00eef3daf75",
+  "x3_dim": 23
+}

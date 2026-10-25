@@ -1,0 +1,10 @@
+{
+  "independent_metric_max_difference": 2.220446049250313e-16,
+  "numeric_and_attribute_metrics_recomputed": true,
+  "information_view_evaluations": 20,
+  "new_mid_predictors": 5,
+  "all_model_source_hashes_verified": true,
+  "source_hash_matches": true,
+  "new_primary_attack_neural_networks": 30,
+  "auxiliary_neural_recovery_networks": 10
+}

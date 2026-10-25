@@ -1,0 +1,56 @@
+{
+  "version": "20261020-v1",
+  "status": "frozen before formal 81-candidate evaluation",
+  "years": [
+    2020,
+    2021,
+    2022
+  ],
+  "seeds": [
+    42,
+    100,
+    17,
+    223,
+    483,
+    907
+  ],
+  "ensemble": {
+    "calibration": "per constituent model",
+    "aggregation": "equal arithmetic mean of six calibrated logits",
+    "probability_transform": "sigmoid after logit averaging"
+  },
+  "main_all_required": {
+    "top10_company_set_exact_each_year": true,
+    "top2_type_set_exact_for_baseline_top10_companies": true,
+    "max_overall_probability_absolute_error": 0.005,
+    "max_type_probability_absolute_error": 0.005
+  },
+  "secondary_sensitivity_only": {
+    "may_replace_main_decision": false,
+    "minimum_top10_jaccard_each_year": 0.995,
+    "minimum_top2_set_agreement_each_year": 0.995,
+    "maximum_recall_at_10_percent_drop_percentage_points_each_year": 0.5
+  },
+  "candidate_grid": {
+    "logical_blocks": [
+      "market",
+      "finance",
+      "governance",
+      "audit_control"
+    ],
+    "precisions": [
+      "fp32",
+      "fp16",
+      "int8"
+    ],
+    "count": 81,
+    "int8_scale_fit": "per model, per logical block, per channel, training fold only, absolute maximum divided by 127",
+    "audit_match_flag": "lossless uint8"
+  },
+  "aggregation_sensitivity": {
+    "alternative": "sigmoid each logit then mean probabilities",
+    "not_the_frozen_predictor": true,
+    "2021_changed_list_members": 4,
+    "2022_changed_list_members": 6
+  }
+}

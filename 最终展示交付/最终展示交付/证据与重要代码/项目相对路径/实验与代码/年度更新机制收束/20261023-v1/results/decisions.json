@@ -1,0 +1,510 @@
+[
+  {
+    "seed": 42,
+    "cutoff": "2020-04-30",
+    "arm": "INCREMENT",
+    "route": "INCREMENT",
+    "increment_gate": {
+      "accept": false,
+      "reasons": [
+        "latest:recall_drop"
+      ]
+    },
+    "gate_applied": false,
+    "full_gate": null,
+    "policy": {
+      "prefer_full": false,
+      "events": [
+        {
+          "id": "securities_law_2020",
+          "status": "POLICY_WAIT",
+          "completed": 0,
+          "required": 2,
+          "support": 0
+        }
+      ]
+    },
+    "policy_support": {
+      "securities_law_2020": 0
+    },
+    "delta_rows": 3210,
+    "revised_old_rows": 307,
+    "new_rows": 2903,
+    "replay_rows": 2048,
+    "parent_version": "s42-initial",
+    "candidate_version": "s42-2020-04-30-INCREMENT-INCREMENT",
+    "cache_invalidated": false,
+    "cost": {
+      "seconds": 0.2307407090002016,
+      "exposures": 15360,
+      "forward_payload": 1582135,
+      "backward_payload": 0
+    }
+  },
+  {
+    "seed": 42,
+    "cutoff": "2020-04-30",
+    "arm": "ADAPTIVE",
+    "route": "FULL",
+    "increment_gate": {
+      "accept": false,
+      "reasons": [
+        "latest:recall_drop"
+      ]
+    },
+    "gate_applied": true,
+    "full_gate": {
+      "accept": true,
+      "reasons": []
+    },
+    "policy": {
+      "prefer_full": false,
+      "events": [
+        {
+          "id": "securities_law_2020",
+          "status": "POLICY_WAIT",
+          "completed": 0,
+          "required": 2,
+          "support": 0
+        }
+      ]
+    },
+    "policy_support": {
+      "securities_law_2020": 0
+    },
+    "delta_rows": 3210,
+    "revised_old_rows": 307,
+    "new_rows": 2903,
+    "replay_rows": 2048,
+    "parent_version": "s42-initial",
+    "candidate_version": "s42-2020-04-30-ADAPTIVE-FULL",
+    "cache_invalidated": true,
+    "cost": {
+      "seconds": 8.905778668000039,
+      "exposures": 916170,
+      "forward_payload": 492523585,
+      "backward_payload": 479230920
+    }
+  },
+  {
+    "seed": 42,
+    "cutoff": "2021-04-30",
+    "arm": "INCREMENT",
+    "route": "INCREMENT",
+    "increment_gate": {
+      "accept": true,
+      "reasons": []
+    },
+    "gate_applied": false,
+    "full_gate": null,
+    "policy": {
+      "prefer_full": false,
+      "events": [
+        {
+          "id": "securities_law_2020",
+          "status": "POLICY_WAIT",
+          "completed": 0,
+          "required": 2,
+          "support": 0
+        }
+      ]
+    },
+    "policy_support": {
+      "securities_law_2020": 0
+    },
+    "delta_rows": 3426,
+    "revised_old_rows": 371,
+    "new_rows": 3055,
+    "replay_rows": 2048,
+    "parent_version": "s42-2020-04-30-INCREMENT-INCREMENT",
+    "candidate_version": "s42-2021-04-30-INCREMENT-INCREMENT",
+    "cache_invalidated": false,
+    "cost": {
+      "seconds": 0.17383270900063508,
+      "exposures": 15360,
+      "forward_payload": 1664975,
+      "backward_payload": 0
+    }
+  },
+  {
+    "seed": 42,
+    "cutoff": "2021-04-30",
+    "arm": "ADAPTIVE",
+    "route": "INCREMENT",
+    "increment_gate": {
+      "accept": true,
+      "reasons": []
+    },
+    "gate_applied": true,
+    "full_gate": null,
+    "policy": {
+      "prefer_full": false,
+      "events": [
+        {
+          "id": "securities_law_2020",
+          "status": "POLICY_WAIT",
+          "completed": 0,
+          "required": 2,
+          "support": 0
+        }
+      ]
+    },
+    "policy_support": {
+      "securities_law_2020": 0
+    },
+    "delta_rows": 3426,
+    "revised_old_rows": 371,
+    "new_rows": 3055,
+    "replay_rows": 2048,
+    "parent_version": "s42-2020-04-30-ADAPTIVE-FULL",
+    "candidate_version": "s42-2021-04-30-ADAPTIVE-INCREMENT",
+    "cache_invalidated": false,
+    "cost": {
+      "seconds": 0.17551683400051843,
+      "exposures": 15360,
+      "forward_payload": 1664975,
+      "backward_payload": 0
+    }
+  },
+  {
+    "seed": 100,
+    "cutoff": "2020-04-30",
+    "arm": "INCREMENT",
+    "route": "INCREMENT",
+    "increment_gate": {
+      "accept": true,
+      "reasons": []
+    },
+    "gate_applied": false,
+    "full_gate": null,
+    "policy": {
+      "prefer_full": false,
+      "events": [
+        {
+          "id": "securities_law_2020",
+          "status": "POLICY_WAIT",
+          "completed": 0,
+          "required": 2,
+          "support": 0
+        }
+      ]
+    },
+    "policy_support": {
+      "securities_law_2020": 0
+    },
+    "delta_rows": 3210,
+    "revised_old_rows": 307,
+    "new_rows": 2903,
+    "replay_rows": 2048,
+    "parent_version": "s100-initial",
+    "candidate_version": "s100-2020-04-30-INCREMENT-INCREMENT",
+    "cache_invalidated": false,
+    "cost": {
+      "seconds": 0.17458554200038634,
+      "exposures": 15360,
+      "forward_payload": 1582135,
+      "backward_payload": 0
+    }
+  },
+  {
+    "seed": 100,
+    "cutoff": "2020-04-30",
+    "arm": "ADAPTIVE",
+    "route": "INCREMENT",
+    "increment_gate": {
+      "accept": true,
+      "reasons": []
+    },
+    "gate_applied": true,
+    "full_gate": null,
+    "policy": {
+      "prefer_full": false,
+      "events": [
+        {
+          "id": "securities_law_2020",
+          "status": "POLICY_WAIT",
+          "completed": 0,
+          "required": 2,
+          "support": 0
+        }
+      ]
+    },
+    "policy_support": {
+      "securities_law_2020": 0
+    },
+    "delta_rows": 3210,
+    "revised_old_rows": 307,
+    "new_rows": 2903,
+    "replay_rows": 2048,
+    "parent_version": "s100-initial",
+    "candidate_version": "s100-2020-04-30-ADAPTIVE-INCREMENT",
+    "cache_invalidated": false,
+    "cost": {
+      "seconds": 0.17132745799972326,
+      "exposures": 15360,
+      "forward_payload": 1582135,
+      "backward_payload": 0
+    }
+  },
+  {
+    "seed": 100,
+    "cutoff": "2021-04-30",
+    "arm": "INCREMENT",
+    "route": "INCREMENT",
+    "increment_gate": {
+      "accept": false,
+      "reasons": [
+        "anchor:recall_drop",
+        "latest:recall_drop"
+      ]
+    },
+    "gate_applied": false,
+    "full_gate": null,
+    "policy": {
+      "prefer_full": false,
+      "events": [
+        {
+          "id": "securities_law_2020",
+          "status": "POLICY_WAIT",
+          "completed": 0,
+          "required": 2,
+          "support": 0
+        }
+      ]
+    },
+    "policy_support": {
+      "securities_law_2020": 0
+    },
+    "delta_rows": 3426,
+    "revised_old_rows": 371,
+    "new_rows": 3055,
+    "replay_rows": 2048,
+    "parent_version": "s100-2020-04-30-INCREMENT-INCREMENT",
+    "candidate_version": "s100-2021-04-30-INCREMENT-INCREMENT",
+    "cache_invalidated": false,
+    "cost": {
+      "seconds": 0.17501320899918937,
+      "exposures": 15360,
+      "forward_payload": 1664975,
+      "backward_payload": 0
+    }
+  },
+  {
+    "seed": 100,
+    "cutoff": "2021-04-30",
+    "arm": "ADAPTIVE",
+    "route": "KEEP",
+    "increment_gate": {
+      "accept": false,
+      "reasons": [
+        "anchor:recall_drop",
+        "latest:recall_drop"
+      ]
+    },
+    "gate_applied": true,
+    "full_gate": {
+      "accept": false,
+      "reasons": [
+        "anchor:recall_drop",
+        "latest:recall_drop"
+      ]
+    },
+    "policy": {
+      "prefer_full": false,
+      "events": [
+        {
+          "id": "securities_law_2020",
+          "status": "POLICY_WAIT",
+          "completed": 0,
+          "required": 2,
+          "support": 0
+        }
+      ]
+    },
+    "policy_support": {
+      "securities_law_2020": 0
+    },
+    "delta_rows": 3426,
+    "revised_old_rows": 371,
+    "new_rows": 3055,
+    "replay_rows": 2048,
+    "parent_version": "s100-2020-04-30-ADAPTIVE-INCREMENT",
+    "candidate_version": "s100-2021-04-30-ADAPTIVE-KEEP",
+    "cache_invalidated": false,
+    "cost": {
+      "seconds": 8.83947895900019,
+      "exposures": 1007820,
+      "forward_payload": 542555675,
+      "backward_payload": 527988720
+    }
+  },
+  {
+    "seed": 17,
+    "cutoff": "2020-04-30",
+    "arm": "INCREMENT",
+    "route": "INCREMENT",
+    "increment_gate": {
+      "accept": false,
+      "reasons": [
+        "anchor:recall_drop"
+      ]
+    },
+    "gate_applied": false,
+    "full_gate": null,
+    "policy": {
+      "prefer_full": false,
+      "events": [
+        {
+          "id": "securities_law_2020",
+          "status": "POLICY_WAIT",
+          "completed": 0,
+          "required": 2,
+          "support": 0
+        }
+      ]
+    },
+    "policy_support": {
+      "securities_law_2020": 0
+    },
+    "delta_rows": 3210,
+    "revised_old_rows": 307,
+    "new_rows": 2903,
+    "replay_rows": 2048,
+    "parent_version": "s17-initial",
+    "candidate_version": "s17-2020-04-30-INCREMENT-INCREMENT",
+    "cache_invalidated": false,
+    "cost": {
+      "seconds": 0.1749860419995457,
+      "exposures": 15360,
+      "forward_payload": 1582135,
+      "backward_payload": 0
+    }
+  },
+  {
+    "seed": 17,
+    "cutoff": "2020-04-30",
+    "arm": "ADAPTIVE",
+    "route": "FULL",
+    "increment_gate": {
+      "accept": false,
+      "reasons": [
+        "anchor:recall_drop"
+      ]
+    },
+    "gate_applied": true,
+    "full_gate": {
+      "accept": true,
+      "reasons": []
+    },
+    "policy": {
+      "prefer_full": false,
+      "events": [
+        {
+          "id": "securities_law_2020",
+          "status": "POLICY_WAIT",
+          "completed": 0,
+          "required": 2,
+          "support": 0
+        }
+      ]
+    },
+    "policy_support": {
+      "securities_law_2020": 0
+    },
+    "delta_rows": 3210,
+    "revised_old_rows": 307,
+    "new_rows": 2903,
+    "replay_rows": 2048,
+    "parent_version": "s17-initial",
+    "candidate_version": "s17-2020-04-30-ADAPTIVE-FULL",
+    "cache_invalidated": true,
+    "cost": {
+      "seconds": 7.82671183399907,
+      "exposures": 916170,
+      "forward_payload": 492523585,
+      "backward_payload": 479230920
+    }
+  },
+  {
+    "seed": 17,
+    "cutoff": "2021-04-30",
+    "arm": "INCREMENT",
+    "route": "INCREMENT",
+    "increment_gate": {
+      "accept": false,
+      "reasons": [
+        "latest:recall_drop"
+      ]
+    },
+    "gate_applied": false,
+    "full_gate": null,
+    "policy": {
+      "prefer_full": false,
+      "events": [
+        {
+          "id": "securities_law_2020",
+          "status": "POLICY_WAIT",
+          "completed": 0,
+          "required": 2,
+          "support": 0
+        }
+      ]
+    },
+    "policy_support": {
+      "securities_law_2020": 0
+    },
+    "delta_rows": 3426,
+    "revised_old_rows": 371,
+    "new_rows": 3055,
+    "replay_rows": 2048,
+    "parent_version": "s17-2020-04-30-INCREMENT-INCREMENT",
+    "candidate_version": "s17-2021-04-30-INCREMENT-INCREMENT",
+    "cache_invalidated": false,
+    "cost": {
+      "seconds": 0.17468816700056777,
+      "exposures": 15360,
+      "forward_payload": 1664975,
+      "backward_payload": 0
+    }
+  },
+  {
+    "seed": 17,
+    "cutoff": "2021-04-30",
+    "arm": "ADAPTIVE",
+    "route": "INCREMENT",
+    "increment_gate": {
+      "accept": true,
+      "reasons": []
+    },
+    "gate_applied": true,
+    "full_gate": null,
+    "policy": {
+      "prefer_full": false,
+      "events": [
+        {
+          "id": "securities_law_2020",
+          "status": "POLICY_WAIT",
+          "completed": 0,
+          "required": 2,
+          "support": 0
+        }
+      ]
+    },
+    "policy_support": {
+      "securities_law_2020": 0
+    },
+    "delta_rows": 3426,
+    "revised_old_rows": 371,
+    "new_rows": 3055,
+    "replay_rows": 2048,
+    "parent_version": "s17-2020-04-30-ADAPTIVE-FULL",
+    "candidate_version": "s17-2021-04-30-ADAPTIVE-INCREMENT",
+    "cache_invalidated": false,
+    "cost": {
+      "seconds": 0.1721060829995622,
+      "exposures": 15360,
+      "forward_payload": 1664975,
+      "backward_payload": 0
+    }
+  }
+]

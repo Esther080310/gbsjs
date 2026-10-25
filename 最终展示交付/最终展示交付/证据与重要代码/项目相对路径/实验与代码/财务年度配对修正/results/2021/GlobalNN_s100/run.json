@@ -1,0 +1,19 @@
+{
+  "epochs": 11,
+  "best_epoch": 5,
+  "selection_loss": 0.8447495842668031,
+  "train_seconds": 1.3706644579942804,
+  "train_forward_bytes": 0,
+  "train_backward_bytes": 0,
+  "epoch_validation_bytes": 0,
+  "year": 2021,
+  "seed": 100,
+  "method": "GlobalNN",
+  "parameters": 45867,
+  "initial_hash": "2fee9ac80c015d2d5a7a107e1510f48101daa8257a0cf82da9b4cc795a90009e",
+  "initial_parameter_hash": "2fee9ac80c015d2d5a7a107e1510f48101daa8257a0cf82da9b4cc795a90009e",
+  "four_fold_reload_exact": true,
+  "calibration_refit_exact": true,
+  "prediction_bytes": 572,
+  "training_bytes": 26357188
+}

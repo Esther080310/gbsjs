@@ -1,0 +1,32 @@
+ATTACK public_only deep_all 34 0.8496
+ATTACK public_only deep_key 28 0.7483
+ATTACK S0_s100 deep_all 80 0.3316
+ATTACK S0_s100 deep_key 61 0.3099
+DONE S0_s100 key observed NRMSE 0.3642
+ATTACK D1_s100 deep_all 66 0.45
+ATTACK D1_s100 deep_key 43 0.3616
+DONE D1_s100 key observed NRMSE 0.4298
+ATTACK S0_s17 deep_all 79 0.3364
+ATTACK S0_s17 deep_key 56 0.3127
+DONE S0_s17 key observed NRMSE 0.3644
+ATTACK D1_s17 deep_all 75 0.4555
+ATTACK D1_s17 deep_key 59 0.3739
+DONE D1_s17 key observed NRMSE 0.4371
+ATTACK S0_s223 deep_all 78 0.3334
+ATTACK S0_s223 deep_key 50 0.3035
+DONE S0_s223 key observed NRMSE 0.3552
+ATTACK D1_s223 deep_all 75 0.4801
+ATTACK D1_s223 deep_key 51 0.4125
+DONE D1_s223 key observed NRMSE 0.4921
+ATTACK S0_s483 deep_all 79 0.3247
+ATTACK S0_s483 deep_key 53 0.3045
+DONE S0_s483 key observed NRMSE 0.356
+ATTACK D1_s483 deep_all 77 0.4672
+ATTACK D1_s483 deep_key 51 0.3805
+DONE D1_s483 key observed NRMSE 0.4374
+ATTACK S0_s907 deep_all 77 0.3302
+ATTACK S0_s907 deep_key 33 0.303
+DONE S0_s907 key observed NRMSE 0.3605
+ATTACK D1_s907 deep_all 62 0.4854
+ATTACK D1_s907 deep_key 34 0.4058
+DONE D1_s907 key observed NRMSE 0.4879

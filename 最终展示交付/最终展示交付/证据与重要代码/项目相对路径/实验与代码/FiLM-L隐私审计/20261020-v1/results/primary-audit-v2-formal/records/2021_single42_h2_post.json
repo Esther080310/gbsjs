@@ -1,0 +1,2214 @@
+{
+  "year": 2021,
+  "scope": "single42",
+  "view": "h2_post",
+  "attack_input_dimensions": 88,
+  "target_dimensions": 240,
+  "fold_rows": {
+    "train0": 37923,
+    "select1": 3864,
+    "test3": 4794
+  },
+  "ridge_selection": [
+    {
+      "alpha": 0.1,
+      "selection_nrmse": 0.6368730573040744
+    },
+    {
+      "alpha": 1.0,
+      "selection_nrmse": 0.6368742933882667
+    },
+    {
+      "alpha": 10.0,
+      "selection_nrmse": 0.6368868702164566
+    },
+    {
+      "alpha": 100.0,
+      "selection_nrmse": 0.6370344200865237
+    }
+  ],
+  "mlp_selection": {
+    "best_epoch": 30,
+    "selection_nrmse": 0.39387824306018737,
+    "history": [
+      {
+        "epoch": 1,
+        "train_mse": 0.7662320529159746,
+        "selection_nrmse": 0.7694888848745273
+      },
+      {
+        "epoch": 2,
+        "train_mse": 0.4456737268912165,
+        "selection_nrmse": 0.6299655493342811
+      },
+      {
+        "epoch": 3,
+        "train_mse": 0.34575475281790685,
+        "selection_nrmse": 0.5673952412262427
+      },
+      {
+        "epoch": 4,
+        "train_mse": 0.29507608594078766,
+        "selection_nrmse": 0.5362413958499241
+      },
+      {
+        "epoch": 5,
+        "train_mse": 0.2663905318630369,
+        "selection_nrmse": 0.5107388361837774
+      },
+      {
+        "epoch": 6,
+        "train_mse": 0.24697895661780708,
+        "selection_nrmse": 0.4939023402183487
+      },
+      {
+        "epoch": 7,
+        "train_mse": 0.23112646372694717,
+        "selection_nrmse": 0.47898399570541156
+      },
+      {
+        "epoch": 8,
+        "train_mse": 0.22020987617342094,
+        "selection_nrmse": 0.4659125230467519
+      },
+      {
+        "epoch": 9,
+        "train_mse": 0.2091892938080587,
+        "selection_nrmse": 0.45639393617143403
+      },
+      {
+        "epoch": 10,
+        "train_mse": 0.20241747129904597,
+        "selection_nrmse": 0.4503970855724376
+      },
+      {
+        "epoch": 11,
+        "train_mse": 0.19663915900807633,
+        "selection_nrmse": 0.44474712313030906
+      },
+      {
+        "epoch": 12,
+        "train_mse": 0.19182837597633662,
+        "selection_nrmse": 0.4383739398871845
+      },
+      {
+        "epoch": 13,
+        "train_mse": 0.1867060939732351,
+        "selection_nrmse": 0.43339314542282165
+      },
+      {
+        "epoch": 14,
+        "train_mse": 0.18170141742417686,
+        "selection_nrmse": 0.4304470120905853
+      },
+      {
+        "epoch": 15,
+        "train_mse": 0.17968223636087619,
+        "selection_nrmse": 0.4249336420592895
+      },
+      {
+        "epoch": 16,
+        "train_mse": 0.17717642101802325,
+        "selection_nrmse": 0.42334318186780684
+      },
+      {
+        "epoch": 17,
+        "train_mse": 0.17323512780038933,
+        "selection_nrmse": 0.41947396264575143
+      },
+      {
+        "epoch": 18,
+        "train_mse": 0.17040488123893738,
+        "selection_nrmse": 0.4173573747490643
+      },
+      {
+        "epoch": 19,
+        "train_mse": 0.16750583797693253,
+        "selection_nrmse": 0.4144125970211842
+      },
+      {
+        "epoch": 20,
+        "train_mse": 0.16468621006137446,
+        "selection_nrmse": 0.4132811959856032
+      },
+      {
+        "epoch": 21,
+        "train_mse": 0.16249144783145503,
+        "selection_nrmse": 0.4101882708105304
+      },
+      {
+        "epoch": 22,
+        "train_mse": 0.16166233820350548,
+        "selection_nrmse": 0.40618436030994803
+      },
+      {
+        "epoch": 23,
+        "train_mse": 0.1587731383348766,
+        "selection_nrmse": 0.4071488474549833
+      },
+      {
+        "epoch": 24,
+        "train_mse": 0.15732100880459735,
+        "selection_nrmse": 0.4037760780623746
+      },
+      {
+        "epoch": 25,
+        "train_mse": 0.1554479685268904,
+        "selection_nrmse": 0.4008252802893902
+      },
+      {
+        "epoch": 26,
+        "train_mse": 0.15377784206678993,
+        "selection_nrmse": 0.4006178714152773
+      },
+      {
+        "epoch": 27,
+        "train_mse": 0.15119898083962893,
+        "selection_nrmse": 0.3993288400343899
+      },
+      {
+        "epoch": 28,
+        "train_mse": 0.15004050496377444,
+        "selection_nrmse": 0.39728154041053537
+      },
+      {
+        "epoch": 29,
+        "train_mse": 0.14821966012057505,
+        "selection_nrmse": 0.3974511402892605
+      },
+      {
+        "epoch": 30,
+        "train_mse": 0.14895074030286387,
+        "selection_nrmse": 0.39387824306018737
+      }
+    ]
+  },
+  "attacker_selection_nrmse": {
+    "ridge": 0.6368730573040744,
+    "mlp": 0.39387824306018737
+  },
+  "selected_attacker": "mlp",
+  "test_metrics": {
+    "constant": {
+      "macro_nrmse_all": 1.1018656499255097,
+      "macro_nrmse_numeric": 1.05520451112342,
+      "macro_nrmse_binary": 1.148526788727599,
+      "macro_r2": -0.1391255592239478,
+      "macro_spearman": NaN,
+      "fields": 240,
+      "binary_fields": 120,
+      "x2_macro_nrmse": 1.1018656499255097
+    },
+    "ridge": {
+      "macro_nrmse_all": 0.6616321596481124,
+      "macro_nrmse_numeric": 0.5759428058298198,
+      "macro_nrmse_binary": 0.747321513466405,
+      "macro_r2": 0.5721870504271988,
+      "macro_spearman": 0.5468311142070967,
+      "fields": 240,
+      "binary_fields": 120,
+      "x2_macro_nrmse": 0.6616321596481124
+    },
+    "mlp": {
+      "macro_nrmse_all": 0.39871873658499174,
+      "macro_nrmse_numeric": 0.4840978815619906,
+      "macro_nrmse_binary": 0.31333959160799285,
+      "macro_r2": 0.7896792491549686,
+      "macro_spearman": 0.5653913058136941,
+      "fields": 240,
+      "binary_fields": 120,
+      "x2_macro_nrmse": 0.39871873658499174
+    }
+  },
+  "selected_gain_vs_constant": {
+    "estimate": 0.7031656503677368,
+    "ci95": [
+      0.6498345345258713,
+      0.7544984519481658
+    ],
+    "null": 0.0,
+    "lower_above_null": true,
+    "replicates": 500,
+    "point_estimate": 0.7031469133405179
+  },
+  "attribute_macro_auc": {
+    "estimate": 0.9983155131340027,
+    "ci95": [
+      0.9981671050190926,
+      0.9984785541892052
+    ],
+    "null": 0.5,
+    "lower_above_null": true,
+    "replicates": 20,
+    "point_estimate": 0.9983504273772308
+  },
+  "attribute_fields_point": [
+    {
+      "field": "missing::solv__F010101A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 122,
+      "n": 4794,
+      "score_column": 0
+    },
+    {
+      "field": "missing::solv__F010201A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 122,
+      "n": 4794,
+      "score_column": 1
+    },
+    {
+      "field": "missing::solv__F010301A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 122,
+      "n": 4794,
+      "score_column": 2
+    },
+    {
+      "field": "missing::solv__F010401A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 122,
+      "n": 4794,
+      "score_column": 3
+    },
+    {
+      "field": "missing::solv__F010501A",
+      "kind": "encoded_binary",
+      "auc": 0.9971171994663768,
+      "positive": 1094,
+      "n": 4794,
+      "score_column": 4
+    },
+    {
+      "field": "missing::solv__F010601A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 122,
+      "n": 4794,
+      "score_column": 5
+    },
+    {
+      "field": "missing::solv__F010701B",
+      "kind": "encoded_binary",
+      "auc": 0.9920546500792861,
+      "positive": 1474,
+      "n": 4794,
+      "score_column": 6
+    },
+    {
+      "field": "missing::solv__F010702B",
+      "kind": "encoded_binary",
+      "auc": 0.992331639992807,
+      "positive": 1474,
+      "n": 4794,
+      "score_column": 7
+    },
+    {
+      "field": "missing::solv__F010801B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 122,
+      "n": 4794,
+      "score_column": 8
+    },
+    {
+      "field": "missing::solv__F010901B",
+      "kind": "encoded_binary",
+      "auc": 0.9925367003972472,
+      "positive": 1474,
+      "n": 4794,
+      "score_column": 9
+    },
+    {
+      "field": "missing::solv__F011001B",
+      "kind": "encoded_binary",
+      "auc": 0.9847644566546782,
+      "positive": 281,
+      "n": 4794,
+      "score_column": 10
+    },
+    {
+      "field": "missing::solv__F011201A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794,
+      "score_column": 11
+    },
+    {
+      "field": "missing::solv__F011301A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794,
+      "score_column": 12
+    },
+    {
+      "field": "missing::solv__F011401A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794,
+      "score_column": 13
+    },
+    {
+      "field": "missing::solv__F011501A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794,
+      "score_column": 14
+    },
+    {
+      "field": "missing::solv__F011601A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794,
+      "score_column": 15
+    },
+    {
+      "field": "missing::solv__F011701A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794,
+      "score_column": 16
+    },
+    {
+      "field": "missing::solv__F011801A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794,
+      "score_column": 17
+    },
+    {
+      "field": "missing::solv__F011901A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794,
+      "score_column": 18
+    },
+    {
+      "field": "missing::solv__F012001A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794,
+      "score_column": 19
+    },
+    {
+      "field": "missing::solv__F012101A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 122,
+      "n": 4794,
+      "score_column": 20
+    },
+    {
+      "field": "missing::solv__F012201B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 125,
+      "n": 4794,
+      "score_column": 21
+    },
+    {
+      "field": "missing::solv__F012301B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 28,
+      "n": 4794,
+      "score_column": 22
+    },
+    {
+      "field": "missing::solv__F012401B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 93,
+      "n": 4794,
+      "score_column": 23
+    },
+    {
+      "field": "missing::solv__F012501B",
+      "kind": "encoded_binary",
+      "auc": 0.9999580184718724,
+      "positive": 30,
+      "n": 4794,
+      "score_column": 24
+    },
+    {
+      "field": "missing::solv__F012601B",
+      "kind": "encoded_binary",
+      "auc": 0.9944825789149315,
+      "positive": 147,
+      "n": 4794,
+      "score_column": 25
+    },
+    {
+      "field": "missing::solv__F012701B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 29,
+      "n": 4794,
+      "score_column": 26
+    },
+    {
+      "field": "missing::solv__F020502A",
+      "kind": "encoded_binary",
+      "auc": 0.9998639167775494,
+      "positive": 70,
+      "n": 4794,
+      "score_column": 27
+    },
+    {
+      "field": "missing::oper__F040101B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794,
+      "score_column": 28
+    },
+    {
+      "field": "missing::oper__F040201B",
+      "kind": "encoded_binary",
+      "auc": 0.997411312373879,
+      "positive": 89,
+      "n": 4794,
+      "score_column": 29
+    },
+    {
+      "field": "missing::oper__F040202B",
+      "kind": "encoded_binary",
+      "auc": 0.9999747244970175,
+      "positive": 84,
+      "n": 4794,
+      "score_column": 30
+    },
+    {
+      "field": "missing::oper__F040203B",
+      "kind": "encoded_binary",
+      "auc": 0.999979779597614,
+      "positive": 84,
+      "n": 4794,
+      "score_column": 31
+    },
+    {
+      "field": "missing::oper__F040301B",
+      "kind": "encoded_binary",
+      "auc": 0.9973587744331276,
+      "positive": 89,
+      "n": 4794,
+      "score_column": 32
+    },
+    {
+      "field": "missing::oper__F040302B",
+      "kind": "encoded_binary",
+      "auc": 0.999979779597614,
+      "positive": 84,
+      "n": 4794,
+      "score_column": 33
+    },
+    {
+      "field": "missing::oper__F040303B",
+      "kind": "encoded_binary",
+      "auc": 0.9999823071479124,
+      "positive": 84,
+      "n": 4794,
+      "score_column": 34
+    },
+    {
+      "field": "missing::oper__F040304C",
+      "kind": "encoded_binary",
+      "auc": 0.999979779597614,
+      "positive": 84,
+      "n": 4794,
+      "score_column": 35
+    },
+    {
+      "field": "missing::oper__F040401B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794,
+      "score_column": 36
+    },
+    {
+      "field": "missing::oper__F040501B",
+      "kind": "encoded_binary",
+      "auc": 0.9927220432959137,
+      "positive": 199,
+      "n": 4794,
+      "score_column": 37
+    },
+    {
+      "field": "missing::oper__F040502B",
+      "kind": "encoded_binary",
+      "auc": 0.9996812668027827,
+      "positive": 188,
+      "n": 4794,
+      "score_column": 38
+    },
+    {
+      "field": "missing::oper__F040503B",
+      "kind": "encoded_binary",
+      "auc": 0.9996877571795536,
+      "positive": 187,
+      "n": 4794,
+      "score_column": 39
+    },
+    {
+      "field": "missing::oper__F040601B",
+      "kind": "encoded_binary",
+      "auc": 0.9928663994619451,
+      "positive": 199,
+      "n": 4794,
+      "score_column": 40
+    },
+    {
+      "field": "missing::oper__F040602B",
+      "kind": "encoded_binary",
+      "auc": 0.9996466218900416,
+      "positive": 188,
+      "n": 4794,
+      "score_column": 41
+    },
+    {
+      "field": "missing::oper__F040603B",
+      "kind": "encoded_binary",
+      "auc": 0.9997179367830167,
+      "positive": 187,
+      "n": 4794,
+      "score_column": 42
+    },
+    {
+      "field": "missing::oper__F040604C",
+      "kind": "encoded_binary",
+      "auc": 0.9996819534096568,
+      "positive": 187,
+      "n": 4794,
+      "score_column": 43
+    },
+    {
+      "field": "missing::oper__F040701B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 74,
+      "n": 4794,
+      "score_column": 44
+    },
+    {
+      "field": "missing::oper__F040702B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 74,
+      "n": 4794,
+      "score_column": 45
+    },
+    {
+      "field": "missing::oper__F040703B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 74,
+      "n": 4794,
+      "score_column": 46
+    },
+    {
+      "field": "missing::oper__F040704C",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 74,
+      "n": 4794,
+      "score_column": 47
+    },
+    {
+      "field": "missing::oper__F040801B",
+      "kind": "encoded_binary",
+      "auc": 0.9999312436871064,
+      "positive": 131,
+      "n": 4794,
+      "score_column": 48
+    },
+    {
+      "field": "missing::oper__F040802B",
+      "kind": "encoded_binary",
+      "auc": 0.9998903262793191,
+      "positive": 129,
+      "n": 4794,
+      "score_column": 49
+    },
+    {
+      "field": "missing::oper__F040803B",
+      "kind": "encoded_binary",
+      "auc": 0.9999501483087814,
+      "positive": 129,
+      "n": 4794,
+      "score_column": 50
+    },
+    {
+      "field": "missing::oper__F040901B",
+      "kind": "encoded_binary",
+      "auc": 0.9989900818736421,
+      "positive": 820,
+      "n": 4794,
+      "score_column": 51
+    },
+    {
+      "field": "missing::oper__F040902B",
+      "kind": "encoded_binary",
+      "auc": 0.9908723306963053,
+      "positive": 802,
+      "n": 4794,
+      "score_column": 52
+    },
+    {
+      "field": "missing::oper__F040903B",
+      "kind": "encoded_binary",
+      "auc": 0.990705019677069,
+      "positive": 801,
+      "n": 4794,
+      "score_column": 53
+    },
+    {
+      "field": "missing::oper__F041001B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794,
+      "score_column": 54
+    },
+    {
+      "field": "missing::oper__F041002B",
+      "kind": "encoded_binary",
+      "auc": 0.9981120201384519,
+      "positive": 27,
+      "n": 4794,
+      "score_column": 55
+    },
+    {
+      "field": "missing::oper__F041003B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 30,
+      "n": 4794,
+      "score_column": 56
+    },
+    {
+      "field": "missing::oper__F041101B",
+      "kind": "encoded_binary",
+      "auc": 0.9999982455647878,
+      "positive": 122,
+      "n": 4794,
+      "score_column": 57
+    },
+    {
+      "field": "missing::oper__F041201B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 122,
+      "n": 4794,
+      "score_column": 58
+    },
+    {
+      "field": "missing::oper__F041202B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 122,
+      "n": 4794,
+      "score_column": 59
+    },
+    {
+      "field": "missing::oper__F041203B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 123,
+      "n": 4794,
+      "score_column": 60
+    },
+    {
+      "field": "missing::oper__F041301B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 28,
+      "n": 4794,
+      "score_column": 61
+    },
+    {
+      "field": "missing::oper__F041401B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 28,
+      "n": 4794,
+      "score_column": 62
+    },
+    {
+      "field": "missing::oper__F041402B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 28,
+      "n": 4794,
+      "score_column": 63
+    },
+    {
+      "field": "missing::oper__F041403B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 29,
+      "n": 4794,
+      "score_column": 64
+    },
+    {
+      "field": "missing::oper__F041501B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 123,
+      "n": 4794,
+      "score_column": 65
+    },
+    {
+      "field": "missing::oper__F041502B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 123,
+      "n": 4794,
+      "score_column": 66
+    },
+    {
+      "field": "missing::oper__F041503B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 124,
+      "n": 4794,
+      "score_column": 67
+    },
+    {
+      "field": "missing::oper__F041601B",
+      "kind": "encoded_binary",
+      "auc": 0.9999999999999999,
+      "positive": 27,
+      "n": 4794,
+      "score_column": 68
+    },
+    {
+      "field": "missing::oper__F041701B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794,
+      "score_column": 69
+    },
+    {
+      "field": "missing::oper__F041702B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794,
+      "score_column": 70
+    },
+    {
+      "field": "missing::oper__F041703B",
+      "kind": "encoded_binary",
+      "auc": 0.9999925064444578,
+      "positive": 28,
+      "n": 4794,
+      "score_column": 71
+    },
+    {
+      "field": "missing::oper__F041801B",
+      "kind": "encoded_binary",
+      "auc": 0.9994329867506786,
+      "positive": 63,
+      "n": 4794,
+      "score_column": 72
+    },
+    {
+      "field": "missing::oper__F041802B",
+      "kind": "encoded_binary",
+      "auc": 0.9998397242046692,
+      "positive": 70,
+      "n": 4794,
+      "score_column": 73
+    },
+    {
+      "field": "missing::oper__F041803B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 72,
+      "n": 4794,
+      "score_column": 74
+    },
+    {
+      "field": "missing::prof__F050101B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794,
+      "score_column": 75
+    },
+    {
+      "field": "missing::prof__F050102B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794,
+      "score_column": 76
+    },
+    {
+      "field": "missing::prof__F050103B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 28,
+      "n": 4794,
+      "score_column": 77
+    },
+    {
+      "field": "missing::prof__F050201B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794,
+      "score_column": 78
+    },
+    {
+      "field": "missing::prof__F050202B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794,
+      "score_column": 79
+    },
+    {
+      "field": "missing::prof__F050203B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 28,
+      "n": 4794,
+      "score_column": 80
+    },
+    {
+      "field": "missing::prof__F050301B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 122,
+      "n": 4794,
+      "score_column": 81
+    },
+    {
+      "field": "missing::prof__F050302B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 122,
+      "n": 4794,
+      "score_column": 82
+    },
+    {
+      "field": "missing::prof__F050303B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 123,
+      "n": 4794,
+      "score_column": 83
+    },
+    {
+      "field": "missing::prof__F050401B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 28,
+      "n": 4794,
+      "score_column": 84
+    },
+    {
+      "field": "missing::prof__F050402B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 28,
+      "n": 4794,
+      "score_column": 85
+    },
+    {
+      "field": "missing::prof__F050403B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 29,
+      "n": 4794,
+      "score_column": 86
+    },
+    {
+      "field": "missing::prof__F050501B",
+      "kind": "encoded_binary",
+      "auc": 0.9994665378305201,
+      "positive": 63,
+      "n": 4794,
+      "score_column": 87
+    },
+    {
+      "field": "missing::prof__F050502B",
+      "kind": "encoded_binary",
+      "auc": 0.9998548445627193,
+      "positive": 70,
+      "n": 4794,
+      "score_column": 88
+    },
+    {
+      "field": "missing::prof__F050503B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 72,
+      "n": 4794,
+      "score_column": 89
+    },
+    {
+      "field": "missing::prof__F050601B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 124,
+      "n": 4794,
+      "score_column": 90
+    },
+    {
+      "field": "missing::prof__F050701B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 124,
+      "n": 4794,
+      "score_column": 91
+    },
+    {
+      "field": "missing::prof__F050801B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 124,
+      "n": 4794,
+      "score_column": 92
+    },
+    {
+      "field": "missing::prof__F050901B",
+      "kind": "encoded_binary",
+      "auc": 0.9983569334276388,
+      "positive": 789,
+      "n": 4794,
+      "score_column": 93
+    },
+    {
+      "field": "missing::prof__F051001B",
+      "kind": "encoded_binary",
+      "auc": 0.9973192588642128,
+      "positive": 838,
+      "n": 4794,
+      "score_column": 94
+    },
+    {
+      "field": "missing::prof__F051101B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 124,
+      "n": 4794,
+      "score_column": 95
+    },
+    {
+      "field": "missing::prof__F051201B",
+      "kind": "encoded_binary",
+      "auc": 0.9983002483002483,
+      "positive": 132,
+      "n": 4794,
+      "score_column": 96
+    },
+    {
+      "field": "missing::prof__F053201B",
+      "kind": "encoded_binary",
+      "auc": 0.9997471933925132,
+      "positive": 142,
+      "n": 4794,
+      "score_column": 97
+    },
+    {
+      "field": "missing::prof__F053301B",
+      "kind": "encoded_binary",
+      "auc": 0.9992046854907843,
+      "positive": 128,
+      "n": 4794,
+      "score_column": 98
+    },
+    {
+      "field": "missing::prof__F051301B",
+      "kind": "encoded_binary",
+      "auc": 0.9990037639305617,
+      "positive": 128,
+      "n": 4794,
+      "score_column": 99
+    },
+    {
+      "field": "missing::prof__F051401B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794,
+      "score_column": 100
+    },
+    {
+      "field": "missing::prof__F051501B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794,
+      "score_column": 101
+    },
+    {
+      "field": "missing::prof__F051601B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794,
+      "score_column": 102
+    },
+    {
+      "field": "missing::prof__F051701B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794,
+      "score_column": 103
+    },
+    {
+      "field": "missing::prof__F051801B",
+      "kind": "encoded_binary",
+      "auc": 0.9999930378237629,
+      "positive": 123,
+      "n": 4794,
+      "score_column": 104
+    },
+    {
+      "field": "missing::prof__F051901B",
+      "kind": "encoded_binary",
+      "auc": 0.9999930924915383,
+      "positive": 124,
+      "n": 4794,
+      "score_column": 105
+    },
+    {
+      "field": "missing::prof__F053401B",
+      "kind": "encoded_binary",
+      "auc": 0.9781488422695683,
+      "positive": 487,
+      "n": 4794,
+      "score_column": 106
+    },
+    {
+      "field": "missing::prof__F052001B",
+      "kind": "encoded_binary",
+      "auc": 0.9999931462840008,
+      "positive": 125,
+      "n": 4794,
+      "score_column": 107
+    },
+    {
+      "field": "missing::prof__F052101B",
+      "kind": "encoded_binary",
+      "auc": 0.9988700283323778,
+      "positive": 129,
+      "n": 4794,
+      "score_column": 108
+    },
+    {
+      "field": "missing::prof__F052201B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794,
+      "score_column": 109
+    },
+    {
+      "field": "missing::prof__F052301B",
+      "kind": "encoded_binary",
+      "auc": 0.9999948193686538,
+      "positive": 124,
+      "n": 4794,
+      "score_column": 110
+    },
+    {
+      "field": "missing::prof__F052401B",
+      "kind": "encoded_binary",
+      "auc": 0.9999948193686538,
+      "positive": 124,
+      "n": 4794,
+      "score_column": 111
+    },
+    {
+      "field": "missing::prof__F052901B",
+      "kind": "encoded_binary",
+      "auc": 0.9984018709186394,
+      "positive": 789,
+      "n": 4794,
+      "score_column": 112
+    },
+    {
+      "field": "missing::prof__F053001B",
+      "kind": "encoded_binary",
+      "auc": 0.998787658562368,
+      "positive": 64,
+      "n": 4794,
+      "score_column": 113
+    },
+    {
+      "field": "missing::prof__F053002B",
+      "kind": "encoded_binary",
+      "auc": 0.999966094511549,
+      "positive": 75,
+      "n": 4794,
+      "score_column": 114
+    },
+    {
+      "field": "missing::prof__F053003B",
+      "kind": "encoded_binary",
+      "auc": 0.9999776890296959,
+      "positive": 76,
+      "n": 4794,
+      "score_column": 115
+    },
+    {
+      "field": "missing::prof__F053101B",
+      "kind": "encoded_binary",
+      "auc": 0.9928697035203458,
+      "positive": 95,
+      "n": 4794,
+      "score_column": 116
+    },
+    {
+      "field": "missing::prof__F053102B",
+      "kind": "encoded_binary",
+      "auc": 0.990133379483547,
+      "positive": 106,
+      "n": 4794,
+      "score_column": 117
+    },
+    {
+      "field": "missing::prof__F053103B",
+      "kind": "encoded_binary",
+      "auc": 0.9897010821341192,
+      "positive": 107,
+      "n": 4794,
+      "score_column": 118
+    },
+    {
+      "field": "missing::prof__F053202B",
+      "kind": "encoded_binary",
+      "auc": 0.9544783249219638,
+      "positive": 664,
+      "n": 4794,
+      "score_column": 119
+    }
+  ],
+  "direct_attribute_attack": {
+    "solver": "multi-output linear logistic head, AdamW L2",
+    "learning_rate": 0.01,
+    "weight_decay": 0.0001,
+    "positive_weight_cap": 20.0,
+    "best_epoch": 20,
+    "selection_loss": 0.11393340677022934,
+    "history": [
+      {
+        "epoch": 1,
+        "train_loss": 0.71351179637407,
+        "selection_loss": 0.6222055554389954
+      },
+      {
+        "epoch": 2,
+        "train_loss": 0.5610492794137252,
+        "selection_loss": 0.5220315456390381
+      },
+      {
+        "epoch": 3,
+        "train_loss": 0.48129776590748835,
+        "selection_loss": 0.435406357049942
+      },
+      {
+        "epoch": 4,
+        "train_loss": 0.42065879388859395,
+        "selection_loss": 0.3872516453266144
+      },
+      {
+        "epoch": 5,
+        "train_loss": 0.3714222970761751,
+        "selection_loss": 0.34711581468582153
+      },
+      {
+        "epoch": 6,
+        "train_loss": 0.33126176031012283,
+        "selection_loss": 0.3133576214313507
+      },
+      {
+        "epoch": 7,
+        "train_loss": 0.2970954760124809,
+        "selection_loss": 0.27749305963516235
+      },
+      {
+        "epoch": 8,
+        "train_loss": 0.26865601853320475,
+        "selection_loss": 0.2509346902370453
+      },
+      {
+        "epoch": 9,
+        "train_loss": 0.24437892985971352,
+        "selection_loss": 0.22959628701210022
+      },
+      {
+        "epoch": 10,
+        "train_loss": 0.22347165252033033,
+        "selection_loss": 0.21483564376831055
+      },
+      {
+        "epoch": 11,
+        "train_loss": 0.20536703106604123,
+        "selection_loss": 0.19860126078128815
+      },
+      {
+        "epoch": 12,
+        "train_loss": 0.18991866864656148,
+        "selection_loss": 0.1843547523021698
+      },
+      {
+        "epoch": 13,
+        "train_loss": 0.17635981581713023,
+        "selection_loss": 0.16862605512142181
+      },
+      {
+        "epoch": 14,
+        "train_loss": 0.16460745115029185,
+        "selection_loss": 0.1582784205675125
+      },
+      {
+        "epoch": 15,
+        "train_loss": 0.15413595579172434,
+        "selection_loss": 0.14957648515701294
+      },
+      {
+        "epoch": 16,
+        "train_loss": 0.14479567110538483,
+        "selection_loss": 0.14210742712020874
+      },
+      {
+        "epoch": 17,
+        "train_loss": 0.13636479173835955,
+        "selection_loss": 0.13314083218574524
+      },
+      {
+        "epoch": 18,
+        "train_loss": 0.12897011480833354,
+        "selection_loss": 0.12523096799850464
+      },
+      {
+        "epoch": 19,
+        "train_loss": 0.12229917041565243,
+        "selection_loss": 0.12019860744476318
+      },
+      {
+        "epoch": 20,
+        "train_loss": 0.11619525794920169,
+        "selection_loss": 0.11393340677022934
+      }
+    ],
+    "registered_fields": 120,
+    "variable_train_fields": 120,
+    "evaluable_test_fields": 120
+  },
+  "reconstruction_attribute_fields_point": [
+    {
+      "field": "missing::solv__F010101A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 122,
+      "n": 4794
+    },
+    {
+      "field": "missing::solv__F010201A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 122,
+      "n": 4794
+    },
+    {
+      "field": "missing::solv__F010301A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 122,
+      "n": 4794
+    },
+    {
+      "field": "missing::solv__F010401A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 122,
+      "n": 4794
+    },
+    {
+      "field": "missing::solv__F010501A",
+      "kind": "encoded_binary",
+      "auc": 0.9966823953752655,
+      "positive": 1094,
+      "n": 4794
+    },
+    {
+      "field": "missing::solv__F010601A",
+      "kind": "encoded_binary",
+      "auc": 0.9999947366943633,
+      "positive": 122,
+      "n": 4794
+    },
+    {
+      "field": "missing::solv__F010701B",
+      "kind": "encoded_binary",
+      "auc": 0.9945300877866963,
+      "positive": 1474,
+      "n": 4794
+    },
+    {
+      "field": "missing::solv__F010702B",
+      "kind": "encoded_binary",
+      "auc": 0.9944969838649033,
+      "positive": 1474,
+      "n": 4794
+    },
+    {
+      "field": "missing::solv__F010801B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 122,
+      "n": 4794
+    },
+    {
+      "field": "missing::solv__F010901B",
+      "kind": "encoded_binary",
+      "auc": 0.9944841101175393,
+      "positive": 1474,
+      "n": 4794
+    },
+    {
+      "field": "missing::solv__F011001B",
+      "kind": "encoded_binary",
+      "auc": 0.9943137775962364,
+      "positive": 281,
+      "n": 4794
+    },
+    {
+      "field": "missing::solv__F011201A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794
+    },
+    {
+      "field": "missing::solv__F011301A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794
+    },
+    {
+      "field": "missing::solv__F011401A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794
+    },
+    {
+      "field": "missing::solv__F011501A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794
+    },
+    {
+      "field": "missing::solv__F011601A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794
+    },
+    {
+      "field": "missing::solv__F011701A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794
+    },
+    {
+      "field": "missing::solv__F011801A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794
+    },
+    {
+      "field": "missing::solv__F011901A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794
+    },
+    {
+      "field": "missing::solv__F012001A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794
+    },
+    {
+      "field": "missing::solv__F012101A",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 122,
+      "n": 4794
+    },
+    {
+      "field": "missing::solv__F012201B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 125,
+      "n": 4794
+    },
+    {
+      "field": "missing::solv__F012301B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 28,
+      "n": 4794
+    },
+    {
+      "field": "missing::solv__F012401B",
+      "kind": "encoded_binary",
+      "auc": 0.9999565409327231,
+      "positive": 93,
+      "n": 4794
+    },
+    {
+      "field": "missing::solv__F012501B",
+      "kind": "encoded_binary",
+      "auc": 0.9997551077525888,
+      "positive": 30,
+      "n": 4794
+    },
+    {
+      "field": "missing::solv__F012601B",
+      "kind": "encoded_binary",
+      "auc": 0.9783650925401364,
+      "positive": 147,
+      "n": 4794
+    },
+    {
+      "field": "missing::solv__F012701B",
+      "kind": "encoded_binary",
+      "auc": 0.9999710532981149,
+      "positive": 29,
+      "n": 4794
+    },
+    {
+      "field": "missing::solv__F020502A",
+      "kind": "encoded_binary",
+      "auc": 0.9999727833555099,
+      "positive": 70,
+      "n": 4794
+    },
+    {
+      "field": "missing::oper__F040101B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794
+    },
+    {
+      "field": "missing::oper__F040201B",
+      "kind": "encoded_binary",
+      "auc": 0.9892774839102556,
+      "positive": 89,
+      "n": 4794
+    },
+    {
+      "field": "missing::oper__F040202B",
+      "kind": "encoded_binary",
+      "auc": 0.9999747244970175,
+      "positive": 84,
+      "n": 4794
+    },
+    {
+      "field": "missing::oper__F040203B",
+      "kind": "encoded_binary",
+      "auc": 0.9999747244970175,
+      "positive": 84,
+      "n": 4794
+    },
+    {
+      "field": "missing::oper__F040301B",
+      "kind": "encoded_binary",
+      "auc": 0.9886016549451336,
+      "positive": 89,
+      "n": 4794
+    },
+    {
+      "field": "missing::oper__F040302B",
+      "kind": "encoded_binary",
+      "auc": 0.9999747244970175,
+      "positive": 84,
+      "n": 4794
+    },
+    {
+      "field": "missing::oper__F040303B",
+      "kind": "encoded_binary",
+      "auc": 0.9999747244970175,
+      "positive": 84,
+      "n": 4794
+    },
+    {
+      "field": "missing::oper__F040304C",
+      "kind": "encoded_binary",
+      "auc": 0.9999747244970175,
+      "positive": 84,
+      "n": 4794
+    },
+    {
+      "field": "missing::oper__F040401B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794
+    },
+    {
+      "field": "missing::oper__F040501B",
+      "kind": "encoded_binary",
+      "auc": 0.9890693948523904,
+      "positive": 199,
+      "n": 4794
+    },
+    {
+      "field": "missing::oper__F040502B",
+      "kind": "encoded_binary",
+      "auc": 0.9999330198353673,
+      "positive": 188,
+      "n": 4794
+    },
+    {
+      "field": "missing::oper__F040503B",
+      "kind": "encoded_binary",
+      "auc": 0.999944283808991,
+      "positive": 187,
+      "n": 4794
+    },
+    {
+      "field": "missing::oper__F040601B",
+      "kind": "encoded_binary",
+      "auc": 0.9885794587737381,
+      "positive": 199,
+      "n": 4794
+    },
+    {
+      "field": "missing::oper__F040602B",
+      "kind": "encoded_binary",
+      "auc": 0.9999284005136686,
+      "positive": 188,
+      "n": 4794
+    },
+    {
+      "field": "missing::oper__F040603B",
+      "kind": "encoded_binary",
+      "auc": 0.9999419623010323,
+      "positive": 187,
+      "n": 4794
+    },
+    {
+      "field": "missing::oper__F040604C",
+      "kind": "encoded_binary",
+      "auc": 0.999944283808991,
+      "positive": 187,
+      "n": 4794
+    },
+    {
+      "field": "missing::oper__F040701B",
+      "kind": "encoded_binary",
+      "auc": 0.9999971369674759,
+      "positive": 74,
+      "n": 4794
+    },
+    {
+      "field": "missing::oper__F040702B",
+      "kind": "encoded_binary",
+      "auc": 0.9999971369674759,
+      "positive": 74,
+      "n": 4794
+    },
+    {
+      "field": "missing::oper__F040703B",
+      "kind": "encoded_binary",
+      "auc": 0.9999971369674759,
+      "positive": 74,
+      "n": 4794
+    },
+    {
+      "field": "missing::oper__F040704C",
+      "kind": "encoded_binary",
+      "auc": 0.9999971369674759,
+      "positive": 74,
+      "n": 4794
+    },
+    {
+      "field": "missing::oper__F040801B",
+      "kind": "encoded_binary",
+      "auc": 0.9998346574380416,
+      "positive": 131,
+      "n": 4794
+    },
+    {
+      "field": "missing::oper__F040802B",
+      "kind": "encoded_binary",
+      "auc": 0.9999617803700658,
+      "positive": 129,
+      "n": 4794
+    },
+    {
+      "field": "missing::oper__F040803B",
+      "kind": "encoded_binary",
+      "auc": 0.9999567952009439,
+      "positive": 129,
+      "n": 4794
+    },
+    {
+      "field": "missing::oper__F040901B",
+      "kind": "encoded_binary",
+      "auc": 0.9996332870978433,
+      "positive": 820,
+      "n": 4794
+    },
+    {
+      "field": "missing::oper__F040902B",
+      "kind": "encoded_binary",
+      "auc": 0.991139386003928,
+      "positive": 802,
+      "n": 4794
+    },
+    {
+      "field": "missing::oper__F040903B",
+      "kind": "encoded_binary",
+      "auc": 0.9914854115801278,
+      "positive": 801,
+      "n": 4794
+    },
+    {
+      "field": "missing::oper__F041001B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794
+    },
+    {
+      "field": "missing::oper__F041002B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794
+    },
+    {
+      "field": "missing::oper__F041003B",
+      "kind": "encoded_binary",
+      "auc": 0.9999860061572908,
+      "positive": 30,
+      "n": 4794
+    },
+    {
+      "field": "missing::oper__F041101B",
+      "kind": "encoded_binary",
+      "auc": 0.9999929822591511,
+      "positive": 122,
+      "n": 4794
+    },
+    {
+      "field": "missing::oper__F041201B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 122,
+      "n": 4794
+    },
+    {
+      "field": "missing::oper__F041202B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 122,
+      "n": 4794
+    },
+    {
+      "field": "missing::oper__F041203B",
+      "kind": "encoded_binary",
+      "auc": 0.9999982594559407,
+      "positive": 123,
+      "n": 4794
+    },
+    {
+      "field": "missing::oper__F041301B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 28,
+      "n": 4794
+    },
+    {
+      "field": "missing::oper__F041401B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 28,
+      "n": 4794
+    },
+    {
+      "field": "missing::oper__F041402B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 28,
+      "n": 4794
+    },
+    {
+      "field": "missing::oper__F041403B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 29,
+      "n": 4794
+    },
+    {
+      "field": "missing::oper__F041501B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 123,
+      "n": 4794
+    },
+    {
+      "field": "missing::oper__F041502B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 123,
+      "n": 4794
+    },
+    {
+      "field": "missing::oper__F041503B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 124,
+      "n": 4794
+    },
+    {
+      "field": "missing::oper__F041601B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794
+    },
+    {
+      "field": "missing::oper__F041701B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794
+    },
+    {
+      "field": "missing::oper__F041702B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794
+    },
+    {
+      "field": "missing::oper__F041703B",
+      "kind": "encoded_binary",
+      "auc": 0.9999925064444578,
+      "positive": 28,
+      "n": 4794
+    },
+    {
+      "field": "missing::oper__F041801B",
+      "kind": "encoded_binary",
+      "auc": 0.999553770638108,
+      "positive": 63,
+      "n": 4794
+    },
+    {
+      "field": "missing::oper__F041802B",
+      "kind": "encoded_binary",
+      "auc": 0.9999667352122898,
+      "positive": 70,
+      "n": 4794
+    },
+    {
+      "field": "missing::oper__F041803B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 72,
+      "n": 4794
+    },
+    {
+      "field": "missing::prof__F050101B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794
+    },
+    {
+      "field": "missing::prof__F050102B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794
+    },
+    {
+      "field": "missing::prof__F050103B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 28,
+      "n": 4794
+    },
+    {
+      "field": "missing::prof__F050201B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794
+    },
+    {
+      "field": "missing::prof__F050202B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794
+    },
+    {
+      "field": "missing::prof__F050203B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 28,
+      "n": 4794
+    },
+    {
+      "field": "missing::prof__F050301B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 122,
+      "n": 4794
+    },
+    {
+      "field": "missing::prof__F050302B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 122,
+      "n": 4794
+    },
+    {
+      "field": "missing::prof__F050303B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 123,
+      "n": 4794
+    },
+    {
+      "field": "missing::prof__F050401B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 28,
+      "n": 4794
+    },
+    {
+      "field": "missing::prof__F050402B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 28,
+      "n": 4794
+    },
+    {
+      "field": "missing::prof__F050403B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 29,
+      "n": 4794
+    },
+    {
+      "field": "missing::prof__F050501B",
+      "kind": "encoded_binary",
+      "auc": 0.9995671910700447,
+      "positive": 63,
+      "n": 4794
+    },
+    {
+      "field": "missing::prof__F050502B",
+      "kind": "encoded_binary",
+      "auc": 0.9999727833555099,
+      "positive": 70,
+      "n": 4794
+    },
+    {
+      "field": "missing::prof__F050503B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 72,
+      "n": 4794
+    },
+    {
+      "field": "missing::prof__F050601B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 124,
+      "n": 4794
+    },
+    {
+      "field": "missing::prof__F050701B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 124,
+      "n": 4794
+    },
+    {
+      "field": "missing::prof__F050801B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 124,
+      "n": 4794
+    },
+    {
+      "field": "missing::prof__F050901B",
+      "kind": "encoded_binary",
+      "auc": 0.9991781502526151,
+      "positive": 789,
+      "n": 4794
+    },
+    {
+      "field": "missing::prof__F051001B",
+      "kind": "encoded_binary",
+      "auc": 0.9993728748935184,
+      "positive": 838,
+      "n": 4794
+    },
+    {
+      "field": "missing::prof__F051101B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 124,
+      "n": 4794
+    },
+    {
+      "field": "missing::prof__F051201B",
+      "kind": "encoded_binary",
+      "auc": 0.9995839995839997,
+      "positive": 132,
+      "n": 4794
+    },
+    {
+      "field": "missing::prof__F053201B",
+      "kind": "encoded_binary",
+      "auc": 0.999850132609933,
+      "positive": 142,
+      "n": 4794
+    },
+    {
+      "field": "missing::prof__F053301B",
+      "kind": "encoded_binary",
+      "auc": 0.999824193634805,
+      "positive": 128,
+      "n": 4794
+    },
+    {
+      "field": "missing::prof__F051301B",
+      "kind": "encoded_binary",
+      "auc": 0.9998493088298328,
+      "positive": 128,
+      "n": 4794
+    },
+    {
+      "field": "missing::prof__F051401B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794
+    },
+    {
+      "field": "missing::prof__F051501B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794
+    },
+    {
+      "field": "missing::prof__F051601B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794
+    },
+    {
+      "field": "missing::prof__F051701B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794
+    },
+    {
+      "field": "missing::prof__F051801B",
+      "kind": "encoded_binary",
+      "auc": 0.9999947783678222,
+      "positive": 123,
+      "n": 4794
+    },
+    {
+      "field": "missing::prof__F051901B",
+      "kind": "encoded_binary",
+      "auc": 0.9999982731228846,
+      "positive": 124,
+      "n": 4794
+    },
+    {
+      "field": "missing::prof__F053401B",
+      "kind": "encoded_binary",
+      "auc": 0.9848663343041675,
+      "positive": 487,
+      "n": 4794
+    },
+    {
+      "field": "missing::prof__F052001B",
+      "kind": "encoded_binary",
+      "auc": 0.9999965731420004,
+      "positive": 125,
+      "n": 4794
+    },
+    {
+      "field": "missing::prof__F052101B",
+      "kind": "encoded_binary",
+      "auc": 0.9998570918185066,
+      "positive": 129,
+      "n": 4794
+    },
+    {
+      "field": "missing::prof__F052201B",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 27,
+      "n": 4794
+    },
+    {
+      "field": "missing::prof__F052301B",
+      "kind": "encoded_binary",
+      "auc": 0.9999982731228846,
+      "positive": 124,
+      "n": 4794
+    },
+    {
+      "field": "missing::prof__F052401B",
+      "kind": "encoded_binary",
+      "auc": 0.9999982731228846,
+      "positive": 124,
+      "n": 4794
+    },
+    {
+      "field": "missing::prof__F052901B",
+      "kind": "encoded_binary",
+      "auc": 0.9992597972433065,
+      "positive": 789,
+      "n": 4794
+    },
+    {
+      "field": "missing::prof__F053001B",
+      "kind": "encoded_binary",
+      "auc": 0.9983152748414377,
+      "positive": 64,
+      "n": 4794
+    },
+    {
+      "field": "missing::prof__F053002B",
+      "kind": "encoded_binary",
+      "auc": 0.9998361234724872,
+      "positive": 75,
+      "n": 4794
+    },
+    {
+      "field": "missing::prof__F053003B",
+      "kind": "encoded_binary",
+      "auc": 0.9996374467325584,
+      "positive": 76,
+      "n": 4794
+    },
+    {
+      "field": "missing::prof__F053101B",
+      "kind": "encoded_binary",
+      "auc": 0.9980331761517007,
+      "positive": 95,
+      "n": 4794
+    },
+    {
+      "field": "missing::prof__F053102B",
+      "kind": "encoded_binary",
+      "auc": 0.9919646306909652,
+      "positive": 106,
+      "n": 4794
+    },
+    {
+      "field": "missing::prof__F053103B",
+      "kind": "encoded_binary",
+      "auc": 0.9933620333832494,
+      "positive": 107,
+      "n": 4794
+    },
+    {
+      "field": "missing::prof__F053202B",
+      "kind": "encoded_binary",
+      "auc": 0.9111387438373348,
+      "positive": 664,
+      "n": 4794
+    }
+  ],
+  "subgroups": {
+    "seen_company": {
+      "rows": 3629,
+      "share": 0.7569879015435962,
+      "constant_nrmse": 1.1453382471756324,
+      "selected_nrmse": 0.40399204303130715,
+      "gain_vs_constant": 0.7413462041443253,
+      "attribute_macro_auc": 0.9982619811675352,
+      "attribute_fields": 120
+    },
+    "unseen_company": {
+      "rows": 1165,
+      "share": 0.24301209845640384,
+      "constant_nrmse": 0.8540077025016274,
+      "selected_nrmse": 0.3735533925041003,
+      "gain_vs_constant": 0.4804543099975271,
+      "attribute_macro_auc": 0.9981475169600951,
+      "attribute_fields": 86
+    },
+    "audit_match_r1": {
+      "rows": 4689,
+      "share": 0.9780976220275344,
+      "constant_nrmse": 0.8923120955856285,
+      "selected_nrmse": 0.3972970277512103,
+      "gain_vs_constant": 0.49501506783441823,
+      "attribute_macro_auc": 0.9977191412564873,
+      "attribute_fields": 95
+    },
+    "audit_unmatched_r0": {
+      "rows": 105,
+      "share": 0.02190237797246558,
+      "constant_nrmse": 2.8834422652140312,
+      "selected_nrmse": 0.4201907374078644,
+      "gain_vs_constant": 2.463251527806167,
+      "attribute_macro_auc": 0.9996229578850052,
+      "attribute_fields": 120
+    }
+  },
+  "statistical_recoverability_detected": true,
+  "leakage_criterion_met": true,
+  "practical_thresholds": {
+    "nrmse_gain": 0.05,
+    "attribute_auc": 0.6
+  },
+  "pca_reference": {
+    "not_run_in_primary_stage": true
+  },
+  "random_projection_reference": {
+    "not_run_in_primary_stage": true
+  },
+  "elapsed_seconds": 16.92618833296001,
+  "target_semantics": "preprocessed_model_input"
+}

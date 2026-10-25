@@ -1,0 +1,278 @@
+[
+  {
+    "version": "s42-2020-04-30-INCREMENT-INCREMENT",
+    "parent": "s42-initial",
+    "cutoff": "2020-04-30",
+    "arm": "INCREMENT",
+    "route": "INCREMENT",
+    "model_path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/年度更新机制收束/20261023-v1/results/s42/2020-04-30-INCREMENT.pt",
+    "model_sha256": "ea01de52f2d30c02077d2cf0cd6ee4e4444e0c790ae5288cd1f1524e8665b827",
+    "encoder_hash": "58392d6380cb49aefc0ed4acdbe6bd339478d3b98cadb63783c7b5f6fcb11a99",
+    "candidate_encoder_unchanged": true,
+    "cache_invalidated": false,
+    "new_cache_key": "d089caa4196bd2f41ef5029354b8ca500d7f7ccb4d27178b134fbe5e5932f9f3",
+    "publication_status": "research_only",
+    "production_checks": {
+      "data_and_schema": false,
+      "calibration": false,
+      "quantized_task_replay": false,
+      "privacy_scope": false,
+      "six_model_aggregation": false
+    }
+  },
+  {
+    "version": "s42-2020-04-30-ADAPTIVE-FULL",
+    "parent": "s42-initial",
+    "cutoff": "2020-04-30",
+    "arm": "ADAPTIVE",
+    "route": "FULL",
+    "model_path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/年度更新机制收束/20261023-v1/results/s42/2020-04-30-ADAPTIVE.pt",
+    "model_sha256": "2926b05f34cc426fa186f2b40bff044b633b0685f2f568d46ca07154956e750b",
+    "encoder_hash": "5d5a46b573106ec59d5c3920ae26a6b2b58f2b642dd2ee8865baca7dd70afa17",
+    "candidate_encoder_unchanged": true,
+    "cache_invalidated": true,
+    "new_cache_key": "c691074483fc4b207ac94bb25af461411b40ed0b63d89aea11362a4439a2e4ea",
+    "publication_status": "research_only",
+    "production_checks": {
+      "data_and_schema": false,
+      "calibration": false,
+      "quantized_task_replay": false,
+      "privacy_scope": false,
+      "six_model_aggregation": false
+    }
+  },
+  {
+    "version": "s42-2021-04-30-INCREMENT-INCREMENT",
+    "parent": "s42-2020-04-30-INCREMENT-INCREMENT",
+    "cutoff": "2021-04-30",
+    "arm": "INCREMENT",
+    "route": "INCREMENT",
+    "model_path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/年度更新机制收束/20261023-v1/results/s42/2021-04-30-INCREMENT.pt",
+    "model_sha256": "a96c2844d92bd19fde0ccdb24d1d626f2de9a584847eef5245254c92545e9dd4",
+    "encoder_hash": "58392d6380cb49aefc0ed4acdbe6bd339478d3b98cadb63783c7b5f6fcb11a99",
+    "candidate_encoder_unchanged": true,
+    "cache_invalidated": false,
+    "new_cache_key": "d089caa4196bd2f41ef5029354b8ca500d7f7ccb4d27178b134fbe5e5932f9f3",
+    "publication_status": "research_only",
+    "production_checks": {
+      "data_and_schema": false,
+      "calibration": false,
+      "quantized_task_replay": false,
+      "privacy_scope": false,
+      "six_model_aggregation": false
+    }
+  },
+  {
+    "version": "s42-2021-04-30-ADAPTIVE-INCREMENT",
+    "parent": "s42-2020-04-30-ADAPTIVE-FULL",
+    "cutoff": "2021-04-30",
+    "arm": "ADAPTIVE",
+    "route": "INCREMENT",
+    "model_path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/年度更新机制收束/20261023-v1/results/s42/2021-04-30-ADAPTIVE.pt",
+    "model_sha256": "9792304c351fcc5ff781cd892822f19ab36d2a55fef7bd8f22dac4dde48b8097",
+    "encoder_hash": "5d5a46b573106ec59d5c3920ae26a6b2b58f2b642dd2ee8865baca7dd70afa17",
+    "candidate_encoder_unchanged": true,
+    "cache_invalidated": false,
+    "new_cache_key": "c691074483fc4b207ac94bb25af461411b40ed0b63d89aea11362a4439a2e4ea",
+    "publication_status": "research_only",
+    "production_checks": {
+      "data_and_schema": false,
+      "calibration": false,
+      "quantized_task_replay": false,
+      "privacy_scope": false,
+      "six_model_aggregation": false
+    }
+  },
+  {
+    "version": "s100-2020-04-30-INCREMENT-INCREMENT",
+    "parent": "s100-initial",
+    "cutoff": "2020-04-30",
+    "arm": "INCREMENT",
+    "route": "INCREMENT",
+    "model_path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/年度更新机制收束/20261023-v1/results/s100/2020-04-30-INCREMENT.pt",
+    "model_sha256": "aca4f994587d24ced366a073bdc3132a4441b568e1e65ac90043a08397023986",
+    "encoder_hash": "3519a1aa7dd83de60ef86da106c90ac0811ed31684b04f47ac98cf968b564130",
+    "candidate_encoder_unchanged": true,
+    "cache_invalidated": false,
+    "new_cache_key": "d08622966da2c07f8465641c6fd6cdd3917fbb963f274160f774703ab484b86f",
+    "publication_status": "research_only",
+    "production_checks": {
+      "data_and_schema": false,
+      "calibration": false,
+      "quantized_task_replay": false,
+      "privacy_scope": false,
+      "six_model_aggregation": false
+    }
+  },
+  {
+    "version": "s100-2020-04-30-ADAPTIVE-INCREMENT",
+    "parent": "s100-initial",
+    "cutoff": "2020-04-30",
+    "arm": "ADAPTIVE",
+    "route": "INCREMENT",
+    "model_path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/年度更新机制收束/20261023-v1/results/s100/2020-04-30-ADAPTIVE.pt",
+    "model_sha256": "aca4f994587d24ced366a073bdc3132a4441b568e1e65ac90043a08397023986",
+    "encoder_hash": "3519a1aa7dd83de60ef86da106c90ac0811ed31684b04f47ac98cf968b564130",
+    "candidate_encoder_unchanged": true,
+    "cache_invalidated": false,
+    "new_cache_key": "d08622966da2c07f8465641c6fd6cdd3917fbb963f274160f774703ab484b86f",
+    "publication_status": "research_only",
+    "production_checks": {
+      "data_and_schema": false,
+      "calibration": false,
+      "quantized_task_replay": false,
+      "privacy_scope": false,
+      "six_model_aggregation": false
+    }
+  },
+  {
+    "version": "s100-2021-04-30-INCREMENT-INCREMENT",
+    "parent": "s100-2020-04-30-INCREMENT-INCREMENT",
+    "cutoff": "2021-04-30",
+    "arm": "INCREMENT",
+    "route": "INCREMENT",
+    "model_path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/年度更新机制收束/20261023-v1/results/s100/2021-04-30-INCREMENT.pt",
+    "model_sha256": "c7ff04cf748b0e789f38b085e4c5fcec4fdc5eef57be3545294681b4b127803c",
+    "encoder_hash": "3519a1aa7dd83de60ef86da106c90ac0811ed31684b04f47ac98cf968b564130",
+    "candidate_encoder_unchanged": true,
+    "cache_invalidated": false,
+    "new_cache_key": "d08622966da2c07f8465641c6fd6cdd3917fbb963f274160f774703ab484b86f",
+    "publication_status": "research_only",
+    "production_checks": {
+      "data_and_schema": false,
+      "calibration": false,
+      "quantized_task_replay": false,
+      "privacy_scope": false,
+      "six_model_aggregation": false
+    }
+  },
+  {
+    "version": "s100-2021-04-30-ADAPTIVE-KEEP",
+    "parent": "s100-2020-04-30-ADAPTIVE-INCREMENT",
+    "cutoff": "2021-04-30",
+    "arm": "ADAPTIVE",
+    "route": "KEEP",
+    "model_path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/年度更新机制收束/20261023-v1/results/s100/2021-04-30-ADAPTIVE.pt",
+    "model_sha256": "aca4f994587d24ced366a073bdc3132a4441b568e1e65ac90043a08397023986",
+    "encoder_hash": "3519a1aa7dd83de60ef86da106c90ac0811ed31684b04f47ac98cf968b564130",
+    "candidate_encoder_unchanged": true,
+    "cache_invalidated": false,
+    "new_cache_key": "d08622966da2c07f8465641c6fd6cdd3917fbb963f274160f774703ab484b86f",
+    "publication_status": "research_only",
+    "production_checks": {
+      "data_and_schema": false,
+      "calibration": false,
+      "quantized_task_replay": false,
+      "privacy_scope": false,
+      "six_model_aggregation": false
+    }
+  },
+  {
+    "version": "s17-2020-04-30-INCREMENT-INCREMENT",
+    "parent": "s17-initial",
+    "cutoff": "2020-04-30",
+    "arm": "INCREMENT",
+    "route": "INCREMENT",
+    "model_path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/年度更新机制收束/20261023-v1/results/s17/2020-04-30-INCREMENT.pt",
+    "model_sha256": "a61758907de193d95545a03ea4a597ddcf706f145a1e58203fc8d338d38184a5",
+    "encoder_hash": "9cb64ebcf77850270414b843bb54b6ecb2f6375dc87c017fbe965afb8959931f",
+    "candidate_encoder_unchanged": true,
+    "cache_invalidated": false,
+    "new_cache_key": "995874aa73ed33b0dd3e2201be664fbe405be520cf79b725c3970028464f88b4",
+    "publication_status": "research_only",
+    "production_checks": {
+      "data_and_schema": false,
+      "calibration": false,
+      "quantized_task_replay": false,
+      "privacy_scope": false,
+      "six_model_aggregation": false
+    }
+  },
+  {
+    "version": "s17-2020-04-30-ADAPTIVE-FULL",
+    "parent": "s17-initial",
+    "cutoff": "2020-04-30",
+    "arm": "ADAPTIVE",
+    "route": "FULL",
+    "model_path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/年度更新机制收束/20261023-v1/results/s17/2020-04-30-ADAPTIVE.pt",
+    "model_sha256": "3d2f9c8b2b9c033a171431a66e4e68df23701ade57546344977863c5e36252c4",
+    "encoder_hash": "cad70e6e93d723ff1d2d144f8f87fa58737effdedd9e9b10324f4891085eb391",
+    "candidate_encoder_unchanged": true,
+    "cache_invalidated": true,
+    "new_cache_key": "8e2d272ca524f353480ba9e72842751e013e609bf8a3c894e0067dd918f2073f",
+    "publication_status": "research_only",
+    "production_checks": {
+      "data_and_schema": false,
+      "calibration": false,
+      "quantized_task_replay": false,
+      "privacy_scope": false,
+      "six_model_aggregation": false
+    }
+  },
+  {
+    "version": "s17-2021-04-30-INCREMENT-INCREMENT",
+    "parent": "s17-2020-04-30-INCREMENT-INCREMENT",
+    "cutoff": "2021-04-30",
+    "arm": "INCREMENT",
+    "route": "INCREMENT",
+    "model_path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/年度更新机制收束/20261023-v1/results/s17/2021-04-30-INCREMENT.pt",
+    "model_sha256": "62ac089cfb1ddda5327cc9549b307956c622daa7db29da8fb76e658d1c39d35d",
+    "encoder_hash": "9cb64ebcf77850270414b843bb54b6ecb2f6375dc87c017fbe965afb8959931f",
+    "candidate_encoder_unchanged": true,
+    "cache_invalidated": false,
+    "new_cache_key": "995874aa73ed33b0dd3e2201be664fbe405be520cf79b725c3970028464f88b4",
+    "publication_status": "research_only",
+    "production_checks": {
+      "data_and_schema": false,
+      "calibration": false,
+      "quantized_task_replay": false,
+      "privacy_scope": false,
+      "six_model_aggregation": false
+    }
+  },
+  {
+    "version": "s17-2021-04-30-ADAPTIVE-INCREMENT",
+    "parent": "s17-2020-04-30-ADAPTIVE-FULL",
+    "cutoff": "2021-04-30",
+    "arm": "ADAPTIVE",
+    "route": "INCREMENT",
+    "model_path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/年度更新机制收束/20261023-v1/results/s17/2021-04-30-ADAPTIVE.pt",
+    "model_sha256": "862e8c8eacc6251903ca681b3f2996ce3afc64cd481d44f5c2490ecf8e570b12",
+    "encoder_hash": "cad70e6e93d723ff1d2d144f8f87fa58737effdedd9e9b10324f4891085eb391",
+    "candidate_encoder_unchanged": true,
+    "cache_invalidated": false,
+    "new_cache_key": "8e2d272ca524f353480ba9e72842751e013e609bf8a3c894e0067dd918f2073f",
+    "publication_status": "research_only",
+    "production_checks": {
+      "data_and_schema": false,
+      "calibration": false,
+      "quantized_task_replay": false,
+      "privacy_scope": false,
+      "six_model_aggregation": false
+    }
+  },
+  {
+    "version": "s42-initial",
+    "parent": null,
+    "model_path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/年度更新机制收束/20261023-v1/results/s42/initial.pt",
+    "model_sha256": "685b662192137989eafadf40249b190b044251c41b2887a6ccdc258e5ecb6256",
+    "encoder_hash": "58392d6380cb49aefc0ed4acdbe6bd339478d3b98cadb63783c7b5f6fcb11a99",
+    "publication_status": "research_only"
+  },
+  {
+    "version": "s100-initial",
+    "parent": null,
+    "model_path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/年度更新机制收束/20261023-v1/results/s100/initial.pt",
+    "model_sha256": "24b8688c2ec39accfb5217122b28b1863598b59723f9781be630d9e315b489fc",
+    "encoder_hash": "3519a1aa7dd83de60ef86da106c90ac0811ed31684b04f47ac98cf968b564130",
+    "publication_status": "research_only"
+  },
+  {
+    "version": "s17-initial",
+    "parent": null,
+    "model_path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/年度更新机制收束/20261023-v1/results/s17/initial.pt",
+    "model_sha256": "a8ef57c0f2c0d1c19adaf77568d16c9c7a66b5668286808ea02e52f85e59b37d",
+    "encoder_hash": "9cb64ebcf77850270414b843bb54b6ecb2f6375dc87c017fbe965afb8959931f",
+    "publication_status": "research_only"
+  }
+]

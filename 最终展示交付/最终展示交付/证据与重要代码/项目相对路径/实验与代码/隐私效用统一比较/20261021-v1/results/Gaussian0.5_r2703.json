@@ -1,0 +1,39 @@
+{
+  "method": "Gaussian",
+  "arm": "Gaussian0.5",
+  "strength": 0.5,
+  "rep": 2703,
+  "recall": 0.2895040369088812,
+  "ap": 0.5642093565941989,
+  "numeric_nrmse": 0.5279002578404991,
+  "normalized_error": 0.5164123403674219,
+  "gain": 0.49434537142719737,
+  "constant_nrmse": 1.0222456292676965,
+  "task": {
+    "rows": 3670,
+    "positives": 867,
+    "budget": 367,
+    "found": 251,
+    "recall_at_10pct": 0.2895040369088812,
+    "precision_at_10pct": 0.6839237057220708,
+    "overall_average_precision": 0.5642093565941989,
+    "eligible_selected_positives": 251,
+    "conditional_top2_hit": 0.4940239043824701,
+    "common_top2_hit": 0.9243027888446215,
+    "type_macro_coverage": 0.10232410988730664,
+    "common_macro_coverage": 0.07154423464143397,
+    "conditional_type_macro_ap": 0.3565215278300931
+  },
+  "attack": {
+    "gain": 0.49434537142719737,
+    "constant_nrmse": 1.0222456292676965,
+    "attacker_nrmse": {
+      "ridge": 0.6057987576605546,
+      "mlp": 0.5279002578404991
+    },
+    "selected": "mlp"
+  },
+  "message_dimensions": 138,
+  "target_dimensions": 138,
+  "same_shared_backbone": true
+}

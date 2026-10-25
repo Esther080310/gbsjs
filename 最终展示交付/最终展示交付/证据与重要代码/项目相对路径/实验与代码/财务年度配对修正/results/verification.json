@@ -1,0 +1,9 @@
+{
+  "new_trainings": 24,
+  "original_checkpoints_unchanged": true,
+  "all_sources_unchanged": true,
+  "original_initializations_matched": true,
+  "old_model_eval_logits_reproduced_exactly": true,
+  "four_fold_reload_and_calibration_checked": true,
+  "model_and_loss_and_selector_unchanged": true
+}

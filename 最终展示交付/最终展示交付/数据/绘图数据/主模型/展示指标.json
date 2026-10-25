@@ -1,0 +1,674 @@
+{
+  "task": {
+    "label_snapshot": "2023-12-31",
+    "unit": "company-occurrence-year",
+    "evaluation": "retrospective, same-year matched comparisons; not Y60/as-of",
+    "main_predictor": "mean of six saved calibrated logits, then rank descending",
+    "seeds": [
+      42,
+      100,
+      17,
+      223,
+      483,
+      907
+    ],
+    "topk_rule": "ceil(fraction*N), stable descending score order",
+    "primary_metric": "Recall@10%",
+    "secondary_metric": "AP"
+  },
+  "years": {
+    "2020": {
+      "rows": 4292,
+      "positives": 787,
+      "base_rate": 0.18336439888164027,
+      "node_input_dims": [
+        19,
+        238,
+        16
+      ],
+      "fold_rows": [
+        34253,
+        3670,
+        3864,
+        4292
+      ]
+    },
+    "2021": {
+      "rows": 4794,
+      "positives": 747,
+      "base_rate": 0.155819774718398,
+      "node_input_dims": [
+        19,
+        240,
+        16
+      ],
+      "fold_rows": [
+        37923,
+        3864,
+        4292,
+        4794
+      ]
+    },
+    "2022": {
+      "rows": 5199,
+      "positives": 629,
+      "base_rate": 0.1209848047701481,
+      "node_input_dims": [
+        24,
+        240,
+        16
+      ],
+      "fold_rows": [
+        41787,
+        4292,
+        4794,
+        5199
+      ]
+    }
+  },
+  "ensemble_metrics": {
+    "2020": {
+      "FiLM-L": {
+        "ap": 0.492743441449349,
+        "logloss": 0.40441900227369904,
+        "lists": {
+          "1%": {
+            "budget": 43,
+            "hits": 40,
+            "recall": 0.05082592121982211,
+            "precision": 0.9302325581395349,
+            "lift_over_random": 5.073136136638988
+          },
+          "5%": {
+            "budget": 215,
+            "hits": 156,
+            "recall": 0.19822109275730623,
+            "precision": 0.7255813953488373,
+            "lift_over_random": 3.957046186578411
+          },
+          "10%": {
+            "budget": 430,
+            "hits": 258,
+            "recall": 0.3278271918678526,
+            "precision": 0.6,
+            "lift_over_random": 3.2721728081321473
+          }
+        }
+      },
+      "UA7": {
+        "ap": 0.49242831478555704,
+        "logloss": 0.4056870693027975,
+        "lists": {
+          "1%": {
+            "budget": 43,
+            "hits": 39,
+            "recall": 0.04955527318932656,
+            "precision": 0.9069767441860465,
+            "lift_over_random": 4.946307733223013
+          },
+          "5%": {
+            "budget": 215,
+            "hits": 153,
+            "recall": 0.19440914866581957,
+            "precision": 0.7116279069767442,
+            "lift_over_random": 3.8809491445288256
+          },
+          "10%": {
+            "budget": 430,
+            "hits": 261,
+            "recall": 0.33163913595933925,
+            "precision": 0.6069767441860465,
+            "lift_over_random": 3.31022132915694
+          }
+        }
+      },
+      "U0": {
+        "ap": 0.4491499853445511,
+        "logloss": 0.41596498206282484,
+        "lists": {
+          "1%": {
+            "budget": 43,
+            "hits": 33,
+            "recall": 0.04193138500635324,
+            "precision": 0.7674418604651163,
+            "lift_over_random": 4.185337312727166
+          },
+          "5%": {
+            "budget": 215,
+            "hits": 142,
+            "recall": 0.18043202033036848,
+            "precision": 0.6604651162790698,
+            "lift_over_random": 3.6019266570136814
+          },
+          "10%": {
+            "budget": 430,
+            "hits": 232,
+            "recall": 0.2947903430749682,
+            "precision": 0.5395348837209303,
+            "lift_over_random": 2.942418959250613
+          }
+        }
+      },
+      "GLOBAL": {
+        "ap": 0.47086682052280027,
+        "logloss": 0.4095441862893878,
+        "lists": {
+          "1%": {
+            "budget": 43,
+            "hits": 38,
+            "recall": 0.048284625158831,
+            "precision": 0.8837209302325582,
+            "lift_over_random": 4.819479329807039
+          },
+          "5%": {
+            "budget": 215,
+            "hits": 145,
+            "recall": 0.18424396442185514,
+            "precision": 0.6744186046511628,
+            "lift_over_random": 3.678023699063266
+          },
+          "10%": {
+            "budget": 430,
+            "hits": 249,
+            "recall": 0.31639135959339265,
+            "precision": 0.5790697674418605,
+            "lift_over_random": 3.1580272450577698
+          }
+        }
+      }
+    },
+    "2021": {
+      "FiLM-L": {
+        "ap": 0.41077603963624415,
+        "logloss": 0.3752618645622157,
+        "lists": {
+          "1%": {
+            "budget": 48,
+            "hits": 38,
+            "recall": 0.050870147255689425,
+            "precision": 0.7916666666666666,
+            "lift_over_random": 5.080655957161981
+          },
+          "5%": {
+            "budget": 240,
+            "hits": 140,
+            "recall": 0.18741633199464525,
+            "precision": 0.5833333333333334,
+            "lift_over_random": 3.7436412315930387
+          },
+          "10%": {
+            "budget": 480,
+            "hits": 227,
+            "recall": 0.3038821954484605,
+            "precision": 0.47291666666666665,
+            "lift_over_random": 3.0350234270414993
+          }
+        }
+      },
+      "UA7": {
+        "ap": 0.3998906720602084,
+        "logloss": 0.375943423108451,
+        "lists": {
+          "1%": {
+            "budget": 48,
+            "hits": 34,
+            "recall": 0.04551539491298527,
+            "precision": 0.7083333333333334,
+            "lift_over_random": 4.545850066934404
+          },
+          "5%": {
+            "budget": 240,
+            "hits": 139,
+            "recall": 0.18607764390896922,
+            "precision": 0.5791666666666667,
+            "lift_over_random": 3.71690093708166
+          },
+          "10%": {
+            "budget": 480,
+            "hits": 224,
+            "recall": 0.2998661311914324,
+            "precision": 0.4666666666666667,
+            "lift_over_random": 2.994912985274431
+          }
+        }
+      },
+      "U0": {
+        "ap": 0.3597695093878223,
+        "logloss": 0.38302414063258056,
+        "lists": {
+          "1%": {
+            "budget": 48,
+            "hits": 26,
+            "recall": 0.03480589022757698,
+            "precision": 0.5416666666666666,
+            "lift_over_random": 3.47623828647925
+          },
+          "5%": {
+            "budget": 240,
+            "hits": 130,
+            "recall": 0.17402945113788487,
+            "precision": 0.5416666666666666,
+            "lift_over_random": 3.47623828647925
+          },
+          "10%": {
+            "budget": 480,
+            "hits": 211,
+            "recall": 0.2824631860776439,
+            "precision": 0.4395833333333333,
+            "lift_over_random": 2.8211010709504682
+          }
+        }
+      },
+      "GLOBAL": {
+        "ap": 0.4052870680517058,
+        "logloss": 0.3732573965904365,
+        "lists": {
+          "1%": {
+            "budget": 48,
+            "hits": 32,
+            "recall": 0.0428380187416332,
+            "precision": 0.6666666666666666,
+            "lift_over_random": 4.278447121820616
+          },
+          "5%": {
+            "budget": 240,
+            "hits": 138,
+            "recall": 0.18473895582329317,
+            "precision": 0.575,
+            "lift_over_random": 3.6901606425702806
+          },
+          "10%": {
+            "budget": 480,
+            "hits": 233,
+            "recall": 0.3119143239625167,
+            "precision": 0.48541666666666666,
+            "lift_over_random": 3.1152443105756356
+          }
+        }
+      }
+    },
+    "2022": {
+      "FiLM-L": {
+        "ap": 0.35706337574414315,
+        "logloss": 0.33205477522669175,
+        "lists": {
+          "1%": {
+            "budget": 52,
+            "hits": 38,
+            "recall": 0.06041335453100159,
+            "precision": 0.7307692307692307,
+            "lift_over_random": 6.040173657820716
+          },
+          "5%": {
+            "budget": 260,
+            "hits": 136,
+            "recall": 0.21621621621621623,
+            "precision": 0.5230769230769231,
+            "lift_over_random": 4.323492723492724
+          },
+          "10%": {
+            "budget": 520,
+            "hits": 210,
+            "recall": 0.3338632750397456,
+            "precision": 0.40384615384615385,
+            "lift_over_random": 3.3379907056377647
+          }
+        }
+      },
+      "UA7": {
+        "ap": 0.3509598199868871,
+        "logloss": 0.3338222957380201,
+        "lists": {
+          "1%": {
+            "budget": 52,
+            "hits": 39,
+            "recall": 0.06200317965023847,
+            "precision": 0.75,
+            "lift_over_random": 6.19912559618442
+          },
+          "5%": {
+            "budget": 260,
+            "hits": 134,
+            "recall": 0.21303656597774245,
+            "precision": 0.5153846153846153,
+            "lift_over_random": 4.259911948147242
+          },
+          "10%": {
+            "budget": 520,
+            "hits": 213,
+            "recall": 0.3386327503974563,
+            "precision": 0.4096153846153846,
+            "lift_over_random": 3.3856762871468753
+          }
+        }
+      },
+      "U0": {
+        "ap": 0.3029399544351021,
+        "logloss": 0.33959148333149203,
+        "lists": {
+          "1%": {
+            "budget": 52,
+            "hits": 24,
+            "recall": 0.03815580286168521,
+            "precision": 0.46153846153846156,
+            "lift_over_random": 3.814846520728874
+          },
+          "5%": {
+            "budget": 260,
+            "hits": 114,
+            "recall": 0.18124006359300476,
+            "precision": 0.43846153846153846,
+            "lift_over_random": 3.62410419469243
+          },
+          "10%": {
+            "budget": 520,
+            "hits": 196,
+            "recall": 0.31160572337042924,
+            "precision": 0.3769230769230769,
+            "lift_over_random": 3.1154579919285803
+          }
+        }
+      }
+    }
+  },
+  "ensemble_recall_ci": {
+    "2020": {
+      "FiLM-L": {
+        "exact_pp": 32.78271918678526,
+        "bootstrap_mean_pp": 32.71036647461371,
+        "lower_pp": 30.246776318885594,
+        "upper_pp": 35.10530388095754
+      },
+      "UA7": {
+        "exact_pp": 33.16391359593393,
+        "bootstrap_mean_pp": 32.999816706492936,
+        "lower_pp": 30.53249079510399,
+        "upper_pp": 35.462842242503264
+      },
+      "U0": {
+        "exact_pp": 29.47903430749682,
+        "bootstrap_mean_pp": 29.319254219143964,
+        "lower_pp": 26.9586410455738,
+        "upper_pp": 31.77242174467667
+      },
+      "GLOBAL": {
+        "exact_pp": 31.639135959339264,
+        "bootstrap_mean_pp": 31.794274994711397,
+        "lower_pp": 29.44754353849199,
+        "upper_pp": 34.18389845761914
+      }
+    },
+    "2021": {
+      "FiLM-L": {
+        "exact_pp": 30.388219544846052,
+        "bootstrap_mean_pp": 30.359825994286187,
+        "lower_pp": 27.710379981464317,
+        "upper_pp": 33.060352275427114
+      },
+      "UA7": {
+        "exact_pp": 29.98661311914324,
+        "bootstrap_mean_pp": 29.969349510827985,
+        "lower_pp": 27.492320451681845,
+        "upper_pp": 32.55837523570082
+      },
+      "U0": {
+        "exact_pp": 28.246318607764394,
+        "bootstrap_mean_pp": 28.12092759113015,
+        "lower_pp": 25.5585405956281,
+        "upper_pp": 30.65993962915049
+      },
+      "GLOBAL": {
+        "exact_pp": 31.191432396251674,
+        "bootstrap_mean_pp": 31.271665576346297,
+        "lower_pp": 28.570979335130275,
+        "upper_pp": 33.96239232977851
+      }
+    },
+    "2022": {
+      "FiLM-L": {
+        "exact_pp": 33.38632750397456,
+        "bootstrap_mean_pp": 33.34075845150315,
+        "lower_pp": 30.185082805051845,
+        "upper_pp": 36.49300734558373
+      },
+      "UA7": {
+        "exact_pp": 33.86327503974563,
+        "bootstrap_mean_pp": 33.798707588386954,
+        "lower_pp": 30.595126783766336,
+        "upper_pp": 37.193011075813516
+      },
+      "U0": {
+        "exact_pp": 31.160572337042925,
+        "bootstrap_mean_pp": 31.20923027457179,
+        "lower_pp": 28.183471747189053,
+        "upper_pp": 34.45581896551724
+      }
+    }
+  },
+  "comparisons": {
+    "FiLM-L_minus_UA7": {
+      "per_year": {
+        "2020": {
+          "exact_pp": -0.3811944091486663,
+          "bootstrap_mean_pp": -0.289450231879235,
+          "lower_pp": -1.4267648693718737,
+          "upper_pp": 0.877220497919828,
+          "ap_difference_pp": 0.031512666379196475
+        },
+        "2021": {
+          "exact_pp": 0.4016064257028107,
+          "bootstrap_mean_pp": 0.39047648345821007,
+          "lower_pp": -0.9272138817797214,
+          "upper_pp": 1.6859093456014587,
+          "ap_difference_pp": 1.0885367576035754
+        },
+        "2022": {
+          "exact_pp": -0.4769475357710662,
+          "bootstrap_mean_pp": -0.45794913688381267,
+          "lower_pp": -1.944973583952514,
+          "upper_pp": 0.9951076563935735,
+          "ap_difference_pp": 0.6103555757256074
+        }
+      },
+      "equal_year": {
+        "exact_pp": -0.15217850640564062,
+        "bootstrap_mean_pp": -0.11897429510161253,
+        "lower_pp": -0.8700452717049765,
+        "upper_pp": 0.635762935973334
+      },
+      "mean_ap_difference_pp": 0.5768016665694597
+    },
+    "FiLM-L_minus_U0": {
+      "per_year": {
+        "2020": {
+          "exact_pp": 3.3036848792884377,
+          "bootstrap_mean_pp": 3.3911122554697317,
+          "lower_pp": 1.7810011706769602,
+          "upper_pp": 5.019331213361065,
+          "ap_difference_pp": 4.359345610479792
+        },
+        "2021": {
+          "exact_pp": 2.141900937081659,
+          "bootstrap_mean_pp": 2.23889840315604,
+          "lower_pp": 0.6737416873243203,
+          "upper_pp": 3.8096535616971607,
+          "ap_difference_pp": 5.100653024842183
+        },
+        "2022": {
+          "exact_pp": 2.225755166931637,
+          "bootstrap_mean_pp": 2.1315281769313623,
+          "lower_pp": 0.0,
+          "upper_pp": 4.28463590413187,
+          "ap_difference_pp": 5.412342130904108
+        }
+      },
+      "equal_year": {
+        "exact_pp": 2.557113661100578,
+        "bootstrap_mean_pp": 2.5871796118523784,
+        "lower_pp": 1.4987029955133355,
+        "upper_pp": 3.645758701481595
+      },
+      "mean_ap_difference_pp": 4.957446922075361
+    },
+    "FiLM-L_minus_GLOBAL": {
+      "per_year": {
+        "2020": {
+          "exact_pp": 1.1435832274459934,
+          "bootstrap_mean_pp": 0.9160914799023032,
+          "lower_pp": -0.6694795375835352,
+          "upper_pp": 2.5252861057382328,
+          "ap_difference_pp": 2.187662092654874
+        },
+        "2021": {
+          "exact_pp": -0.8032128514056214,
+          "bootstrap_mean_pp": -0.9118395820601086,
+          "lower_pp": -2.7237354085603127,
+          "upper_pp": 0.8119630657146043,
+          "ap_difference_pp": 0.5488971584538371
+        }
+      },
+      "equal_year": {
+        "exact_pp": 0.170185188020186,
+        "bootstrap_mean_pp": 0.0021259489210971967,
+        "lower_pp": -1.206359610664382,
+        "upper_pp": 1.2086130975201554
+      },
+      "mean_ap_difference_pp": 1.3682796255543557
+    },
+    "UA7_minus_U0": {
+      "per_year": {
+        "2020": {
+          "exact_pp": 3.684879288437104,
+          "bootstrap_mean_pp": 3.680562487348967,
+          "lower_pp": 2.1198019975392035,
+          "upper_pp": 5.2493438320209975,
+          "ap_difference_pp": 4.327832944100596
+        },
+        "2021": {
+          "exact_pp": 1.7402945113788482,
+          "bootstrap_mean_pp": 1.8484219196978298,
+          "lower_pp": 0.1446061666426475,
+          "upper_pp": 3.4034767562658654,
+          "ap_difference_pp": 4.012116267238608
+        },
+        "2022": {
+          "exact_pp": 2.7027027027027026,
+          "bootstrap_mean_pp": 2.589477313815175,
+          "lower_pp": 0.7667833559687173,
+          "upper_pp": 4.5032493673798015,
+          "ap_difference_pp": 4.8019865551785
+        }
+      },
+      "equal_year": {
+        "exact_pp": 2.7092921675062183,
+        "bootstrap_mean_pp": 2.7061539069539906,
+        "lower_pp": 1.6773314726793367,
+        "upper_pp": 3.6739471582757144
+      },
+      "mean_ap_difference_pp": 4.380645255505901
+    }
+  },
+  "single_model_mean_comparisons": {
+    "FiLM-L_minus_UA7": {
+      "2020": -0.6141465480728497,
+      "2021": 0.4908522980812134,
+      "2022": -0.5564387917329068
+    },
+    "UA7_minus_U0": {
+      "2020": 2.8589580686149927,
+      "2021": 1.784917447568051,
+      "2022": 2.994170641229463
+    }
+  },
+  "bootstrap": {
+    "repeats": 2000,
+    "seed": 20261018,
+    "unit": "company",
+    "shared_across_years": true,
+    "reselect_list_within_draw": true,
+    "conditional_on_fixed_predictions": true
+  },
+  "cost": {
+    "unit": "per constituent model",
+    "film_parameters_2020": 38538,
+    "ua7_parameters_2020": 37375,
+    "global_parameters_2020": 46507,
+    "main_fusion_floats": 128,
+    "example_explicit_control_sidechannel_floats": 9,
+    "example_total_one_way_floats": 137,
+    "example_total_one_way_float32_bytes": 548,
+    "note": "137 is an explicit topology accounting example, not measured traffic; ensemble requires six model executions"
+  },
+  "sources": {
+    "实验与代码/控制消息架构/20261018-v1/artifacts/2020/FiLM-L_s100/fold3.npz": "b935842f6027ae9c270745aed764bd850489999696c70d381d57efe8a2bd017e",
+    "实验与代码/控制消息架构/20261018-v1/artifacts/2020/FiLM-L_s17/fold3.npz": "e22d38c92d86d28f2a324b72a67c40f1a52b537e74b949d2fcb7c079f48e6f38",
+    "实验与代码/控制消息架构/20261018-v1/artifacts/2020/FiLM-L_s223/fold3.npz": "628fd5d0f0ac135c2a9ab8c643fc41f152491771bbd50cd433b2d4c5ae2ca107",
+    "实验与代码/控制消息架构/20261018-v1/artifacts/2020/FiLM-L_s42/fold3.npz": "1e82b6e9af31a30d5f41a84771fa1d42bcd48533d68bda4c759f51df3821424d",
+    "实验与代码/控制消息架构/20261018-v1/artifacts/2020/FiLM-L_s483/fold3.npz": "99a99a153a3c745399eb4b5e9a05bfc4e2427fc00e224be2f1f96031b4f3ef21",
+    "实验与代码/控制消息架构/20261018-v1/artifacts/2020/FiLM-L_s907/fold3.npz": "e5177c78e2febc5be34ee23cb99cf6335a5cc670d72a16ddcb91f715c366297e",
+    "实验与代码/控制消息架构/20261018-v1/artifacts/2021/FiLM-L_s100/fold3.npz": "f3f539183020be7fc882d1d3547ec75787cb4832733c7c525b228a3139a94378",
+    "实验与代码/控制消息架构/20261018-v1/artifacts/2021/FiLM-L_s17/fold3.npz": "019554fd2ffcc97f7bf3f0f9d309f8de71056532fa0c57112f0d4ff4e586ead6",
+    "实验与代码/控制消息架构/20261018-v1/artifacts/2021/FiLM-L_s223/fold3.npz": "2a97336704576ba67c6974253be9ec8a0d55dbf44dd02e34f94fe5f7b4a8fe96",
+    "实验与代码/控制消息架构/20261018-v1/artifacts/2021/FiLM-L_s42/fold3.npz": "90638c5b18c82cd3271a7d981cd3b361821925dd28d5ddeb8e67307dec580e60",
+    "实验与代码/控制消息架构/20261018-v1/artifacts/2021/FiLM-L_s483/fold3.npz": "7d58b23ec7ce1e17f793cd9e8865be894ba27c1501696d0dcfd495bafa3c13ad",
+    "实验与代码/控制消息架构/20261018-v1/artifacts/2021/FiLM-L_s907/fold3.npz": "01f4c5b3421f4eb3e6f745a0eb9dcbf8087d2169a14bb7cc9a0b415e48972d6b",
+    "实验与代码/控制消息架构/20261018-v1/artifacts/2022/FiLM-L_s100/fold3.npz": "c80e7a8af43e4ffc260aa7554a43bc0c49c9642547d42e3a116402df09061fe4",
+    "实验与代码/控制消息架构/20261018-v1/artifacts/2022/FiLM-L_s17/fold3.npz": "bb12e3a110c295f26bc6997932cae7dbb1f1b20691e31a6e0ba9799b2bdc09dd",
+    "实验与代码/控制消息架构/20261018-v1/artifacts/2022/FiLM-L_s223/fold3.npz": "c9f51ae131e8356910c45641efa69cd352c2f5f2b9e0a675f3ea35e9088f1ba6",
+    "实验与代码/控制消息架构/20261018-v1/artifacts/2022/FiLM-L_s42/fold3.npz": "7f9f898cfaf9d5e50cf1837ad1866c17d2aa989d77417edd8d10caabd509c179",
+    "实验与代码/控制消息架构/20261018-v1/artifacts/2022/FiLM-L_s483/fold3.npz": "957e40a1fa85e84491d1bf6db799f4862e26e4a556f07ac5364dfe68d1b0a524",
+    "实验与代码/控制消息架构/20261018-v1/artifacts/2022/FiLM-L_s907/fold3.npz": "92f491ffe3e8cfe1623b48eacf97cec698b105a50a416e64781b490c2c0a251d",
+    "实验与代码/财务年度配对修正/cache/2020.npz": "64673df87531328306cc0b32b2272739373839ff8760646752b231dac2c59ffc",
+    "实验与代码/财务年度配对修正/cache/2021.npz": "7ebfa316b6d41180084c62309b0bbcd8bce0ffc622a266de3093027f233857e7",
+    "实验与代码/违规通报结构化研究/artifacts/experiments/20261016-audit-year2022-v1/cache/2022.npz": "816f0cb6b3ceeb169a273ead37f4877f74e5afd7771faf255a6e9a9a6a6152fd",
+    "实验与代码/违规通报结构化研究/artifacts/experiments/20261016-audit-year2022-v1/distributed/D128/U0_s100/predictions.npz": "b7b5a06f9440ba1e48331d11ddfac2c0e6d846860a15e356759b0bbbf86c17e1",
+    "实验与代码/违规通报结构化研究/artifacts/experiments/20261016-audit-year2022-v1/distributed/D128/U0_s17/predictions.npz": "4b237e039dcdc3faf8637c7532e7187317827422a69fb9ac39a06ff9501028fa",
+    "实验与代码/违规通报结构化研究/artifacts/experiments/20261016-audit-year2022-v1/distributed/D128/U0_s223/predictions.npz": "bbc28825db8686cafef8eda1cdbfd0eb1bc941fe12cb4dd3ec84d8769ff20598",
+    "实验与代码/违规通报结构化研究/artifacts/experiments/20261016-audit-year2022-v1/distributed/D128/U0_s42/predictions.npz": "f80a6cb3310f79868e4b2297d8f0a64892b4c6cc24193b77d24400ae0d0317bc",
+    "实验与代码/违规通报结构化研究/artifacts/experiments/20261016-audit-year2022-v1/distributed/D128/U0_s483/predictions.npz": "e38c1c108120e76a0c742561af4ab5e67a464260806bc1eb7921cebf38c90ad8",
+    "实验与代码/违规通报结构化研究/artifacts/experiments/20261016-audit-year2022-v1/distributed/D128/U0_s907/predictions.npz": "9b829ed0d44d6b17b487323a359a37cb1e6c8cb6595eba3a1783d9bfab85d61a",
+    "实验与代码/违规通报结构化研究/artifacts/experiments/20261016-audit-year2022-v1/distributed/D128/UA_s100/predictions.npz": "35d3056722641be98768d09a473c886955f4ce014031f180657f16e8d3982624",
+    "实验与代码/违规通报结构化研究/artifacts/experiments/20261016-audit-year2022-v1/distributed/D128/UA_s17/predictions.npz": "222eade431778f085744fc7d2a5cd18d0a72df6f0e8ac675f5f40dde3b3ff48a",
+    "实验与代码/违规通报结构化研究/artifacts/experiments/20261016-audit-year2022-v1/distributed/D128/UA_s223/predictions.npz": "e64b06e1449be2c62af28e2f3c53f8fad4d903f90cb85f3d2f4a5b8327e0366d",
+    "实验与代码/违规通报结构化研究/artifacts/experiments/20261016-audit-year2022-v1/distributed/D128/UA_s42/predictions.npz": "577e893083a3f7cc08100c0cb5f7f5ac6f1df323f9be647187f88580c41cb6e2",
+    "实验与代码/违规通报结构化研究/artifacts/experiments/20261016-audit-year2022-v1/distributed/D128/UA_s483/predictions.npz": "c98beb784284f17edb93472031ffd3c90e310ceae8b97d12fa4c1f5c90a789ac",
+    "实验与代码/违规通报结构化研究/artifacts/experiments/20261016-audit-year2022-v1/distributed/D128/UA_s907/predictions.npz": "378182cd7cd9383bfca467aec35bf683a16adceac2e10847f8f6ac7d6028cbed",
+    "实验与代码/违规通报结构化研究/artifacts/experiments/20261016-evidence-v1/audit_information/distributed/D128/2020/U0_s100/predictions.npz": "ddd12ff58ee9f279aa05d96537af05f39477335f58f4a19b4b8105a16e54ca32",
+    "实验与代码/违规通报结构化研究/artifacts/experiments/20261016-evidence-v1/audit_information/distributed/D128/2020/U0_s17/predictions.npz": "61d3cbd5ac3eacd53cf386b7ce9bb3da0f0004f0cbf42ec9f816450de5942c7c",
+    "实验与代码/违规通报结构化研究/artifacts/experiments/20261016-evidence-v1/audit_information/distributed/D128/2020/U0_s223/predictions.npz": "4c5d9b1b0118d306be4bfe8149f8f5c2778ade4c22aeb4638077c3b491ec3d10",
+    "实验与代码/违规通报结构化研究/artifacts/experiments/20261016-evidence-v1/audit_information/distributed/D128/2020/U0_s42/predictions.npz": "9c74e0e89cd918bde91a111dc75f28f25aa8a228a0cafd36635c73d6fd9b73cd",
+    "实验与代码/违规通报结构化研究/artifacts/experiments/20261016-evidence-v1/audit_information/distributed/D128/2020/U0_s483/predictions.npz": "74c7e5ed3d0bf2ddbc5cb4df302263a03c713b16e0b2101413184353bba425fb",
+    "实验与代码/违规通报结构化研究/artifacts/experiments/20261016-evidence-v1/audit_information/distributed/D128/2020/U0_s907/predictions.npz": "3e9854182d957c27db7971a5e563d66562a08515f5ecbd9fb7232c479f07c174",
+    "实验与代码/违规通报结构化研究/artifacts/experiments/20261016-evidence-v1/audit_information/distributed/D128/2020/UA_s100/predictions.npz": "1aa2ee4094c923e0bb617d179822e5c12e3ab54e1f210dbca69e45208d2b81d5",
+    "实验与代码/违规通报结构化研究/artifacts/experiments/20261016-evidence-v1/audit_information/distributed/D128/2020/UA_s17/predictions.npz": "9e4819eecd5f1638d3bd9aa0bdfb0f4df021a34febfc14163debbf83d1ae15a4",
+    "实验与代码/违规通报结构化研究/artifacts/experiments/20261016-evidence-v1/audit_information/distributed/D128/2020/UA_s223/predictions.npz": "2fde815209c641b81b966ce8ec33103631a1676656c188d030b4b97bc1598d34",
+    "实验与代码/违规通报结构化研究/artifacts/experiments/20261016-evidence-v1/audit_information/distributed/D128/2020/UA_s42/predictions.npz": "dc52b7b88f5fd0286678df5ae3240721a34dd66d7c2e759e25186e6734d8f5c5",
+    "实验与代码/违规通报结构化研究/artifacts/experiments/20261016-evidence-v1/audit_information/distributed/D128/2020/UA_s483/predictions.npz": "6b32af8514c8de99a6c1be9dc7487e1d0b8e9d94d569e07b7f9632f84eb019f2",
+    "实验与代码/违规通报结构化研究/artifacts/experiments/20261016-evidence-v1/audit_information/distributed/D128/2020/UA_s907/predictions.npz": "630de663e957781fa30ab6c377750a7fb6555415c144b4d26f85e74810518bcb",
+    "实验与代码/违规通报结构化研究/artifacts/experiments/20261016-evidence-v1/audit_information/distributed/D128/2021/U0_s100/predictions.npz": "f82b04dde2af444ff5f78d2bce065186d0a8a6894a8c2172eb7f58be94327bab",
+    "实验与代码/违规通报结构化研究/artifacts/experiments/20261016-evidence-v1/audit_information/distributed/D128/2021/U0_s17/predictions.npz": "3be77062faf1d2368dc70a95b46ca72d8cab30ccb02f4cf8b5fd5c4ad16424e7",
+    "实验与代码/违规通报结构化研究/artifacts/experiments/20261016-evidence-v1/audit_information/distributed/D128/2021/U0_s223/predictions.npz": "9d539b91ff772c2997d7f16d519279e5bb64874850e56aee22fade2934593177",
+    "实验与代码/违规通报结构化研究/artifacts/experiments/20261016-evidence-v1/audit_information/distributed/D128/2021/U0_s42/predictions.npz": "7e81f59d774758a647564503e088d25d40ed4f7b78bb0a9adef02bddab48fc3e",
+    "实验与代码/违规通报结构化研究/artifacts/experiments/20261016-evidence-v1/audit_information/distributed/D128/2021/U0_s483/predictions.npz": "6e03a145dd30f3ed9d0ed39ee056b941b38f221118b13b197150a1ed403dac80",
+    "实验与代码/违规通报结构化研究/artifacts/experiments/20261016-evidence-v1/audit_information/distributed/D128/2021/U0_s907/predictions.npz": "696fbb22cbe130577174b7b3637151fccc9a363007f223e1a86089ca393d276c",
+    "实验与代码/违规通报结构化研究/artifacts/experiments/20261016-evidence-v1/audit_information/distributed/D128/2021/UA_s100/predictions.npz": "9554918abdefd3c870b71fbfcd367ca259d45b7bc7c3d72fbdb62252bb5c5332",
+    "实验与代码/违规通报结构化研究/artifacts/experiments/20261016-evidence-v1/audit_information/distributed/D128/2021/UA_s17/predictions.npz": "55ec592eee332d7c859d87917c36735300fc6f4b58e9633edd844f7f4156d555",
+    "实验与代码/违规通报结构化研究/artifacts/experiments/20261016-evidence-v1/audit_information/distributed/D128/2021/UA_s223/predictions.npz": "a1a65c5ca7292ce4f2807297163cf15feb342e480e849c36800a9bee7f80228e",
+    "实验与代码/违规通报结构化研究/artifacts/experiments/20261016-evidence-v1/audit_information/distributed/D128/2021/UA_s42/predictions.npz": "aac4c5de909df4c24d1d10ca23df1889c1643942d187e3ff82bcf5d60f4bc45b",
+    "实验与代码/违规通报结构化研究/artifacts/experiments/20261016-evidence-v1/audit_information/distributed/D128/2021/UA_s483/predictions.npz": "4b1c4e890ffeab2bb72bb1e0fb0739c7fe1839fa2a6bf199f71864e22b5b3434",
+    "实验与代码/违规通报结构化研究/artifacts/experiments/20261016-evidence-v1/audit_information/distributed/D128/2021/UA_s907/predictions.npz": "7a84c7345b17298751acfa8d400c952e604ca30b577670578847b5ebb3e08021",
+    "实验与代码/违规通报结构化研究/artifacts/experiments/20261016-evidence-v1/audit_information/global/2020/UA_s100/predictions.npz": "b717a7f18a4d6b0cbf2f38c06e0343f0ca76088bfa8d2f8062387304ebd82cae",
+    "实验与代码/违规通报结构化研究/artifacts/experiments/20261016-evidence-v1/audit_information/global/2020/UA_s17/predictions.npz": "516ad2181c782a6b36e22f07432266766b7851dcc6e8c49fa9bbceeb26e8277d",
+    "实验与代码/违规通报结构化研究/artifacts/experiments/20261016-evidence-v1/audit_information/global/2020/UA_s223/predictions.npz": "d2caa4b9a83f851f5c6dfad2689647fd233757bdde3e2dcdeaafd2359057a87b",
+    "实验与代码/违规通报结构化研究/artifacts/experiments/20261016-evidence-v1/audit_information/global/2020/UA_s42/predictions.npz": "5e28c37b8758dc17b34eff028e0e559bc2292bcf8604c09a47d80b7bfcfff6eb",
+    "实验与代码/违规通报结构化研究/artifacts/experiments/20261016-evidence-v1/audit_information/global/2020/UA_s483/predictions.npz": "caa18b2634bd645ea809f0c80cdad829edf6a05803026574c64a7213a3eff89c",
+    "实验与代码/违规通报结构化研究/artifacts/experiments/20261016-evidence-v1/audit_information/global/2020/UA_s907/predictions.npz": "510b3f366a95ae35ed4652c1ecd980ff00f987cb6572e14dead3d9e1ba435e5c",
+    "实验与代码/违规通报结构化研究/artifacts/experiments/20261016-evidence-v1/audit_information/global/2021/UA_s100/predictions.npz": "f3c8094be0bd51f907750367c6588e5239d26d10c712d1e1bb0aac7879fc8c33",
+    "实验与代码/违规通报结构化研究/artifacts/experiments/20261016-evidence-v1/audit_information/global/2021/UA_s17/predictions.npz": "cc7e945d7a16ff5504c157c666975955319c6d871e63562f5432d8c5a6f1a2af",
+    "实验与代码/违规通报结构化研究/artifacts/experiments/20261016-evidence-v1/audit_information/global/2021/UA_s223/predictions.npz": "dcc8f1c8310d93254b030c86b422951b7607090e901fe01997c1247fa61a9c7d",
+    "实验与代码/违规通报结构化研究/artifacts/experiments/20261016-evidence-v1/audit_information/global/2021/UA_s42/predictions.npz": "24f22ae227ac571167301de625e8e1156237f043ec1dcb9d6d281ada02fe5424",
+    "实验与代码/违规通报结构化研究/artifacts/experiments/20261016-evidence-v1/audit_information/global/2021/UA_s483/predictions.npz": "da1ebb0c6ee9bf9483d667d5a8518aa3139ba5bf6d04655fdcf26e77e1755d81",
+    "实验与代码/违规通报结构化研究/artifacts/experiments/20261016-evidence-v1/audit_information/global/2021/UA_s907/predictions.npz": "f2ab9548bfc90894462e48bd6708b9e5dd0f0ccf9cb9c1d8a67d36f25f961212"
+  },
+  "new_training_runs": 0
+}

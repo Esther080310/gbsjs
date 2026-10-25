@@ -1,0 +1,24 @@
+FIELD prof__F052201B
+FIELD oper__F041202B
+FIELD oper__F041001B
+FIELD oper__F041101B
+FIELD solv__F010301A
+FIELD solv__F010201A
+FIELD prof__F051801B
+FIELD solv__F010501A
+FIELD solv__F011501A
+FIELD oper__F041601B
+FIELD oper__F041402B
+FIELD prof__F053201B
+FIELD solv__F010801B
+FIELD mkt__company_age
+FIELD mkt__listing_age
+FIELD exec__events
+FIELD exec__resign
+FIELD exec__chair
+FIELD exec__manager
+FIELD exec__external
+FIELD exec__mean_age
+FIELD exec__mean_tenure
+FIELD exec__mean_notice_lag
+COMPLETE {'Main': 8.881784197001252e-16, 'S0': 8.881784197001252e-16, 'MID': 8.881784197001252e-16}

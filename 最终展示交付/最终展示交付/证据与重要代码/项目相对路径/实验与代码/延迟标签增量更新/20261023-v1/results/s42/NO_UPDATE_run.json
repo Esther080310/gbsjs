@@ -1,0 +1,19 @@
+{
+  "seconds": 0.0,
+  "steps": 0,
+  "exposures": 0,
+  "trainable_parameters": 0,
+  "seed": 42,
+  "arm": "NO_UPDATE",
+  "initial_sha256": "4e9ffe0e53ef284275dcf8af01a78eafa6cced6ef99b04139945466885b85e96",
+  "initial_training_seconds": 8.001732083000206,
+  "cache_build_seconds": 0.040516125000067404,
+  "cache_replay_max_error": 0.0,
+  "parameters": 38538,
+  "model_sha256": "40cebdced61f2a0e283e18707fa37de3005bfcd7333e036cfc43636339030e17",
+  "update_seconds_including_cache": 0.0,
+  "stored_initial_cache_payload_bytes": 14782580,
+  "new_rows_upload_payload_bytes": null,
+  "logical_train_forward_payload_bytes": 0,
+  "logical_train_backward_payload_bytes": 0
+}

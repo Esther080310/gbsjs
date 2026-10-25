@@ -1,0 +1,22 @@
+{
+  "epochs": 23,
+  "best_epoch": 17,
+  "selection_loss": 0.8840540752356394,
+  "train_seconds": 3.5699257920205127,
+  "train_forward_bytes": 362396740,
+  "train_backward_bytes": 352942912,
+  "epoch_validation_bytes": 38828600,
+  "year": 2020,
+  "arm": "CMA",
+  "seed": 42,
+  "content_dims": [
+    16,
+    88,
+    8
+  ],
+  "budget_floats": 115,
+  "parameters": 41280,
+  "initial_hash": "a3190da9b04651b0116727a9be832fb8595fcf728cf12337f764f0aa111a38a9",
+  "final_hash": "a3190da9b04651b0116727a9be832fb8595fcf728cf12337f764f0aa111a38a9",
+  "x3_dim": 23
+}

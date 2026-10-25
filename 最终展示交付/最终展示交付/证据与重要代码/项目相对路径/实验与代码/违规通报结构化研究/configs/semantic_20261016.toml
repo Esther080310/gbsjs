@@ -1,0 +1,33 @@
+[study]
+version = "20261016-evidence-v1-semantic"
+time_protocol = "retrospective_snapshot2023"
+evaluation_years = [2020, 2021]
+pilot_seeds = [42, 100]
+expansion_seeds = [17, 223, 483, 907]
+arms = ["A", "B", "C"]
+output = "artifacts/experiments/20261016-evidence-v1/semantic"
+
+[model]
+backbone = "RiskModel(pack,32,'Plain',seed)"
+original_x_and_q = true
+head_seed_offset = 1000
+auxiliary_weight = 0.1
+
+[training]
+threads = 4
+learning_rate = 0.001
+weight_decay = 0.0001
+batch_size = 1024
+max_epochs = 30
+patience = 6
+min_improvement = 0.0001
+clip_backbone_norm = 1.0
+clip_head_norm = 1.0
+selector = "original fold1 proper BCE"
+calibration = "original fold2 overall Platt and type shrinkage"
+
+[gate]
+year_mean_difference_maximum = 0.0
+all_four_mean_difference_maximum = -0.001
+expand_all_abc_if_b_or_c_passes = true
+use_test_for_gate = false

@@ -1,0 +1,33 @@
+{
+  "baseline": {
+    "rows": 4292,
+    "positives": 787,
+    "budget": 430,
+    "found": 258,
+    "recall_at_10pct": 0.3278271918678526,
+    "precision_at_10pct": 0.6,
+    "overall_average_precision": 0.492743441449349,
+    "eligible_selected_positives": 258,
+    "conditional_top2_hit": 0.875968992248062,
+    "common_top2_hit": 0.8488372093023255,
+    "type_macro_coverage": 0.07322277770841226,
+    "common_macro_coverage": 0.07170315810715366,
+    "conditional_type_macro_ap": 0.3093958108204634
+  },
+  "baseline_full_gain": 0.8357107110617112,
+  "baseline_full_auc": 0.9999746354191567,
+  "rows": [
+    {
+      "arm": "S0",
+      "recall": 0.3189326556543837,
+      "ap": 0.4781401677416609,
+      "recall_difference_pp": -0.8894536213468862,
+      "ap_difference": -0.014603273707688103,
+      "full_gain": 0.691429396797307,
+      "full_auc": 0.9987665427650199,
+      "public_gain": 0.2245432103093562,
+      "public_auc": 0.966613721675112,
+      "practical_leakage": true
+    }
+  ]
+}

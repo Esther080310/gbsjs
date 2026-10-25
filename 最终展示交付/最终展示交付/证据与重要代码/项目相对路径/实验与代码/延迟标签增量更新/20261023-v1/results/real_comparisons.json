@@ -1,0 +1,26 @@
+[
+  {
+    "a": "FINETUNE",
+    "b": "NO_UPDATE",
+    "mean_recall_difference_pp": 0.45155882835388184,
+    "positive_seeds": 2
+  },
+  {
+    "a": "REPLAY",
+    "b": "NO_UPDATE",
+    "mean_recall_difference_pp": 0.9441693623860677,
+    "positive_seeds": 2
+  },
+  {
+    "a": "REPLAY",
+    "b": "FINETUNE",
+    "mean_recall_difference_pp": 0.49261053403218585,
+    "positive_seeds": 2
+  },
+  {
+    "a": "REPLAY",
+    "b": "RETRAIN",
+    "mean_recall_difference_pp": -0.6157636642456055,
+    "positive_seeds": 0
+  }
+]

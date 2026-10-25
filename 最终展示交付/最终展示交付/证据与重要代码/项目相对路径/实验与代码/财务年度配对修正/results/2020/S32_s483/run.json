@@ -1,0 +1,19 @@
+{
+  "epochs": 22,
+  "best_epoch": 16,
+  "selection_loss": 0.8929603425137099,
+  "train_seconds": 6.55098933300178,
+  "train_forward_bytes": 96456448,
+  "train_backward_bytes": 87413656,
+  "epoch_validation_bytes": 10334720,
+  "year": 2020,
+  "seed": 483,
+  "method": "S32",
+  "parameters": 23628,
+  "initial_hash": "1a31758c4e0bfa06323e2303b7e36636a533628c9857cb665fc30faec53477c7",
+  "initial_parameter_hash": "1a31758c4e0bfa06323e2303b7e36636a533628c9857cb665fc30faec53477c7",
+  "four_fold_reload_exact": true,
+  "calibration_refit_exact": true,
+  "prediction_bytes": 128,
+  "training_bytes": 195169176
+}

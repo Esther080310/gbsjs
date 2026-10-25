@@ -1,0 +1,43 @@
+{
+  "exact_point_pp": -0.36682094749178884,
+  "lower_pp": -0.8913405298758649,
+  "upper_pp": 0.12581827370858978,
+  "per_year_pp": {
+    "2020": -0.5225144065529648,
+    "2021": -0.2165926807559841
+  },
+  "per_seed_two_year_pp": {
+    "42": -1.146985230205022,
+    "100": 0.8429312336172307,
+    "17": -1.806123264765966,
+    "223": 0.15087882236272387,
+    "483": -0.5922036302771438,
+    "907": 0.3505763843174442
+  },
+  "ap_diff_pp": 0.39807019278866873,
+  "budget": {
+    "cma": 115,
+    "ua7": 128,
+    "saving_pct": 10.15625
+  },
+  "interpretability": {
+    "separation_ratio": 846849088.0,
+    "within_median": 0.0,
+    "between_median": 0.8468490839004517,
+    "gamma_norm_by_category": {
+      "1": 6.743410110473633,
+      "2": 7.950629711151123,
+      "3": 7.762281894683838,
+      "5": 8.329073905944824
+    }
+  },
+  "checks": {
+    "c1_non_inferior_0p5pp": true,
+    "c2_ci_lower_above_minus1p2": true,
+    "c3_each_year_above_minus1p0": true,
+    "c4_ap_above_minus1p0": true,
+    "c5_budget_le_128": true,
+    "c6_control_code_separates_categories": true
+  },
+  "adopt": true
+}

@@ -1,0 +1,56 @@
+{
+  "checks": [
+    {
+      "seed": 100,
+      "candidate": "fp16",
+      "decision_checks_exact": true
+    },
+    {
+      "seed": 100,
+      "candidate": "mixed",
+      "decision_checks_exact": true
+    },
+    {
+      "seed": 17,
+      "candidate": "fp16",
+      "decision_checks_exact": true
+    },
+    {
+      "seed": 17,
+      "candidate": "mixed",
+      "decision_checks_exact": true
+    },
+    {
+      "seed": 223,
+      "candidate": "fp16",
+      "decision_checks_exact": true
+    },
+    {
+      "seed": 223,
+      "candidate": "mixed",
+      "decision_checks_exact": true
+    },
+    {
+      "seed": 483,
+      "candidate": "fp16",
+      "decision_checks_exact": true
+    },
+    {
+      "seed": 483,
+      "candidate": "mixed",
+      "decision_checks_exact": true
+    },
+    {
+      "seed": 907,
+      "candidate": "fp16",
+      "decision_checks_exact": true
+    },
+    {
+      "seed": 907,
+      "candidate": "mixed",
+      "decision_checks_exact": true
+    }
+  ],
+  "source_hash_matches": true,
+  "training_performed": false
+}

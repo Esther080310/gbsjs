@@ -1,0 +1,20 @@
+{
+  "epochs": 19,
+  "best_epoch": 13,
+  "selection_loss": 0.795652402419562,
+  "train_seconds": 3.995401416992536,
+  "train_forward_bytes": 406503936,
+  "train_backward_bytes": 396976500,
+  "epoch_validation_bytes": 41752576,
+  "year": 2022,
+  "arm": "FiLM-L",
+  "seed": 17,
+  "content_dims": [
+    16,
+    88,
+    21
+  ],
+  "budget_floats": 128,
+  "parameters": 38986,
+  "final_hash": "70f9b0610af0396d50d644e46fe1eb983bfa93f3cf3269fbad8f6d0a40a0da87"
+}

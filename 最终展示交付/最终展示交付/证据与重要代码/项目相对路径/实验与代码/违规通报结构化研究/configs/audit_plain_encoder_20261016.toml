@@ -1,0 +1,30 @@
+[study]
+version = "20261016-evidence-v1-audit-plain-x3"
+output = "artifacts/experiments/20261016-evidence-v1/audit_information/plain_encoder"
+budget_source = "distributed/capacity_selection.json; fixed before plain model training"
+evaluation_years = [2020, 2021]
+pilot_seeds = [42, 100]
+expansion_seeds = [17, 223, 483, 907]
+arms = ["U0", "UM", "UA"]
+
+[model]
+node = "X3 full original16+audit7 columns"
+encoder = "Linear(d_in,H),ReLU,Dropout(.2),Linear(H,d3),ReLU; no LayerNorm"
+hidden_rule = "round((branch_X3_parameter_count-d3)/(d_in+d3+1))"
+encoder_seed_offset = 3000
+other_components = "unchanged from fold1 selected branch capacity"
+hidden_width_search = false
+
+[training]
+threads = 4
+optimizer = "original AdamW .001/.0001; batch1024/max30/patience6/clip1"
+selector = "original fold1 proper BCE"
+calibration = "original fold2 Platt/type shrinkage"
+
+[gate]
+comparison = "plain_UA minus selected_branch_UA"
+per_year_mean_maximum = 0.0
+macro_mean_maximum = -0.001
+expand_all_three_arms_if_pass = true
+test_used = false
+changes_original_capacity_selection = false

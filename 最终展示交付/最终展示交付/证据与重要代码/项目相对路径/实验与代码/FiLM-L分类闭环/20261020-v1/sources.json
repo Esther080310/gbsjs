@@ -1,0 +1,74 @@
+[
+  {
+    "path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/控制消息架构/20261018-v1/artifacts/2020/FiLM-L_s42/fold3.npz",
+    "sha256": "1e82b6e9af31a30d5f41a84771fa1d42bcd48533d68bda4c759f51df3821424d"
+  },
+  {
+    "path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/控制消息架构/20261018-v1/artifacts/2020/FiLM-L_s100/fold3.npz",
+    "sha256": "b935842f6027ae9c270745aed764bd850489999696c70d381d57efe8a2bd017e"
+  },
+  {
+    "path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/控制消息架构/20261018-v1/artifacts/2020/FiLM-L_s17/fold3.npz",
+    "sha256": "e22d38c92d86d28f2a324b72a67c40f1a52b537e74b949d2fcb7c079f48e6f38"
+  },
+  {
+    "path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/控制消息架构/20261018-v1/artifacts/2020/FiLM-L_s223/fold3.npz",
+    "sha256": "628fd5d0f0ac135c2a9ab8c643fc41f152491771bbd50cd433b2d4c5ae2ca107"
+  },
+  {
+    "path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/控制消息架构/20261018-v1/artifacts/2020/FiLM-L_s483/fold3.npz",
+    "sha256": "99a99a153a3c745399eb4b5e9a05bfc4e2427fc00e224be2f1f96031b4f3ef21"
+  },
+  {
+    "path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/控制消息架构/20261018-v1/artifacts/2020/FiLM-L_s907/fold3.npz",
+    "sha256": "e5177c78e2febc5be34ee23cb99cf6335a5cc670d72a16ddcb91f715c366297e"
+  },
+  {
+    "path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/控制消息架构/20261018-v1/artifacts/2021/FiLM-L_s42/fold3.npz",
+    "sha256": "90638c5b18c82cd3271a7d981cd3b361821925dd28d5ddeb8e67307dec580e60"
+  },
+  {
+    "path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/控制消息架构/20261018-v1/artifacts/2021/FiLM-L_s100/fold3.npz",
+    "sha256": "f3f539183020be7fc882d1d3547ec75787cb4832733c7c525b228a3139a94378"
+  },
+  {
+    "path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/控制消息架构/20261018-v1/artifacts/2021/FiLM-L_s17/fold3.npz",
+    "sha256": "019554fd2ffcc97f7bf3f0f9d309f8de71056532fa0c57112f0d4ff4e586ead6"
+  },
+  {
+    "path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/控制消息架构/20261018-v1/artifacts/2021/FiLM-L_s223/fold3.npz",
+    "sha256": "2a97336704576ba67c6974253be9ec8a0d55dbf44dd02e34f94fe5f7b4a8fe96"
+  },
+  {
+    "path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/控制消息架构/20261018-v1/artifacts/2021/FiLM-L_s483/fold3.npz",
+    "sha256": "7d58b23ec7ce1e17f793cd9e8865be894ba27c1501696d0dcfd495bafa3c13ad"
+  },
+  {
+    "path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/控制消息架构/20261018-v1/artifacts/2021/FiLM-L_s907/fold3.npz",
+    "sha256": "01f4c5b3421f4eb3e6f745a0eb9dcbf8087d2169a14bb7cc9a0b415e48972d6b"
+  },
+  {
+    "path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/控制消息架构/20261018-v1/artifacts/2022/FiLM-L_s42/fold3.npz",
+    "sha256": "7f9f898cfaf9d5e50cf1837ad1866c17d2aa989d77417edd8d10caabd509c179"
+  },
+  {
+    "path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/控制消息架构/20261018-v1/artifacts/2022/FiLM-L_s100/fold3.npz",
+    "sha256": "c80e7a8af43e4ffc260aa7554a43bc0c49c9642547d42e3a116402df09061fe4"
+  },
+  {
+    "path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/控制消息架构/20261018-v1/artifacts/2022/FiLM-L_s17/fold3.npz",
+    "sha256": "bb12e3a110c295f26bc6997932cae7dbb1f1b20691e31a6e0ba9799b2bdc09dd"
+  },
+  {
+    "path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/控制消息架构/20261018-v1/artifacts/2022/FiLM-L_s223/fold3.npz",
+    "sha256": "c9f51ae131e8356910c45641efa69cd352c2f5f2b9e0a675f3ea35e9088f1ba6"
+  },
+  {
+    "path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/控制消息架构/20261018-v1/artifacts/2022/FiLM-L_s483/fold3.npz",
+    "sha256": "957e40a1fa85e84491d1bf6db799f4862e26e4a556f07ac5364dfe68d1b0a524"
+  },
+  {
+    "path": "/Users/how/Desktop/分布式企业违规检测/实验与代码/控制消息架构/20261018-v1/artifacts/2022/FiLM-L_s907/fold3.npz",
+    "sha256": "92f491ffe3e8cfe1623b48eacf97cec698b105a50a416e64781b490c2c0a251d"
+  }
+]

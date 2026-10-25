@@ -1,0 +1,323 @@
+{
+  "year": 2020,
+  "scope": "single42",
+  "view": "h3",
+  "attack_input_dimensions": 21,
+  "target_dimensions": 16,
+  "fold_rows": {
+    "train0": 512,
+    "select1": 512,
+    "test3": 512
+  },
+  "ridge_selection": [
+    {
+      "alpha": 0.1,
+      "selection_nrmse": 0.2951204510535893
+    },
+    {
+      "alpha": 1.0,
+      "selection_nrmse": 0.30446481014497484
+    }
+  ],
+  "mlp_selection": {
+    "best_epoch": 2,
+    "selection_nrmse": 1.0181395788425212,
+    "history": [
+      {
+        "epoch": 1,
+        "train_mse": 1.078838586807251,
+        "selection_nrmse": 1.0274666556883914
+      },
+      {
+        "epoch": 2,
+        "train_mse": 1.056290626525879,
+        "selection_nrmse": 1.0181395788425212
+      }
+    ]
+  },
+  "attacker_selection_nrmse": {
+    "ridge": 0.2951204510535893,
+    "mlp": 1.0181395788425212
+  },
+  "selected_attacker": "ridge",
+  "test_metrics": {
+    "constant": {
+      "macro_nrmse_all": 1.006844788436801,
+      "macro_nrmse_numeric": 0.9977067196996405,
+      "macro_nrmse_binary": 1.0159828571739613,
+      "macro_r2": -46.051138528169545,
+      "macro_spearman": NaN,
+      "fields": 16,
+      "binary_fields": 8,
+      "x3_macro_nrmse": 1.006844788436801
+    },
+    "ridge": {
+      "macro_nrmse_all": 0.28499280388193104,
+      "macro_nrmse_numeric": 0.5328047487983069,
+      "macro_nrmse_binary": 0.03718085896555528,
+      "macro_r2": -372.59123143028904,
+      "macro_spearman": 0.8294517596940001,
+      "fields": 16,
+      "binary_fields": 8,
+      "x3_macro_nrmse": 0.28499280388193104
+    },
+    "mlp": {
+      "macro_nrmse_all": 1.0129157999062914,
+      "macro_nrmse_numeric": 0.9776913294646762,
+      "macro_nrmse_binary": 1.0481402703479068,
+      "macro_r2": -13.348289594186117,
+      "macro_spearman": 0.039866089865566834,
+      "fields": 16,
+      "binary_fields": 8,
+      "x3_macro_nrmse": 1.0129157999062914
+    }
+  },
+  "selected_gain_vs_constant": {
+    "estimate": 0.7226547598838806,
+    "ci95": [
+      0.6943663507699966,
+      0.751280315220356
+    ],
+    "null": 0.0,
+    "lower_above_null": true,
+    "replicates": 500,
+    "point_estimate": 0.72185198455487
+  },
+  "attribute_macro_auc": {
+    "estimate": 0.9930065870285034,
+    "ci95": [
+      0.991160100698471,
+      0.994181364774704
+    ],
+    "null": 0.5,
+    "lower_above_null": true,
+    "replicates": 5,
+    "point_estimate": 0.9923462408860589
+  },
+  "attribute_fields_point": [
+    {
+      "field": "missing::exec__events",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 318,
+      "n": 512,
+      "score_column": 0
+    },
+    {
+      "field": "missing::exec__resign",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 318,
+      "n": 512,
+      "score_column": 1
+    },
+    {
+      "field": "missing::exec__chair",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 318,
+      "n": 512,
+      "score_column": 2
+    },
+    {
+      "field": "missing::exec__manager",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 318,
+      "n": 512,
+      "score_column": 3
+    },
+    {
+      "field": "missing::exec__external",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 318,
+      "n": 512,
+      "score_column": 4
+    },
+    {
+      "field": "missing::exec__mean_age",
+      "kind": "encoded_binary",
+      "auc": 0.9973544973544973,
+      "positive": 323,
+      "n": 512,
+      "score_column": 5
+    },
+    {
+      "field": "missing::exec__mean_tenure",
+      "kind": "encoded_binary",
+      "auc": 0.9973544973544973,
+      "positive": 323,
+      "n": 512,
+      "score_column": 6
+    },
+    {
+      "field": "missing::exec__mean_notice_lag",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 318,
+      "n": 512,
+      "score_column": 7
+    },
+    {
+      "field": "exec__resign::event_present",
+      "kind": "event_present",
+      "auc": 1.0,
+      "positive": 507,
+      "n": 512,
+      "score_column": 8
+    },
+    {
+      "field": "exec__chair::event_present",
+      "kind": "event_present",
+      "auc": 0.9778252517223105,
+      "positive": 444,
+      "n": 512,
+      "score_column": 9
+    },
+    {
+      "field": "exec__manager::event_present",
+      "kind": "event_present",
+      "auc": 0.9375,
+      "positive": 456,
+      "n": 512,
+      "score_column": 10
+    },
+    {
+      "field": "exec__external::event_present",
+      "kind": "event_present",
+      "auc": 0.9981206442014042,
+      "positive": 91,
+      "n": 512,
+      "score_column": 11
+    }
+  ],
+  "direct_attribute_attack": {
+    "solver": "OneVsRest SGDClassifier(loss=log_loss, penalty=l2)",
+    "alpha": 0.0001,
+    "max_iter": 20,
+    "registered_fields": 13,
+    "variable_train_fields": 12,
+    "evaluable_test_fields": 12
+  },
+  "reconstruction_attribute_fields_point": [
+    {
+      "field": "missing::exec__events",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 318,
+      "n": 512
+    },
+    {
+      "field": "missing::exec__resign",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 318,
+      "n": 512
+    },
+    {
+      "field": "missing::exec__chair",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 318,
+      "n": 512
+    },
+    {
+      "field": "missing::exec__manager",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 318,
+      "n": 512
+    },
+    {
+      "field": "missing::exec__external",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 318,
+      "n": 512
+    },
+    {
+      "field": "missing::exec__mean_age",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 323,
+      "n": 512
+    },
+    {
+      "field": "missing::exec__mean_tenure",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 323,
+      "n": 512
+    },
+    {
+      "field": "missing::exec__mean_notice_lag",
+      "kind": "encoded_binary",
+      "auc": 1.0,
+      "positive": 318,
+      "n": 512
+    },
+    {
+      "field": "exec__resign::event_present",
+      "kind": "event_present",
+      "auc": 1.0,
+      "positive": 507,
+      "n": 512
+    },
+    {
+      "field": "exec__chair::event_present",
+      "kind": "event_present",
+      "auc": 0.9889374668786434,
+      "positive": 444,
+      "n": 512
+    },
+    {
+      "field": "exec__manager::event_present",
+      "kind": "event_present",
+      "auc": 0.9614661654135339,
+      "positive": 456,
+      "n": 512
+    },
+    {
+      "field": "exec__external::event_present",
+      "kind": "event_present",
+      "auc": 0.9964762078776331,
+      "positive": 91,
+      "n": 512
+    }
+  ],
+  "subgroups": {
+    "seen_company": {
+      "rows": 453,
+      "share": 0.884765625,
+      "constant_nrmse": 1.0198642010612775,
+      "selected_nrmse": 0.2981743648813846,
+      "gain_vs_constant": 0.7216898361798929,
+      "attribute_macro_auc": 0.9924454806710167,
+      "attribute_fields": 12
+    },
+    "unseen_company": {
+      "rows": 59,
+      "share": 0.115234375,
+      "constant_nrmse": 0.8835925202688881,
+      "selected_nrmse": 0.1291988344938903,
+      "gain_vs_constant": 0.7543936857749978,
+      "attribute_macro_auc": 0.9942067736185383,
+      "attribute_fields": 11
+    }
+  },
+  "statistical_recoverability_detected": true,
+  "leakage_criterion_met": true,
+  "practical_thresholds": {
+    "nrmse_gain": 0.05,
+    "attribute_auc": 0.6
+  },
+  "pca_reference": {
+    "not_run_in_primary_stage": true
+  },
+  "random_projection_reference": {
+    "not_run_in_primary_stage": true
+  },
+  "elapsed_seconds": 0.155253958015237,
+  "target_semantics": "preprocessed_model_input"
+}

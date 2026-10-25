@@ -1,0 +1,32 @@
+[
+  {
+    "seed": 100,
+    "initial_exact": true,
+    "common_batch_prefix_exact": true,
+    "parameters_exact": true
+  },
+  {
+    "seed": 17,
+    "initial_exact": true,
+    "common_batch_prefix_exact": true,
+    "parameters_exact": true
+  },
+  {
+    "seed": 223,
+    "initial_exact": true,
+    "common_batch_prefix_exact": true,
+    "parameters_exact": true
+  },
+  {
+    "seed": 483,
+    "initial_exact": true,
+    "common_batch_prefix_exact": true,
+    "parameters_exact": true
+  },
+  {
+    "seed": 907,
+    "initial_exact": true,
+    "common_batch_prefix_exact": true,
+    "parameters_exact": true
+  }
+]
